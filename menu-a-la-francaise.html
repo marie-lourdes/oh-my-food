@@ -39,6 +39,128 @@
                         <img src="images/heart.png" alt="icone coeur" width=20px height=20px/>
                     </div>
                 </div>
+                <form  method="post" action="user-order.php" class="form-menu">
+                    <fieldset class="form-menu__starter"> 
+                        <legend><h2>ENTRÉES</h2></legend>
+                            <div class="starter__menu">
+                                <div class="starter__details">
+                                    <label for="tartare de poulpe acidulé">
+                                        <h3>Tartare de poulpe acidulé</h3>
+                                        <p>Aux zestes d'orange</p>
+                                    </label>
+                                    <p class="starter__price">25 €</p>
+                                </div>
+                                <div class="checkbox-animation">
+                                    <input type="checkbox" id="tartare de poulpe acidulé" name="entrée" value="tartare de poulpe acidulé"/>
+                                </div>
+                            </div>
+                            <div class="starter__menu">
+                                <div class="starter__details">
+                                    <label for="foie grans de canard mi-cuit">
+                                        <h3>Velouté de légumes d'antan</h3>
+                                        <p>Carotte, panais, topinambour</p>
+                                    </label>
+                                    <p class="starter__price">35 €</p>
+                                </div>
+                                <div class="checkbox-animation">
+                                    <input type="checkbox" id="velouté de légumes d'antan" name="entrée" value="velouté de légumes d'antan"/>
+                                </div>
+                            </div>
+                            <div class="starter__menu">
+                                <div class="starter__details">
+                                    <label for="soupe à l'oignon">
+                                        <h3>Soupe à l'oignon</h3>
+                                        <p>Revisitée</p>
+                                    </label>
+                                    <p class="starter__price">20 €</p>
+                                </div>
+                                <div class="checkbox-animation">
+                                    <input type="checkbox" id="soupe à l'oignon" name="entrée" value="soupe à l'oignon"/>
+                                </div>
+                            </div>
+                    </fieldset>
+                    <fieldset class="form-menu__dish"> 
+                        <legend><h2>PLATS</h2></legend>
+                            <div class="dish__menu">
+                                <div class="dish__details">
+                                    <label for="coquilles saint-jacques">
+                                        <h3>Coquilles Saint-Jacques</h3>
+                                        <p>Accompagnées d'une purée de panais</p>
+                                    </label>
+                                    <p class="dish__price">40 €</p>
+                                </div>
+                                <div class="checkbox-animation">
+                                    <input type="checkbox" id="coquilles saint-jacques" name="plat" value="coquilles saint-jacques"/>
+                                </div>
+                            </div>
+                            <div class="dish__menu">
+                                <div class="dish__details">
+                                    <label for="magret de canard">
+                                        <h3>Magret de canard</h3>
+                                        <p>Et parmentier de pommes de terre</p>
+                                    </label>
+                                    <p class="dish__price">35 €</p>
+                                </div>
+                                <div class="checkbox-animation">
+                                    <input type="checkbox" id="magret de canard" name="plat" value="magret de canard"/>
+                                </div>
+                            </div>
+                            <div class="dish__menu">
+                                <div class="dish__details">
+                                    <label for="pigeonneau d ille-et-vilaine">
+                                        <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+                                        <p>Sur son lit de gnocchis aux légumes</p>
+                                    </label>
+                                    <p class="dish__price">44 €</p>
+                                </div>
+                                <div class="checkbox-animation">
+                                    <input type="checkbox" id="pigeonneau d ille-et-vilaine" name="plat" value="pigeonneau d ille-et-vilaine"/>
+                                </div>
+                            </div>
+                    </fieldset>
+                    <fieldset class="form-menu__dessert"> 
+                        <legend><h2>DESSERTS</h2></legend>
+                            <div class="dessert__menu">
+                                <div class="dessert__details">
+                                    <label for="pétales de violettes glacés">
+                                        <h3>Pétales de violettes glacés</h3>
+                                        <p>Et purée de noisettes</p>
+                                    </label>
+                                    <p class="dessert__price">18 €</p>
+                                </div>
+                                <div class="checkbox-animation">
+                                    <input type="checkbox" id="pétales de violettes glacés" name="dessert" value="pétales de violettes glacés"/>
+                                </div>
+                            </div>
+                            <div class="dessert__menu">
+                                <div class="dessert__details">
+                                    <label for="fondant au chocolat">
+                                        <h3>Fondant au chocolat</h3>
+                                        <p>Revisité</p>
+                                    </label>
+                                    <p class="dessert__price">22 €</p>
+                                </div>
+                                <div class="checkbox-animation">
+                                    <input type="checkbox" id="fondant au chocolat" name="dessert" value="fondant au chocolat"/>
+                                </div>
+                            </div>
+                            <div class="dessert__menu">
+                                <div class="dessert__details">
+                                    <label for="millefeuille croustillant">
+                                        <h3>Millefeuille croustillant</h3>
+                                        <p>Myrtilles et pâte d’amande</p>
+                                    </label>
+                                    <p class="dessert__price">23 €</p>
+                                </div>
+                                <div class="checkbox-animation">
+                                    <input type="checkbox" id="millefeuille croustillant" name="dessert" value="millefeuille croustillant"/>
+                                </div>
+                            </div>
+                    </fieldset>
+
+                    <button type="submit" id="order" name="order" value="commande envoyé"> Commander</button>
+
+                </form>
             
 
 
