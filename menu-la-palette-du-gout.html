@@ -39,7 +39,7 @@
                         <img src="images/heart.png" alt="icone coeur" width=20px height=20px/>
                     </div>
                 </div>
-                <form  method="post" action="user-order.php" class="form-menu">
+                <form  method="get" action="user-order.php" class="form-menu">
                     <fieldset class="form-menu__starter"> 
                         <legend><h2>ENTRÉES</h2></legend>
                             <div class="starter__menu" >
@@ -52,7 +52,7 @@
                                     
                                 </div>
                                 <div class="checkbox-animation">
-                                    <input type="checkbox" id="starter" name="entrée" value="fricassée d'escargot" checked="checked"/>
+                                    <input type="checkbox" id="starter" name="entrée" value="fricassée d'escargot"/>
                                 </div>
                             </div>
                             <div class="starter__menu" >
@@ -65,7 +65,7 @@
                                     
                                 </div>
                                 <div class="checkbox-animation">
-                                    <input type="checkbox" id="starter" name="entrée" value="foie gras de canard mi-cuit" checked="checked"/>
+                                    <input type="checkbox" id="starter" name="entrée" value="foie gras de canard mi-cuit"/>
                                 </div>
                             </div>
                             <div class="starter__menu">
@@ -78,11 +78,54 @@
                                     
                                 </div>
                                 <div class="checkbox-animation">
-                                    <input type="checkbox" id="starter" name="entrée" value="oeuf au plat" checked="checked"/>
+                                    <input type="checkbox" id="starter" name="entrée" value="oeuf au plat"/>
                                 </div>
                             </div>
                     </fieldset>
-                  <!--  <button type="submit" id="order" name="order" value="commande envoyé"> Commander</button>-->
+                    <fieldset class="form-menu__dish"> 
+                        <legend><h2>PLATS</h2></legend>
+                            <div class="dish__menu" >
+                                <div class="dish__details">
+                                    <label for="dish">
+                                        <h3>Filet de boeuf aux herbes</h3>
+                                        <p>Accompagné de sa ribambelle de légumes</p>
+                                    </label>
+                                    <p class="dish__price">40 €</p>
+                                    
+                                </div>
+                                <div class="checkbox-animation">
+                                    <input type="checkbox" id="dish" name="plat" value="Filet de boeuf aux herbes"/>
+                                </div>
+                            </div>
+                            <div class="dish__menu" >
+                                <div class="dish__details">
+                                    <label for="dish">
+                                        <h3>Parmentier de queue de boeuf</h3>
+                                        <p>À la truffe noire sur sa purée de panais</p>
+                                    </label>
+                                    <p class="dish__price">35 €</p>
+                                    
+                                </div>
+                                <div class="checkbox-animation">
+                                    <input type="checkbox" id="dish" name="plat" value="Parmentier de queue de boeuf"/>
+                                </div>
+                            </div>
+                            <div class="dish__menu">
+                                <div class="dish__details">
+                                    <label for="dish">
+                                        <h3>Filet de turbot</h3>
+                                        <p>Aux agrumes</p>
+                                    </label>
+                                    <p class="dish__price">44 €</p>
+                                    
+                                </div>
+                                <div class="checkbox-animation">
+                                    <input type="checkbox" id="dish" name="plat" value="Filet de turbot" />
+                                </div>
+                            </div>
+                    </fieldset>
+
+                    <button type="submit" id="order" name="order" value="commande envoyé"> Commander</button>
 
                 </form>
             
