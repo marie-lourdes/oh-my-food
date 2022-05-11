@@ -39,7 +39,50 @@
                         <img src="images/heart.png" alt="icone coeur" width=20px height=20px/>
                     </div>
                 </div>
-                <form  method="post" class="form-menu">
+                <form  method="post" action="user-order.php" class="form-menu">
+                    <fieldset class="form-menu__starter"> 
+                        <legend><h2>ENTRÉES</h2></legend>
+                            <div class="starter__menu" >
+                                <div class="starter__details">
+                                    <label for="starter">
+                                        <h3> Fricassée d'escargot</h3>
+                                        <p> Au piment d'Espelette</p>
+                                    </label>
+                                    <p class="starter__price">25 €</p>
+                                    
+                                </div>
+                                <div class="checkbox-animation">
+                                    <input type="checkbox" id="starter" name="entrée" value="fricassée d'escargot" checked="checked"/>
+                                </div>
+                            </div>
+                            <div class="starter__menu" >
+                                <div class="starter__details">
+                                    <label for="starter">
+                                        <h3>Foie gras de canard mi-cuit</h3>
+                                        <p>Et ses copeaux de truffe noire</p>
+                                    </label>
+                                    <p class="starter__price">35 €</p>
+                                    
+                                </div>
+                                <div class="checkbox-animation">
+                                    <input type="checkbox" id="starter" name="entrée" value="foie gras de canard mi-cuit" checked="checked"/>
+                                </div>
+                            </div>
+                            <div class="starter__menu">
+                                <div class="starter__details">
+                                    <label for="starter">
+                                        <h3>Oeuf au plat</h3>
+                                        <p>Assaisonné à la truffe sur lit de caviar </p>
+                                    </label>
+                                    <p class="starter__price">35 €</p>
+                                    
+                                </div>
+                                <div class="checkbox-animation">
+                                    <input type="checkbox" id="starter" name="entrée" value="oeuf au plat" checked="checked"/>
+                                </div>
+                            </div>
+                    </fieldset>
+                  <!--  <button type="submit" id="order" name="order" value="commande envoyé"> Commander</button>-->
 
                 </form>
             
