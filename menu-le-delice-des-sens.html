@@ -28,7 +28,146 @@
                 </svg>
             </div>
         </header>
-        
+        <main>
+            <div class="banner-menu">
+                <img src="images/le-delice-des-sens-s.jpg" alt="photo des plats du restaurant Le délice des sens "> 
+            </div>
+            <section class="menu">
+                <div class="menu__heading">
+                    <h1>Le délice des sens</h1>
+                    <div>
+                        <img src="images/heart.png" alt="icone coeur" width=20px height=20px/>
+                    </div>
+                </div>
+                <form  method="post" action="user-order.php" class="form-menu">
+                    <fieldset class="form-menu__starter"> 
+                        <legend><h2>ENTRÉES</h2></legend>
+                            <div class="starter__menu">
+                                <div class="starter__details">
+                                    <label for="Tartare de thon">
+                                        <h3>Tartare de thon</h3>
+                                        <p>Assaisonné au yuzu</p>
+                                    </label>
+                                    <p class="starter__price">25 €</p>
+                                </div>
+                                <div class="checkbox-animation">
+                                    <input type="checkbox" id="Tartare de thon" name="entrée" value="Tartare de thon"/>
+                                </div>
+                            </div>
+                            <div class="starter__menu">
+                                <div class="starter__details">
+                                    <label for="bouchée de homard croustillant">
+                                        <h3>Bouchée de homard croustillant</h3>
+                                        <p>Et sa farandole de petits légumes</p>
+                                    </label>
+                                    <p class="starter__price">35 €</p>
+                                </div>
+                                <div class="checkbox-animation">
+                                    <input type="checkbox" id="bouchée de homard croustillant" name="entrée" value="bouchée de homard croustillant"/>
+                                </div>
+                            </div>
+                            <div class="starter__menu">
+                                <div class="starter__details">
+                                    <label for="velouté de cèpes">
+                                        <h3>Velouté de cèpes</h3>
+                                        <p>Aux truffes</p>
+                                    </label>
+                                    <p class="starter__price">20 €</p>
+                                </div>
+                                <div class="checkbox-animation">
+                                    <input type="checkbox" id="velouté de cèpes" name="entrée" value="velouté de cèpes"/>
+                                </div>
+                            </div>
+                    </fieldset>
+                    <fieldset class="form-menu__dish"> 
+                        <legend><h2>PLATS</h2></legend>
+                            <div class="dish__menu">
+                                <div class="dish__details">
+                                    <label for="poulet rôti aux herbes de provence">
+                                        <h3>Poulet rôti aux herbes de Provence</h3>
+                                        <p>Et sa crème de truffe</p>
+                                    </label>
+                                    <pclass="dish__price">40 €</p>
+                                </div>
+                                <div class="checkbox-animation">
+                                    <input type="checkbox" id="poulet rôti aux herbes de provence" name="plat" value="poulet rôti aux herbes de provence"/>
+                                </div>
+                            </div>
+                            <div class="dish__menu">
+                                <div class="dish__details">
+                                    <label for="langouste rôtie">
+                                        <h3>Langouste rôtie</h3>
+                                        <p>Et ses légumes de saison</p>
+                                    </label>
+                                    <p class="dish__price">35 €</p>
+                                </div>
+                                <div class="checkbox-animation">
+                                    <input type="checkbox" id="langouste rôtie" name="plat" value="langouste rôtie"/>
+                                </div>
+                            </div>
+                            <div class="dish__menu">
+                                <div class="dish__details">
+                                    <label for="côte de boeuf angus">
+                                        <h3>Côte de boeuf Angus</h3>
+                                        <p>Et sa purée de panais</p>
+                                    </label>
+                                    <p class="dish__price">44 €</p>
+                                </div>
+                                <div class="checkbox-animation">
+                                    <input type="checkbox" id="côte de boeuf angus" name="plat" value="côte de boeuf angus"/>
+                                </div>
+                            </div>
+                    </fieldset>
+                    <fieldset class="form-menu__dessert"> 
+                        <legend><h2>DESSERTS</h2></legend>
+                            <div class="dessert__menu">
+                                <div class="dessert__details">
+                                    <label for="farandole de desserts">
+                                        <h3>Farandole de desserts</h3>
+                                        <p>Du chef</p>
+                                    </label>
+                                    <p class="dessert__price">18 €</p>
+                                </div>
+                                <div class="checkbox-animation">
+                                    <input type="checkbox" id="farandole de desserts" name="dessert" value="farandole de desserts"/>
+                                </div>
+                            </div>
+                            <div class="dessert__menu">
+                                <div class="dessert__details">
+                                    <label for="crème brulée">
+                                        <h3>Crème brulée</h3>
+                                        <p>Revisitée</p>
+                                    </label>
+                                    <p class="dessert__price">22 €</p>
+                                </div>
+                                <div class="checkbox-animation">
+                                    <input type="checkbox" id="crème brulée" name="dessert" value="crème brulée"/>
+                                </div>
+                            </div>
+                            <div class="dessert__menu">
+                                <div class="dessert__details">
+                                    <label for="tiramisu">
+                                        <h3>Tiramisu</h3>
+                                        <p>Au piment d'Espelette et à la truffe noire</p>
+                                    </label>
+                                    <p class="dessert__price">23 €</p>
+                                </div>
+                                <div class="checkbox-animation">
+                                    <input type="checkbox" id="tiramisu" name="dessert" value="tiramisu"/>
+                                </div>
+                            </div>
+                    </fieldset>
+
+                    <button type="submit" id="order" name="order" value="commande envoyé"> Commander</button>
+
+                </form>
+                
+            
+
+
+            </section>
+        </main>
+
 
 
     </body>
