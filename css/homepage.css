@@ -6,6 +6,8 @@ html {
 body {
   margin: 0 auto;
   font-family: "Roboto", arial, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 /*
@@ -13,5 +15,6 @@ body {
 h1,h2,h3{
     font-family:'Shrikhand', cursive, arial, sans-serif;
 }*/
+/* font color*/
 
 /*# sourceMappingURL=homepage.css.map */
