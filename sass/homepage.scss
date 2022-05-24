@@ -35,3 +35,9 @@ main{
     display: flex;
     flex-direction: column;
 }
+
+.gallery-restaurants__card {
+    img{
+        width:100%;
+    }
+}
