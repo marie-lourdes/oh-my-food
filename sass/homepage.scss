@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Shrikhand&display=swap');
 /* color*/
 
 $color-primary: #9356DC;
@@ -24,11 +24,12 @@ body {
     
 }
 
-/*
 
-h1,h2,h3{
-    font-family:'Shrikhand', cursive, arial, sans-serif;
-}*/
+
+h1,h2, {
+    font-size: 1.5rem;   
+}
+
 
 /*header*/
 
@@ -53,17 +54,29 @@ main {
     @include flexbox-direction ;
     text-align: center;
     background:$main-background;
+    appearance: none;
 }
 
 .booking-form {
     @include flexbox-direction;
     &__search-bar {
+        @include flexbox-direction(row);
+        justify-content: center;
         background:$background-search-bar;
 
     }  
     &__call-to-action {
-        h1{
-            font-size: 1.6rem;
+        @include flexbox-direction;
+        margin:0 auto;
+        padding: 1.5rem 2rem 3.5rem;
+        label{
+            appearance: none;
+            width: 80%;
+            margin: 0 auto;
+        }
+        h1 {
+           font-weight:900;
+           margin:0;
         }
     }
 }

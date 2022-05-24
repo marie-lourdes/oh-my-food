@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Shrikhand&display=swap");
 /* color*/
 html {
   font-size: 62, 5%;
@@ -12,11 +12,10 @@ body {
   font-size: 1rem;
 }
 
-/*
+h1, h2 {
+  font-size: 1.5rem;
+}
 
-h1,h2,h3{
-    font-family:'Shrikhand', cursive, arial, sans-serif;
-}*/
 /*header*/
 header {
   display: flex;
@@ -40,6 +39,7 @@ main {
   flex-direction: column;
   text-align: center;
   background: #f6f6f6;
+  appearance: none;
 }
 
 .booking-form {
@@ -47,10 +47,25 @@ main {
   flex-direction: column;
 }
 .booking-form__search-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   background: #eaeaea;
 }
+.booking-form__call-to-action {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 1.5rem 2rem 3.5rem;
+}
+.booking-form__call-to-action label {
+  appearance: none;
+  width: 80%;
+  margin: 0 auto;
+}
 .booking-form__call-to-action h1 {
-  font-size: 1.6rem;
+  font-weight: 900;
+  margin: 0;
 }
 
 .gallery-restaurants__card .card__image img {
