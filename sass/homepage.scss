@@ -1,4 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Shrikhand&display=swap');
+/* color*/
+
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$main-background:#f6f6f6;
+$background-search-bar: #eaeaea;
+
+@mixin flexbox-direction($direction:column) {
+    display:flex;
+    flex-direction:$direction;
+}
 
 html {
     font-size: 62,5%;
@@ -7,39 +19,72 @@ html {
 body {
     margin: 0 auto;
     font-family: 'Roboto', arial, sans-serif;
-    display: flex;
-    flex-direction: column;
+    @include flexbox-direction;
+    font-size: 1rem;
     
 }
 
-/*
 
-h1,h2,h3{
-    font-family:'Shrikhand', cursive, arial, sans-serif;
-}*/
 
-/* font color*/
+h1,h2, {
+    font-size: 1.5rem;   
+}
 
-$color-primary: #9356DC;
-$color-secondary: #FF79DA;
-$color-tertiary: #99E2D0;
 
 /*header*/
 
 header {
     display: flex;
     justify-content: center;
+    >.header__logo {
+        display: flex;
+        .logo-svg {
+            padding: 1rem;
+            width: 10rem;
+            
+        }
+    }
 }
 
 main {
-    display: flex;
-    flex-direction: column;
+    @include flexbox-direction;
+}
+
+.booking-menu {
+    @include flexbox-direction ;
+    text-align: center;
+    background:$main-background;
+    appearance: none;
+}
+
+.booking-form {
+    @include flexbox-direction;
+    &__search-bar {
+        @include flexbox-direction(row);
+        justify-content: center;
+        background:$background-search-bar;
+
+    }  
+    &__call-to-action {
+        @include flexbox-direction;
+        margin:0 auto;
+        padding: 1.5rem 2rem 3.5rem;
+        label{
+            appearance: none;
+            width: 80%;
+            margin: 0 auto;
+        }
+        h1 {
+           font-weight:900;
+           margin:0;
+        }
+    }
 }
 
 .gallery-restaurants__card {
     .card__image {
         img {
-            width:100%;
+            width: 100%;
         }
    
     }
