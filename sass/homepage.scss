@@ -29,6 +29,13 @@ $color-tertiary: #99E2D0;
 header {
     display: flex;
     justify-content: center;
+    >.header__logo {
+        display:flex;
+        .logo-svg {
+            padding: 1rem;
+            
+        }
+    }
 }
 
 main {

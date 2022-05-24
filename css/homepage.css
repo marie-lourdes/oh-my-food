@@ -21,6 +21,12 @@ header {
   display: flex;
   justify-content: center;
 }
+header > .header__logo {
+  display: flex;
+}
+header > .header__logo .logo-svg {
+  padding: 1rem;
+}
 
 main {
   display: flex;
