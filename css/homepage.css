@@ -40,11 +40,11 @@ main {
   text-align: center;
   background: #f6f6f6;
 }
-.booking-form {
+.booking-menu .booking-form {
   display: flex;
   flex-direction: column;
 }
-.booking-form__search-bar {
+.booking-menu .booking-form__search-bar {
   background: #eaeaea;
 }
 

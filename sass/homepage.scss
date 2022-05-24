@@ -50,23 +50,16 @@ main {
     @include flexbox-direction;
 }
 
-.booking {
-    &-menu{
-        @include flexbox-direction ;
-        text-align: center;
-        background:$main-background;
-
-    }
-    
-    &-form {
+.booking-menu {
+    @include flexbox-direction ;
+    text-align: center;
+    background:$main-background;
+    .booking-form {
         @include flexbox-direction;
         &__search-bar{
             background:$background-search-bar;
 
         }
-       
-         
-
     }
 }
 
