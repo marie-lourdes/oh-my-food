@@ -21,3 +21,10 @@ h1,h2,h3{
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
+
+/*header*/
+
+header {
+    display: flex;
+    justify-content: center;
+}
