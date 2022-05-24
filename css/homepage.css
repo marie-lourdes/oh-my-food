@@ -27,7 +27,7 @@ main {
   flex-direction: column;
 }
 
-.gallery-restaurants__card img {
+.gallery-restaurants__card .card__image img {
   width: 100%;
 }
 
