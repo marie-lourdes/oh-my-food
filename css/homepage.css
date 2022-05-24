@@ -51,12 +51,25 @@ main {
   flex-direction: row;
   justify-content: center;
   background: #eaeaea;
+  position: relative;
+  height: 3rem;
+}
+.booking-form__search-bar .icon-location {
+  position: absolute;
+  left: 8rem;
+}
+.booking-form__search-bar input {
+  position: absolute;
+  right: 2rem;
+  padding: 0.8rem 0rem;
+  background: none;
+  border: 0;
 }
 .booking-form__call-to-action {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 1.5rem 2rem 3.5rem;
+  padding: 2rem 2rem 3.5rem;
 }
 .booking-form__call-to-action label {
   appearance: none;
