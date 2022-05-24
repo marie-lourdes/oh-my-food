@@ -22,4 +22,9 @@ header {
   justify-content: center;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 /*# sourceMappingURL=homepage.css.map */
