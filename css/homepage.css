@@ -9,6 +9,7 @@ body {
   font-family: "Roboto", arial, sans-serif;
   display: flex;
   flex-direction: column;
+  font-size: 1rem;
 }
 
 /*
@@ -40,12 +41,16 @@ main {
   text-align: center;
   background: #f6f6f6;
 }
-.booking-menu .booking-form {
+
+.booking-form {
   display: flex;
   flex-direction: column;
 }
-.booking-menu .booking-form__search-bar {
+.booking-form__search-bar {
   background: #eaeaea;
+}
+.booking-form__call-to-action h1 {
+  font-size: 1.6rem;
 }
 
 .gallery-restaurants__card .card__image img {

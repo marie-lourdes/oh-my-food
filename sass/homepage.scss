@@ -20,6 +20,7 @@ body {
     margin: 0 auto;
     font-family: 'Roboto', arial, sans-serif;
     @include flexbox-direction;
+    font-size: 1rem;
     
 }
 
@@ -28,8 +29,6 @@ body {
 h1,h2,h3{
     font-family:'Shrikhand', cursive, arial, sans-serif;
 }*/
-
-
 
 /*header*/
 
@@ -54,11 +53,17 @@ main {
     @include flexbox-direction ;
     text-align: center;
     background:$main-background;
-    .booking-form {
-        @include flexbox-direction;
-        &__search-bar{
-            background:$background-search-bar;
+}
 
+.booking-form {
+    @include flexbox-direction;
+    &__search-bar {
+        background:$background-search-bar;
+
+    }  
+    &__call-to-action {
+        h1{
+            font-size: 1.6rem;
         }
     }
 }
