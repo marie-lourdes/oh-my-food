@@ -50,6 +50,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   background: #eaeaea;
   position: relative;
   height: 3rem;
