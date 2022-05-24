@@ -1,4 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap');
+/* color*/
+
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$main-background:#f6f6f6;
+$background-search-bar: #eaeaea;
+
+@mixin flexbox-direction($direction:column) {
+    display:flex;
+    flex-direction:$direction;
+}
 
 html {
     font-size: 62,5%;
@@ -7,8 +19,7 @@ html {
 body {
     margin: 0 auto;
     font-family: 'Roboto', arial, sans-serif;
-    display: flex;
-    flex-direction: column;
+    @include flexbox-direction;
     
 }
 
@@ -18,11 +29,7 @@ h1,h2,h3{
     font-family:'Shrikhand', cursive, arial, sans-serif;
 }*/
 
-/* font color*/
 
-$color-primary: #9356DC;
-$color-secondary: #FF79DA;
-$color-tertiary: #99E2D0;
 
 /*header*/
 
@@ -30,7 +37,7 @@ header {
     display: flex;
     justify-content: center;
     >.header__logo {
-        display:flex;
+        display: flex;
         .logo-svg {
             padding: 1rem;
             width: 10rem;
@@ -40,14 +47,33 @@ header {
 }
 
 main {
-    display: flex;
-    flex-direction: column;
+    @include flexbox-direction;
+}
+
+.booking {
+    &-menu{
+        @include flexbox-direction ;
+        text-align: center;
+        background:$main-background;
+
+    }
+    
+    &-form {
+        @include flexbox-direction;
+        &__search-bar{
+            background:$background-search-bar;
+
+        }
+       
+         
+
+    }
 }
 
 .gallery-restaurants__card {
     .card__image {
         img {
-            width:100%;
+            width: 100%;
         }
    
     }
