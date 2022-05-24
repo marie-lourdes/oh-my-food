@@ -5,7 +5,13 @@ html {
 
 body {
   margin: 0 auto;
-  font-family: "Shrikhand", cursive, "roboto", arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
 }
+
+/*
+
+h1,h2,h3{
+    font-family:'Shrikhand', cursive, arial, sans-serif;
+}*/
 
 /*# sourceMappingURL=homepage.css.map */
