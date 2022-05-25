@@ -65,6 +65,7 @@ main {
   right: 4rem;
 }
 .booking-form__search-bar > .search-field input {
+  box-sizing: border-box;
   padding: 0.8rem 0rem;
   background: none;
   border: 0;
@@ -86,6 +87,13 @@ main {
   font-weight: 900;
   margin: 0;
   color: #000;
+}
+.booking-form__call-to-action .button-primary {
+  padding: 1rem;
+  border-radius: 2rem;
+  border: none;
+  color: #fff;
+  background: linear-gradient(#fface8, #ae80e5);
 }
 
 .gallery-restaurants__card .card__image img {
