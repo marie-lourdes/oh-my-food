@@ -37,9 +37,9 @@ $color-gray:(
     box-shadow: 0px 10px 20px -5px rgb(map-get($color-gray, dark-gray),0.5);
 
 }
-@mixin button-shadow ($color-shadow: rgb(map-get($color-gray, dark-gray),0.6)) {
+@mixin button-shadow ($color-shadow: rgb(map-get($color-gray, dark-gray),0.6), $offset-y:10px,$blur-radius: 20px, $spread-radius:-2px) {
 
-    box-shadow: 0px 10px 20px -2px $color-shadow ;
+    box-shadow: 0px $offset-y $blur-radius $spread-radius $color-shadow ;
 
 }
 
@@ -58,6 +58,15 @@ body {
 
 h1, h2, {
     font-size: 1.5rem;   
+}
+
+h2 {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: $color-black;
 }
 
 
@@ -153,6 +162,7 @@ main {
         @include flexbox-direction;
         height: 16rem;
         justify-content: space-between; 
+        padding-left: 0.5rem;
       
        
     }
@@ -163,10 +173,11 @@ main {
     &__steps {
     @include flexbox-direction(row);
     border-radius: 1.5rem;
-    @include button-shadow ($color-shadow:map-get($color-gray, background-search-bar));
+    @include button-shadow ($color-shadow: map-get($color-gray, background-search-bar), $offset-y: 5px, $blur-radius: 10px, $spread-radius: 1px);
     align-items: center;
     position: relative;  
-    padding: 0.8rem;
+    padding: 1rem 0.8rem 0.5rem 0.8rem;
+    background: map-get($color-gray,main-background);
     >span {
         position: absolute;
         display: flex;
@@ -187,22 +198,37 @@ main {
             color:map-get($color-gray, icon);
             font-size: 1.1rem;
             
+
+            
         }
         &__icon--purple{
             color:$color-primary;
         }
         &__heading{
             font-size: 1rem;
+            
         }
        
     }
     }
 } 
 
-
+.gallery-restaurants{
+    padding: 0 1rem;
+}
 
 .gallery-restaurants__card {
     .card__image {
+        position: relative;
+        >span {
+        position: absolute;
+        right: 0.5rem;
+        top: 0.5rem;
+        background: $color-tertiary;
+        padding: 0.5rem 1rem;
+        color:darken($color-tertiary,50%);
+        font-weight: 700;
+        }
         img {
             width: 100%;
         }

@@ -16,6 +16,15 @@ h1, h2 {
   font-size: 1.5rem;
 }
 
+h2 {
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 /*header*/
 header {
   display: flex;
@@ -111,16 +120,18 @@ main {
   flex-direction: column;
   height: 16rem;
   justify-content: space-between;
+  padding-left: 0.5rem;
 }
 
 .proceeding__steps {
   display: flex;
   flex-direction: row;
   border-radius: 1.5rem;
-  box-shadow: 0px 10px 20px -2px #eaeaea;
+  box-shadow: 0px 5px 10px 1px #eaeaea;
   align-items: center;
   position: relative;
-  padding: 0.8rem;
+  padding: 1rem 0.8rem 0.5rem 0.8rem;
+  background: #f6f6f6;
 }
 .proceeding__steps > span {
   position: absolute;
@@ -147,6 +158,22 @@ main {
   font-size: 1rem;
 }
 
+.gallery-restaurants {
+  padding: 0 1rem;
+}
+
+.gallery-restaurants__card .card__image {
+  position: relative;
+}
+.gallery-restaurants__card .card__image > span {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  background: #99E2D0;
+  padding: 0.5rem 1rem;
+  color: #1b6150;
+  font-weight: 700;
+}
 .gallery-restaurants__card .card__image img {
   width: 100%;
 }
