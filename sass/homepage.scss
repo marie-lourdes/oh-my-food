@@ -4,12 +4,26 @@
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
-$main-background:#f6f6f6;
-$background-search-bar: #eaeaea;
+$color-black: #000;
+$color-gray:(
+    dark-gray:#353535,
+    main-background:#f6f6f6,
+    background-search-bar: #eaeaea);
 
 @mixin flexbox-direction($direction:column) {
     display:flex;
     flex-direction:$direction;
+}
+
+@function darken-opacity-color($color: $color1){
+    $color1:darken($color,15%),rgb($color,0.4);;
+    @return $color1; 
+  }
+@mixin gradient($color1:map-get($color-gray,background-search-bar),$color2:map-get($color-gray,background-search-bar),$degrees:10%){
+    $color1: darken-opacity-color($color1);
+    background:linear-gradient( $color1 $degrees, $color2); 
+   
+
 }
 
 html {
@@ -26,7 +40,7 @@ body {
 
 
 
-h1,h2, {
+h1, h2, {
     font-size: 1.5rem;   
 }
 
@@ -53,30 +67,40 @@ main {
 .booking-menu {
     @include flexbox-direction ;
     text-align: center;
-    background: $main-background;
+    background: map-get($color-gray,main-background);
     appearance: none;
 }
 
 .booking-form {
     @include flexbox-direction;
+    
+    color: map-get($color-gray,dark-gray);
     &__search-bar {
         @include flexbox-direction(row);
+        @include gradient;
         justify-content: center;
         align-items: center;
-        background:$background-search-bar;
         position: relative;
         height: 3rem;
-        .icon-location {
+        
+        >.icon-location {
             position: absolute;
-            left: 8rem;
+            left: 6.5rem;
             
         }
-        input {
+        >.search-field {
             position :absolute;
-            right: 2rem;
-            padding:0.8rem 0rem;
-            background: none;
+            right: 4rem;
+            input{
+           
+            padding: 0.8rem 0rem;
+            background:none;
             border:0;
+            font-weight: 700;
+            color: map-get($color-gray,dark-gray);
+
+            }
+            
         }
 
     }  
@@ -92,6 +116,7 @@ main {
         h1 {
            font-weight:900;
            margin:0;
+           color:$color-black;
         }
     }
 }
