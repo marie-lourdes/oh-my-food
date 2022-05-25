@@ -4,6 +4,7 @@
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
+$color-white:#fff;
 $color-black: #000;
 $color-gray:(
     dark-gray:#353535,
@@ -19,10 +20,21 @@ $color-gray:(
     $color1: darken($color, 15%), rgb($color ,0.4);;
     @return $color1; 
   }
-@mixin gradient($color1: map-get($color-gray, background-search-bar),$color2: map-get($color-gray, background-search-bar), $degrees: 10%){
+@mixin gradient-search-bar($color1: map-get($color-gray, background-search-bar),$color2: map-get($color-gray, background-search-bar), $degrees: 10%){
     $color1: darken-opacity-color($color1);
     background: linear-gradient($color1 $degrees, $color2); 
    
+}
+@function lightness-gradient($color){
+    @return lighten($color, 10%);
+}
+@mixin button-primary($color1:lightness-gradient($color-secondary) ,$color2:lightness-gradient($color-primary)){
+    padding: 1rem;
+    border-radius: 2rem;
+    border:none;
+    color: $color-white;
+    background: linear-gradient( $color1, $color2);
+
 }
 
 html {
@@ -74,7 +86,7 @@ main {
     color: map-get($color-gray, dark-gray);
     &__search-bar {
         @include flexbox-direction(row);
-        @include gradient;
+        @include gradient-search-bar;
         justify-content: center;
         align-items: center;
         position: relative;
@@ -89,7 +101,7 @@ main {
             position :absolute;
             right: 4rem;
             input{
-           
+            box-sizing: border-box;
             padding: 0.8rem 0rem;
             background:none;
             border:0;
@@ -114,6 +126,9 @@ main {
            font-weight:900;
            margin:0;
            color:$color-black;
+        }
+        .button-primary{
+            @include button-primary;
         }
     }
 }
