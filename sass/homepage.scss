@@ -11,19 +11,18 @@ $color-gray:(
     background-search-bar: #eaeaea);
 
 @mixin flexbox-direction($direction:column) {
-    display:flex;
-    flex-direction:$direction;
+    display: flex;
+    flex-direction: $direction;
 }
 
 @function darken-opacity-color($color: $color1){
-    $color1:darken($color,15%),rgb($color,0.4);;
+    $color1: darken($color, 15%), rgb($color ,0.4);;
     @return $color1; 
   }
-@mixin gradient($color1:map-get($color-gray,background-search-bar),$color2:map-get($color-gray,background-search-bar),$degrees:10%){
+@mixin gradient($color1: map-get($color-gray, background-search-bar),$color2: map-get($color-gray, background-search-bar), $degrees: 10%){
     $color1: darken-opacity-color($color1);
-    background:linear-gradient( $color1 $degrees, $color2); 
+    background: linear-gradient($color1 $degrees, $color2); 
    
-
 }
 
 html {
@@ -37,8 +36,6 @@ body {
     font-size: 1rem;
     
 }
-
-
 
 h1, h2, {
     font-size: 1.5rem;   
@@ -67,14 +64,14 @@ main {
 .booking-menu {
     @include flexbox-direction ;
     text-align: center;
-    background: map-get($color-gray,main-background);
+    background: map-get($color-gray, main-background);
     appearance: none;
 }
 
 .booking-form {
     @include flexbox-direction;
     
-    color: map-get($color-gray,dark-gray);
+    color: map-get($color-gray, dark-gray);
     &__search-bar {
         @include flexbox-direction(row);
         @include gradient;
