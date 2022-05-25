@@ -19,25 +19,35 @@ $color-gray:(
 @function darken-opacity-color($color: $color1){
     $color1: darken($color, 15%), rgb($color ,0.4);;
     @return $color1; 
-  }
+ }
+
 @mixin gradient-search-bar($color1: map-get($color-gray, background-search-bar),$color2: map-get($color-gray, background-search-bar), $degrees: 10%){
     $color1: darken-opacity-color($color1);
     background: linear-gradient($color1 $degrees, $color2); 
    
 }
+
 @function lightness-gradient($color){
+    
     @return lighten($color, 10%);
 }
+
+
+
 @mixin button-primary($color1:lightness-gradient($color-secondary) ,$color2:lightness-gradient($color-primary)){
     padding: 1rem;
     border-radius: 2rem;
     border:none;
     color: $color-white;
     background: linear-gradient( $color1, $color2);
+    box-shadow: 0px 10px 20px -5px rgb(map-get($color-gray, dark-gray),0.5);
 
 }
+@mixin button-shadow ($color-shadow: rgb(map-get($color-gray, dark-gray),0.6)) {
 
+    box-shadow: 0px 10px 20px -2px $color-shadow ;
 
+}
 @function lightness-gradient($color){
     @return lighten($color, 10%);
 }
@@ -119,7 +129,7 @@ main {
             background:none;
             border:0;
             font-weight: 700;
-            color: map-get($color-gray, dark-gray);
+            color: map-get($color-gray,dark-gray);
 
             }
             
@@ -136,18 +146,19 @@ main {
             margin: 0 auto;
         }
         h1 {
-           font-weight: 900;
-           margin: 0;
-           color: $color-black;
-        }
-       
-        .button-primary {
-           @include button-primary; 
-
+           font-weight:900;
+           margin:0;
+           color:$color-black;
         }
         .button-primary{
             @include button-primary;
+            &:active {
+               @include button-shadow;
+                filter:brightness(110%);
+
+            }
         }
+        
     }
 }
 
