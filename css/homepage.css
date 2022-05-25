@@ -95,6 +95,13 @@ main {
   color: #fff;
   background: linear-gradient(#fface8, #ae80e5);
 }
+.booking-form__call-to-action .button-primary {
+  padding: 1rem;
+  border-radius: 2rem;
+  border: none;
+  color: #fff;
+  background: linear-gradient(#fface8, #ae80e5);
+}
 
 .gallery-restaurants__card .card__image img {
   width: 100%;

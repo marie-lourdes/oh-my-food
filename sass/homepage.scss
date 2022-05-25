@@ -37,6 +37,19 @@ $color-gray:(
 
 }
 
+
+@function lightness-gradient($color){
+    @return lighten($color, 10%);
+}
+@mixin button-primary($color1:lightness-gradient($color-secondary) ,$color2:lightness-gradient($color-primary)){
+    padding: 1rem;
+    border-radius: 2rem;
+    border:none;
+    color: $color-white;
+    background: linear-gradient( $color1, $color2);
+    
+}
+
 html {
     font-size: 62,5%;
 }
@@ -106,7 +119,7 @@ main {
             background:none;
             border:0;
             font-weight: 700;
-            color: map-get($color-gray,dark-gray);
+            color: map-get($color-gray, dark-gray);
 
             }
             
@@ -123,9 +136,14 @@ main {
             margin: 0 auto;
         }
         h1 {
-           font-weight:900;
-           margin:0;
-           color:$color-black;
+           font-weight: 900;
+           margin: 0;
+           color: $color-black;
+        }
+       
+        .button-primary {
+           @include button-primary; 
+
         }
         .button-primary{
             @include button-primary;
