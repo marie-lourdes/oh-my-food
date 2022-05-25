@@ -109,7 +109,7 @@ main {
 .proceeding-site .proceeding {
   display: flex;
   flex-direction: column;
-  height: 15rem;
+  height: 16rem;
   justify-content: space-between;
 }
 
