@@ -9,7 +9,8 @@ $color-black: #000;
 $color-gray:(
     dark-gray:#353535,
     main-background:#f6f6f6,
-    background-search-bar: #eaeaea);
+    background-search-bar: #eaeaea,
+    icon:#7e7e7e);
 
 @mixin flexbox-direction($direction:column) {
     display: flex;
@@ -27,16 +28,7 @@ $color-gray:(
    
 }
 
-@function lightness-gradient($color){
-    
-    @return lighten($color, 10%);
-}
-
-@function lightness-gradient($color){
-    @return lighten($color, 10%);
-}
-
-@mixin button-primary($color1:lightness-gradient($color-secondary) ,$color2:lightness-gradient($color-primary)){
+@mixin button-primary($color1:$color-secondary ,$color2:$color-primary){
     padding: 1rem;
     border-radius: 2rem;
     border:none;
@@ -155,25 +147,57 @@ main {
 }
 
 .proceeding-site {
-    @include flexbox-direction;   
-    .proceeding{
+    @include flexbox-direction;
+    padding:0 1rem;   
+    .proceeding {
         @include flexbox-direction;
         height: 15rem;
-        justify-content: space-between;  
-        &__steps{
-            @include flexbox-direction(row);
-            border-radius:1.5rem;
-           @include button-shadow;
-            align-items:center;
-            position: relative;
-            >span {
-                position: absolute;
-
-            }
-        }
+        justify-content: space-between; 
+      
+       
     }
    
-}  
+} 
+
+.proceeding {
+    &__steps {
+    @include flexbox-direction(row);
+    border-radius: 1.5rem;
+    @include button-shadow ($color-shadow:map-get($color-gray, background-search-bar));
+    align-items: center;
+    position: relative;  
+    padding: 0.8rem;
+    >span {
+        position: absolute;
+        display: flex;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius:1rem;
+        background: $color-primary;
+        align-items: center;
+        justify-content: center;
+        color: $color-white;
+        font-size:0.8rem;
+        left:-0.7rem;
+
+    }
+    .steps {
+        &__icon{
+            margin: 0 1.5rem;
+            color:map-get($color-gray, icon);
+            font-size: 1.1rem;
+            
+        }
+        &__icon--purple{
+            color:$color-primary;
+        }
+        &__heading{
+            font-size: 1rem;
+        }
+       
+    }
+    }
+} 
 
 
 
