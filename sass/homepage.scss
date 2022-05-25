@@ -4,12 +4,39 @@
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
-$main-background:#f6f6f6;
-$background-search-bar: #eaeaea;
+$color-white:#fff;
+$color-black: #000;
+$color-gray:(
+    dark-gray:#353535,
+    main-background:#f6f6f6,
+    background-search-bar: #eaeaea);
 
 @mixin flexbox-direction($direction:column) {
-    display:flex;
-    flex-direction:$direction;
+    display: flex;
+    flex-direction: $direction;
+}
+
+@function darken-opacity-color($color: $color1){
+    $color1: darken($color, 15%), rgb($color ,0.4);;
+    @return $color1; 
+  }
+@mixin gradient-search-bar($color1: map-get($color-gray, background-search-bar),$color2: map-get($color-gray, background-search-bar), $degrees: 10%){
+    $color1: darken-opacity-color($color1);
+    background: linear-gradient($color1 $degrees, $color2); 
+   
+}
+
+
+@function lightness-gradient($color){
+    @return lighten($color, 10%);
+}
+@mixin button-primary($color1:lightness-gradient($color-secondary) ,$color2:lightness-gradient($color-primary)){
+    padding: 1rem;
+    border-radius: 2rem;
+    border:none;
+    color: $color-white;
+    background: linear-gradient( $color1, $color2);
+    
 }
 
 html {
@@ -24,9 +51,7 @@ body {
     
 }
 
-
-
-h1,h2, {
+h1, h2, {
     font-size: 1.5rem;   
 }
 
@@ -53,30 +78,61 @@ main {
 .booking-menu {
     @include flexbox-direction ;
     text-align: center;
-    background:$main-background;
+    background: map-get($color-gray, main-background);
     appearance: none;
 }
 
 .booking-form {
     @include flexbox-direction;
+    
+    color: map-get($color-gray, dark-gray);
     &__search-bar {
         @include flexbox-direction(row);
+        @include gradient-search-bar;
         justify-content: center;
-        background:$background-search-bar;
+        align-items: center;
+        position: relative;
+        height: 3rem;
+        
+        >.icon-location {
+            position: absolute;
+            left: 6.5rem;
+            
+        }
+        >.search-field {
+            position :absolute;
+            right: 4rem;
+            input {
+            box-sizing: border-box;
+            padding: 0.8rem 0rem;
+            background:none;
+            border:0;
+            font-weight: 700;
+            color: map-get($color-gray, dark-gray);
+
+            }
+            
+        }
 
     }  
     &__call-to-action {
         @include flexbox-direction;
         margin:0 auto;
-        padding: 1.5rem 2rem 3.5rem;
-        label{
+        padding: 2rem 2rem 3.5rem;
+        label {
             appearance: none;
             width: 80%;
             margin: 0 auto;
         }
         h1 {
-           font-weight:900;
-           margin:0;
+           font-weight: 900;
+           margin: 0;
+           color: $color-black;
+        }
+       
+        .button-primary {
+           @include button-primary; 
+
         }
     }
 }

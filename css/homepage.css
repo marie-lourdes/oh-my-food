@@ -45,18 +45,38 @@ main {
 .booking-form {
   display: flex;
   flex-direction: column;
+  color: #353535;
 }
 .booking-form__search-bar {
   display: flex;
   flex-direction: row;
+  background: linear-gradient(#c4c4c4, rgba(234, 234, 234, 0.4) 10%, #eaeaea);
   justify-content: center;
-  background: #eaeaea;
+  align-items: center;
+  position: relative;
+  height: 3rem;
+}
+.booking-form__search-bar > .icon-location {
+  position: absolute;
+  left: 6.5rem;
+}
+.booking-form__search-bar > .search-field {
+  position: absolute;
+  right: 4rem;
+}
+.booking-form__search-bar > .search-field input {
+  box-sizing: border-box;
+  padding: 0.8rem 0rem;
+  background: none;
+  border: 0;
+  font-weight: 700;
+  color: #353535;
 }
 .booking-form__call-to-action {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 1.5rem 2rem 3.5rem;
+  padding: 2rem 2rem 3.5rem;
 }
 .booking-form__call-to-action label {
   appearance: none;
@@ -66,6 +86,14 @@ main {
 .booking-form__call-to-action h1 {
   font-weight: 900;
   margin: 0;
+  color: #000;
+}
+.booking-form__call-to-action .button-primary {
+  padding: 1rem;
+  border-radius: 2rem;
+  border: none;
+  color: #fff;
+  background: linear-gradient(#fface8, #ae80e5);
 }
 
 .gallery-restaurants__card .card__image img {
