@@ -213,6 +213,11 @@ main {
     }
 } 
 
+@function label-new ($color: $color-tertiary) {
+    @return darken($color, 40%);
+  
+} 
+
 .gallery-restaurants{
     padding: 0 1rem;
 }
@@ -220,17 +225,23 @@ main {
 .gallery-restaurants__card {
     .card__image {
         position: relative;
+        box-sizing: border-box;
+        
         >span {
         position: absolute;
         right: 0.5rem;
         top: 0.5rem;
         background: $color-tertiary;
-        padding: 0.5rem 1rem;
-        color:darken($color-tertiary,50%);
+        padding: 0.5rem 0.8rem;
+        color:label-new($color: $color-tertiary);
         font-weight: 700;
+        border-radius: 0.2rem;
         }
         img {
             width: 100%;
+            object-fit: cover;
+            max-height: 15rem;
+            border-radius:1.5rem 1.5rem 0 0rem;
         }
    
     }
