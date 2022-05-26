@@ -349,6 +349,7 @@ $img-restaurant:(
         @include flexbox-direction;
     }
     &__link{
+        @include flexbox-direction;
         a{
             @include flexbox-direction(row);
             align-items: baseline;
