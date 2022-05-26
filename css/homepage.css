@@ -167,10 +167,13 @@ $img-restaurant :(
     le-delice-des-sens
 
 )*/
-.gallery-restaurants {
-  padding: 0 1rem;
-}
+/*.gallery-restaurants{
+    padding: 0 1rem;
+    .gallery-flex-between{
+        height:30rem;
 
+    }
+}*/
 .card__image {
   position: relative;
   box-sizing: border-box;
