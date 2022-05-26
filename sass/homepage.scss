@@ -322,6 +322,20 @@ $img-restaurant:(
 
 }
 
+/*footer*/
 
+footer {
+    background: map-get($color-gray, dark-gray);
+    padding-left: 1.5rem;
+    
+    a {
+        color: $color-white;
+    }
+    h1 {
+        font-family: 'Shrikhand',cursive, arial, sans-serif;
+        font-size: 1.1rem;
+        font-weight:400;
+    }
+}
 
 

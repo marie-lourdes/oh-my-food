@@ -239,4 +239,18 @@ main {
   line-height: 0.5rem;
 }
 
+/*footer*/
+footer {
+  background: #353535;
+  padding-left: 1.5rem;
+}
+footer a {
+  color: #fff;
+}
+footer h1 {
+  font-family: "Shrikhand", cursive, arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
 /*# sourceMappingURL=homepage.css.map */
