@@ -324,18 +324,39 @@ $img-restaurant:(
 
 /*footer*/
 
-footer {
+.footer {
     background: map-get($color-gray, dark-gray);
     padding-left: 1.5rem;
-    
+    @include flexbox-direction;
+   
     a {
         color: $color-white;
+        font-size: 0.9rem;
+        
     }
     h1 {
-        font-family: 'Shrikhand',cursive, arial, sans-serif;
+        font-family: 'Shrikhand', cursive, arial, sans-serif;
         font-size: 1.1rem;
-        font-weight:400;
+        font-weight: 400;
     }
+    h3 {
+        font-weight:500;
+        font-size: 0.9rem;
+        text-shadow: 0.01rem -0.01rem;
+        
+    }
+    &__bloc-links {
+        @include flexbox-direction;
+    }
+    &__link{
+        a{
+            @include flexbox-direction(row);
+            align-items: baseline;
+        }
+       
+    }
+   
+    
 }
 
 
