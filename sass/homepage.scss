@@ -17,7 +17,7 @@ $color-gray:(
     flex-direction: $direction;
 }
 
-@function darken-opacity-color($color: $color1){
+@function darken-opacity-search-bar($color: $color1){
     $color1: darken($color, 15%), rgb($color ,0.4);;
     @return $color1; 
  }
@@ -85,98 +85,104 @@ header {
     }
 }
 
+
+
+/*booking-menu*/
+
 main {
     @include flexbox-direction;
 }
 
-.booking-menu {
-    @include flexbox-direction ;
-    text-align: center;
-    background: map-get($color-gray, main-background);
-    appearance: none;
-}
 
-.booking-form {
-    @include flexbox-direction;
-    
-    color: map-get($color-gray, dark-gray);
-    &__search-bar {
-        @include flexbox-direction(row);
-        @include gradient-search-bar;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        height: 3rem;
-        
-        >.icon-location {
-            position: absolute;
-            left: 6.5rem;
-            
-        }
-        >.search-field {
-            position :absolute;
-            right: 4rem;
-            input{
-            box-sizing: border-box;
-            padding: 0.8rem 0rem;
-            background:none;
-            border:0;
-            font-weight: 700;
-            color: map-get($color-gray,dark-gray);
+.booking {
+    &-menu{
+        @include flexbox-direction ;
+        text-align: center;
+        background: map-get($color-gray, main-background);
+        appearance: none;
 
-            }
-            
-        }
-
-    }  
-    &__call-to-action {
-        @include flexbox-direction;
-        margin:0 auto;
-        padding: 2rem 2rem 3.5rem;
-        label {
-            appearance: none;
-            width: 80%;
-            margin: 0 auto;
-        }
-        h1 {
-           font-weight:900;
-           margin:0;
-           color:$color-black;
-        }
-        .button-primary{
-            @include button-primary;
-            &:active {
-               @include button-shadow;
-                filter:brightness(110%);
-
-            }
-        }
-        
     }
+    &-form {
+        @include flexbox-direction;
+        
+        color: map-get($color-gray, dark-gray);
+        &__search-bar {
+            @include flexbox-direction(row);
+            @include gradient-search-bar;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 3rem;
+            
+            >.icon-location {
+                position: absolute;
+                left: 6.5rem;
+                
+            }
+            >.search-field {
+                position :absolute;
+                right: 4rem;
+                input{
+                box-sizing: border-box;
+                padding: 0.8rem 0rem;
+                background:none;
+                border:0;
+                font-weight: 700;
+                color: map-get($color-gray,dark-gray);
+    
+                }
+                
+            }
+    
+        }  
+        &__call-to-action {
+            @include flexbox-direction;
+            margin:0 auto;
+            padding: 2rem 2rem 3.5rem;
+            label {
+                appearance: none;
+                width: 80%;
+                margin: 0 auto;
+            }
+            h1 {
+               font-weight:900;
+               margin:0;
+               color:$color-black;
+            }
+            .button-primary{
+                @include button-primary;
+                &:active {
+                   @include button-shadow;
+                    filter:brightness(110%);
+    
+                }
+            }
+            
+        }
+    }
+   
 }
+
+/* fonctionnement*/
 
 .proceeding-site {
     @include flexbox-direction;
-    padding:0 1rem;   
-   
-   
+    padding:0 1rem;     
 } 
 
 .proceeding {
-    
-        @include flexbox-direction;
-        height: 16rem;
-        justify-content: space-between; 
-        padding-left: 0.5rem;  
-   
+    @include flexbox-direction;
+    height: 16rem;
+    justify-content: space-between; 
+    padding-left: 0.5rem;  
     &__steps {
-    @include flexbox-direction(row);
-    border-radius: 1.5rem;
-    @include button-shadow ($color-shadow: map-get($color-gray, background-search-bar), $offset-y: 5px, $blur-radius: 10px, $spread-radius: 1px);
-    align-items: center;
-    position: relative;  
-    padding: 1rem 0.8rem 0.5rem 0.8rem;
-    background: map-get($color-gray,main-background);
+        @include flexbox-direction(row);
+        border-radius: 1.5rem;
+        @include button-shadow ($color-shadow: map-get($color-gray, background-search-bar), $offset-y: 5px, $blur-radius: 10px, $spread-radius: 1px);
+        align-items: center;
+        position: relative;  
+        padding: 1rem 0.8rem 0.5rem 0.8rem;
+        background: map-get($color-gray,main-background);
     >span {
         position: absolute;
         display: flex;
@@ -209,43 +215,48 @@ main {
     }
 } 
 
-@function label-new ($color: $color-tertiary) {
-    @return darken($color, 40%);
-  
-}
-$position: 111%,60%,109%,108%;
+/*Gallery-restaurant*/
+
+
 
 $img-restaurant:(
     la-palette-du-gout:(
-        object-position: $position,
+        object-position: 111%,
     ),
     la-note-enchantee:(
-        object-position: $position,
+        object-position:60%, 
     ),
     a-la-francaise:(
-          object-position:$position,
+          object-position:109%,
     ),
     le-delice-des-sens:(
-          object-position:$position,
+          object-position:108%,
     )
 
 );
+
 @mixin object-position ($map) {
     @each $key, $value in $map {
         &.#{$key}{
-            object-position: center $position;
+            object-position:center map-get($value,object-position);
         }
     }
 }
 
-.gallery-restaurants{
-    padding: 0 1rem;
+.gallery{
+    &-restaurants{
+        padding: 0 1rem;
     .gallery-flex-between{
         height:70rem;
         @include flexbox-direction;
         justify-content: space-between;
-
     }
+    }
+}
+
+@function label-new ($color: $color-tertiary) {
+    @return darken($color, 40%);
+  
 }
 
 .card {
@@ -254,14 +265,14 @@ $img-restaurant:(
         box-sizing: border-box;
         
         >span {
-        position: absolute;
-        right: 0.8rem;
-        top: 0.8rem;
-        background: $color-tertiary;
-        padding: 0.5rem 0.6rem 0.3rem;
-        color:label-new($color: $color-tertiary);
-        font-weight: 700;
-        border-radius: 0.2rem;
+            position: absolute;
+            right: 0.8rem;
+            top: 0.8rem;
+            background: $color-tertiary;
+            padding: 0.5rem 0.6rem 0.3rem;
+            color:label-new($color: $color-tertiary);
+            font-weight: 700;
+            border-radius: 0.2rem;
         }
         img {
             width: 100%;

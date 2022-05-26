@@ -38,6 +38,7 @@ header > .header__logo .logo-svg {
   width: 10rem;
 }
 
+/*booking-menu*/
 main {
   display: flex;
   flex-direction: column;
@@ -50,7 +51,6 @@ main {
   background: #f6f6f6;
   appearance: none;
 }
-
 .booking-form {
   display: flex;
   flex-direction: column;
@@ -59,7 +59,7 @@ main {
 .booking-form__search-bar {
   display: flex;
   flex-direction: row;
-  background: linear-gradient(#c4c4c4, rgba(234, 234, 234, 0.4) 10%, #eaeaea);
+  background: linear-gradient(darken-opacity-color(#eaeaea) 10%, #eaeaea);
   justify-content: center;
   align-items: center;
   position: relative;
@@ -110,6 +110,7 @@ main {
   filter: brightness(110%);
 }
 
+/* fonctionnement*/
 .proceeding-site {
   display: flex;
   flex-direction: column;
@@ -158,6 +159,7 @@ main {
   font-size: 1rem;
 }
 
+/*Gallery-restaurant*/
 .gallery-restaurants {
   padding: 0 1rem;
 }
@@ -189,16 +191,16 @@ main {
   border-radius: 1.5rem 1.5rem 0 0rem;
 }
 .card__image img.la-palette-du-gout {
-  object-position: center 111%, 60%, 109%, 108%;
+  object-position: center 111%;
 }
 .card__image img.la-note-enchantee {
-  object-position: center 111%, 60%, 109%, 108%;
+  object-position: center 60%;
 }
 .card__image img.a-la-francaise {
-  object-position: center 111%, 60%, 109%, 108%;
+  object-position: center 109%;
 }
 .card__image img.le-delice-des-sens {
-  object-position: center 111%, 60%, 109%, 108%;
+  object-position: center 108%;
 }
 .card__description {
   display: flex;
