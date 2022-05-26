@@ -23,7 +23,7 @@ $color-gray:(
  }
 
 @mixin gradient-search-bar($color1: map-get($color-gray, background-search-bar),$color2: map-get($color-gray, background-search-bar), $degrees: 10%){
-    $color1: darken-opacity-color($color1);
+    $color1: darken-opacity-search-bar($color1);
     background: linear-gradient($color1 $degrees, $color2); 
    
 }
@@ -56,12 +56,15 @@ body {
     
 }
 
-h1, h2, {
+h1, h2 {
     font-size: 1.5rem;   
 }
 
 h2 {
     font-weight: 700;
+}
+h3{
+    font-size: 1rem;
 }
 
 a {
@@ -175,49 +178,46 @@ main {
     height: 16rem;
     justify-content: space-between; 
     padding-left: 0.5rem;  
-    &__steps {
-        @include flexbox-direction(row);
-        border-radius: 1.5rem;
-        @include button-shadow ($color-shadow: map-get($color-gray, background-search-bar), $offset-y: 5px, $blur-radius: 10px, $spread-radius: 1px);
-        align-items: center;
-        position: relative;  
-        padding: 1rem 0.8rem 0.5rem 0.8rem;
-        background: map-get($color-gray,main-background);
-    >span {
-        position: absolute;
-        display: flex;
-        width: 1.5rem;
-        height: 1.5rem;
-        border-radius:1rem;
-        background: $color-primary;
-        align-items: center;
-        justify-content: center;
-        color: $color-white;
-        font-size:0.8rem;
-        left:-0.7rem;
+        &__steps {
+            @include flexbox-direction(row);
+            border-radius: 1.5rem;
+            @include button-shadow ($color-shadow: map-get($color-gray, background-search-bar), $offset-y: 5px, $blur-radius: 10px, $spread-radius: 1px);
+            align-items: center;
+            position: relative;  
+            padding: 1rem 0.8rem 0.5rem 0.8rem;
+            background: map-get($color-gray,main-background);
+        >span {
+            position: absolute;
+            display: flex;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius:1rem;
+            background: $color-primary;
+            align-items: center;
+            justify-content: center;
+            color: $color-white;
+            font-size:0.8rem;
+            left:-0.7rem;
 
-    }
-    .steps {
-        &__icon{
-            margin: 0 1.5rem;
-            color:map-get($color-gray, icon);
-            font-size: 1.1rem;   
         }
-        &__icon--purple{
-            color:$color-primary;
+        .steps {
+            &__icon{
+                margin: 0 1.5rem;
+                color:map-get($color-gray, icon);
+                font-size: 1.1rem;   
+            }
+            &__icon--purple{
+                color:$color-primary;
+            }
+            &__heading{
+                font-size: 1rem;
+                
+            }  
         }
-        &__heading{
-            font-size: 1rem;
-            
-        }
-       
-    }
     }
 } 
 
 /*Gallery-restaurant*/
-
-
 
 $img-restaurant:(
     la-palette-du-gout:(
@@ -232,7 +232,6 @@ $img-restaurant:(
     le-delice-des-sens:(
           object-position:108%,
     )
-
 );
 
 @mixin object-position ($map) {
@@ -242,52 +241,69 @@ $img-restaurant:(
         }
     }
 }
-
-.gallery{
-    &-restaurants{
-        padding: 0 1rem;
-    .gallery-flex-between{
-        height:70rem;
-        @include flexbox-direction;
-        justify-content: space-between;
-    }
-    }
-}
-
 @function label-new ($color: $color-tertiary) {
     @return darken($color, 40%);
   
 }
 
-.card {
-    &__image {
-        position: relative;
-        box-sizing: border-box;
-        
-        >span {
-            position: absolute;
-            right: 0.8rem;
-            top: 0.8rem;
-            background: $color-tertiary;
-            padding: 0.5rem 0.6rem 0.3rem;
-            color:label-new($color: $color-tertiary);
-            font-weight: 700;
-            border-radius: 0.2rem;
+.gallery{
+    &-restaurants{
+        padding: 0 1rem;
+        background: map-get($color-gray,main-background);
+        margin-top: 4rem;
+        .gallery-flex-between {
+            height: 70rem;
+            @include flexbox-direction;
+            justify-content: space-between;
         }
-        img {
-            width: 100%;
-            object-fit: cover;
-            max-height: 11rem;
-            border-radius:1.5rem 1.5rem 0 0rem;
-            @include object-position($img-restaurant);
-        }   
-        
     }
-    &__description{
-        display:flex;
-        justify-content: space-between;
-        align-items: center;
-    } 
+ 
+    
+}
+
+.gallery__card {
+    background:$color-white;
+    .card {
+        &__image {
+            position: relative;
+            box-sizing: border-box;
+            max-height: 11rem;
+            
+            >span {
+                position: absolute;
+                right: 0.8rem;
+                top: 0.8rem;
+                background: $color-tertiary;
+                padding: 0.5rem 0.6rem 0.3rem;
+                color:label-new($color: $color-tertiary);
+                font-weight: 700;
+                border-radius: 0.2rem;
+            }
+            img {
+                width: 100%;
+                object-fit: cover;
+                max-height: 11rem;
+                border-radius:1.5rem 1.5rem 0 0rem;
+                @include object-position($img-restaurant);
+            }     
+        }
+        &__description{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1.5rem 0.6rem 0.8rem;
+            .description { 
+                &__text{
+                @include flexbox-direction;
+                line-height: 0.5rem;
+                }
+            }
+        } 
+    }
 
 
 }
+
+
+
+

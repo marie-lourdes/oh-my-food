@@ -20,6 +20,10 @@ h2 {
   font-weight: 700;
 }
 
+h3 {
+  font-size: 1rem;
+}
+
 a {
   text-decoration: none;
   color: #000;
@@ -59,7 +63,7 @@ main {
 .booking-form__search-bar {
   display: flex;
   flex-direction: row;
-  background: linear-gradient(darken-opacity-color(#eaeaea) 10%, #eaeaea);
+  background: linear-gradient(#c4c4c4, rgba(234, 234, 234, 0.4) 10%, #eaeaea);
   justify-content: center;
   align-items: center;
   position: relative;
@@ -162,6 +166,8 @@ main {
 /*Gallery-restaurant*/
 .gallery-restaurants {
   padding: 0 1rem;
+  background: #f6f6f6;
+  margin-top: 4rem;
 }
 .gallery-restaurants .gallery-flex-between {
   height: 70rem;
@@ -170,11 +176,15 @@ main {
   justify-content: space-between;
 }
 
-.card__image {
+.gallery__card {
+  background: #fff;
+}
+.gallery__card .card__image {
   position: relative;
   box-sizing: border-box;
+  max-height: 11rem;
 }
-.card__image > span {
+.gallery__card .card__image > span {
   position: absolute;
   right: 0.8rem;
   top: 0.8rem;
@@ -184,28 +194,34 @@ main {
   font-weight: 700;
   border-radius: 0.2rem;
 }
-.card__image img {
+.gallery__card .card__image img {
   width: 100%;
   object-fit: cover;
   max-height: 11rem;
   border-radius: 1.5rem 1.5rem 0 0rem;
 }
-.card__image img.la-palette-du-gout {
+.gallery__card .card__image img.la-palette-du-gout {
   object-position: center 111%;
 }
-.card__image img.la-note-enchantee {
+.gallery__card .card__image img.la-note-enchantee {
   object-position: center 60%;
 }
-.card__image img.a-la-francaise {
+.gallery__card .card__image img.a-la-francaise {
   object-position: center 109%;
 }
-.card__image img.le-delice-des-sens {
+.gallery__card .card__image img.le-delice-des-sens {
   object-position: center 108%;
 }
-.card__description {
+.gallery__card .card__description {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 1.5rem 0.6rem 0.8rem;
+}
+.gallery__card .card__description .description__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.5rem;
 }
 
 /*# sourceMappingURL=homepage.css.map */
