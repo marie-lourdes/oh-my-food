@@ -247,12 +247,12 @@ $img-restaurant:(
 }
 
 .gallery{
-    &-restaurants{
+    &-restaurants {
         padding: 0 1rem;
         background: map-get($color-gray,main-background);
         margin-top: 4rem;
         .gallery-flex-between {
-            height: 62rem;
+            height: 63rem;
             @include flexbox-direction;
             justify-content: space-between;
         }
@@ -271,8 +271,8 @@ $img-restaurant:(
             position: relative;
             box-sizing: border-box;
             max-height: 11rem;
-            &.card__image{
-                &--min-height{
+            &.card__image {
+                &--min-height {
                 min-height: 11rem;
                 }
             }
@@ -282,7 +282,7 @@ $img-restaurant:(
                 top: 0.8rem;
                 background: $color-tertiary;
                 padding: 0.5rem 0.6rem 0.3rem;
-                color:label-new($color: $color-tertiary);
+                color: label-new($color: $color-tertiary);
                 font-weight: 700;
                 border-radius: 0.2rem;
             }
@@ -290,28 +290,28 @@ $img-restaurant:(
                 width: 100%;
                 object-fit: cover;
                 max-height: 11rem;
-                border-radius:1rem 1rem 0 0;
+                border-radius: 1rem 1rem 0 0;
                 @include object-position($img-restaurant);
                 overflow:hidden;
             }     
         }
-        &__description{
-            display:flex;
+        &__description {
+            display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 0 1.5rem 1rem 0.8rem;
             box-sizing: border-box;
-            &.card__description{
-                &--padding{
+            &.card__description {
+                &--padding {
                 padding: 0.3rem 1.5rem 1rem 0.8rem;
                 }
-                &--margin-top{
+                &--margin-top {
                     margin-top: -0.1rem;
                 }
 
             }
             .description { 
-                &__text{
+                &__text {
                 @include flexbox-direction;
                 line-height: 0.5rem;
                 }
