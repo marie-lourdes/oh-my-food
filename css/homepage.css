@@ -167,13 +167,16 @@ $img-restaurant :(
     le-delice-des-sens
 
 )*/
-/*.gallery-restaurants{
-    padding: 0 1rem;
-    .gallery-flex-between{
-        height:30rem;
+.gallery-restaurants {
+  padding: 0 1rem;
+}
+.gallery-restaurants .gallery-flex-between {
+  height: 70rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-    }
-}*/
 .card__image {
   position: relative;
   box-sizing: border-box;

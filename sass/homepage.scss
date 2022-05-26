@@ -223,13 +223,15 @@ $img-restaurant :(
 
 )*/
 
-/*.gallery-restaurants{
+.gallery-restaurants{
     padding: 0 1rem;
     .gallery-flex-between{
-        height:30rem;
+        height:70rem;
+        @include flexbox-direction;
+        justify-content: space-between;
 
     }
-}*/
+}
 
 .card {
     &__image {
