@@ -213,15 +213,30 @@ main {
     @return darken($color, 40%);
   
 }
-/*
+$position: 111%,60%,109%,108%;
 
-$img-restaurant :(
-    la-palette-du-gout
-    la-note-enchantee
-    a-la-francaise
-    le-delice-des-sens
+$img-restaurant:(
+    la-palette-du-gout:(
+        object-position: $position,
+    ),
+    la-note-enchantee:(
+        object-position: $position,
+    ),
+    a-la-francaise:(
+          object-position:$position,
+    ),
+    le-delice-des-sens:(
+          object-position:$position,
+    )
 
-)*/
+);
+@mixin object-position ($map) {
+    @each $key, $value in $map {
+        &.#{$key}{
+            object-position: center $position;
+        }
+    }
+}
 
 .gallery-restaurants{
     padding: 0 1rem;
@@ -253,7 +268,7 @@ $img-restaurant :(
             object-fit: cover;
             max-height: 11rem;
             border-radius:1.5rem 1.5rem 0 0rem;
-            object-position: center 60%;
+            @include object-position($img-restaurant);
         }   
         
     }

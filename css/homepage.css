@@ -158,15 +158,6 @@ main {
   font-size: 1rem;
 }
 
-/*
-
-$img-restaurant :(
-    la-palette-du-gout
-    la-note-enchantee
-    a-la-francaise
-    le-delice-des-sens
-
-)*/
 .gallery-restaurants {
   padding: 0 1rem;
 }
@@ -196,7 +187,18 @@ $img-restaurant :(
   object-fit: cover;
   max-height: 11rem;
   border-radius: 1.5rem 1.5rem 0 0rem;
-  object-position: center 60%;
+}
+.card__image img.la-palette-du-gout {
+  object-position: center 111%, 60%, 109%, 108%;
+}
+.card__image img.la-note-enchantee {
+  object-position: center 111%, 60%, 109%, 108%;
+}
+.card__image img.a-la-francaise {
+  object-position: center 111%, 60%, 109%, 108%;
+}
+.card__image img.le-delice-des-sens {
+  object-position: center 111%, 60%, 109%, 108%;
 }
 .card__description {
   display: flex;
