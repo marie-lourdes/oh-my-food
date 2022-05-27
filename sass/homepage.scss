@@ -37,7 +37,7 @@ $color-gray:(
     box-shadow: 0px 10px 20px -5px rgb(map-get($color-gray, dark-gray),0.5);
 
 }
-@mixin button-shadow ($color-shadow: rgb(map-get($color-gray, dark-gray),0.6), $offset-y:10px,$blur-radius: 20px, $spread-radius:-2px) {
+@mixin box-shadow ($color-shadow: rgb(map-get($color-gray, dark-gray),0.6), $offset-y:10px,$blur-radius: 20px, $spread-radius:-2px) {
 
     box-shadow: 0px $offset-y $blur-radius $spread-radius $color-shadow ;
 
@@ -155,7 +155,7 @@ main {
             .button-primary{
                 @include button-primary;
                 &:active {
-                   @include button-shadow;
+                   @include box-shadow;
                     filter:brightness(110%);
     
                 }
@@ -181,7 +181,7 @@ main {
         &__steps {
             @include flexbox-direction(row);
             border-radius: 1.5rem;
-            @include button-shadow ($color-shadow: map-get($color-gray, background-search-bar), $offset-y: 5px, $blur-radius: 10px, $spread-radius: 1px);
+            @include box-shadow ($color-shadow: map-get($color-gray, background-search-bar), $offset-y: 5px, $blur-radius: 10px, $spread-radius: 1px);
             align-items: center;
             position: relative;  
             padding: 1rem 0.8rem 0.5rem 0.8rem;
@@ -261,6 +261,7 @@ $img-restaurant:(
     &__card {
         background: $color-white;
         @include flexbox-direction;
+        @include box-shadow ($color-shadow: map-get($color-gray, background-search-bar), $offset-y: 5px, $blur-radius: 10px, $spread-radius: 1px);
         border-radius: 1rem;
         box-sizing: border-box;
     }  
