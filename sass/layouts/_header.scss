@@ -3,6 +3,8 @@
 header {
     display: flex;
     justify-content: center;
+    
+    position:relative;
     >.header__logo {
         display: flex;
         .logo-svg {
@@ -11,6 +13,20 @@ header {
             
         }
     }
-    
+    button {
+        background:none;
+        border:none;
+        color:map-get($color-gray,dark-gray);
+        text-shadow:0rem -0.01rem;
+        position:absolute;
+        left:1.5rem;
+        top:1.5rem;
+        font-size: 1.2rem;
+        
+        
+        
+       
+       
+    }
 }
 
