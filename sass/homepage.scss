@@ -251,6 +251,7 @@ $img-restaurant:(
         padding: 0 1rem;
         background: map-get($color-gray,main-background);
         margin-top: 4rem;
+        padding-bottom: 5rem;
         .gallery-flex-between {
             height: 63rem;
             @include flexbox-direction;
@@ -326,7 +327,6 @@ $img-restaurant:(
 
 .footer {
     background: map-get($color-gray, dark-gray);
-    
     @include flexbox-direction;
     padding: 0.5rem 2rem 1.5rem;
     
