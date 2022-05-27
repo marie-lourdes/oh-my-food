@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/homepage.scss:./css/homepage.css"
+    "sass-1": "sass --watch ./sass/homepage.scss:./css/homepage.css",
+    "sass-2": "sass --watch ./sass/page-menu.scss:./css/page-menu.css"
   },
   "author": "marie-lourdes",
   "license": "ISC"
