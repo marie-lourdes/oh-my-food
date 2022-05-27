@@ -1,16 +1,16 @@
-/*header*/
-
 header {
     display: flex;
     justify-content: center;
     >.header__logo {
         display: flex;
         .logo-svg {
-            padding: 1rem;
+            padding: 5rem;
             width: 10rem;
             
         }
     }
-    
+    button {
+        background:none;
+        border:none;
+    }
 }
-
