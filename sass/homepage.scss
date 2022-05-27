@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Shrikhand&display=swap');
 
-@function darken-opacity-search-bar($color: $color1){
-    $color1: darken($color, 15%), rgb($color ,0.4);;
-    @return $color1; 
- }
+
 
 
 html {
@@ -181,26 +178,9 @@ main {
 
 /*Gallery-restaurant*/
 
-$img-restaurant:(
-    la-palette-du-gout:(
-        object-position: 111%,
-    ),
-    la-note-enchantee:(
-        object-position:60%, 
-    ),
-    a-la-francaise:(
-          object-position:109%,
-    ),
-    le-delice-des-sens:(
-          object-position:108%,
-    )
-);
 
 
-@function label-new ($color: $color-tertiary) {
-    @return darken($color, 40%);
-  
-}
+
 
 .gallery{
     &-restaurants {
