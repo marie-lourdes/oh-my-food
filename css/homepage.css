@@ -1,9 +1,9 @@
 /* Error: Undefined mixin.
  *    ,
- * 23 |     @include flexbox-direction;
+ * 10 |     @include flexbox-direction;
  *    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^
  *    '
- *   sass\homepage.scss 23:5  root stylesheet */
+ *   sass\homepage.scss 10:5  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 23 \2502      @include flexbox-direction;\d\a    \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   sass\\homepage.scss 23:5  root stylesheet";
+  content: "Error: Undefined mixin.\a    \2577 \a 10 \2502      @include flexbox-direction;\d\a    \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   sass\\homepage.scss 10:5  root stylesheet";
 }
