@@ -247,6 +247,8 @@ main {
   display: flex;
   flex-direction: column;
   padding: 0.5rem 2rem 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 .footer a {
   color: #fff;
