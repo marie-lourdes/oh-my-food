@@ -257,15 +257,15 @@ $img-restaurant:(
             justify-content: space-between;
         }
     }
- 
-    
+    &__card {
+        background: $color-white;
+        @include flexbox-direction;
+        border-radius: 1rem;
+        box-sizing: border-box;
+    }  
 }
 
-.gallery__card {
-    background: $color-white;
-    @include flexbox-direction;
-    border-radius: 1rem;
-    box-sizing: border-box;
+
     .card {
         &__image {
             position: relative;
@@ -320,15 +320,16 @@ $img-restaurant:(
     }
 
 
-}
+
 
 /*footer*/
 
 .footer {
     background: map-get($color-gray, dark-gray);
-    padding-left: 1.5rem;
+    
     @include flexbox-direction;
-   
+    padding: 0.5rem 2rem 1.5rem;
+    
     a {
         color: $color-white;
         font-size: 0.9rem;
@@ -342,17 +343,30 @@ $img-restaurant:(
     h3 {
         font-weight:500;
         font-size: 0.9rem;
-        text-shadow: 0.01rem -0.01rem;
+        text-shadow: 0.03rem -0.02rem;
         
     }
+   
     &__bloc-links {
         @include flexbox-direction;
+        margin-top:-0.5rem;
     }
     &__link{
         @include flexbox-direction;
-        a{
+        height: 1.5rem;
+        &.footer__link {
+            &--padding {
+                padding-bottom:0.8rem;
+            } 
+        }
+        a {
             @include flexbox-direction(row);
             align-items: baseline;
+            >span {
+                margin-right: 0.5rem;
+                font-size:0.7rem;
+
+            }
         }
        
     }

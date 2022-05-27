@@ -175,7 +175,6 @@ main {
   flex-direction: column;
   justify-content: space-between;
 }
-
 .gallery__card {
   background: #fff;
   display: flex;
@@ -183,15 +182,16 @@ main {
   border-radius: 1rem;
   box-sizing: border-box;
 }
-.gallery__card .card__image {
+
+.card__image {
   position: relative;
   box-sizing: border-box;
   max-height: 11rem;
 }
-.gallery__card .card__image.card__image--min-height {
+.card__image.card__image--min-height {
   min-height: 11rem;
 }
-.gallery__card .card__image > span {
+.card__image > span {
   position: absolute;
   right: 0.8rem;
   top: 0.8rem;
@@ -201,39 +201,39 @@ main {
   font-weight: 700;
   border-radius: 0.2rem;
 }
-.gallery__card .card__image img {
+.card__image img {
   width: 100%;
   object-fit: cover;
   max-height: 11rem;
   border-radius: 1rem 1rem 0 0;
   overflow: hidden;
 }
-.gallery__card .card__image img.la-palette-du-gout {
+.card__image img.la-palette-du-gout {
   object-position: center 111%;
 }
-.gallery__card .card__image img.la-note-enchantee {
+.card__image img.la-note-enchantee {
   object-position: center 60%;
 }
-.gallery__card .card__image img.a-la-francaise {
+.card__image img.a-la-francaise {
   object-position: center 109%;
 }
-.gallery__card .card__image img.le-delice-des-sens {
+.card__image img.le-delice-des-sens {
   object-position: center 108%;
 }
-.gallery__card .card__description {
+.card__description {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1.5rem 1rem 0.8rem;
   box-sizing: border-box;
 }
-.gallery__card .card__description.card__description--padding {
+.card__description.card__description--padding {
   padding: 0.3rem 1.5rem 1rem 0.8rem;
 }
-.gallery__card .card__description.card__description--margin-top {
+.card__description.card__description--margin-top {
   margin-top: -0.1rem;
 }
-.gallery__card .card__description .description__text {
+.card__description .description__text {
   display: flex;
   flex-direction: column;
   line-height: 0.5rem;
@@ -242,9 +242,9 @@ main {
 /*footer*/
 .footer {
   background: #353535;
-  padding-left: 1.5rem;
   display: flex;
   flex-direction: column;
+  padding: 0.5rem 2rem 1.5rem;
 }
 .footer a {
   color: #fff;
@@ -258,20 +258,29 @@ main {
 .footer h3 {
   font-weight: 500;
   font-size: 0.9rem;
-  text-shadow: 0.01rem -0.01rem;
+  text-shadow: 0.03rem -0.02rem;
 }
 .footer__bloc-links {
   display: flex;
   flex-direction: column;
+  margin-top: -0.5rem;
 }
 .footer__link {
   display: flex;
   flex-direction: column;
+  height: 1.5rem;
+}
+.footer__link.footer__link--padding {
+  padding-bottom: 0.8rem;
 }
 .footer__link a {
   display: flex;
   flex-direction: row;
   align-items: baseline;
+}
+.footer__link a > span {
+  margin-right: 0.5rem;
+  font-size: 0.7rem;
 }
 
 /*# sourceMappingURL=homepage.css.map */
