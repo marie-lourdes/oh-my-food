@@ -1,140 +1,26 @@
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./base/base";
+@import "./components/button-primary";
+@import "./layouts/header";
+@import "./layouts/container-homepage";
+@import "./layouts/footer";
 
 
 
 
 
 
-/*booking-menu*/
-
-main {
-    @include flexbox-direction;
-}
 
 
-.booking {
-    &-menu{
-        @include flexbox-direction ;
-        text-align: center;
-        background: map-get($color-gray, main-background);
-        appearance: none;
 
-    }
-    &-form {
-        @include flexbox-direction;
-        
-        color: map-get($color-gray, dark-gray);
-        &__search-bar {
-            @include flexbox-direction(row);
-            @include gradient-search-bar;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            height: 3rem;
-            
-            >.icon-location {
-                position: absolute;
-                left: 6.5rem;
+
+
+
+
                 
-            }
-            >.search-field {
-                position :absolute;
-                right: 4rem;
-                input{
-                box-sizing: border-box;
-                padding: 0.8rem 0rem;
-                background:none;
-                border:0;
-                font-weight: 700;
-                color: map-get($color-gray,dark-gray);
     
-                }
-                
-            }
-    
-        }  
-        &__call-to-action {
-            @include flexbox-direction;
-            margin:0 auto;
-            padding: 2rem 2rem 3.5rem;
-            label {
-                appearance: none;
-                width: 80%;
-                margin: 0 auto;
-            }
-            h1 {
-               font-weight:900;
-               margin:0;
-               color:$color-black;
-            }
-            .button-primary{
-                @include button-primary;
-                &:active {
-                   @include box-shadow;
-                    filter:brightness(110%);
-    
-                }
-            }
             
-        }
-    }
-   
-}
-
-
-
-
-
-/*footer*/
-
-.footer {
-    background: map-get($color-gray, dark-gray);
-    @include flexbox-direction;
-    padding: 0.5rem 2rem 1.5rem;
-    width:100%;
-    box-sizing: border-box;
-    
-    a {
-        color: $color-white;
-        font-size: 0.9rem;
-        
-    }
-    h1 {
-        font-family: 'Shrikhand', cursive, arial, sans-serif;
-        font-size: 1.1rem;
-        font-weight: 400;
-    }
-    h3 {
-        font-weight:500;
-        font-size: 0.9rem;
-        text-shadow: 0.03rem -0.02rem;
-        
-    }
-   
-    &__bloc-links {
-        @include flexbox-direction;
-        margin-top:-0.5rem;
-    }
-    &__link{
-        @include flexbox-direction;
-        height: 1.5rem;
-        &.footer__link {
-            &--padding {
-                padding-bottom:0.8rem;
-            } 
-        }
-        a {
-            @include flexbox-direction(row);
-            align-items: baseline;
-            >span {
-                margin-right: 0.5rem;
-                font-size:0.7rem;
-
-            }
-        }
-       
-    }
-   
-    
-}
 
 

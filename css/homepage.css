@@ -1,17 +1,307 @@
-/* Error: Undefined mixin.
- *    ,
- * 10 |     @include flexbox-direction;
- *    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   sass\homepage.scss 10:5  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 10 \2502      @include flexbox-direction;\d\a    \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   sass\\homepage.scss 10:5  root stylesheet";
+/* color*/
+/*search-bar*/
+/*gallery-restaurants*/
+/*search-bar*/
+/*gallery-restaurants*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Shrikhand&display=swap");
+html {
+  font-size: 62, 5%;
 }
+
+body {
+  margin: 0 auto;
+  font-family: "Roboto", arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+h1, h2 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.button-primary {
+  padding: 1rem;
+  border-radius: 2rem;
+  border: none;
+  color: #fff;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0px 10px 20px -5px rgba(53, 53, 53, 0.5);
+}
+.button-primary:active {
+  box-shadow: 0px 10px 20px -2px rgba(53, 53, 53, 0.6);
+  filter: brightness(110%);
+}
+
+/*header*/
+header {
+  display: flex;
+  justify-content: center;
+}
+header > .header__logo {
+  display: flex;
+}
+header > .header__logo .logo-svg {
+  padding: 1rem;
+  width: 10rem;
+}
+
+/*booking-menu*/
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #f6f6f6;
+  appearance: none;
+}
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  color: #353535;
+}
+.booking-form__search-bar {
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(#c4c4c4, rgba(234, 234, 234, 0.4) 10%, #eaeaea);
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 3rem;
+}
+.booking-form__search-bar > .icon-location {
+  position: absolute;
+  left: 6.5rem;
+}
+.booking-form__search-bar > .search-field {
+  position: absolute;
+  right: 4rem;
+}
+.booking-form__search-bar > .search-field input {
+  box-sizing: border-box;
+  padding: 0.8rem 0rem;
+  background: none;
+  border: 0;
+  font-weight: 700;
+  color: #353535;
+}
+.booking-form__call-to-action {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 2rem 2rem 3.5rem;
+}
+.booking-form__call-to-action label {
+  appearance: none;
+  width: 80%;
+  margin: 0 auto;
+}
+.booking-form__call-to-action h1 {
+  font-weight: 900;
+  margin: 0;
+  color: #000;
+}
+.booking-form__call-to-action .button-primary {
+  padding: 1rem;
+  border-radius: 2rem;
+  border: none;
+  color: #fff;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0px 10px 20px -5px rgba(53, 53, 53, 0.5);
+}
+.booking-form__call-to-action .button-primary:active {
+  box-shadow: 0px 10px 20px -2px rgba(53, 53, 53, 0.6);
+  filter: brightness(110%);
+}
+
+/* fonctionnement*/
+.proceeding-site {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+
+.proceeding {
+  display: flex;
+  flex-direction: column;
+  height: 16rem;
+  justify-content: space-between;
+  padding-left: 0.5rem;
+}
+.proceeding__steps {
+  display: flex;
+  flex-direction: row;
+  border-radius: 1.5rem;
+  box-shadow: 0px 5px 10px 1px #eaeaea;
+  align-items: center;
+  position: relative;
+  padding: 1rem 0.8rem 0.5rem 0.8rem;
+  background: #f6f6f6;
+}
+.proceeding__steps > span {
+  position: absolute;
+  display: flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 1rem;
+  background: #9356DC;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.8rem;
+  left: -0.7rem;
+}
+.proceeding__steps .steps__icon {
+  margin: 0 1.5rem;
+  color: #7e7e7e;
+  font-size: 1.1rem;
+}
+.proceeding__steps .steps__icon--purple {
+  color: #9356DC;
+}
+.proceeding__steps .steps__heading {
+  font-size: 1rem;
+}
+
+/*Gallery-restaurant*/
+.gallery-restaurants {
+  padding: 0 1rem;
+  background: #f6f6f6;
+  margin-top: 4rem;
+  padding-bottom: 4rem;
+}
+.gallery-restaurants .gallery-flex-between {
+  height: 63rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.gallery__card {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 5px 10px 1px #eaeaea;
+  border-radius: 1rem;
+  box-sizing: border-box;
+}
+
+.card__image {
+  position: relative;
+  box-sizing: border-box;
+  max-height: 11rem;
+}
+.card__image.card__image--min-height {
+  min-height: 11rem;
+}
+.card__image > span {
+  position: absolute;
+  right: 0.8rem;
+  top: 0.8rem;
+  background: #99E2D0;
+  padding: 0.5rem 0.6rem 0.3rem;
+  color: #278870;
+  font-weight: 700;
+  border-radius: 0.2rem;
+}
+.card__image img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 11rem;
+  border-radius: 1rem 1rem 0 0;
+  overflow: hidden;
+}
+.card__image img.la-palette-du-gout {
+  object-position: center 111%;
+}
+.card__image img.la-note-enchantee {
+  object-position: center 60%;
+}
+.card__image img.a-la-francaise {
+  object-position: center 109%;
+}
+.card__image img.le-delice-des-sens {
+  object-position: center 108%;
+}
+.card__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem 1rem 0.8rem;
+  box-sizing: border-box;
+}
+.card__description.card__description--padding {
+  padding: 0.3rem 1.5rem 1rem 0.8rem;
+}
+.card__description.card__description--margin-top {
+  margin-top: -0.1rem;
+}
+.card__description .description__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.5rem;
+}
+
+/*footer*/
+.footer {
+  background: #353535;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 2rem 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+.footer a {
+  color: #fff;
+  font-size: 0.9rem;
+}
+.footer h1 {
+  font-family: "Shrikhand", cursive, arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.footer h3 {
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-shadow: 0.03rem -0.02rem;
+}
+.footer__bloc-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: -0.5rem;
+}
+.footer__link {
+  display: flex;
+  flex-direction: column;
+  height: 1.5rem;
+}
+.footer__link.footer__link--padding {
+  padding-bottom: 0.8rem;
+}
+.footer__link a {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.footer__link a > span {
+  margin-right: 0.5rem;
+  font-size: 0.7rem;
+}
+
+/*# sourceMappingURL=homepage.css.map */
