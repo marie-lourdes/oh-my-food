@@ -70,4 +70,21 @@ header button {
   font-size: 1.2rem;
 }
 
+/*banner-menu*/
+.banner-menu img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center 50%;
+}
+
+.menu {
+  position: absolute;
+  z-index: 1;
+  background: #f6f6f6;
+  border-radius: 2.5rem 2.5rem 0 0;
+  top: 17rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
 /*# sourceMappingURL=page-menu.css.map */
