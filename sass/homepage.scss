@@ -170,7 +170,8 @@ main {
 
 .proceeding-site {
     @include flexbox-direction;
-    padding:0 1rem;     
+    padding:0 1rem; 
+    margin-top: 1.5rem;    
 } 
 
 .proceeding {

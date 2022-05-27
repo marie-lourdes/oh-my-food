@@ -119,6 +119,7 @@ main {
   display: flex;
   flex-direction: column;
   padding: 0 1rem;
+  margin-top: 1.5rem;
 }
 
 .proceeding {
