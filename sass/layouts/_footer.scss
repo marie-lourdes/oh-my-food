@@ -1,0 +1,53 @@
+
+/*footer*/
+
+.footer {
+    background: map-get($color-gray, dark-gray);
+    @include flexbox-direction;
+    padding: 0.5rem 2rem 1.5rem;
+    width:100%;
+    box-sizing: border-box;
+    
+    a {
+        color: $color-white;
+        font-size: 0.9rem;
+        
+    }
+    h1 {
+        font-family: 'Shrikhand', cursive, arial, sans-serif;
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+    h3 {
+        font-weight:500;
+        font-size: 0.9rem;
+        text-shadow: 0.03rem -0.02rem;
+        
+    }
+   
+    &__bloc-links {
+        @include flexbox-direction;
+        margin-top:-0.5rem;
+    }
+    &__link{
+        @include flexbox-direction;
+        height: 1.5rem;
+        &.footer__link {
+            &--padding {
+                padding-bottom:0.8rem;
+            } 
+        }
+        a {
+            @include flexbox-direction(row);
+            align-items: baseline;
+            >span {
+                margin-right: 0.5rem;
+                font-size:0.7rem;
+
+            }
+        }
+       
+    }
+   
+    
+}
