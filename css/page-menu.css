@@ -115,7 +115,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100rem;
+  height: 70rem;
   appearance: none;
   padding-bottom: 5rem;
 }
@@ -124,11 +124,6 @@ main {
   position: relative;
   display: flex;
   flex-direction: column;
-}
-.form-menu legend {
-  /* &.starter__menu,.dish__menu,.dessert__menu{
-       @includ
-   }*/
 }
 .form-menu legend::after {
   content: "";
@@ -141,6 +136,26 @@ main {
 .form-menu legend h2 {
   font-size: 1rem;
   font-weight: 500;
+}
+.form-menu .starter__menu, .form-menu .dish__menu, .form-menu .dessert__menu {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.form-menu .starter__menu input[type=checkbox], .form-menu .dish__menu input[type=checkbox], .form-menu .dessert__menu input[type=checkbox] {
+  position: absolute;
+  height: 0;
+  width: 0;
+}
+.form-menu .starter__menu span, .form-menu .dish__menu span, .form-menu .dessert__menu span {
+  display: none;
+  background: #99E2D0;
+  padding: 3rem;
+}
+.form-menu .starter__menu:active span, .form-menu .dish__menu:active span, .form-menu .dessert__menu:active span {
+  display: block;
+  border-radius: 0 1.5rem 1.5rem 0;
 }
 
 /*# sourceMappingURL=page-menu.css.map */
