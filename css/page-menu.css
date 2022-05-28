@@ -138,10 +138,15 @@ main {
   font-weight: 500;
 }
 .form-menu .starter__menu, .form-menu .dish__menu, .form-menu .dessert__menu {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   justify-content: space-between;
+}
+.form-menu .starter__menu .checkbox-animation, .form-menu .dish__menu .checkbox-animation, .form-menu .dessert__menu .checkbox-animation {
+  position: absolute;
+  right: 0%;
 }
 .form-menu .starter__menu input[type=checkbox], .form-menu .dish__menu input[type=checkbox], .form-menu .dessert__menu input[type=checkbox] {
   position: absolute;
@@ -151,7 +156,7 @@ main {
 .form-menu .starter__menu span, .form-menu .dish__menu span, .form-menu .dessert__menu span {
   display: none;
   background: #99E2D0;
-  padding: 3rem;
+  padding: 2rem;
 }
 .form-menu .starter__menu:active span, .form-menu .dish__menu:active span, .form-menu .dessert__menu:active span {
   display: block;
