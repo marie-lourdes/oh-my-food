@@ -5,6 +5,10 @@
 @import "./components/button-primary";
 @import "./layouts/header";
 
+main{
+    @include flexbox-direction;
+}
+
 /*banner-menu*/
 
 .banner-menu {
@@ -14,10 +18,10 @@
         img {
             width:100%;
             object-fit: cover;
-            position:absolute;
-            z-index:-1;
+            position: absolute;
+            z-index: -1;
             min-height: 17.2rem;
-            &.img--max-height{
+            &.img--max-height {
                 max-height: 17.2rem;
             }
             
@@ -26,14 +30,50 @@
 }
 
 .menu{
-    
-    background:map-get($color-gray, main-background);
-    border-radius:2.5rem 2.5rem 0 0;
-  
+    @include flexbox-direction;
+    background: map-get($color-gray, main-background);
+    border-radius: 2.5rem 2.5rem 0 0;
     box-sizing: border-box;
-    width:100%;
+    width: 100%;
     position: relative;
     top: 12.8rem;
-    padding-bottom: 5rem;
     margin-bottom: 12.7rem;
+    &__heading {
+        font-family: "Shrikhand", cursive, arial, sans-serif;
+        @include flexbox-direction(row);
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 1.5rem 0rem 1.2rem;
+    }
+}
+
+.form-menu {
+    @include flexbox-direction;
+    justify-content: space-between;
+    height: 100rem;
+    appearance: none;
+    padding-bottom: 5rem;
+    fieldset {
+        /* border:none;*/
+        position: relative;
+        @include flexbox-direction;
+     }
+    legend {
+        &::after {
+            content: "";
+            height: 0.2rem;
+            width: 2.5rem;
+            background: $color-tertiary;
+            position: absolute;
+            top: 2rem;
+        }
+        h2{
+            font-size: 1rem;
+            font-weight: 500;
+        }
+       /* &.starter__menu,.dish__menu,.dessert__menu{
+            @includ
+        }*/
+    }
+   
 }
