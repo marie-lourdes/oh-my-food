@@ -71,10 +71,18 @@ header button {
 }
 
 /*banner-menu*/
-.banner-menu img {
+.banner-menu {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.banner-menu .banner {
+  min-width: 24.5rem;
+  width: 100%;
+}
+.banner-menu .banner img {
   width: 100%;
   object-fit: cover;
-  object-position: center 50%;
 }
 
 .menu {
