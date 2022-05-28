@@ -17,6 +17,9 @@
             position:absolute;
             z-index:-1;
             min-height: 17.2rem;
+            &.img--max-height{
+                max-height: 17.2rem;
+            }
             
         }
     

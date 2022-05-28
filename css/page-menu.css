@@ -82,6 +82,9 @@ header button {
   z-index: -1;
   min-height: 17.2rem;
 }
+.banner-menu img.img--max-height {
+  max-height: 17.2rem;
+}
 
 .menu {
   background: #f6f6f6;
