@@ -50,7 +50,7 @@ main{
 .form-menu {
     @include flexbox-direction;
     justify-content: space-between;
-    height: 100rem;
+    height: 70rem;
     appearance: none;
     padding-bottom: 5rem;
     fieldset {
@@ -71,9 +71,12 @@ main{
             font-size: 1rem;
             font-weight: 500;
         }
-       /* &.starter__menu,.dish__menu,.dessert__menu{
-            @includ
-        }*/
+        
+    }
+    .starter__menu,.dish__menu,.dessert__menu{
+        @include flexbox-direction(row);
+        align-items: flex-end;
+        justify-content: space-between;
     }
    
 }
