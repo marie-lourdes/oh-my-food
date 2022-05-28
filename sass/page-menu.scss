@@ -53,11 +53,27 @@ main{
     height: 100rem;
     appearance: none;
     padding-bottom: 5rem;
-    h2{
-        font-size: 1rem;
-        font-weight: 500;
+    fieldset {
+        /* border:none;*/
+        position: relative;
+        @include flexbox-direction;
+     }
+    legend {
+        &::after {
+            content: "";
+            height: 0.2rem;
+            width: 2.5rem;
+            background: $color-tertiary;
+            position: absolute;
+            top: 2rem;
+        }
+        h2{
+            font-size: 1rem;
+            font-weight: 500;
+        }
+       /* &.starter__menu,.dish__menu,.dessert__menu{
+            @includ
+        }*/
     }
-    fieldset{
-       /* border:none;*/
-    }
+   
 }
