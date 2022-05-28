@@ -10,29 +10,27 @@
 .banner-menu {
     width: 100%;
     box-sizing: border-box;
-    overflow: hidden;
-    .banner {
-        min-width: 24.5rem;
-        width: 100%;
 
         img {
             width:100%;
             object-fit: cover;
-           
-           
+            position:absolute;
+            z-index:-1;
+            min-height: 17.2rem;
+            
         }
-
-    }
- 
     
 }
 
 .menu{
-    position: absolute;
-    z-index: 1;
+    
     background:map-get($color-gray, main-background);
     border-radius:2.5rem 2.5rem 0 0;
-    top:17rem;
+  
     box-sizing: border-box;
     width:100%;
+    position: relative;
+    top: 12.8rem;
+    padding-bottom: 5rem;
+    margin-bottom: 11rem;
 }

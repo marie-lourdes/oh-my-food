@@ -74,25 +74,24 @@ header button {
 .banner-menu {
   width: 100%;
   box-sizing: border-box;
-  overflow: hidden;
 }
-.banner-menu .banner {
-  min-width: 24.5rem;
-  width: 100%;
-}
-.banner-menu .banner img {
+.banner-menu img {
   width: 100%;
   object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  min-height: 17.2rem;
 }
 
 .menu {
-  position: absolute;
-  z-index: 1;
   background: #f6f6f6;
   border-radius: 2.5rem 2.5rem 0 0;
-  top: 17rem;
   box-sizing: border-box;
   width: 100%;
+  position: relative;
+  top: 12.8rem;
+  padding-bottom: 5rem;
+  margin-bottom: 11rem;
 }
 
 /*# sourceMappingURL=page-menu.css.map */
