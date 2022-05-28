@@ -100,7 +100,6 @@ main {
   width: 100%;
   position: relative;
   top: 12.8rem;
-  padding-bottom: 5rem;
   margin-bottom: 12.7rem;
 }
 .menu__heading {
@@ -110,6 +109,22 @@ main {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1.5rem 0rem 1.2rem;
+}
+
+.form-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100rem;
+  appearance: none;
+  padding-bottom: 5rem;
+}
+.form-menu h2 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.form-menu fieldset {
+  /* border:none;*/
 }
 
 /*# sourceMappingURL=page-menu.css.map */

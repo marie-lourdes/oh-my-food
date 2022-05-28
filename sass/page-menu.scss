@@ -37,7 +37,6 @@ main{
     width: 100%;
     position: relative;
     top: 12.8rem;
-    padding-bottom: 5rem;
     margin-bottom: 12.7rem;
     &__heading {
         font-family: "Shrikhand", cursive, arial, sans-serif;
@@ -45,5 +44,20 @@ main{
         align-items: center;
         justify-content: space-between;
         padding: 1rem 1.5rem 0rem 1.2rem;
+    }
+}
+
+.form-menu {
+    @include flexbox-direction;
+    justify-content: space-between;
+    height: 100rem;
+    appearance: none;
+    padding-bottom: 5rem;
+    h2{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    fieldset{
+       /* border:none;*/
     }
 }
