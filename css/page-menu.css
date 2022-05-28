@@ -157,6 +157,10 @@ main {
 .form-menu .starter__menu:active span, .form-menu .dish__menu:active span, .form-menu .dessert__menu:active span {
   display: block;
   border-radius: 0 1.5rem 1.5rem 0;
+  color: #fff;
+}
+.form-menu .starter__menu:active span .circle-checked, .form-menu .dish__menu:active span .circle-checked, .form-menu .dessert__menu:active span .circle-checked {
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=page-menu.css.map */

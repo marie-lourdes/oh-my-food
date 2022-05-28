@@ -98,6 +98,11 @@ main{
             span {
                 display:block;
                 border-radius:0 1.5rem 1.5rem 0;
+                color:$color-white;
+                .circle-checked{
+                    font-size:1.5rem;
+                }
+                
     
             }
            
