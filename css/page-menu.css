@@ -144,10 +144,6 @@ main {
   align-items: flex-end;
   justify-content: space-between;
 }
-.form-menu .starter__menu .checkbox-animation, .form-menu .dish__menu .checkbox-animation, .form-menu .dessert__menu .checkbox-animation {
-  position: absolute;
-  right: 0%;
-}
 .form-menu .starter__menu input[type=checkbox], .form-menu .dish__menu input[type=checkbox], .form-menu .dessert__menu input[type=checkbox] {
   position: absolute;
   height: 0;
@@ -161,10 +157,6 @@ main {
 .form-menu .starter__menu:active span, .form-menu .dish__menu:active span, .form-menu .dessert__menu:active span {
   display: block;
   border-radius: 0 1.5rem 1.5rem 0;
-}
-.form-menu .starter__menu:active .starter__price, .form-menu .dish__menu:active .starter__price, .form-menu .dessert__menu:active .starter__price {
-  position: absolute;
-  right: 10rem;
 }
 
 /*# sourceMappingURL=page-menu.css.map */
