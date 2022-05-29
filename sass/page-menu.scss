@@ -4,6 +4,7 @@
 @import "./base/base";
 @import "./components/button-primary";
 @import "./layouts/header";
+@import "./layouts/footer";
 
 main{
     @include flexbox-direction;

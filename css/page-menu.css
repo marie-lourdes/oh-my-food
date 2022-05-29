@@ -70,6 +70,52 @@ header button {
   font-size: 1.2rem;
 }
 
+/*footer*/
+.footer {
+  background: #353535;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 2rem 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+.footer a {
+  color: #fff;
+  font-size: 0.9rem;
+}
+.footer h1 {
+  font-family: "Shrikhand", cursive, arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.footer h3 {
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-shadow: 0.03rem -0.02rem;
+}
+.footer__bloc-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: -0.5rem;
+}
+.footer__link {
+  display: flex;
+  flex-direction: column;
+  height: 1.5rem;
+}
+.footer__link.footer__link--padding {
+  padding-bottom: 0.8rem;
+}
+.footer__link a {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.footer__link a > span {
+  margin-right: 0.5rem;
+  font-size: 0.7rem;
+}
+
 main {
   display: flex;
   flex-direction: column;
