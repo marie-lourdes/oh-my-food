@@ -162,7 +162,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 75rem;
+  height: 70rem;
   appearance: none;
   padding-bottom: 5rem;
   /*span:checkbox-animation*/
