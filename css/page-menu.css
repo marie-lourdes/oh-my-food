@@ -70,6 +70,52 @@ header button {
   font-size: 1.2rem;
 }
 
+/*footer*/
+.footer {
+  background: #353535;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 2rem 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+.footer a {
+  color: #fff;
+  font-size: 0.9rem;
+}
+.footer h1 {
+  font-family: "Shrikhand", cursive, arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.footer h3 {
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-shadow: 0.03rem -0.02rem;
+}
+.footer__bloc-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: -0.5rem;
+}
+.footer__link {
+  display: flex;
+  flex-direction: column;
+  height: 1.5rem;
+}
+.footer__link.footer__link--padding {
+  padding-bottom: 0.8rem;
+}
+.footer__link a {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.footer__link a > span {
+  margin-right: 0.5rem;
+  font-size: 0.7rem;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -101,6 +147,7 @@ main {
   position: relative;
   top: 12.8rem;
   margin-bottom: 12.7rem;
+  padding: 0 1rem;
 }
 .menu__heading {
   font-family: "Shrikhand", cursive, arial, sans-serif;
@@ -115,7 +162,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 70rem;
+  height: 75rem;
   appearance: none;
   padding-bottom: 5rem;
   /*span:checkbox-animation*/
@@ -124,21 +171,18 @@ main {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 50rem;
   justify-content: space-around;
 }
 .form-menu__dish {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 50rem;
   justify-content: space-around;
 }
 .form-menu__dessert {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 50rem;
   justify-content: space-around;
 }
 .form-menu legend::after {
@@ -157,11 +201,14 @@ main {
   position: relative;
   display: flex;
   flex-direction: row;
-  box-shadow: 0px 10px 20px -2px rgba(53, 53, 53, 0.6);
+  box-shadow: 0px 5px 10px 2px #eaeaea;
   border-radius: 1rem;
   padding: 0.3rem 1rem 0rem 0.5rem;
   align-items: flex-end;
   justify-content: space-between;
+  background: #fff;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
 }
 .form-menu .starter__details {
   display: flex;
@@ -177,11 +224,14 @@ main {
   position: relative;
   display: flex;
   flex-direction: row;
-  box-shadow: 0px 10px 20px -2px rgba(53, 53, 53, 0.6);
+  box-shadow: 0px 5px 10px 2px #eaeaea;
   border-radius: 1rem;
   padding: 0.3rem 1rem 0rem 0.5rem;
   align-items: flex-end;
   justify-content: space-between;
+  background: #fff;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
 }
 .form-menu .dish__details {
   display: flex;
@@ -197,11 +247,14 @@ main {
   position: relative;
   display: flex;
   flex-direction: row;
-  box-shadow: 0px 10px 20px -2px rgba(53, 53, 53, 0.6);
+  box-shadow: 0px 5px 10px 2px #eaeaea;
   border-radius: 1rem;
   padding: 0.3rem 1rem 0rem 0.5rem;
   align-items: flex-end;
   justify-content: space-between;
+  background: #fff;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
 }
 .form-menu .dessert__details {
   display: flex;
@@ -221,10 +274,9 @@ main {
 .form-menu span {
   display: none;
   background: #99E2D0;
-  padding: 1rem;
-  border-radius: 0 1.5rem 1.5rem 0;
+  padding: 1.5rem;
+  border-radius: 0 1rem 1rem 0;
   color: #fff;
-  height: 50%;
 }
 .form-menu span .circle-checked {
   vertical-align: middle;
@@ -234,10 +286,15 @@ main {
 
 /*checkbox-animation sans animation*/
 .starter__menu:active, .dish__menu:active, .dessert__menu:active {
-  padding: 0.3rem 0rem 0rem 0.5rem;
+  padding: 0rem 0rem 0rem 0.5rem;
 }
 .starter__menu:active span, .dish__menu:active span, .dessert__menu:active span {
   display: block;
+}
+
+.button-primary {
+  width: 13rem;
+  margin: 0rem auto;
 }
 
 /*# sourceMappingURL=page-menu.css.map */
