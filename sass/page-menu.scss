@@ -49,38 +49,53 @@ main{
 @mixin checked  {
     display:block;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 4ad41e64ecf984501eba9b15be33ce211a391e63
+
+
+
 $menu-details: 
     starter,
     dish,
     dessert;
 
- @mixin menu-details ($map:$menu-details) {
-    @each $key in $map {
-        & .#{$key}__menu{
+ @mixin menu-details ($list:$menu-details) {
+    @each $value in $list {
+        & .#{$value}__menu{
             position:relative;
     @include flexbox-direction(row);
+    @include box-shadow;
+    border-radius:1.5rem;
+    
     align-items: flex-end;
     justify-content: space-between;
         }
-<<<<<<< HEAD
-    }
+        .#{$value}__details {
+            @include flexbox-direction;
+    line-height: 0.5rem;
 
- }   
-=======
->>>>>>> parent of 4ad41e6 (test:css loop @each menu details)
-=======
+        }
+        .#{$value}__price {
+            @include flexbox-direction;
+    line-height: 0.5rem;
 
+        }
 
     }
     
-   
 
- }   
->>>>>>> 4ad41e64ecf984501eba9b15be33ce211a391e63
+ } 
+ 
+ @mixin form-menu-fieldset($list:$menu-details) {
+    @each $value in $list {
+        &__#{$value}{
+            position: relative;
+            @include flexbox-direction;
+            height: 50rem;
+            justify-content: space-around;
+            
+        }
+    }
+    
+}
 
 .form-menu {
     @include flexbox-direction;
@@ -88,10 +103,12 @@ $menu-details:
     height: 70rem;
     appearance: none;
     padding-bottom: 5rem;
+    @include form-menu-fieldset;
     fieldset {
         /* border:none;*/
         position: relative;
         @include flexbox-direction;
+
      }
     legend {
         &::after {
@@ -108,54 +125,42 @@ $menu-details:
         }
         
     }
-   /* .starter__menu,.dish__menu,.dessert__menu{
-        /*position:relative;
-        @include flexbox-direction(row);
-        align-items: flex-end;
-        justify-content: space-between;*/
-        
-            @include menu-details;
-            &__details{
-            @include flexbox-direction;
-            line-height: 0.5rem;
-            }
-            &__price{
-                line-height: 0.5rem;;
-            }
-        
-        
-        input[type=checkbox]{
-            position:absolute;
-            height:0;
-            width:0;
-           
-           
-        }
-        span{
-            display:none;
-            background:$color-tertiary;
-            padding:2rem;
-        }
-        
-        &:active{
-            span {
-                display:block;
-                border-radius:0 1.5rem 1.5rem 0;
-                color:$color-white;
-                .circle-checked{
-                    font-size:1.5rem;
-                }
-                
-    
-            }
-           
-            
-        }
-       
-     
-       
+    @include menu-details;
     
 
+    
+        
+    input[type=checkbox]{
+        position:absolute;
+        height:0;
+        width:0;
+       
+       
+    }
+    span{
+        display:none;
+        background:$color-tertiary;
+        padding:2rem;
+    }
+    
+    &:active{
+        span {
+            display:block;
+            border-radius:0 1.5rem 1.5rem 0;
+            color:$color-white;
+            .circle-checked{
+                font-size:1.5rem;
+            }
+            
+
+        }
+       
+        
+    }
+        
+         
+        
+       
    
 }
 
