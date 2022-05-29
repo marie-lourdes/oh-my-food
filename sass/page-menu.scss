@@ -49,26 +49,53 @@ main{
 @mixin checked  {
     display:block;
     }
+
+
+
 $menu-details: 
     starter,
     dish,
     dessert;
 
- @mixin menu-details ($map:$menu-details) {
-    @each $key in $map {
-        & .#{$key}__menu{
+ @mixin menu-details ($list: $menu-details) {
+    @each $value in $list {
+        & .#{$value}__menu {
             position:relative;
     @include flexbox-direction(row);
+    @include box-shadow;
+    border-radius: 1rem;
+    padding: 0.3rem 1rem 0rem 0.5rem;
     align-items: flex-end;
     justify-content: space-between;
         }
+        .#{$value}__details {
+            @include flexbox-direction;
+            line-height: 0.5rem;
 
+        }
+        .#{$value}__price {
+            @include flexbox-direction;
+            line-height: 0.5rem;
+
+        }
 
     }
     
-   
 
- }   
+ } 
+ 
+ @mixin form-menu-fieldset($list: $menu-details) {
+    @each $value in $list {
+        &__#{$value} {
+            position: relative;
+            @include flexbox-direction;
+            height: 50rem;
+            justify-content: space-around;
+            
+        }
+    }
+    
+}
 
 .form-menu {
     @include flexbox-direction;
@@ -76,11 +103,8 @@ $menu-details:
     height: 70rem;
     appearance: none;
     padding-bottom: 5rem;
-    fieldset {
-        /* border:none;*/
-        position: relative;
-        @include flexbox-direction;
-     }
+    @include form-menu-fieldset;
+   
     legend {
         &::after {
             content: "";
@@ -96,54 +120,50 @@ $menu-details:
         }
         
     }
-   /* .starter__menu,.dish__menu,.dessert__menu{
-        /*position:relative;
-        @include flexbox-direction(row);
-        align-items: flex-end;
-        justify-content: space-between;*/
-        
-            @include menu-details;
-            &__details{
-            @include flexbox-direction;
-            line-height: 0.5rem;
-            }
-            &__price{
-                line-height: 0.5rem;;
-            }
-        
-        
-        input[type=checkbox]{
-            position:absolute;
-            height:0;
-            width:0;
-           
-           
-        }
-        span{
-            display:none;
-            background:$color-tertiary;
-            padding:2rem;
-        }
-        
-        &:active{
-            span {
-                display:block;
-                border-radius:0 1.5rem 1.5rem 0;
-                color:$color-white;
-                .circle-checked{
-                    font-size:1.5rem;
-                }
-                
-    
-            }
-           
-            
-        }
-       
-     
-       
+    @include menu-details;
     
 
+    
+        
+    input[type=checkbox] {
+        position: absolute;
+        height: 0;
+        width: 0;
+       
+       
+    }
+    span{
+        display: none;
+        background: $color-tertiary;
+        padding:1rem;
+        
+        height: 50%;
+        & .circle-checked {
+            vertical-align: middle;
+            height: 40%;
+           
+        }
+
+    }
+    
+    &:active {
+        span {
+            display: block;
+            border-radius: 0 1.5rem 1.5rem 0;
+            color: $color-white;
+            .circle-checked {
+                font-size: 1.5rem;
+            }
+            
+
+        }
+       
+        
+    }
+        
+         
+        
+       
    
 }
 
