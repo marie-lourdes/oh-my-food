@@ -36,6 +36,7 @@ main{
     position: relative;
     top: 12.8rem;
     margin-bottom: 12.7rem;
+    padding: 0 1rem;
     &__heading {
         font-family: "Shrikhand", cursive, arial, sans-serif;
         @include flexbox-direction(row);
@@ -64,6 +65,8 @@ $menu-details:
             align-items: flex-end;
             justify-content: space-between;
             background:$color-white;
+            margin-bottom:1rem;
+            box-sizing:border-box;
         }
         .#{$value}__details {
             @include flexbox-direction;
@@ -82,7 +85,7 @@ $menu-details:
         &__#{$value} {
             position: relative;
             @include flexbox-direction;
-            height: 50rem;
+           
             justify-content: space-around;          
         }
     }   
@@ -91,7 +94,7 @@ $menu-details:
 .form-menu {
     @include flexbox-direction;
     justify-content: space-between;
-    height: 70rem;
+    height: 65rem;
     appearance: none;
     padding-bottom: 5rem;
     @include form-menu-fieldset;
@@ -123,10 +126,10 @@ $menu-details:
     span {
         display: none;
         background: $color-tertiary;
-        padding: 1rem;
+        padding: 1.5rem;
         border-radius: 0 1rem 1rem 0;
         color: $color-white;
-        height: 50%;
+       
         & .circle-checked {
             vertical-align: middle;
             height: 40%;
@@ -143,6 +146,11 @@ $menu-details:
         display: block;
     }
                   
+}
+
+.button-primary {
+    width:13rem;
+    margin: 0rem auto;
 }
 
 

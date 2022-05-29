@@ -101,6 +101,7 @@ main {
   position: relative;
   top: 12.8rem;
   margin-bottom: 12.7rem;
+  padding: 0 1rem;
 }
 .menu__heading {
   font-family: "Shrikhand", cursive, arial, sans-serif;
@@ -115,7 +116,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 70rem;
+  height: 65rem;
   appearance: none;
   padding-bottom: 5rem;
   /*span:checkbox-animation*/
@@ -124,21 +125,18 @@ main {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 50rem;
   justify-content: space-around;
 }
 .form-menu__dish {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 50rem;
   justify-content: space-around;
 }
 .form-menu__dessert {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 50rem;
   justify-content: space-around;
 }
 .form-menu legend::after {
@@ -163,6 +161,8 @@ main {
   align-items: flex-end;
   justify-content: space-between;
   background: #fff;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
 }
 .form-menu .starter__details {
   display: flex;
@@ -184,6 +184,8 @@ main {
   align-items: flex-end;
   justify-content: space-between;
   background: #fff;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
 }
 .form-menu .dish__details {
   display: flex;
@@ -205,6 +207,8 @@ main {
   align-items: flex-end;
   justify-content: space-between;
   background: #fff;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
 }
 .form-menu .dessert__details {
   display: flex;
@@ -224,10 +228,9 @@ main {
 .form-menu span {
   display: none;
   background: #99E2D0;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 0 1rem 1rem 0;
   color: #fff;
-  height: 50%;
 }
 .form-menu span .circle-checked {
   vertical-align: middle;
@@ -241,6 +244,11 @@ main {
 }
 .starter__menu:active span, .dish__menu:active span, .dessert__menu:active span {
   display: block;
+}
+
+.button-primary {
+  width: 13rem;
+  margin: 0rem auto;
 }
 
 /*# sourceMappingURL=page-menu.css.map */
