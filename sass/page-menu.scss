@@ -49,6 +49,25 @@ main{
 @mixin checked  {
     display:block;
     }
+<<<<<<< HEAD
+$menu-details: 
+    starter,
+    dish,
+    dessert;
+
+ @mixin menu-details ($map:$menu-details) {
+    @each $key in $map {
+        & .#{$key}__menu{
+            position:relative;
+    @include flexbox-direction(row);
+    align-items: flex-end;
+    justify-content: space-between;
+        }
+    }
+
+ }   
+=======
+>>>>>>> parent of 4ad41e6 (test:css loop @each menu details)
 
 .form-menu {
     @include flexbox-direction;
