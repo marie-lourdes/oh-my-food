@@ -116,7 +116,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 65rem;
+  height: 75rem;
   appearance: none;
   padding-bottom: 5rem;
   /*span:checkbox-animation*/
