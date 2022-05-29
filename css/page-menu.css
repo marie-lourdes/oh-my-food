@@ -118,6 +118,11 @@ main {
   height: 70rem;
   appearance: none;
   padding-bottom: 5rem;
+  /* .starter__menu,.dish__menu,.dessert__menu{
+       /*position:relative;
+       @include flexbox-direction(row);
+       align-items: flex-end;
+       justify-content: space-between;*/
 }
 .form-menu fieldset {
   /* border:none;*/
@@ -137,29 +142,51 @@ main {
   font-size: 1rem;
   font-weight: 500;
 }
-.form-menu .starter__menu, .form-menu .dish__menu, .form-menu .dessert__menu {
+.form-menu .starter__menu {
   position: relative;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   justify-content: space-between;
 }
-.form-menu .starter__menu input[type=checkbox], .form-menu .dish__menu input[type=checkbox], .form-menu .dessert__menu input[type=checkbox] {
+.form-menu .dish__menu {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.form-menu .dessert__menu {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.form-menu__details {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.5rem;
+}
+.form-menu__price {
+  line-height: 0.5rem;
+}
+.form-menu input[type=checkbox] {
   position: absolute;
   height: 0;
   width: 0;
 }
-.form-menu .starter__menu span, .form-menu .dish__menu span, .form-menu .dessert__menu span {
+.form-menu span {
   display: none;
   background: #99E2D0;
   padding: 2rem;
 }
-.form-menu .starter__menu:active span, .form-menu .dish__menu:active span, .form-menu .dessert__menu:active span {
+.form-menu:active span {
   display: block;
   border-radius: 0 1.5rem 1.5rem 0;
   color: #fff;
 }
-.form-menu .starter__menu:active span .circle-checked, .form-menu .dish__menu:active span .circle-checked, .form-menu .dessert__menu:active span .circle-checked {
+.form-menu:active span .circle-checked {
   font-size: 1.5rem;
 }
 

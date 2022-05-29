@@ -49,6 +49,26 @@ main{
 @mixin checked  {
     display:block;
     }
+$menu-details: 
+    starter,
+    dish,
+    dessert;
+
+ @mixin menu-details ($map:$menu-details) {
+    @each $key in $map {
+        & .#{$key}__menu{
+            position:relative;
+    @include flexbox-direction(row);
+    align-items: flex-end;
+    justify-content: space-between;
+        }
+
+
+    }
+    
+   
+
+ }   
 
 .form-menu {
     @include flexbox-direction;
@@ -76,11 +96,22 @@ main{
         }
         
     }
-    .starter__menu,.dish__menu,.dessert__menu{
-        position:relative;
+   /* .starter__menu,.dish__menu,.dessert__menu{
+        /*position:relative;
         @include flexbox-direction(row);
         align-items: flex-end;
-        justify-content: space-between;
+        justify-content: space-between;*/
+        
+            @include menu-details;
+            &__details{
+            @include flexbox-direction;
+            line-height: 0.5rem;
+            }
+            &__price{
+                line-height: 0.5rem;;
+            }
+        
+        
         input[type=checkbox]{
             position:absolute;
             height:0;
@@ -111,7 +142,7 @@ main{
        
      
        
-    }
+    
 
    
 }
