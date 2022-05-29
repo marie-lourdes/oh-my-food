@@ -63,8 +63,8 @@ $menu-details:
             position:relative;
     @include flexbox-direction(row);
     @include box-shadow;
-    border-radius: 1.5rem;
-    
+    border-radius: 1rem;
+    padding: 0.3rem 1rem 0rem 0.5rem;
     align-items: flex-end;
     justify-content: space-between;
         }
