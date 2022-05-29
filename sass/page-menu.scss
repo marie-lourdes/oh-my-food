@@ -15,21 +15,19 @@ main{
     width: 100%;
     box-sizing: border-box;
 
-        img {
-            width:100%;
-            object-fit: cover;
-            position: absolute;
-            z-index: -1;
-            min-height: 17.2rem;
-            &.img--max-height {
-                max-height: 17.2rem;
-            }
-            
-        }
-    
+    img {
+        width:100%;
+        object-fit: cover;
+        position: absolute;
+         z-index: -1;
+        min-height: 17.2rem;
+        &.img--max-height {
+             max-height: 17.2rem;
+        }          
+     } 
 }
 
-.menu{
+.menu {
     @include flexbox-direction;
     background: map-get($color-gray, main-background);
     border-radius: 2.5rem 2.5rem 0 0;
@@ -50,8 +48,6 @@ main{
     display:block;
     }
 
-
-
 $menu-details: 
     starter,
     dish,
@@ -61,12 +57,12 @@ $menu-details:
     @each $value in $list {
         & .#{$value}__menu {
             position:relative;
-    @include flexbox-direction(row);
-    @include box-shadow;
-    border-radius: 1rem;
-    padding: 0.3rem 1rem 0rem 0.5rem;
-    align-items: flex-end;
-    justify-content: space-between;
+            @include flexbox-direction(row);
+            @include box-shadow;
+            border-radius: 1rem;
+            padding: 0.3rem 1rem 0rem 0.5rem;
+            align-items: flex-end;
+            justify-content: space-between;
         }
         .#{$value}__details {
             @include flexbox-direction;
@@ -76,12 +72,8 @@ $menu-details:
         .#{$value}__price {
             @include flexbox-direction;
             line-height: 0.5rem;
-
         }
-
-    }
-    
-
+    }  
  } 
  
  @mixin form-menu-fieldset($list: $menu-details) {
@@ -90,11 +82,9 @@ $menu-details:
             position: relative;
             @include flexbox-direction;
             height: 50rem;
-            justify-content: space-around;
-            
+            justify-content: space-around;          
         }
-    }
-    
+    }   
 }
 
 .form-menu {
@@ -104,7 +94,6 @@ $menu-details:
     appearance: none;
     padding-bottom: 5rem;
     @include form-menu-fieldset;
-   
     legend {
         &::after {
             content: "";
@@ -114,17 +103,12 @@ $menu-details:
             position: absolute;
             top: 2rem;
         }
-        h2{
+        h2 {
             font-size: 1rem;
             font-weight: 500;
-        }
-        
+        }       
     }
     @include menu-details;
-    
-
-    
-        
     input[type=checkbox] {
         position: absolute;
         height: 0;
@@ -132,39 +116,32 @@ $menu-details:
        
        
     }
-    span{
+
+    /*span:checkbox-animation*/
+
+    span {
         display: none;
         background: $color-tertiary;
-        padding:1rem;
-        
+        padding: 1rem;
+        border-radius: 0 1.5rem 1.5rem 0;
+        color: $color-white;
         height: 50%;
         & .circle-checked {
             vertical-align: middle;
             height: 40%;
-           
+            font-size: 1.5rem;  
         }
+    }      
+}
 
-    }
-    
-    &:active {
-        span {
-            display: block;
-            border-radius: 0 1.5rem 1.5rem 0;
-            color: $color-white;
-            .circle-checked {
-                font-size: 1.5rem;
-            }
-            
+/*checkbox-animation sans animation*/
 
-        }
-       
-        
+ .starter__menu:active, .dish__menu:active, .dessert__menu:active {
+    padding: 0.3rem 0rem 0rem 0.5rem;
+    span {
+        display: block;
     }
-        
-         
-        
-       
-   
+                  
 }
 
 

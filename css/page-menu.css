@@ -118,6 +118,7 @@ main {
   height: 70rem;
   appearance: none;
   padding-bottom: 5rem;
+  /*span:checkbox-animation*/
 }
 .form-menu__starter {
   position: relative;
@@ -221,19 +222,22 @@ main {
   display: none;
   background: #99E2D0;
   padding: 1rem;
+  border-radius: 0 1.5rem 1.5rem 0;
+  color: #fff;
   height: 50%;
 }
 .form-menu span .circle-checked {
   vertical-align: middle;
   height: 40%;
-}
-.form-menu:active span {
-  display: block;
-  border-radius: 0 1.5rem 1.5rem 0;
-  color: #fff;
-}
-.form-menu:active span .circle-checked {
   font-size: 1.5rem;
+}
+
+/*checkbox-animation sans animation*/
+.starter__menu:active, .dish__menu:active, .dessert__menu:active {
+  padding: 0.3rem 0rem 0rem 0.5rem;
+}
+.starter__menu:active span, .dish__menu:active span, .dessert__menu:active span {
+  display: block;
 }
 
 /*# sourceMappingURL=page-menu.css.map */
