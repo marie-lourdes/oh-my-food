@@ -58,11 +58,12 @@ $menu-details:
         & .#{$value}__menu {
             position:relative;
             @include flexbox-direction(row);
-            @include box-shadow;
+            @include box-shadow ($color-shadow: map-get($color-gray, background-search-bar), $offset-y: 5px, $blur-radius: 10px, $spread-radius: 2px);
             border-radius: 1rem;
             padding: 0.3rem 1rem 0rem 0.5rem;
             align-items: flex-end;
             justify-content: space-between;
+            background:$color-white;
         }
         .#{$value}__details {
             @include flexbox-direction;
@@ -123,7 +124,7 @@ $menu-details:
         display: none;
         background: $color-tertiary;
         padding: 1rem;
-        border-radius: 0 1.5rem 1.5rem 0;
+        border-radius: 0 1rem 1rem 0;
         color: $color-white;
         height: 50%;
         & .circle-checked {
@@ -137,7 +138,7 @@ $menu-details:
 /*checkbox-animation sans animation*/
 
  .starter__menu:active, .dish__menu:active, .dessert__menu:active {
-    padding: 0.3rem 0rem 0rem 0.5rem;
+    padding: 0rem 0rem 0rem 0.5rem;
     span {
         display: block;
     }
