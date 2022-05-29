@@ -227,12 +227,14 @@ main {
   vertical-align: middle;
   height: 40%;
 }
-.form-menu:active span {
+
+/*checkbox-animation sans animation*/
+.starter__menu:active span, .dish__menu:active span, .dessert__menu:active span {
   display: block;
   border-radius: 0 1.5rem 1.5rem 0;
   color: #fff;
 }
-.form-menu:active span .circle-checked {
+.starter__menu:active span .circle-checked, .dish__menu:active span .circle-checked, .dessert__menu:active span .circle-checked {
   font-size: 1.5rem;
 }
 
