@@ -211,6 +211,14 @@ main {
   box-sizing: border-box;
   cursor: pointer;
 }
+.form-menu label {
+  white-space: nowrap;
+  appearance: none;
+  cursor: pointer;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 .form-menu .starter__details {
   display: flex;
   flex-direction: column;
@@ -235,6 +243,14 @@ main {
   box-sizing: border-box;
   cursor: pointer;
 }
+.form-menu label {
+  white-space: nowrap;
+  appearance: none;
+  cursor: pointer;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 .form-menu .dish__details {
   display: flex;
   flex-direction: column;
@@ -258,6 +274,14 @@ main {
   margin-bottom: 1rem;
   box-sizing: border-box;
   cursor: pointer;
+}
+.form-menu label {
+  white-space: nowrap;
+  appearance: none;
+  cursor: pointer;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .form-menu .dessert__details {
   display: flex;
@@ -294,7 +318,7 @@ main {
 }
 .starter__menu:hover span, .dish__menu:active span, .dessert__menu:active span {
   display: block;
-  animation: checkbox-animation 100ms ease-in;
+  animation: checkbox-animation 1s ease-in;
 }
 
 @keyframes checkbox-animation {

@@ -64,11 +64,19 @@ $menu-details:
             border-radius: 1rem;
             padding: 0.3rem 1rem 0rem 0.5rem;
             align-items: flex-end;
-            justify-content: space-between;
+           justify-content: space-between;
             background:$color-white;
             margin-bottom:1rem;
             box-sizing:border-box;
             cursor:pointer;
+        }
+        label{
+            white-space:nowrap;
+            appearance:none;
+            cursor:pointer;
+            display:block;
+            text-overflow:ellipsis;
+            overflow:hidden;
         }
         .#{$value}__details {
             @include flexbox-direction;
@@ -126,11 +134,13 @@ $menu-details:
     /*span:checkbox-animation*/
 
     span {
-        display: none;
+        display:none;
         background: $color-tertiary;
         padding: 1.5rem;
         border-radius: 0 1rem 1rem 0;
         color: $color-white;
+       
+
         
        
         & .circle-checked {
@@ -147,8 +157,8 @@ $menu-details:
     padding: 0rem 0rem 0rem 0.5rem;
     overflow:hidden;
     span {
-        display: block;
-        animation: checkbox-animation 100ms ease-in;
+        display:block;
+        animation: checkbox-animation 1s ease-in;
         
 
     }
