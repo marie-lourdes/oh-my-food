@@ -68,6 +68,7 @@ $menu-details:
             background:$color-white;
             margin-bottom:1rem;
             box-sizing:border-box;
+            cursor:pointer;
         }
         .#{$value}__details {
             @include flexbox-direction;
@@ -130,6 +131,7 @@ $menu-details:
         padding: 1.5rem;
         border-radius: 0 1rem 1rem 0;
         color: $color-white;
+        
        
         & .circle-checked {
             vertical-align: middle;
@@ -141,12 +143,28 @@ $menu-details:
 
 /*checkbox-animation sans animation*/
 
- .starter__menu:active, .dish__menu:active, .dessert__menu:active {
+ .starter__menu:hover, .dish__menu:active, .dessert__menu:active {
     padding: 0rem 0rem 0rem 0.5rem;
+    overflow:hidden;
     span {
         display: block;
+        animation: checkbox-animation 100ms ease-in;
+        
+
     }
+
+  
                   
+}
+@keyframes checkbox-animation {
+    0%{
+        transform:translateX(9999px);
+       
+
+    }
+    100%{
+
+    }
 }
 
 .button-primary {

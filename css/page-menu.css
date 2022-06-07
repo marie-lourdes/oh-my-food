@@ -209,6 +209,7 @@ main {
   background: #fff;
   margin-bottom: 1rem;
   box-sizing: border-box;
+  cursor: pointer;
 }
 .form-menu .starter__details {
   display: flex;
@@ -232,6 +233,7 @@ main {
   background: #fff;
   margin-bottom: 1rem;
   box-sizing: border-box;
+  cursor: pointer;
 }
 .form-menu .dish__details {
   display: flex;
@@ -255,6 +257,7 @@ main {
   background: #fff;
   margin-bottom: 1rem;
   box-sizing: border-box;
+  cursor: pointer;
 }
 .form-menu .dessert__details {
   display: flex;
@@ -285,13 +288,20 @@ main {
 }
 
 /*checkbox-animation sans animation*/
-.starter__menu:active, .dish__menu:active, .dessert__menu:active {
+.starter__menu:hover, .dish__menu:active, .dessert__menu:active {
   padding: 0rem 0rem 0rem 0.5rem;
+  overflow: hidden;
 }
-.starter__menu:active span, .dish__menu:active span, .dessert__menu:active span {
+.starter__menu:hover span, .dish__menu:active span, .dessert__menu:active span {
   display: block;
+  animation: checkbox-animation 100ms ease-in;
 }
 
+@keyframes checkbox-animation {
+  0% {
+    transform: translateX(9999px);
+  }
+}
 .button-primary {
   width: 13rem;
   margin: 0rem auto;
