@@ -71,12 +71,16 @@ $menu-details:
             cursor:pointer;
         }
         label{
-            white-space:nowrap;
+            
             appearance:none;
             cursor:pointer;
-            display:block;
-            text-overflow:ellipsis;
+            
+            
+            & > p{
+                white-space:nowrap;
+                text-overflow:ellipsis;
             overflow:hidden;
+            }
         }
         .#{$value}__details {
             @include flexbox-direction;
@@ -86,6 +90,7 @@ $menu-details:
         .#{$value}__price {
             @include flexbox-direction;
             line-height: 0.5rem;
+            transform:translateX(0);
         }
     }  
  } 
@@ -140,6 +145,7 @@ $menu-details:
         border-radius: 0 1rem 1rem 0;
         color: $color-white;
        
+       
 
         
        
@@ -158,22 +164,28 @@ $menu-details:
     overflow:hidden;
     span {
         display:block;
-        animation: checkbox-animation 1s ease-in;
+        animation: checkbox-animation 1s ease-in-out  backwards;
         
 
     }
+    .starter__price,.dish__price{
+        animation: checkbox-animation 1s  ease-in-out ;
+    }
+   /* p{
+        width ellipsis?
+    }*/
 
   
                   
 }
 @keyframes checkbox-animation {
     0%{
-        transform:translateX(9999px);
        
+        transform:translateX(9999px);
 
     }
     100%{
-
+  transform:translate(0);
     }
 }
 
