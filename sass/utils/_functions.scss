@@ -2,7 +2,7 @@
 /*search-bar*/
 
 @function darken-opacity-search-bar($color: $color1){
-    $color1: darken($color, 15%), rgb($color ,0.4);;
+    $color1: darken($color, 15%), rgb($color ,0.4);
     @return $color1; 
  }
 
