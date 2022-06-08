@@ -70,18 +70,7 @@ $menu-details:
             box-sizing:border-box;
             cursor:pointer;
         }
-        label{
-            
-            appearance:none;
-            cursor:pointer;
-            
-            
-            & > p{
-                white-space:nowrap;
-                font-size:0.9rem;
-                
-            }
-        }
+       
         .#{$value}__details {
             @include flexbox-direction;
             line-height: 0.4rem;
@@ -95,7 +84,13 @@ $menu-details:
             
             line-height: 0.3rem;
             text-align:right;
-           
+
+            position:absolute;
+            
+            bottom:-1px;
+            
+          right:20px;
+           z-index:1;
             
            
         }
@@ -144,46 +139,94 @@ $menu-details:
        
        
     }
+    
 
-    /*span:checkbox-animation*/
 
-    .checkbox-animation {
-        display:none;
-        background: $color-tertiary;
-        padding: 1.5rem;
-        border-radius: 0 1rem 1rem 0;
-        color: $color-white;
-       
-       
-
-        
-       
-        & .circle-checked {
-            vertical-align: middle;
-            height: 40%;
-            font-size: 1.5rem;  
-        }
-    } 
+    
     &.form-menu--note-enchantee {
         padding-bottom: 15rem;
     }    
 }
 
-/*checkbox-animation sans animation*/
+/*checkbox-animation*/
+label{
+            
+    appearance:none;
+    cursor:pointer;
+    
+    
+    & > p{
+        white-space:nowrap;
+        font-size:0.9rem;
+        transform-origin: left;
+        transition:transform 1s;
+        
+    }
+}
+
+.starter__price, .dish__price, .dessert__price{
+    transform-origin:right;
+    transform:translateX(0);
+    transition: transform  3s;
+    
+}
+.checkbox-animation {
+  /*  display:none;*/
+    background: $color-tertiary;
+    padding: 1.5rem;
+    border-radius: 0 1rem 1rem 0;
+    color: $color-white;
+    
+    transform-origin:right;
+    transform:scaleX(0);
+    transition: transform 3s;
+
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    z-index:0;
+    
+   
+    
+    
+   
+   
+
+    
+   
+    & .circle-checked {
+        vertical-align: middle;
+        height: 40%;
+        font-size: 1.5rem;  
+        transform: rotate(0);
+        transition: transform 3s;
+        display:block;
+    }
+} 
+
 
  .starter__menu:active, .dish__menu:active, .dessert__menu:active {
     padding: 0rem 0rem 0rem 0.5rem;
     overflow: hidden;
+   
     .checkbox-animation {
-        display: block;
-        animation: checkbox-animation 1s ease-in-out  backwards;
-        
+         display:flex; 
+         transform:scaleX(1);
+         .circle-checked{
+             transform:rotate(360deg);
+         }
+         
+         
+       
+     /*   animation: checkbox-animation 3s 1s  ;*/
 
     }
     .starter__price, .dish__price, .dessert__price{
-        animation: checkbox-animation 1s  ease-in-out ;
+       /* animation: checkbox-animation 1s  ease-in-out ;*/
         margin-right: 1rem;
         margin-left: -2rem;
+        transform:translateX(-55px);
     }
     label{
 
@@ -193,10 +236,10 @@ $menu-details:
             overflow :hidden;
             transition: text-overflow 1s;
             line-height: 1rem;
-           width: 45%;
-           transform-origin: left;
-           transition:transform 1s;
-           transform: scaleX(0.9);
+            width: 45%;
+            transform-origin: left;
+            transition:transform 3s;
+            transform: scaleX(0.9);
            
     
         }
@@ -270,16 +313,20 @@ $menu-details:
   
                   
 }
-@keyframes checkbox-animation {
+/*@keyframes checkbox-animation {
     0%{
-       
-        transform:translateX(9999px);
+       transform:scaleX(0);
+        /*transform:translateX(9999px);
+        
 
     }
+    
     100%{
-        transform:translate(0);
+       /* transform:translateX(0px);
+       transform:scaleX(1);
+        
     }
-}
+}*/
 
 .button-primary {
     width: 13rem;
