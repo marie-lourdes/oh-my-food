@@ -314,13 +314,14 @@ label > p {
   white-space: nowrap;
   font-size: 0.9rem;
   transform-origin: left;
-  transition: transform 1s;
+  transition: transform 1s linear;
+  transition: transform 1s linear, text-overflow 1s linear;
 }
 
 .starter__price, .dish__price, .dessert__price {
   transform-origin: right;
   transform: translateX(0);
-  transition: transform 3s;
+  transition: transform 1s linear;
 }
 
 .checkbox-animation {
@@ -331,7 +332,7 @@ label > p {
   color: #fff;
   transform-origin: right;
   transform: scaleX(0);
-  transition: transform 3s;
+  transition: transform 1s linear;
   position: absolute;
   top: 0;
   right: 0;
@@ -342,7 +343,7 @@ label > p {
   height: 40%;
   font-size: 1.5rem;
   transform: rotate(0);
-  transition: transform 3s;
+  transition: transform 1s;
   display: block;
   position: absolute;
   top: 20px;
@@ -376,11 +377,8 @@ label > p {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  transition: text-overflow 1s;
   line-height: 1rem;
   width: 45%;
-  transform-origin: left;
-  transition: transform 3s;
   transform: scaleX(0.9);
 }
 .starter__menu:active .starter--duck, .dish__menu:active .starter--duck, .dessert__menu:active .starter--duck {
