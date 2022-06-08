@@ -78,8 +78,8 @@ $menu-details:
             
             & > p{
                 white-space:nowrap;
-            font-size:0.9rem;
-            width:45%;
+                font-size:0.9rem;
+                
             }
         }
         .#{$value}__details {
@@ -147,7 +147,7 @@ $menu-details:
 
     /*span:checkbox-animation*/
 
-    span {
+    .checkbox-animation {
         display:none;
         background: $color-tertiary;
         padding: 1.5rem;
@@ -170,30 +170,58 @@ $menu-details:
 
  .starter__menu:active, .dish__menu:active, .dessert__menu:active {
     padding: 0rem 0rem 0rem 0.5rem;
-    overflow:hidden;
-    span {
-        display:block;
+    overflow: hidden;
+    .checkbox-animation {
+        display: block;
         animation: checkbox-animation 1s ease-in-out  backwards;
         
 
     }
-    .starter__price,.dish__price,.dessert__price{
+    .starter__price, .dish__price, .dessert__price{
         animation: checkbox-animation 1s  ease-in-out ;
         margin-right: 1rem;
         margin-left: -2rem;
     }
-    p{
-        white-space:nowrap;
-                text-overflow:ellipsis;
-            overflow:hidden;
+    label{
+
+        p{
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow :hidden;
             transition: text-overflow 1s;
             line-height: 1rem;
+           width: 45%;
+           transform-origin: left;
+           transition:transform 1s;
+           transform: scaleX(0.9);
+           
+    
+        }
+        /* paragraph width-ellipsis: " menu palette du goût"*/
+        
+        .starter--duck {
+            width: 57%;
+        }
+        .starter--egg {
+            width: 90%;
+        } 
+        .starter--snail,.dish--turbot, .dessert--brest {
+            width: 100%;
+        }
+        .dessert--macaroon {
+            width: 58%;
+        }
+        .dessert--mousse {
+            width: 60%;
+        }
+
+        /* "french menu*/
+        
 
     }
-    .starter__details,.dish__details,.dessert__details{
-        transform-origin:left;
-        transform: scaleX(0.9);
-        transition:transform 1s;
+  
+    .starter__details, .dish__details, .dessert__details {
+     
         line-height:0.07rem;
 
     }
@@ -208,12 +236,12 @@ $menu-details:
 
     }
     100%{
-  transform:translate(0);
+        transform:translate(0);
     }
 }
 
 .button-primary {
-    width:13rem;
+    width: 13rem;
     margin: 0rem auto;
 }
 

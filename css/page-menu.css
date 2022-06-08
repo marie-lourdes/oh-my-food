@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* color*/
 /*search-bar*/
 /*gallery-restaurants*/
@@ -224,7 +225,6 @@ main {
 .form-menu label > p {
   white-space: nowrap;
   font-size: 0.9rem;
-  width: 45%;
 }
 .form-menu .starter__details {
   display: flex;
@@ -260,7 +260,6 @@ main {
 .form-menu label > p {
   white-space: nowrap;
   font-size: 0.9rem;
-  width: 45%;
 }
 .form-menu .dish__details {
   display: flex;
@@ -296,7 +295,6 @@ main {
 .form-menu label > p {
   white-space: nowrap;
   font-size: 0.9rem;
-  width: 45%;
 }
 .form-menu .dessert__details {
   display: flex;
@@ -316,14 +314,14 @@ main {
   height: 0;
   width: 0;
 }
-.form-menu span {
+.form-menu .checkbox-animation {
   display: none;
   background: #99E2D0;
   padding: 1.5rem;
   border-radius: 0 1rem 1rem 0;
   color: #fff;
 }
-.form-menu span .circle-checked {
+.form-menu .checkbox-animation .circle-checked {
   vertical-align: middle;
   height: 40%;
   font-size: 1.5rem;
@@ -334,7 +332,7 @@ main {
   padding: 0rem 0rem 0rem 0.5rem;
   overflow: hidden;
 }
-.starter__menu:active span, .dish__menu:active span, .dessert__menu:active span {
+.starter__menu:active .checkbox-animation, .dish__menu:active .checkbox-animation, .dessert__menu:active .checkbox-animation {
   display: block;
   animation: checkbox-animation 1s ease-in-out backwards;
 }
@@ -343,17 +341,37 @@ main {
   margin-right: 1rem;
   margin-left: -2rem;
 }
-.starter__menu:active p, .dish__menu:active p, .dessert__menu:active p {
+.starter__menu:active label, .dish__menu:active label, .dessert__menu:active label {
+  /* paragraph width-ellipsis: " menu palette du goût"*/
+  /* "french menu*/
+}
+.starter__menu:active label p, .dish__menu:active label p, .dessert__menu:active label p {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   transition: text-overflow 1s;
   line-height: 1rem;
+  width: 45%;
+  transform-origin: left;
+  transition: transform 1s;
+  transform: scaleX(0.9);
+}
+.starter__menu:active label .starter--duck, .dish__menu:active label .starter--duck, .dessert__menu:active label .starter--duck {
+  width: 57%;
+}
+.starter__menu:active label .starter--egg, .dish__menu:active label .starter--egg, .dessert__menu:active label .starter--egg {
+  width: 90%;
+}
+.starter__menu:active label .starter--snail, .starter__menu:active label .dish--turbot, .starter__menu:active label .dessert--brest, .dish__menu:active label .starter--snail, .dish__menu:active label .dish--turbot, .dish__menu:active label .dessert--brest, .dessert__menu:active label .starter--snail, .dessert__menu:active label .dish--turbot, .dessert__menu:active label .dessert--brest {
+  width: 100%;
+}
+.starter__menu:active label .dessert--macaroon, .dish__menu:active label .dessert--macaroon, .dessert__menu:active label .dessert--macaroon {
+  width: 58%;
+}
+.starter__menu:active label .dessert--mousse, .dish__menu:active label .dessert--mousse, .dessert__menu:active label .dessert--mousse {
+  width: 60%;
 }
 .starter__menu:active .starter__details, .starter__menu:active .dish__details, .starter__menu:active .dessert__details, .dish__menu:active .starter__details, .dish__menu:active .dish__details, .dish__menu:active .dessert__details, .dessert__menu:active .starter__details, .dessert__menu:active .dish__details, .dessert__menu:active .dessert__details {
-  transform-origin: left;
-  transform: scaleX(0.9);
-  transition: transform 1s;
   line-height: 0.07rem;
 }
 
