@@ -163,7 +163,10 @@ $menu-details:
             height: 40%;
             font-size: 1.5rem;  
         }
-    }      
+    } 
+    &.form-menu--note-enchantee {
+        padding-bottom: 16rem;
+    }    
 }
 
 /*checkbox-animation sans animation*/

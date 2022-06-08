@@ -326,6 +326,9 @@ main {
   height: 40%;
   font-size: 1.5rem;
 }
+.form-menu.form-menu--note-enchantee {
+  padding-bottom: 16rem;
+}
 
 /*checkbox-animation sans animation*/
 .starter__menu:active, .dish__menu:active, .dessert__menu:active {
