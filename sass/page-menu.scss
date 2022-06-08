@@ -85,11 +85,16 @@ $menu-details:
         .#{$value}__details {
             @include flexbox-direction;
             line-height: 0.4rem;
+            white-space: nowrap;
             
 
         }
         .#{$value}__price {
             @include flexbox-direction;
+            width: 50%;
+            
+            line-height: 0.3rem;
+            text-align:right;
            
             
            
@@ -113,9 +118,9 @@ $menu-details:
 .form-menu {
     @include flexbox-direction;
     justify-content: space-between;
-    height: 70rem;
+    height: 50rem;
     appearance: none;
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
     @include form-menu-fieldset;
     legend {
         &::after {
@@ -163,7 +168,7 @@ $menu-details:
 
 /*checkbox-animation sans animation*/
 
- .starter__menu:hover, .dish__menu:active, .dessert__menu:active {
+ .starter__menu:active, .dish__menu:active, .dessert__menu:active {
     padding: 0rem 0rem 0rem 0.5rem;
     overflow:hidden;
     span {
@@ -172,8 +177,10 @@ $menu-details:
         
 
     }
-    .starter__price,.dish__price{
+    .starter__price,.dish__price,.dessert__price{
         animation: checkbox-animation 1s  ease-in-out ;
+        margin-right: 1rem;
+        margin-left: -2rem;
     }
     p{
         white-space:nowrap;
@@ -183,7 +190,7 @@ $menu-details:
             line-height: 1rem;
 
     }
-    .dish__details{
+    .starter__details,.dish__details,.dessert__details{
         transform-origin:left;
         transform: scaleX(0.9);
         transition:transform 1s;
