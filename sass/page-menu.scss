@@ -165,7 +165,7 @@ $menu-details:
         }
     } 
     &.form-menu--note-enchantee {
-        padding-bottom: 16rem;
+        padding-bottom: 15rem;
     }    
 }
 
@@ -200,6 +200,7 @@ $menu-details:
            
     
         }
+    }
         /* paragraph width-ellipsis: " menu palette du goût" */
         
         .starter--duck {
@@ -249,8 +250,16 @@ $menu-details:
             width: 65%;
         }
 
+        /* "le délice des sens */
+        .details{
+            width: 100%;
+        }
+        .dessert--tiramisu{
+            width: 60%;
+        }
 
-    }
+
+    
   
     .starter__details, .dish__details, .dessert__details {
      
