@@ -197,7 +197,7 @@ $menu-details:
            
     
         }
-        /* paragraph width-ellipsis: " menu palette du goût"*/
+        /* paragraph width-ellipsis: " menu palette du goût" */
         
         .starter--duck {
             width: 57%;
@@ -205,7 +205,9 @@ $menu-details:
         .starter--egg {
             width: 90%;
         } 
-        .starter--snail,.dish--turbot, .dessert--brest {
+        .starter--snail, 
+        .dish--turbot, 
+        .dessert--brest {
             width: 100%;
         }
         .dessert--macaroon {
@@ -215,7 +217,8 @@ $menu-details:
             width: 60%;
         }
 
-        /* "french menu*/
+        /* "french menu" */
+
         .starter--soup{
             width: 100%;
         }
@@ -224,6 +227,23 @@ $menu-details:
         }
         .dessert--blueberry, .dessert--hazelnut{
             width: 100%;
+        }
+
+        /* "la note enchantée" */
+        
+        .starter--ravioli{
+            width: 51%;
+        }
+        .starter--blini,
+        .starter--marinated, 
+        .starter--jam,
+        .dish--celery,
+        .dish--sweetpotatoes,
+        .dessert--baba{
+            width: 100%;
+        }
+        .dessert--ice{
+            width: 65%;
         }
 
 

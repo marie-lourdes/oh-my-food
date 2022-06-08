@@ -342,8 +342,9 @@ main {
   margin-left: -2rem;
 }
 .starter__menu:active label, .dish__menu:active label, .dessert__menu:active label {
-  /* paragraph width-ellipsis: " menu palette du goût"*/
-  /* "french menu*/
+  /* paragraph width-ellipsis: " menu palette du goût" */
+  /* "french menu" */
+  /* "la note enchantée" */
 }
 .starter__menu:active label p, .dish__menu:active label p, .dessert__menu:active label p {
   white-space: nowrap;
@@ -362,7 +363,13 @@ main {
 .starter__menu:active label .starter--egg, .dish__menu:active label .starter--egg, .dessert__menu:active label .starter--egg {
   width: 90%;
 }
-.starter__menu:active label .starter--snail, .starter__menu:active label .dish--turbot, .starter__menu:active label .dessert--brest, .dish__menu:active label .starter--snail, .dish__menu:active label .dish--turbot, .dish__menu:active label .dessert--brest, .dessert__menu:active label .starter--snail, .dessert__menu:active label .dish--turbot, .dessert__menu:active label .dessert--brest {
+.starter__menu:active label .starter--snail,
+.starter__menu:active label .dish--turbot,
+.starter__menu:active label .dessert--brest, .dish__menu:active label .starter--snail,
+.dish__menu:active label .dish--turbot,
+.dish__menu:active label .dessert--brest, .dessert__menu:active label .starter--snail,
+.dessert__menu:active label .dish--turbot,
+.dessert__menu:active label .dessert--brest {
   width: 100%;
 }
 .starter__menu:active label .dessert--macaroon, .dish__menu:active label .dessert--macaroon, .dessert__menu:active label .dessert--macaroon {
@@ -379,6 +386,30 @@ main {
 }
 .starter__menu:active label .dessert--blueberry, .starter__menu:active label .dessert--hazelnut, .dish__menu:active label .dessert--blueberry, .dish__menu:active label .dessert--hazelnut, .dessert__menu:active label .dessert--blueberry, .dessert__menu:active label .dessert--hazelnut {
   width: 100%;
+}
+.starter__menu:active label .starter--ravioli, .dish__menu:active label .starter--ravioli, .dessert__menu:active label .starter--ravioli {
+  width: 51%;
+}
+.starter__menu:active label .starter--blini,
+.starter__menu:active label .starter--marinated,
+.starter__menu:active label .starter--jam,
+.starter__menu:active label .dish--celery,
+.starter__menu:active label .dish--sweetpotatoes,
+.starter__menu:active label .dessert--baba, .dish__menu:active label .starter--blini,
+.dish__menu:active label .starter--marinated,
+.dish__menu:active label .starter--jam,
+.dish__menu:active label .dish--celery,
+.dish__menu:active label .dish--sweetpotatoes,
+.dish__menu:active label .dessert--baba, .dessert__menu:active label .starter--blini,
+.dessert__menu:active label .starter--marinated,
+.dessert__menu:active label .starter--jam,
+.dessert__menu:active label .dish--celery,
+.dessert__menu:active label .dish--sweetpotatoes,
+.dessert__menu:active label .dessert--baba {
+  width: 100%;
+}
+.starter__menu:active label .dessert--ice, .dish__menu:active label .dessert--ice, .dessert__menu:active label .dessert--ice {
+  width: 65%;
 }
 .starter__menu:active .starter__details, .starter__menu:active .dish__details, .starter__menu:active .dessert__details, .dish__menu:active .starter__details, .dish__menu:active .dish__details, .dish__menu:active .dessert__details, .dessert__menu:active .starter__details, .dessert__menu:active .dish__details, .dessert__menu:active .dessert__details {
   line-height: 0.07rem;
