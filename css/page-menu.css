@@ -371,6 +371,15 @@ main {
 .starter__menu:active label .dessert--mousse, .dish__menu:active label .dessert--mousse, .dessert__menu:active label .dessert--mousse {
   width: 60%;
 }
+.starter__menu:active label .starter--soup, .dish__menu:active label .starter--soup, .dessert__menu:active label .starter--soup {
+  width: 100%;
+}
+.starter__menu:active label .dish--potatoes, .dish__menu:active label .dish--potatoes, .dessert__menu:active label .dish--potatoes {
+  width: 63%;
+}
+.starter__menu:active label .dessert--blueberry, .starter__menu:active label .dessert--hazelnut, .dish__menu:active label .dessert--blueberry, .dish__menu:active label .dessert--hazelnut, .dessert__menu:active label .dessert--blueberry, .dessert__menu:active label .dessert--hazelnut {
+  width: 100%;
+}
 .starter__menu:active .starter__details, .starter__menu:active .dish__details, .starter__menu:active .dessert__details, .dish__menu:active .starter__details, .dish__menu:active .dish__details, .dish__menu:active .dessert__details, .dessert__menu:active .starter__details, .dessert__menu:active .dish__details, .dessert__menu:active .dessert__details {
   line-height: 0.07rem;
 }
