@@ -171,18 +171,24 @@ main {
   position: relative;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
   justify-content: space-around;
 }
 .form-menu__dish {
   position: relative;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
   justify-content: space-around;
 }
 .form-menu__dessert {
   position: relative;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
   justify-content: space-around;
 }
 .form-menu legend::after {
@@ -217,19 +223,17 @@ main {
 }
 .form-menu label > p {
   white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
+  font-size: 0.9rem;
+  width: 45%;
 }
 .form-menu .starter__details {
   display: flex;
   flex-direction: column;
-  line-height: 0.5rem;
+  line-height: 0.4rem;
 }
 .form-menu .starter__price {
   display: flex;
   flex-direction: column;
-  line-height: 0.5rem;
-  transform: translateX(0);
 }
 .form-menu .dish__menu {
   position: relative;
@@ -251,19 +255,17 @@ main {
 }
 .form-menu label > p {
   white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
+  font-size: 0.9rem;
+  width: 45%;
 }
 .form-menu .dish__details {
   display: flex;
   flex-direction: column;
-  line-height: 0.5rem;
+  line-height: 0.4rem;
 }
 .form-menu .dish__price {
   display: flex;
   flex-direction: column;
-  line-height: 0.5rem;
-  transform: translateX(0);
 }
 .form-menu .dessert__menu {
   position: relative;
@@ -285,19 +287,17 @@ main {
 }
 .form-menu label > p {
   white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
+  font-size: 0.9rem;
+  width: 45%;
 }
 .form-menu .dessert__details {
   display: flex;
   flex-direction: column;
-  line-height: 0.5rem;
+  line-height: 0.4rem;
 }
 .form-menu .dessert__price {
   display: flex;
   flex-direction: column;
-  line-height: 0.5rem;
-  transform: translateX(0);
 }
 .form-menu input[type=checkbox] {
   position: absolute;
@@ -330,7 +330,17 @@ main {
   animation: checkbox-animation 1s ease-in-out;
 }
 .starter__menu:hover p, .dish__menu:active p, .dessert__menu:active p {
-  width: 220px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: text-overflow 1s;
+  line-height: 1rem;
+}
+.starter__menu:hover .dish__details, .dish__menu:active .dish__details, .dessert__menu:active .dish__details {
+  transform-origin: left;
+  transform: scaleX(0.9);
+  transition: transform 1s;
+  line-height: 0.07rem;
 }
 
 @keyframes checkbox-animation {
