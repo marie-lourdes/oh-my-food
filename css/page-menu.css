@@ -339,12 +339,15 @@ label > p {
   z-index: 0;
 }
 .checkbox-animation .circle-checked {
-  vertical-align: middle;
   height: 40%;
   font-size: 1.5rem;
   transform: rotate(0);
   transition: transform 3s;
   display: block;
+  position: absolute;
+  top: 20px;
+  bottom: 0;
+  right: 12px;
 }
 
 .starter__menu:active, .dish__menu:active, .dessert__menu:active {
@@ -357,7 +360,7 @@ label > p {
 }
 .starter__menu:active .checkbox-animation, .dish__menu:active .checkbox-animation, .dessert__menu:active .checkbox-animation {
   display: flex;
-  transform: scaleX(1);
+  transform: scaleX(1.2);
   /*   animation: checkbox-animation 3s 1s  ;*/
 }
 .starter__menu:active .checkbox-animation .circle-checked, .dish__menu:active .checkbox-animation .circle-checked, .dessert__menu:active .checkbox-animation .circle-checked {

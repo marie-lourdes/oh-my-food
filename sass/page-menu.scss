@@ -196,12 +196,16 @@ label{
     
    
     & .circle-checked {
-        vertical-align: middle;
-        height: 40%;
-        font-size: 1.5rem;  
-        transform: rotate(0);
+        height:40%;
+        font-size: 1.5rem; 
+        transform:  rotate(0);
         transition: transform 3s;
         display:block;
+        position:absolute;
+        top:20px;
+       
+        bottom:0;
+        right:12px;
     }
 } 
 
@@ -212,7 +216,7 @@ label{
    
     .checkbox-animation {
          display:flex; 
-         transform:scaleX(1);
+         transform:scaleX(1.2);
          .circle-checked{
              transform:rotate(360deg);
          }
