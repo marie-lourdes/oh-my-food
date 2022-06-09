@@ -426,21 +426,26 @@ main {
   margin: 0rem auto;
 }
 
+.form-menu__starter {
+  animation: fadein 3s -800ms both;
+}
+
 .form-menu .form-menu--1-fadein {
-  animation: fadein 5s;
+  animation-delay: 3s 1s;
+  animation: fadein 3s both;
 }
 .form-menu .form-menu--2-fadein {
-  animation: fadein 5s;
-}
-.form-menu .form-menu--3-fadein {
-  animation: fadein 5s;
+  animation-delay: 3s 2s;
+  animation: fadein 3s both;
 }
 
 @keyframes fadein {
   0% {
+    /*  transform:translateY(-9999px);*/
     opacity: 0;
   }
   100% {
+    /*  transform:translateY(0);*/
     opacity: 1;
   }
 }

@@ -147,15 +147,22 @@ $menu-details:
     width: 13rem;
     margin: 0rem auto;
 }
-
+ $anim-dur:3s;
+ $anim-delay:$anim-dur/3;
 @mixin fadein {
-    @for $i from 1 through 3 {
+    @for $i from 1 through 2 {
          .form-menu--#{$i}-fadein{
-            animation:fadein 5s;
-        }
+            animation-delay:$anim-dur $anim-delay*$i;
+            animation: fadein $anim-dur both;
+          
+
+        } 
+
        
-        
     }
+}
+.form-menu__starter{
+    animation: fadein $anim-dur -800ms both;
 }
 
 .form-menu{
@@ -164,9 +171,19 @@ $menu-details:
 
 @keyframes fadein{
     0%{
+       
+      /*  transform:translateY(-9999px);*/
         opacity:0;
     }
+
+    50%{
+        
+    }
+    
+
     100%{
+     
+      /*  transform:translateY(0);*/
         opacity:1;
 
     }
