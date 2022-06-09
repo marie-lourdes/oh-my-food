@@ -364,7 +364,6 @@ label > p {
   margin-right: 1rem;
   margin-left: -3rem;
   transform: translateX(-45px);
-  left: 185px;
   line-height: 1rem;
 }
 .starter__menu:active label p, .dish__menu:active label p, .dessert__menu:active label p {
