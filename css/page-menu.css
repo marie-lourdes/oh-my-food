@@ -37,6 +37,60 @@ a {
   color: #000;
 }
 
+/* animation css icon-like*/
+.icon-like {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  right: 0;
+  z-index: 0;
+}
+
+.full-heart {
+  background: linear-gradient(purple, pink);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  position: absolute;
+  transform: scale(0);
+  transition: transform 1s linear, opacity 0.4s ease-out;
+  z-index: -1;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.full-heart i {
+  font-size: 1.5rem;
+}
+
+.empty-heart {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.empty-heart > .border {
+  opacity: 1;
+  transition: opacity 0.1s linear 0.9s;
+  font-size: 1.5rem;
+}
+.empty-heart:hover .border {
+  opacity: 0;
+}
+.empty-heart:hover > .full-heart {
+  transform: scale(1);
+  opacity: 1;
+  cursor: pointer;
+}
+
 /*checkbox-animation*/
 label {
   appearance: none;
@@ -187,60 +241,27 @@ header button {
   font-size: 1.2rem;
 }
 
-/* animation css icon-like*/
-.icon-like {
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 5rem;
-  height: 5rem;
-  position: absolute;
-  right: 0;
-  z-index: 0;
+.form-menu__starter {
+  animation: fadein 500ms both;
 }
 
-.full-heart {
-  background: linear-gradient(purple, pink);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  position: absolute;
-  transform: scale(0);
-  transition: transform 1s linear, opacity 0.4s ease-out;
-  z-index: -1;
-  overflow: hidden;
-  opacity: 0;
+.form-menu .form-menu--1-fadein {
+  animation-delay: 3s 1s;
+  animation: fadein 3s both;
+}
+.form-menu .form-menu--2-fadein {
+  animation-delay: 3s 2s;
+  animation: fadein 3s both;
 }
 
-.full-heart i {
-  font-size: 1.5rem;
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
-.empty-heart {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  position: relative;
-}
-.empty-heart > .border {
-  opacity: 1;
-  transition: opacity 0.1s linear 0.9s;
-  font-size: 1.5rem;
-}
-.empty-heart:hover .border {
-  opacity: 0;
-}
-.empty-heart:hover > .full-heart {
-  transform: scale(1);
-  opacity: 1;
-  cursor: pointer;
-}
-
 main {
   display: flex;
   flex-direction: column;
