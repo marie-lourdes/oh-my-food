@@ -362,8 +362,8 @@ label > p {
 }
 .starter__menu:active .starter__price, .starter__menu:active .dish__price, .starter__menu:active .dessert__price, .dish__menu:active .starter__price, .dish__menu:active .dish__price, .dish__menu:active .dessert__price, .dessert__menu:active .starter__price, .dessert__menu:active .dish__price, .dessert__menu:active .dessert__price {
   margin-right: 1rem;
-  margin-left: -1.5rem;
-  transform: translateX(-75px);
+  margin-left: -3rem;
+  transform: translateX(-45px);
   left: 185px;
   line-height: 1rem;
 }
