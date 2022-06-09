@@ -427,7 +427,7 @@ main {
 }
 
 .form-menu__starter {
-  animation: fadein 3s -800ms both;
+  animation: fadein 500ms both;
 }
 
 .form-menu .form-menu--1-fadein {
