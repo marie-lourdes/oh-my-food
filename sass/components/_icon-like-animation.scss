@@ -1,0 +1,58 @@
+/* animation css icon-like*/
+.card__description{
+    position:relative;
+    .icon-like{
+        overflow:hidden;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        width:5rem;
+        height:5rem;
+        position:absolute;
+        right:0;
+        z-index:0;
+    
+        }
+        
+        .full-heart{
+            background:linear-gradient(purple,pink);
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            width:100%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            position:absolute;
+            transform:scale(0);
+            transition: transform 1s linear , opacity 0.4s ease-out ;
+            z-index:-1;
+            overflow:hidden;
+            opacity:0;      
+        }
+        .full-heart i {
+        font-size: 1.5rem;
+        }
+        .empty-heart{
+            width:100%;
+            display:flex;
+            justify-content:center;
+            position:relative;
+            >.border{
+                opacity:1;
+                transition:opacity 0.1s linear 0.9s;
+                font-size: 1.5rem;
+          
+            }
+            &:hover {
+                .border{
+                    opacity:0;
+                }
+            >.full-heart{
+                transform: scale(1);
+                opacity:1;
+                cursor:pointer;                    
+            }
+        }   
+     }  
+}
