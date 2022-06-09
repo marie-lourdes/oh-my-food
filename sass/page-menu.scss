@@ -2,11 +2,14 @@
 @import "./utils/functions";
 @import "./utils/mixins";
 @import "./base/base";
-@import "./components/icon-like-animation";
 @import "./components/checkbox-animation";
+
 @import "./components/button-primary";
+
 @import "./layouts/header";
+@import"./components/icon-like-animation";
 @import "./layouts/container-menu";
+
 @import "./layouts/footer";
 
 
