@@ -337,7 +337,7 @@ label > p {
 }
 .checkbox-animation .circle-checked {
   font-size: 1.3rem;
-  transform: rotate(0) scaleX(1);
+  transform: rotate(-360deg) scaleX(1);
   transition: transform 1s ease-in-out;
   display: block;
   position: absolute;
