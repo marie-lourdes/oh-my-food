@@ -28,7 +28,8 @@
 
 }
 
-/*gallery-restaurants*/
+
+/*gallery-restaurants homepage*/
 @mixin object-position ($map) {
     @each $key, $value in $map {
         &.#{$key}{
@@ -36,3 +37,73 @@
         }
     }
 }
+/*page-menu form*/
+
+@mixin menu-details ($list: $menu-details) {
+    @each $value in $list {
+        & .#{$value}__menu {
+            position:relative;
+            @include flexbox-direction(row);
+            @include box-shadow ($color-shadow: map-get($color-gray, background-search-bar), $offset-y: 5px, $blur-radius: 10px, $spread-radius: 2px);
+            border-radius: 1rem;
+            padding: 0.3rem 1rem 0rem 0.5rem;
+            align-items: flex-end;
+            
+            background:$color-white;
+            margin-bottom:1rem;
+            box-sizing:border-box;
+            cursor:pointer;
+        }
+       
+        .#{$value}__details {
+            @include flexbox-direction;
+            line-height: 0.4rem;
+            white-space: nowrap;
+            
+
+        }
+        .#{$value}__price {
+            @include flexbox-direction;
+            width: 50%;
+            
+            line-height: 0.3rem;
+            text-align:right;
+
+            position:absolute;
+            
+            bottom:-1px;
+            
+          right:20px;
+           z-index:1;
+            
+           
+        }
+    }  
+ } 
+
+ @mixin form-menu-fieldset($list: $menu-details) {
+    @each $value in $list {
+        &__#{$value} {
+            position: relative;
+            @include flexbox-direction;
+            margin:0;
+            padding:0;
+           
+            justify-content: space-around;          
+        }
+    }   
+}
+
+@mixin fadein {
+    @for $i from 1 through 2 {
+         .form-menu--#{$i}-fadein{
+            animation-delay:$anim-dur $anim-delay*$i;
+            animation: fadein $anim-dur both;
+          
+
+        } 
+
+       
+    }
+}
+

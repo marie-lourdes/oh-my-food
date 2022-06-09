@@ -161,33 +161,6 @@ $menu-details:
        
     }
 }
-.form-menu__starter{
-    animation: fadein 500ms  both;
-}
-
-.form-menu{
-   @include fadein;
-}
-
-@keyframes fadein{
-    0%{
-       
-      /*  transform:translateY(-9999px);*/
-        opacity:0;
-    }
-
-    50%{
-        
-    }
-    
-
-    100%{
-     
-      /*  transform:translateY(0);*/
-        opacity:1;
-
-    }
-}
 
 
     

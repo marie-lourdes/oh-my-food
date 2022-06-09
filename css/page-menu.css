@@ -1,9 +1,12 @@
 @charset "UTF-8";
 /* color*/
+/*page-menu*/
+/* animation fade-in*/
 /*search-bar*/
 /*gallery-restaurants*/
 /*search-bar*/
-/*gallery-restaurants*/
+/*gallery-restaurants homepage*/
+/*page-menu form*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Shrikhand&display=swap");
 html {
   font-size: 62, 5%;
@@ -426,29 +429,6 @@ main {
   margin: 0rem auto;
 }
 
-.form-menu__starter {
-  animation: fadein 500ms both;
-}
-
-.form-menu .form-menu--1-fadein {
-  animation-delay: 3s 1s;
-  animation: fadein 3s both;
-}
-.form-menu .form-menu--2-fadein {
-  animation-delay: 3s 2s;
-  animation: fadein 3s both;
-}
-
-@keyframes fadein {
-  0% {
-    /*  transform:translateY(-9999px);*/
-    opacity: 0;
-  }
-  100% {
-    /*  transform:translateY(0);*/
-    opacity: 1;
-  }
-}
 /*footer*/
 .footer {
   background: #353535;

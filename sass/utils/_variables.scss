@@ -24,6 +24,17 @@ $img-restaurant:(
     le-delice-des-sens:(
         object-position:108%,
     )
-    );   
+    ); 
+    
+/*page-menu*/
+
+$menu-details: 
+    starter,
+    dish,
+    dessert;
+/* animation fade-in*/
+$anim-dur:3s;
+ $anim-delay:$anim-dur/3;
+
 
   
