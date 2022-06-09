@@ -50,6 +50,7 @@ a {
 header {
   display: flex;
   justify-content: center;
+  position: relative;
 }
 header > .header__logo {
   display: flex;
@@ -57,6 +58,16 @@ header > .header__logo {
 header > .header__logo .logo-svg {
   padding: 1rem;
   width: 10rem;
+}
+header button {
+  background: none;
+  border: none;
+  color: #353535;
+  text-shadow: 0rem -0.01rem;
+  position: absolute;
+  left: 1.5rem;
+  top: 1.5rem;
+  font-size: 1.2rem;
 }
 
 /*booking-menu*/
@@ -302,6 +313,60 @@ main {
 .footer__link a > span {
   margin-right: 0.5rem;
   font-size: 0.7rem;
+}
+
+/* animation css icon-like*/
+.card__description {
+  position: relative;
+}
+.card__description .icon-like {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  right: 0;
+  z-index: 0;
+}
+.card__description .full-heart {
+  background: linear-gradient(purple, pink);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  position: absolute;
+  transform: scale(0);
+  transition: transform 1s linear, opacity 0.4s ease-out;
+  z-index: -1;
+  overflow: hidden;
+  opacity: 0;
+}
+.card__description .full-heart i {
+  font-size: 1.5rem;
+}
+.card__description .empty-heart {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.card__description .empty-heart .border {
+  opacity: 1;
+  transition: opacity 0.1s linear 0.9s;
+  font-size: 1.5rem;
+}
+.card__description .empty-heart:hover .border {
+  opacity: 0;
+}
+.card__description .empty-heart:hover > .full-heart {
+  transform: scale(1);
+  opacity: 1;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=homepage.css.map */
