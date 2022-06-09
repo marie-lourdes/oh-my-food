@@ -148,5 +148,29 @@ $menu-details:
     margin: 0rem auto;
 }
 
+@mixin fadein {
+    @for $i from 1 through 3 {
+         .form-menu--#{$i}-fadein{
+            animation:fadein 5s;
+        }
+       
+        
+    }
+}
+
+.form-menu{
+   @include fadein;
+}
+
+@keyframes fadein{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+
+    }
+}
+
 
     

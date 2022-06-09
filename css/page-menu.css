@@ -426,6 +426,24 @@ main {
   margin: 0rem auto;
 }
 
+.form-menu .form-menu--1-fadein {
+  animation: fadein 5s;
+}
+.form-menu .form-menu--2-fadein {
+  animation: fadein 5s;
+}
+.form-menu .form-menu--3-fadein {
+  animation: fadein 5s;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /*footer*/
 .footer {
   background: #353535;
