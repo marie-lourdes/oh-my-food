@@ -309,13 +309,15 @@ label > p {
   white-space: nowrap;
   font-size: 0.9rem;
   transform-origin: left;
-  transition: transform 3s linear, text-overflow 3s linear;
+  transition: transform, text-overflow;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
 }
 
 .starter__price, .dish__price, .dessert__price {
   transform-origin: right;
   transform: translateX(0);
-  transition: transform 3s linear;
+  transition: transform 1s ease-in-out;
 }
 
 .checkbox-animation {
@@ -326,7 +328,7 @@ label > p {
   color: #fff;
   transform-origin: right;
   transform: scaleX(0);
-  transition: transform 3s linear;
+  transition: transform 1s ease-in-out;
   position: absolute;
   top: 0;
   right: 0;
@@ -336,7 +338,7 @@ label > p {
 .checkbox-animation .circle-checked {
   font-size: 1.3rem;
   transform: rotate(0) scaleX(1);
-  transition: transform 3s;
+  transition: transform 1s ease-in-out;
   display: block;
   position: absolute;
   top: 1.55rem;
@@ -344,29 +346,24 @@ label > p {
 }
 
 .starter__menu:active, .dish__menu:active, .dessert__menu:active {
-  /*   padding: 0rem 0rem 0rem 0.5rem;*/
+  /*padding: 0rem 0rem 0rem 0.5rem;*/
   overflow: hidden;
   /* paragraph width-ellipsis: " menu palette du goût" */
   /* "french menu" */
-  /* .dessert--blueberry, .dessert--hazelnut{
-       width: 100%;
-   }*/
   /* "la note enchantée" */
   /* "le délice des sens */
 }
 .starter__menu:active .checkbox-animation, .dish__menu:active .checkbox-animation, .dessert__menu:active .checkbox-animation {
   display: flex;
   transform: scaleX(1.35);
-  /*   animation: checkbox-animation 3s 1s  ;*/
 }
 .starter__menu:active .checkbox-animation .circle-checked, .dish__menu:active .checkbox-animation .circle-checked, .dessert__menu:active .checkbox-animation .circle-checked {
   transform: rotate(360deg) scaleX(0.9);
 }
 .starter__menu:active .starter__price, .starter__menu:active .dish__price, .starter__menu:active .dessert__price, .dish__menu:active .starter__price, .dish__menu:active .dish__price, .dish__menu:active .dessert__price, .dessert__menu:active .starter__price, .dessert__menu:active .dish__price, .dessert__menu:active .dessert__price {
-  /* animation: checkbox-animation 1s  ease-in-out ;*/
   margin-right: 1rem;
-  margin-left: -2rem;
-  transform: translateX(-55px);
+  margin-left: -1.5rem;
+  transform: translateX(-75px);
   left: 185px;
   line-height: 1rem;
 }
@@ -404,24 +401,6 @@ label > p {
 .starter__menu:active .starter--ravioli, .dish__menu:active .starter--ravioli, .dessert__menu:active .starter--ravioli {
   width: 91%;
 }
-.starter__menu:active .starter--blini,
-.starter__menu:active .starter--marinated,
-.starter__menu:active .starter--jam,
-.starter__menu:active .dish--celery,
-.starter__menu:active .dish--sweetpotatoes,
-.starter__menu:active .dessert--baba, .dish__menu:active .starter--blini,
-.dish__menu:active .starter--marinated,
-.dish__menu:active .starter--jam,
-.dish__menu:active .dish--celery,
-.dish__menu:active .dish--sweetpotatoes,
-.dish__menu:active .dessert--baba, .dessert__menu:active .starter--blini,
-.dessert__menu:active .starter--marinated,
-.dessert__menu:active .starter--jam,
-.dessert__menu:active .dish--celery,
-.dessert__menu:active .dish--sweetpotatoes,
-.dessert__menu:active .dessert--baba {
-  width: 100%;
-}
 .starter__menu:active .dessert--ice, .dish__menu:active .dessert--ice, .dessert__menu:active .dessert--ice {
   width: 83%;
 }
@@ -435,20 +414,6 @@ label > p {
   line-height: 0.07rem;
 }
 
-/*@keyframes checkbox-animation {
-    0%{
-       transform:scaleX(0);
-        /*transform:translateX(9999px);
-
-
-    }
-
-    100%{
-       /* transform:translateX(0px);
-       transform:scaleX(1);
-
-    }
-}*/
 .button-primary {
   width: 13rem;
   margin: 0rem auto;
