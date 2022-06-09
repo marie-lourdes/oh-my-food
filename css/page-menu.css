@@ -211,7 +211,6 @@ main {
   border-radius: 1rem;
   padding: 0.3rem 1rem 0rem 0.5rem;
   align-items: flex-end;
-  justify-content: space-between;
   background: #fff;
   margin-bottom: 1rem;
   box-sizing: border-box;
@@ -242,7 +241,6 @@ main {
   border-radius: 1rem;
   padding: 0.3rem 1rem 0rem 0.5rem;
   align-items: flex-end;
-  justify-content: space-between;
   background: #fff;
   margin-bottom: 1rem;
   box-sizing: border-box;
@@ -273,7 +271,6 @@ main {
   border-radius: 1rem;
   padding: 0.3rem 1rem 0rem 0.5rem;
   align-items: flex-end;
-  justify-content: space-between;
   background: #fff;
   margin-bottom: 1rem;
   box-sizing: border-box;
@@ -324,7 +321,7 @@ label > p {
 .checkbox-animation {
   /*  display:none;*/
   background: #99E2D0;
-  padding: 1.5rem;
+  padding: 1.6rem;
   border-radius: 0 1rem 1rem 0;
   color: #fff;
   transform-origin: right;
@@ -338,16 +335,16 @@ label > p {
 }
 .checkbox-animation .circle-checked {
   font-size: 1.3rem;
-  transform: rotate(0);
+  transform: rotate(0) scaleX(1);
   transition: transform 3s;
   display: block;
   position: absolute;
-  top: 1.46rem;
-  right: 0.76rem;
+  top: 1.55rem;
+  right: 0.9rem;
 }
 
 .starter__menu:active, .dish__menu:active, .dessert__menu:active {
-  padding: 0rem 0rem 0rem 0.5rem;
+  /*   padding: 0rem 0rem 0rem 0.5rem;*/
   overflow: hidden;
   /* paragraph width-ellipsis: " menu palette du goût" */
   /* "french menu" */
@@ -359,11 +356,11 @@ label > p {
 }
 .starter__menu:active .checkbox-animation, .dish__menu:active .checkbox-animation, .dessert__menu:active .checkbox-animation {
   display: flex;
-  transform: scaleX(1.3);
+  transform: scaleX(1.35);
   /*   animation: checkbox-animation 3s 1s  ;*/
 }
 .starter__menu:active .checkbox-animation .circle-checked, .dish__menu:active .checkbox-animation .circle-checked, .dessert__menu:active .checkbox-animation .circle-checked {
-  transform: rotate(360deg);
+  transform: rotate(360deg) scaleX(0.9);
 }
 .starter__menu:active .starter__price, .starter__menu:active .dish__price, .starter__menu:active .dessert__price, .dish__menu:active .starter__price, .dish__menu:active .dish__price, .dish__menu:active .dessert__price, .dessert__menu:active .starter__price, .dessert__menu:active .dish__price, .dessert__menu:active .dessert__price {
   /* animation: checkbox-animation 1s  ease-in-out ;*/
