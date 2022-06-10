@@ -43,10 +43,10 @@
                 font-size: 1.5rem;
           
             }
-            &:hover {
+            &:hover:active {
                 .border{
                     opacity:0;
-                }
+            }
             >.full-heart{
                 transform: scale(1);
                 opacity:1;
