@@ -136,7 +136,10 @@ main {
     @include flexbox-direction;
     height: 16rem;
     justify-content: space-between; 
-    padding-left: 0.5rem;  
+    padding-left: 0.5rem; 
+    box-sizing:border-box;
+    width:100%; 
+    
         &__steps {
             @include flexbox-direction(row);
             border-radius: 1.5rem;
@@ -214,7 +217,7 @@ main {
         @include box-shadow ($color-shadow: map-get($color-gray, background-search-bar), $offset-y: 5px, $blur-radius: 10px, $spread-radius: 1px);
         border-radius: 1rem;
         box-sizing: border-box;
-        width:100vw;
+        width:100%;
         @include tablette {
             width:45vw;
             
@@ -224,6 +227,10 @@ main {
         }
         @include desktop {
             
+        }
+        > a{
+            position:relative;
+            width:100%;
         }
 
     }  
