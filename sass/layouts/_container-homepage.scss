@@ -200,12 +200,13 @@ main {
         .gallery-flex-between {
             height: 63rem;
             @include flexbox-direction;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            align-content: space-evenly;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                align-content: space-evenly;
             @include tablette {
-                
-                max-height:32rem;
+                max-height: 32rem;
+                flex-direction: row;
+                flex-wrap: wrap;
                 
             }
            

@@ -330,6 +330,8 @@ main {
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .gallery-restaurants .gallery-flex-between {
     max-height: 32rem;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 .gallery__card {
