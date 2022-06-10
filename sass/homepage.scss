@@ -7,9 +7,142 @@
 @import "./layouts/header";
 @import "./layouts/container-homepage";
 @import "./layouts/footer";
+body{
+    position:relative;
+}
 
-
-
+.page-loading{
+    position:absolute;
+   
+    
+   
+    font-weight:900;
+   
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+  
+    animation: page-loading 16s ease-in-out 1;
+    opacity:0;
+    background-color:$color-primary ;
+    filter:brightness(110%) contrast(130%) saturate(110%);
+    background:url(img/loading.jpg) no-repeat center 10%/cover;
+      & .citation{
+          color:$color-primary;
+          font-weight:900;
+      }
+       & >.loading{
+      position:relative;
+     margin:0 auto;
+      top:10%;
+       border:10px solid ;
+      border-top-color:blue;
+      animation:loading-spinner 16s  -2s ease-in 1,loading-start 4s ease-out 2;
+     
+      opacity:0;
+      transform:rotate(-360deg);
+    
+    
+    
+       height:50px;
+      width:50px;
+         & .loading__spinner{
+     border:10px solid ;
+      
+     
+     
+    
+      position:absolute;
+      top:0;
+      left:0;
+        bottom:0;
+      right:0;
+    opacity:0;
+      border-radius:50%; 
+           
+       &--0{
+      border-top-color:green;
+      animation:loading-spinner 4s 1s  infinite ;
+      animation-timing-function:ease-in;
+      z-index:0;
+      opacity:0;
+       transform:rotate(0deg);
+    }
+        &--1{
+      border-right-color:green;
+      animation:loading-spinner 4s 2s infinite;
+       animation-timing-function:ease-in-out;
+      z-index:0;
+        opacity:0;
+      transform:rotate(0deg);
+    }
+        &--2{
+      border-bottom-color:green;
+       animation:loading-spinner 4s 3s infinite;
+       animation-timing-function:ease-out;
+      z-index:0;
+      opacity:0;
+      transform:rotate(0deg);
+    }
+       &--3{
+      border-left-color:green;
+       animation:loading-spinner 4s 3s infinite;
+       animation-timing-function:ease-in-out;
+      z-index:0;
+      transform:rotate(0deg);
+      
+      
+      opacity:0;
+    }
+        &--4{
+       animation:loading-spinner 4s  infinite;
+       animation-timing-function:ease-out;
+      border-top-color:green;
+       z-index:0;
+     
+      opacity:0;
+    }
+     
+    }
+         
+    } 
+  }
+  
+  
+   
+  @keyframes page-loading{
+    0%,100%{
+      opacity:1;
+      z-index:1;
+    
+      
+      
+    }
+  }
+    @keyframes loading-spinner{
+      from{
+        opacity:0;
+        z-index:0;
+       
+      }
+        
+      
+      to{
+        opacity:1;
+        z-index:1;
+        transform:rotate(45deg);
+      }
+    }
+    
+    @keyframes loading-start{
+      from{
+        opacity:0;
+      }
+      to{
+        opacity:1;
+      }
+    }
 
 
 
