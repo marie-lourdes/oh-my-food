@@ -17,6 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 1rem;
+  position: relative;
 }
 
 h1, h2 {
@@ -384,18 +385,20 @@ main {
   opacity: 0;
   background-color: #9356DC;
   filter: brightness(110%) contrast(130%) saturate(110%);
-  background: url(img/loading-s.jpg) no-repeat center/cover;
+  background: url(img/loading.jpg) no-repeat center 50%/cover;
 }
 .page-loading .citation {
   color: #9356DC;
   font-weight: 900;
+  line-height: 1.5;
+  word-spacing: 0.2rem;
 }
 .page-loading > .loading {
   position: relative;
   margin: 0 auto;
   top: 10%;
   border: 10px solid;
-  border-top-color: blue;
+  border-top-color: #9356DC;
   animation: loading-spinner 16s -2s ease-in 1, loading-start 4s ease-out 2;
   opacity: 0;
   transform: rotate(-360deg);
