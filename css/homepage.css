@@ -128,10 +128,38 @@ header button {
   font-size: 1.2rem;
 }
 
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    width: auto;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1024px) and (orientation: landscape) {
+  body {
+    width: auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  body {
+    width: auto;
+  }
+}
+
 /*booking-menu*/
 main {
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+  main {
+    width: auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  main {
+    max-height: 80rem;
+    flex-wrap: wrap;
+    width: auto;
+  }
 }
 
 .booking-menu {
@@ -140,6 +168,12 @@ main {
   text-align: center;
   background: #f6f6f6;
   appearance: none;
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .booking-menu {
+    width: 30vw;
+  }
 }
 .booking-form {
   display: flex;
@@ -154,6 +188,12 @@ main {
   align-items: center;
   position: relative;
   height: 3rem;
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .booking-form__search-bar {
+    width: 100%;
+  }
 }
 .booking-form__search-bar > .icon-location {
   position: absolute;
@@ -170,6 +210,7 @@ main {
   border: 0;
   font-weight: 700;
   color: #353535;
+  width: 100%;
 }
 .booking-form__call-to-action {
   display: flex;
@@ -205,6 +246,12 @@ main {
   display: flex;
   flex-direction: column;
   padding: 0 1rem;
+}
+@media screen and (min-width: 992px) {
+  .proceeding-site {
+    width: 30vw;
+    padding: 0 2rem;
+  }
 }
 
 .proceeding {
@@ -255,20 +302,32 @@ main {
   background: #f6f6f6;
   margin-top: 4rem;
   padding-bottom: 4rem;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+  .gallery-restaurants {
+    width: auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .gallery-restaurants {
+    width: auto;
+    margin-top: 0rem;
+  }
 }
 .gallery-restaurants .gallery-flex-between {
   height: 63rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-evenly;
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .gallery-restaurants .gallery-flex-between {
-    flex-wrap: wrap;
     max-height: 32rem;
-    align-content: space-between;
   }
 }
 .gallery__card {
@@ -278,14 +337,18 @@ main {
   box-shadow: 0px 5px 10px 1px #eaeaea;
   border-radius: 1rem;
   box-sizing: border-box;
+  width: 100vw;
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .gallery__card {
     width: 45vw;
-    max-height: 15rem;
   }
 }
-
+@media screen and (min-width: 991px) and (max-width: 1024px) and (orientation: landscape) {
+  .gallery__card {
+    width: 60vw;
+  }
+}
 .card__image {
   position: relative;
   box-sizing: border-box;
