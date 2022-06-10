@@ -455,15 +455,11 @@ main {
   position: absolute;
   z-index: 1;
   font-weight: 900;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
   animation: page-loading 16s ease-in-out 1;
   opacity: 0;
   background-color: #9356DC;
   filter: brightness(110%) contrast(130%) saturate(110%);
-  background: url(img/coupe-s.jpg) no-repeat center 50%/cover;
+  background: url(img/coupe-s.jpg) no-repeat center/cover;
 }
 .page-loading .citation {
   color: #9356DC;
@@ -536,6 +532,10 @@ main {
 @keyframes page-loading {
   0%, 100% {
     opacity: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
   }
 }
 @keyframes loading-spinner {
