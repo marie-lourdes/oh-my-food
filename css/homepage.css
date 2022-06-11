@@ -144,7 +144,6 @@ header button {
   }
 }
 
-/*booking-menu*/
 main {
   display: flex;
   flex-direction: column;
@@ -162,18 +161,14 @@ main {
   }
 }
 
+/*booking-menu*/
+/*booking-menu*/
 .booking-menu {
   display: flex;
   flex-direction: column;
   text-align: center;
   background: #f6f6f6;
   appearance: none;
-  width: 100%;
-}
-@media screen and (min-width: 992px) {
-  .booking-menu {
-    width: 30vw;
-  }
 }
 .booking-form {
   display: flex;
@@ -188,12 +183,6 @@ main {
   align-items: center;
   position: relative;
   height: 3rem;
-  width: 100%;
-}
-@media screen and (min-width: 992px) {
-  .booking-form__search-bar {
-    width: 100%;
-  }
 }
 .booking-form__search-bar > .icon-location {
   position: absolute;
@@ -210,7 +199,6 @@ main {
   border: 0;
   font-weight: 700;
   color: #353535;
-  width: 100%;
 }
 .booking-form__call-to-action {
   display: flex;

@@ -1,3 +1,5 @@
+
+
 @mixin tablette {
     @media screen and (min-width:768px) and (max-width:991px) and (orientation:portrait), screen and  (min-width:768px) and (max-width:1024px) and (orientation:landscape){
         @content;
@@ -26,7 +28,7 @@ body{
     }
 }
 
-/*booking-menu*/
+
 
 main {
     @include flexbox-direction;
@@ -40,92 +42,16 @@ main {
     }
 }
 
+/*booking-menu*/
+@import "../layouts/booking-form";
 
-.booking {
-    &-menu{
-        @include flexbox-direction ;
-        text-align: center;
-        background: map-get($color-gray, main-background);
-        appearance: none;
-     width:100%;
-        @include desktop{
-           
-            width:30vw;
-        } 
 
-    }
-    &-form {
-        @include flexbox-direction;
-        
-        color: map-get($color-gray, dark-gray);
-        &__search-bar {
-            @include flexbox-direction(row);
-            @include gradient-search-bar;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            height: 3rem;
-            width:100%;
-            @include desktop {
-                width:100%;
-            }
-            
-            >.icon-location {
-                position: absolute;
-                left: 6.5rem;
-                
-            }
-            >.search-field {
-                position :absolute;
-                right: 4rem;
-                input{
-                box-sizing: border-box;
-                padding: 0.8rem 0rem;
-                background:none;
-                border:0;
-                font-weight: 700;
-                color: map-get($color-gray,dark-gray);
-                width:100%;
-    
-                }
-                
-            }
-    
-        }  
-        &__call-to-action {
-            @include flexbox-direction;
-            margin:0 auto;
-            padding: 2rem 2rem 3.5rem;
-            label {
-                appearance: none;
-                width: 80%;
-                margin: 0 auto;
-            }
-            h1 {
-               font-weight:900;
-               margin:0;
-               color:$color-black;
-            }
-            .button-primary{
-                @include button-primary;
-                &:active {
-                   @include box-shadow;
-                    filter:brightness(110%);
-    
-                }
-            }
-            
-        }
-    }
-   
-}
 
 /* fonctionnement*/
 
 .proceeding-site {
     @include flexbox-direction;
     padding:0 1rem; 
-    
     @include desktop{
     width:30vw;
     padding:0 2rem;
