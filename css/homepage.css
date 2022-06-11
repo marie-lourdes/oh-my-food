@@ -280,6 +280,8 @@ main {
   display: flex;
   flex-direction: column;
   padding: 0 1rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 @media screen and (min-width: 992px) {
   .proceeding-site {
@@ -296,6 +298,11 @@ main {
   padding-left: 0.5rem;
   box-sizing: border-box;
   width: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+  .proceeding {
+    height: 24rem;
+  }
 }
 .proceeding__steps {
   display: flex;
@@ -330,6 +337,11 @@ main {
 }
 .proceeding__steps .steps__heading {
   font-size: 1rem;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+  .proceeding__steps .steps__heading {
+    font-size: 100%;
+  }
 }
 
 /*Gallery-restaurant*/

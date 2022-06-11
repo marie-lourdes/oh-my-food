@@ -28,19 +28,16 @@ main {
 /*booking-menu*/
 @import "../layouts/booking-form";
 
-   
-
-
-
-
 /* fonctionnement*/
 
 .proceeding-site {
     @include flexbox-direction;
     padding:0 1rem; 
-    @include desktop{
-    width:30vw;
-    padding:0 2rem;
+    width: 100%;
+    box-sizing: border-box;
+    @include desktop {
+    width: 30vw;
+    padding: 0 2rem;
     }    
 } 
 
@@ -49,8 +46,11 @@ main {
     height: 16rem;
     justify-content: space-between; 
     padding-left: 0.5rem; 
-    box-sizing:border-box;
-    width:100%; 
+    box-sizing: border-box;
+    width: 100%; 
+    @include tablette {
+        height: 24rem
+    }
     
         &__steps {
             @include flexbox-direction(row);
@@ -85,6 +85,9 @@ main {
             }
             &__heading{
                 font-size: 1rem;
+                @include tablette {
+                    font-size: 100%;
+                }
                 
             }  
         }
