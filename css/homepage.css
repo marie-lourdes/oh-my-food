@@ -466,10 +466,9 @@ main {
   font-weight: 900;
   animation: page-loading 16s ease-in-out 1;
   opacity: 0;
-  background-color: #9356DC;
-  filter: brightness(110%) contrast(130%) saturate(110%);
-  /* background:url(img/coupe-s.jpg) no-repeat center/cover;*/
   background: #fff;
+  /*filter:brightness(110%) contrast(130%) saturate(110%);
+  background:url(img/coupe-s.jpg) no-repeat center/cover;*/
 }
 .page-loading .citation {
   color: #9356DC;
