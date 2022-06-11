@@ -18,6 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 1rem;
+  position: relative;
 }
 
 h1, h2 {
@@ -82,10 +83,10 @@ a {
   transition: opacity 0.1s linear 0.9s;
   font-size: 1.5rem;
 }
-.empty-heart:hover .border {
+.empty-heart:hover:active .border {
   opacity: 0;
 }
-.empty-heart:hover > .full-heart {
+.empty-heart:hover:active > .full-heart {
   transform: scale(1);
   opacity: 1;
   cursor: pointer;
