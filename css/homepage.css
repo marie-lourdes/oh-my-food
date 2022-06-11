@@ -17,6 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 1rem;
+  position: relative;
 }
 
 h1, h2 {
@@ -94,10 +95,10 @@ a {
   transition: opacity 0.1s linear 0.9s;
   font-size: 1.5rem;
 }
-.empty-heart:hover .border {
+.empty-heart:hover:active .border {
   opacity: 0;
 }
-.empty-heart:hover > .full-heart {
+.empty-heart:hover:active > .full-heart {
   transform: scale(1);
   opacity: 1;
   cursor: pointer;
@@ -127,10 +128,38 @@ header button {
   font-size: 1.2rem;
 }
 
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  body {
+    width: auto;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1024px) and (orientation: landscape) {
+  body {
+    width: auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  body {
+    width: auto;
+  }
+}
+
 /*booking-menu*/
 main {
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  main {
+    width: auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  main {
+    max-height: 80rem;
+    flex-wrap: wrap;
+    width: auto;
+  }
 }
 
 .booking-menu {
@@ -139,6 +168,12 @@ main {
   text-align: center;
   background: #f6f6f6;
   appearance: none;
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .booking-menu {
+    width: 30vw;
+  }
 }
 .booking-form {
   display: flex;
@@ -153,6 +188,12 @@ main {
   align-items: center;
   position: relative;
   height: 3rem;
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .booking-form__search-bar {
+    width: 100%;
+  }
 }
 .booking-form__search-bar > .icon-location {
   position: absolute;
@@ -169,6 +210,7 @@ main {
   border: 0;
   font-weight: 700;
   color: #353535;
+  width: 100%;
 }
 .booking-form__call-to-action {
   display: flex;
@@ -205,6 +247,12 @@ main {
   flex-direction: column;
   padding: 0 1rem;
 }
+@media screen and (min-width: 992px) {
+  .proceeding-site {
+    width: 30vw;
+    padding: 0 2rem;
+  }
+}
 
 .proceeding {
   display: flex;
@@ -212,6 +260,8 @@ main {
   height: 16rem;
   justify-content: space-between;
   padding-left: 0.5rem;
+  box-sizing: border-box;
+  width: 100%;
 }
 .proceeding__steps {
   display: flex;
@@ -254,12 +304,35 @@ main {
   background: #f6f6f6;
   margin-top: 4rem;
   padding-bottom: 4rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .gallery-restaurants {
+    width: auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .gallery-restaurants {
+    width: auto;
+    margin-top: 0rem;
+  }
 }
 .gallery-restaurants .gallery-flex-between {
   height: 63rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .gallery-restaurants .gallery-flex-between {
+    max-height: 32rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 .gallery__card {
   background: #fff;
@@ -268,6 +341,21 @@ main {
   box-shadow: 0px 5px 10px 1px #eaeaea;
   border-radius: 1rem;
   box-sizing: border-box;
+  width: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .gallery__card {
+    width: 45vw;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1024px) and (orientation: landscape) {
+  .gallery__card {
+    width: 60vw;
+  }
+}
+.gallery__card > a {
+  position: relative;
+  width: 100%;
 }
 
 .card__image {
@@ -372,33 +460,29 @@ main {
   font-size: 0.7rem;
 }
 
-body {
-  position: relative;
-}
-
 .page-loading {
   position: absolute;
+  z-index: 1;
   font-weight: 900;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
   animation: page-loading 16s ease-in-out 1;
   opacity: 0;
   background-color: #9356DC;
   filter: brightness(110%) contrast(130%) saturate(110%);
-  background: url(img/loading.jpg) no-repeat center 10%/cover;
+  /* background:url(img/coupe-s.jpg) no-repeat center/cover;*/
+  background: #fff;
 }
 .page-loading .citation {
   color: #9356DC;
   font-weight: 900;
+  line-height: 1.5;
+  word-spacing: 0.2rem;
 }
 .page-loading > .loading {
   position: relative;
   margin: 0 auto;
   top: 10%;
   border: 10px solid;
-  border-top-color: blue;
+  border-top-color: #9356DC;
   animation: loading-spinner 16s -2s ease-in 1, loading-start 4s ease-out 2;
   opacity: 0;
   transform: rotate(-360deg);
@@ -458,7 +542,10 @@ body {
 @keyframes page-loading {
   0%, 100% {
     opacity: 1;
-    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
   }
 }
 @keyframes loading-spinner {

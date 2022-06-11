@@ -1,7 +1,43 @@
+@mixin tablette {
+    @media screen and (min-width:768px) and (max-width:991px) and (orientation:portrait), screen and  (min-width:768px) and (max-width:1024px) and (orientation:landscape){
+        @content;
+    }
+}
+@mixin tablette-landscape {
+    @media screen and (min-width:991px) and (max-width:1024px) and (orientation:landscape){
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media screen and (min-width:992px){
+        @content;
+    }
+}
+body{
+    @include tablette {
+        width:auto;
+    }
+    @include tablette-landscape{
+        width: auto;
+    }
+    @include desktop {
+        width:auto;
+    }
+}
+
 /*booking-menu*/
 
 main {
     @include flexbox-direction;
+    @include tablette {
+        width:auto;
+    }
+    @include desktop{
+        max-height:80rem;
+        flex-wrap:wrap;
+        width:auto;
+    }
 }
 
 
@@ -11,6 +47,11 @@ main {
         text-align: center;
         background: map-get($color-gray, main-background);
         appearance: none;
+     width:100%;
+        @include desktop{
+           
+            width:30vw;
+        } 
 
     }
     &-form {
@@ -24,6 +65,10 @@ main {
             align-items: center;
             position: relative;
             height: 3rem;
+            width:100%;
+            @include desktop {
+                width:100%;
+            }
             
             >.icon-location {
                 position: absolute;
@@ -40,6 +85,7 @@ main {
                 border:0;
                 font-weight: 700;
                 color: map-get($color-gray,dark-gray);
+                width:100%;
     
                 }
                 
@@ -78,14 +124,22 @@ main {
 
 .proceeding-site {
     @include flexbox-direction;
-    padding:0 1rem;     
+    padding:0 1rem; 
+    
+    @include desktop{
+    width:30vw;
+    padding:0 2rem;
+    }    
 } 
 
 .proceeding {
     @include flexbox-direction;
     height: 16rem;
     justify-content: space-between; 
-    padding-left: 0.5rem;  
+    padding-left: 0.5rem; 
+    box-sizing:border-box;
+    width:100%; 
+    
         &__steps {
             @include flexbox-direction(row);
             border-radius: 1.5rem;
@@ -125,6 +179,7 @@ main {
     }
 } 
 
+
 /*Gallery-restaurant*/
 
 .gallery{
@@ -133,10 +188,28 @@ main {
         background: map-get($color-gray,main-background);
         margin-top: 4rem;
         padding-bottom: 4rem;
+        box-sizing:border-box;
+        @include tablette {
+            width:auto;
+        }
+        @include desktop{
+            width:auto;
+            margin-top:0rem;
+        }
+        @include flexbox-direction;
         .gallery-flex-between {
             height: 63rem;
             @include flexbox-direction;
-            justify-content: space-between;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                align-content: space-evenly;
+            @include tablette {
+                max-height: 32rem;
+                flex-direction: row;
+                flex-wrap: wrap;
+                
+            }
+           
         }
     }
     &__card {
@@ -145,6 +218,22 @@ main {
         @include box-shadow ($color-shadow: map-get($color-gray, background-search-bar), $offset-y: 5px, $blur-radius: 10px, $spread-radius: 1px);
         border-radius: 1rem;
         box-sizing: border-box;
+        width:100%;
+        @include tablette {
+            width:45vw;
+            
+        }
+        @include tablette-landscape{
+            width: 60vw;
+        }
+        @include desktop {
+            
+        }
+        > a{
+            position:relative;
+            width:100%;
+        }
+
     }  
 }
 

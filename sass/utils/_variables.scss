@@ -34,7 +34,7 @@ $menu-details:
     dessert;
 /* animation fade-in*/
 $anim-dur:3s;
- $anim-delay:$anim-dur/3;
+ $anim-delay: calc($anim-dur / 3);
 
 
   
