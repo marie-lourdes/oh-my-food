@@ -5,8 +5,7 @@
         @include flexbox-direction ;
         text-align: center;
         background: map-get($color-gray, main-background);
-        appearance: none;
-
+        appearance: none;  
     }
     &-form {
         @include flexbox-direction;
@@ -19,6 +18,9 @@
             align-items: center;
             position: relative;
             height: 3rem;
+            @include tablette {
+                height: 5rem;
+            }
             
             >.icon-location {
                 position: relative;
@@ -35,6 +37,9 @@
                 border:0;
                 font-weight: 700;
                 color: map-get($color-gray,dark-gray);
+                @include tablette {
+                    font-size: 1.8rem;
+                }
     
                 }
                 
@@ -49,22 +54,33 @@
                 appearance: none;
                 width: 80%;
                 margin: 0 auto;
+                h1 {
+                    font-weight:900;
+                    margin:0;
+                    color:$color-black;
+                 }
+               
             }
-            h1 {
-               font-weight:900;
-               margin:0;
-               color:$color-black;
-            }
-            .button-primary{
-                @include button-primary;
-                &:active {
-                   @include box-shadow;
-                    filter:brightness(110%);
-    
+            p{
+                @include tablette {
+                    white-space: pre-wrap;
                 }
             }
+
+            @import "../components/button-primary";
+            
+            
             
         }
     }
    
+}
+
+@keyframes pop-up-search-bar{
+    0%{
+        transform:scale(0);
+    }
+    100%{
+        transform:scale(1);
+    }
 }

@@ -20,6 +20,10 @@
     color: $color-white;
     background: linear-gradient( $color1, $color2);
     box-shadow: 0px 10px 20px -5px rgb(map-get($color-gray, dark-gray),0.5);
+    @include tablette{
+        padding:1.5rem;
+        border-radius:2.5rem;
+    }
 
 }
 @mixin box-shadow ($color-shadow: rgb(map-get($color-gray, dark-gray),0.6), $offset-y:10px,$blur-radius: 20px, $spread-radius:-2px) {
@@ -106,4 +110,22 @@
        
     }
 }
+
+/* responsive*/
+@mixin tablette {
+    @media screen and (min-width:768px) and (max-width:991px) and (orientation:portrait), (min-width:768px) and (max-width:1024px){
+        @content;
+    }
+  }
+  @mixin tablette-landscape {
+    @media screen and (min-width:992px) and (max-width:1024px) and (orientation:landscape){
+        @content;
+    }
+  }
+  
+  @mixin desktop{
+    @media screen and (min-width:992px){
+        @content;
+    }
+  }
 
