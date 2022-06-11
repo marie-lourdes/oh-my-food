@@ -24,10 +24,10 @@
   animation: page-loading 16s ease-in-out 1;
   opacity:0;
  
-  background-color:$color-primary ;
-  filter:brightness(110%) contrast(130%) saturate(110%);
- /* background:url(img/coupe-s.jpg) no-repeat center/cover;*/
- background:#fff;
+  background:#fff;
+  /*filter:brightness(110%) contrast(130%) saturate(110%);*/
+  background:url(img/coupe-s.jpg) no-repeat center/cover;*/
+
     & .citation{
         color:$color-primary;
         font-weight:900;
