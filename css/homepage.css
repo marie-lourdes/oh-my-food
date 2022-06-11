@@ -128,7 +128,7 @@ header button {
   font-size: 1.2rem;
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   body {
     width: auto;
   }
@@ -149,7 +149,7 @@ main {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   main {
     width: auto;
   }
@@ -308,7 +308,7 @@ main {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .gallery-restaurants {
     width: auto;
   }
@@ -327,7 +327,7 @@ main {
   flex-wrap: wrap;
   align-content: space-evenly;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .gallery-restaurants .gallery-flex-between {
     max-height: 32rem;
     flex-direction: row;
@@ -343,7 +343,7 @@ main {
   box-sizing: border-box;
   width: 100%;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .gallery__card {
     width: 45vw;
   }
@@ -468,7 +468,8 @@ main {
   opacity: 0;
   background-color: #9356DC;
   filter: brightness(110%) contrast(130%) saturate(110%);
-  background: url(img/coupe-s.jpg) no-repeat center/cover;
+  /* background:url(img/coupe-s.jpg) no-repeat center/cover;*/
+  background: #fff;
 }
 .page-loading .citation {
   color: #9356DC;

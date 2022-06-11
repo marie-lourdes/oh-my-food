@@ -26,7 +26,8 @@
  
   background-color:$color-primary ;
   filter:brightness(110%) contrast(130%) saturate(110%);
-  background:url(img/coupe-s.jpg) no-repeat center/cover;
+ /* background:url(img/coupe-s.jpg) no-repeat center/cover;*/
+ background:#fff;
     & .citation{
         color:$color-primary;
         font-weight:900;
