@@ -120,6 +120,9 @@ main {
         padding-bottom: 4rem;
         box-sizing:border-box;
         width:100%;
+        h2{
+            padding-left: 2rem;
+        }
         @include tablet {
             width:auto;
             padding: 0rem;
