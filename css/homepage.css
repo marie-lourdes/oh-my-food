@@ -362,6 +362,7 @@ main {
   margin-top: 4rem;
   padding-bottom: 4rem;
   box-sizing: border-box;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -402,12 +403,12 @@ main {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
   .gallery__card {
-    width: 45vw;
+    width: 45%;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1024px) and (orientation: landscape) {
   .gallery__card {
-    width: 60vw;
+    width: 60%;
   }
 }
 .gallery__card > a {
