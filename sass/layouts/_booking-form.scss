@@ -18,7 +18,7 @@
             align-items: center;
             position: relative;
             height: 3rem;
-            @include tablette {
+            @include tablet {
                 height: 5rem;
             }
             
@@ -37,7 +37,7 @@
                 border:0;
                 font-weight: 700;
                 color: map-get($color-gray,dark-gray);
-                @include tablette {
+                @include tablet {
                     font-size: 1.8rem;
                 }
     
@@ -62,7 +62,7 @@
                
             }
             p{
-                @include tablette {
+                @include tablet {
                     white-space: pre-wrap;
                 }
             }
@@ -76,11 +76,3 @@
    
 }
 
-@keyframes pop-up-search-bar{
-    0%{
-        transform:scale(0);
-    }
-    100%{
-        transform:scale(1);
-    }
-}

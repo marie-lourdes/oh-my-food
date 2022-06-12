@@ -2,7 +2,7 @@
 
   body{
   
-    @include tablette-landscape{
+    @include tablet-landscape{
         width: auto;
     }
     @include desktop {
@@ -15,7 +15,7 @@
 
 main {
     @include flexbox-direction;
-    @include tablette {
+    @include tablet {
         width:auto;
     }
     @include desktop{
@@ -35,6 +35,9 @@ main {
     padding:0 1rem; 
     width: 100%;
     box-sizing: border-box;
+    @include tablet {
+        padding: 0 2rem;
+    }
     @include desktop {
     width: 30vw;
     padding: 0 2rem;
@@ -48,18 +51,18 @@ main {
     padding-left: 0.5rem; 
     box-sizing: border-box;
     width: 100%; 
-    @include tablette {
-        height: 24rem
+    @include tablet {
+        height: 24rem;
     }
     
-        &__steps {
-            @include flexbox-direction(row);
-            border-radius: 1.5rem;
-            @include box-shadow ($color-shadow: map-get($color-gray, background-search-bar), $offset-y: 5px, $blur-radius: 10px, $spread-radius: 1px);
-            align-items: center;
-            position: relative;  
-            padding: 1rem 0.8rem 0.5rem 0.8rem;
-            background: map-get($color-gray,main-background);
+    &__steps {
+        @include flexbox-direction(row);
+        border-radius: 1.5rem;
+        @include box-shadow ($color-shadow: map-get($color-gray, background-search-bar), $offset-y: 5px, $blur-radius: 10px, $spread-radius: 1px);
+        align-items: center;
+        position: relative;  
+        padding: 1rem 0.8rem 0.5rem 0.8rem;
+        background: map-get($color-gray,main-background);
         >span {
             position: absolute;
             display: flex;
@@ -70,29 +73,41 @@ main {
             align-items: center;
             justify-content: center;
             color: $color-white;
-            font-size:0.8rem;
-            left:-0.7rem;
-
+            font-size: 0.8rem;
+            left: -0.7rem;
+            @include tablet {
+                font-size: 70%;
+                width: 2rem;
+                height: 2rem;
+                left: -2.5%;
+            }
         }
         .steps {
             &__icon{
                 margin: 0 1.5rem;
                 color:map-get($color-gray, icon);
-                font-size: 1.1rem;   
+                font-size: 1.1rem;
+                display:flex;
+                @include tablet {
+                    font-size: 90%;
+                }   
             }
             &__icon--purple{
                 color:$color-primary;
             }
             &__heading{
                 font-size: 1rem;
-                @include tablette {
+                @include tablet {
                     font-size: 100%;
                 }
                 
             }  
         }
+
     }
-} 
+        
+}
+
 
 
 /*Gallery-restaurant*/
@@ -104,7 +119,7 @@ main {
         margin-top: 4rem;
         padding-bottom: 4rem;
         box-sizing:border-box;
-        @include tablette {
+        @include tablet {
             width:auto;
         }
         @include desktop{
@@ -118,7 +133,7 @@ main {
                 justify-content: space-between;
                 flex-wrap: wrap;
                 align-content: space-evenly;
-            @include tablette {
+            @include tablet {
                 max-height: 32rem;
                 flex-direction: row;
                 flex-wrap: wrap;
@@ -134,11 +149,11 @@ main {
         border-radius: 1rem;
         box-sizing: border-box;
         width:100%;
-        @include tablette {
+        @include tablet {
             width:45vw;
             
         }
-        @include tablette-landscape{
+        @include tablet-landscape{
             width: 60vw;
         }
         @include desktop {

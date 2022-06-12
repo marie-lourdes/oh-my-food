@@ -13,7 +13,7 @@ body {
     @include flexbox-direction;
     font-size: 1rem;
     position:relative;
-    @include tablette {
+    @include tablet {
         width:auto;
         font-size:160%;
     }
@@ -23,7 +23,7 @@ body {
 
 h1, h2 {
     font-size: 1.5rem; 
-    @include tablette {
+    @include tablet {
         font-size:130%;
     }  
 }
@@ -34,7 +34,7 @@ h2 {
 }
 h3{
     font-size: 1rem;
-    @include tablette {
+    @include tablet {
         font-size:110%;
     } 
 }
