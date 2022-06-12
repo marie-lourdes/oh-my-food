@@ -118,6 +118,11 @@ a {
   transition: opacity 0.1s linear 0.9s;
   font-size: 1.5rem;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+  .empty-heart > .border {
+    font-size: 130%;
+  }
+}
 .empty-heart:hover:active .border {
   opacity: 0;
 }
@@ -369,6 +374,7 @@ main {
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
   .gallery-restaurants {
     width: auto;
+    padding: 0rem;
   }
 }
 @media screen and (min-width: 992px) {
@@ -387,9 +393,10 @@ main {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
   .gallery-restaurants .gallery-flex-between {
-    max-height: 32rem;
+    max-height: 46rem;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 }
 .gallery__card {
@@ -404,7 +411,7 @@ main {
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
   .gallery__card {
     width: 45%;
-    flex-direction: row;
+    min-height: 20rem;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1024px) and (orientation: landscape) {
@@ -420,11 +427,7 @@ main {
 .card__image {
   position: relative;
   box-sizing: border-box;
-  max-height: 11rem;
   width: 100%;
-}
-.card__image.card__image--min-height {
-  min-height: 11rem;
 }
 .card__image > span {
   position: absolute;
@@ -435,6 +438,11 @@ main {
   color: #278870;
   font-weight: 700;
   border-radius: 0.2rem;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+  .card__image > span {
+    font-size: 75%;
+  }
 }
 .card__image img {
   width: 100%;
@@ -455,15 +463,19 @@ main {
 .card__image img.le-delice-des-sens {
   object-position: center 108%;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+  .card__image img {
+    max-height: 13rem;
+  }
+}
 .card__description {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1.5rem 1rem 0.8rem;
   box-sizing: border-box;
-}
-.card__description.card__description--padding {
-  padding: 0.3rem 1.5rem 1rem 0.8rem;
+  margin-top: -0.5rem;
+  position: relative;
 }
 .card__description.card__description--margin-top {
   margin-top: -0.1rem;

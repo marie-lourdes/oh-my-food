@@ -122,6 +122,7 @@ main {
         width:100%;
         @include tablet {
             width:auto;
+            padding: 0rem;
         }
         @include desktop{
             width:auto;
@@ -135,9 +136,10 @@ main {
                 flex-wrap: wrap;
                 align-content: space-evenly;
             @include tablet {
-                max-height: 32rem;
+                max-height: 46rem;
                 flex-direction: row;
                 flex-wrap: wrap;
+                justify-content: space-evenly;
                 
             }
            
@@ -149,10 +151,11 @@ main {
         @include box-shadow ($color-shadow: map-get($color-gray, background-search-bar), $offset-y: 5px, $blur-radius: 10px, $spread-radius: 1px);
         border-radius: 1rem;
         box-sizing: border-box;
-        width:100%;
+        width: 100%;
         @include tablet {
             width:45%;
-            flex-direction:row;
+            min-height: 20rem;
+            
             
         }
         @include tablet-landscape{
@@ -161,9 +164,9 @@ main {
         @include desktop {
             
         }
-        > a{
-            position:relative;
-            width:100%;
+        > a {
+            position: relative;
+            width: 100%;
         }
 
     }  
@@ -174,13 +177,7 @@ main {
         &__image {
             position: relative;
             box-sizing: border-box;
-            max-height: 11rem;
             width:100%;
-            &.card__image {
-                &--min-height {
-                min-height: 11rem;
-                }
-            }
             >span {
                 position: absolute;
                 right: 0.8rem;
@@ -190,6 +187,9 @@ main {
                 color: label-new($color: $color-tertiary);
                 font-weight: 700;
                 border-radius: 0.2rem;
+                @include tablet {
+                    font-size: 75%;
+                }
             }
             img {
                 width: 100%;
@@ -197,7 +197,10 @@ main {
                 max-height: 11rem;
                 border-radius: 1rem 1rem 0 0;
                 @include object-position($img-restaurant);
-                overflow:hidden;
+                overflow: hidden;
+                @include tablet {
+                    max-height: 13rem;
+                }
             }     
         }
         &__description {
@@ -206,14 +209,10 @@ main {
             align-items: center;
             padding: 0 1.5rem 1rem 0.8rem;
             box-sizing: border-box;
-            &.card__description {
-                &--padding {
-                padding: 0.3rem 1.5rem 1rem 0.8rem;
-                }
-                &--margin-top {
-                    margin-top: -0.1rem;
-                }
-
+            margin-top: -0.5rem;
+            position: relative;
+            &.card__description--margin-top{
+                margin-top: -0.1rem;
             }
             .description { 
                 &__text {
