@@ -9,12 +9,21 @@ header {
         display: flex;
         position: relative;
         top: 5px;
+        @include tablet {
+            top: 10px;
+        }
         .logo-svg {
-            padding: 1rem;
+            padding: 0.8rem;
             width: 10rem;
+            @include tablet {
+                padding: 2rem;
+                width: 15rem;
+                height: 45px;
+            }
+            }
             
         }
-    }
+    
     button {
         background:none;
         border:none;
