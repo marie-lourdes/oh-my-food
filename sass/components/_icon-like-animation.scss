@@ -30,7 +30,10 @@
             opacity:0;      
         }
         .full-heart i {
-        font-size: 1.5rem;
+            font-size: 1.5rem;
+            @include tablet {
+                font-size: 130%;
+            }  
         }
         .empty-heart{
             width:100%;
@@ -53,7 +56,8 @@
             >.full-heart{
                 transform: scale(1);
                 opacity:1;
-                cursor:pointer;                    
+                cursor:pointer;
+                                
             }
         }   
      }  
