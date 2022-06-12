@@ -145,6 +145,8 @@ header {
 }
 header > .header__logo {
   display: flex;
+  position: relative;
+  top: 5px;
 }
 header > .header__logo .logo-svg {
   padding: 1rem;
