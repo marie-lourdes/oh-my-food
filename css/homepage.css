@@ -404,6 +404,7 @@ main {
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
   .gallery__card {
     width: 45%;
+    flex-direction: row;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1024px) and (orientation: landscape) {
@@ -420,6 +421,7 @@ main {
   position: relative;
   box-sizing: border-box;
   max-height: 11rem;
+  width: 100%;
 }
 .card__image.card__image--min-height {
   min-height: 11rem;

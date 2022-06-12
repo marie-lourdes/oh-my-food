@@ -152,6 +152,7 @@ main {
         width:100%;
         @include tablet {
             width:45%;
+            flex-direction:row;
             
         }
         @include tablet-landscape{
@@ -174,6 +175,7 @@ main {
             position: relative;
             box-sizing: border-box;
             max-height: 11rem;
+            width:100%;
             &.card__image {
                 &--min-height {
                 min-height: 11rem;
