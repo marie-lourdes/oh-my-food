@@ -19,8 +19,7 @@ main {
         width:auto;
     }
     @include desktop{
-        max-height:80rem;
-        flex-wrap:wrap;
+       
         width:auto;
     }
 }
@@ -37,7 +36,9 @@ main {
     box-sizing: border-box;
     @include tablet {
         padding: 0 2rem;
+        width: 100vw;
     }
+
     @include desktop {
     width: 30vw;
     padding: 0 2rem;
@@ -156,13 +157,13 @@ main {
         box-sizing: border-box;
         width: 100%;
         @include tablet {
-            width:45%;
+            width:45vw;
             min-height: 20rem;
             
             
         }
         @include tablet-landscape{
-            width: 60%;
+            width: 45vw;
         }
         @include desktop {
             

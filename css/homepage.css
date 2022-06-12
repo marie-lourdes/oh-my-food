@@ -150,7 +150,7 @@ header > .header__logo {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
   header > .header__logo {
-    top: 10px;
+    top: 17px;
   }
 }
 header > .header__logo .logo-svg {
@@ -180,7 +180,7 @@ header button {
     width: auto;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1025px) {
   body {
     width: auto;
   }
@@ -195,10 +195,8 @@ main {
     width: auto;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1025px) {
   main {
-    max-height: 80rem;
-    flex-wrap: wrap;
     width: auto;
   }
 }
@@ -302,9 +300,10 @@ main {
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
   .proceeding-site {
     padding: 0 2rem;
+    width: 100vw;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1025px) {
   .proceeding-site {
     width: 30vw;
     padding: 0 2rem;
@@ -399,7 +398,7 @@ main {
     padding: 0rem;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1025px) {
   .gallery-restaurants {
     width: auto;
     margin-top: 0rem;
@@ -432,13 +431,13 @@ main {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
   .gallery__card {
-    width: 45%;
+    width: 45vw;
     min-height: 20rem;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1024px) and (orientation: landscape) {
   .gallery__card {
-    width: 60%;
+    width: 45vw;
   }
 }
 .gallery__card > a {
