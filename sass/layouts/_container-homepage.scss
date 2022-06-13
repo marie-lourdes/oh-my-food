@@ -140,8 +140,9 @@ main {
         @include desktop{
             width:auto;
             margin-top:0rem;
-            width: 67vw;
+            width: 68vw;
             margin-right: 1rem;
+            padding:0 2rem;
         }
         @include flexbox-direction;
         .gallery-flex-between {
@@ -184,6 +185,9 @@ main {
         @include desktop {
            width: 26vw;
            max-height: 17rem; 
+        }
+        @include desktop-large {
+            width: 31vw;
         }
         > a {
             position: relative;
