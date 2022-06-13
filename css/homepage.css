@@ -33,11 +33,6 @@ body {
     min-height: 100vh;
   }
 }
-@media screen and (min-width: 1200px) {
-  body {
-    width: auto;
-  }
-}
 
 h1, h2 {
   font-size: 1.5rem;
@@ -336,7 +331,7 @@ main {
 }
 @media screen and (min-width: 992px) {
   .proceeding-site {
-    width: 30vw;
+    width: 40vw;
     padding: 0 2rem;
   }
 }
@@ -425,6 +420,11 @@ main {
     padding-left: 2rem;
   }
 }
+@media screen and (min-width: 992px) {
+  .gallery-restaurants h2 {
+    padding-left: 2.5rem;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
   .gallery-restaurants {
     width: auto;
@@ -435,9 +435,10 @@ main {
   .gallery-restaurants {
     width: auto;
     margin-top: 0rem;
-    width: 68vw;
-    margin-right: 1rem;
-    padding: 0 2rem;
+    width: 60vw;
+    padding-bottom: 1rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
 }
 .gallery-restaurants .gallery-flex-between {
@@ -461,6 +462,7 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     max-height: 44rem;
+    justify-content: space-evenly;
   }
 }
 .gallery__card {
@@ -486,12 +488,7 @@ main {
 @media screen and (min-width: 992px) {
   .gallery__card {
     width: 26vw;
-    max-height: 17rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .gallery__card {
-    width: 31vw;
+    min-height: 13rem;
   }
 }
 .gallery__card > a {
@@ -543,6 +540,14 @@ main {
     max-height: 13rem;
   }
 }
+@media screen and (min-width: 992px) {
+  .card__image img {
+    min-height: 13rem;
+  }
+}
+.card__image img.la-note-enchantee {
+  min-height: 12.6rem;
+}
 .card__description {
   display: flex;
   justify-content: space-between;
@@ -554,6 +559,11 @@ main {
 }
 .card__description.card__description--margin-top {
   margin-top: -0.1rem;
+}
+@media screen and (min-width: 992px) {
+  .card__description.card__description--margin-top {
+    /* margin-top: 0.5rem;*/
+  }
 }
 .card__description .description__text {
   display: flex;

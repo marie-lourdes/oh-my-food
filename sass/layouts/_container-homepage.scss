@@ -45,7 +45,7 @@ main {
     } 
     
     @include desktop {
-    width: 30vw;
+    width: 40vw;
     padding: 0 2rem;
     } 
       
@@ -131,6 +131,9 @@ main {
             @include tablet {
                 padding-left: 2rem;
             }
+            @include desktop {
+                padding-left: 2.5rem;
+            }
            
         }
         @include tablet {
@@ -140,9 +143,10 @@ main {
         @include desktop{
             width:auto;
             margin-top:0rem;
-            width: 68vw;
-            margin-right: 1rem;
-            padding:0 2rem;
+            width: 60vw;
+            padding-bottom:1rem;
+            padding-left:0rem;
+            padding-right:0rem;
         }
         @include flexbox-direction;
         .gallery-flex-between {
@@ -162,6 +166,7 @@ main {
                 flex-direction:row;
                 flex-wrap:wrap;
                 max-height: 44rem;
+                justify-content: space-evenly;
             }
            
         }
@@ -184,11 +189,10 @@ main {
         
         @include desktop {
            width: 26vw;
-           max-height: 17rem; 
+           min-height: 13rem;
+           
         }
-        @include desktop-large {
-            width: 31vw;
-        }
+      
         > a {
             position: relative;
             width: 100%;
@@ -226,6 +230,13 @@ main {
                 @include tablet {
                     max-height: 13rem;
                 }
+                @include desktop {
+                   min-height: 13rem;
+                }
+                &.la-note-enchantee {
+                    min-height: 12.6rem;
+                    
+                }
             }     
         }
         &__description {
@@ -238,6 +249,9 @@ main {
             position: relative;
             &.card__description--margin-top{
                 margin-top: -0.1rem;
+                @include desktop {
+                   /* margin-top: 0.5rem;*/
+                 }
             }
             .description { 
                 &__text {
