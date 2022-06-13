@@ -265,15 +265,18 @@ main {
                    /* margin-top: 0.5rem;*/
                  }
                  @include desktop-large {
-                  /* margin-top: 0.1rem;*/
+                   margin-top: 0.1rem;
                 }
             }
             .description { 
                 &__text {
                 @include flexbox-direction;
                 line-height: 0.5rem;
+                @include desktop {
+                    line-height: 0.4rem;
+                   }
                 @include desktop-large {
-                   line-height: 0.5rem;
+                   line-height: 0.4rem;
                   }
                 }
             }

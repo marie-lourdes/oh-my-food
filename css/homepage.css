@@ -585,7 +585,7 @@ main {
 }
 @media screen and (min-width: 1200px) {
   .card__description.card__description--margin-top {
-    /* margin-top: 0.1rem;*/
+    margin-top: 0.1rem;
   }
 }
 .card__description .description__text {
@@ -593,9 +593,14 @@ main {
   flex-direction: column;
   line-height: 0.5rem;
 }
+@media screen and (min-width: 992px) {
+  .card__description .description__text {
+    line-height: 0.4rem;
+  }
+}
 @media screen and (min-width: 1200px) {
   .card__description .description__text {
-    line-height: 0.5rem;
+    line-height: 0.4rem;
   }
 }
 
