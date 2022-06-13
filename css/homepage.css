@@ -520,25 +520,54 @@ main {
   color: #fff;
   font-size: 0.9rem;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+  .footer a {
+    font-size: 80%;
+  }
+}
 .footer h1 {
   font-family: "Shrikhand", cursive, arial, sans-serif;
   font-size: 1.1rem;
   font-weight: 400;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+  .footer h1 {
+    font-size: 110%;
+  }
 }
 .footer h3 {
   font-weight: 500;
   font-size: 0.9rem;
   text-shadow: 0.03rem -0.02rem;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+  .footer h3 {
+    font-size: 100%;
+  }
+}
 .footer__bloc-links {
   display: flex;
   flex-direction: column;
   margin-top: -0.5rem;
+  align-items: flex-start;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+  .footer__bloc-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: baseline;
+    justify-content: space-between;
+    font-size: 100%;
+  }
 }
 .footer__link {
-  display: flex;
-  flex-direction: column;
   height: 1.5rem;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+  .footer__link {
+    height: 100%;
+  }
 }
 .footer__link.footer__link--padding {
   padding-bottom: 0.8rem;
@@ -548,9 +577,14 @@ main {
   flex-direction: row;
   align-items: baseline;
 }
-.footer__link a > span {
+.footer__link a > .footer__icon {
   margin-right: 0.5rem;
   font-size: 0.7rem;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+  .footer__link a > .footer__icon {
+    font-size: 100%;
+  }
 }
 
 .page-loading {
