@@ -118,13 +118,13 @@
     }
   }
   @mixin tablet-landscape {
-    @media screen and (min-width:992px) and (max-width:1024px) and (orientation:landscape){
+    @media screen and (min-width:991px) and (max-width:1024px) and (orientation:landscape){
         @content;
     }
   }
   
   @mixin desktop{
-    @media screen and (min-width:1025px){
+    @media screen and (min-width:992px){
         @content;
     }
   }

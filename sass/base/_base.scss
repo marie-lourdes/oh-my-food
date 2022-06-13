@@ -17,6 +17,10 @@ body {
         width:auto;
         font-size:160%;
     }
+    @include desktop {
+        font-size: 100%;
+        width: auto;
+    }
     
     
 }

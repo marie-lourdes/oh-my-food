@@ -5,7 +5,10 @@
         @include flexbox-direction ;
         text-align: center;
         background: map-get($color-gray, main-background);
-        appearance: none;  
+        appearance: none;
+        @include desktop {
+            width: 100vw;
+        }  
     }
     &-form {
         @include flexbox-direction;
