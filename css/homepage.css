@@ -559,7 +559,12 @@ main {
   }
 }
 .card__image img.la-note-enchantee {
-  min-height: 12.6rem;
+  /* min-height: 12.6rem;*/
+}
+@media screen and (min-width: 1200px) {
+  .card__image img.la-note-enchantee {
+    max-height: 12.6rem;
+  }
 }
 .card__description {
   display: flex;
@@ -578,10 +583,20 @@ main {
     /* margin-top: 0.5rem;*/
   }
 }
+@media screen and (min-width: 1200px) {
+  .card__description.card__description--margin-top {
+    /* margin-top: 0.1rem;*/
+  }
+}
 .card__description .description__text {
   display: flex;
   flex-direction: column;
   line-height: 0.5rem;
+}
+@media screen and (min-width: 1200px) {
+  .card__description .description__text {
+    line-height: 0.5rem;
+  }
 }
 
 /*footer*/

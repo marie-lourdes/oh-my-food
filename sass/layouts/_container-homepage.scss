@@ -244,8 +244,10 @@ main {
                    min-height: 13rem;
                 }
                 &.la-note-enchantee {
-                    min-height: 12.6rem;
-                    
+                   /* min-height: 12.6rem;*/
+                    @include desktop-large {
+                        max-height: 12.6rem;
+                     }
                 }
             }     
         }
@@ -262,11 +264,17 @@ main {
                 @include desktop {
                    /* margin-top: 0.5rem;*/
                  }
+                 @include desktop-large {
+                  /* margin-top: 0.1rem;*/
+                }
             }
             .description { 
                 &__text {
                 @include flexbox-direction;
                 line-height: 0.5rem;
+                @include desktop-large {
+                   line-height: 0.5rem;
+                  }
                 }
             }
         } 
