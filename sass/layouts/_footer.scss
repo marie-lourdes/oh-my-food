@@ -4,11 +4,18 @@
 .footer {
     background: map-get($color-gray, dark-gray);
     @include flexbox-direction;
-    padding: 0.5rem 2rem 1.5rem;
+    padding: 1.5rem 2rem 1.5rem;
     width:100%;
     box-sizing: border-box;
     @include desktop {
-        height: 100%;
+        height: 17vh;
+        justify-content: center;
+    }
+    &__logo {
+        @include desktop {
+            position: relative;
+            top: -0.5rem;
+        }
     }
   
     
@@ -49,6 +56,13 @@
             align-items: baseline;
             justify-content: space-between;
             font-size: 100%;
+        }
+        @include desktop {
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            align-items: baseline;
+            justify-content: space-between;
         }
     }
     &__link{

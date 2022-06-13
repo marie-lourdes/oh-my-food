@@ -45,7 +45,7 @@ main {
     } 
     
     @include desktop {
-    width: 40vw;
+    width: 30vw;
     padding: 0 2rem;
     } 
       
@@ -140,7 +140,8 @@ main {
         @include desktop{
             width:auto;
             margin-top:0rem;
-            width: 60vw;
+            width: 67vw;
+            margin-right: 1rem;
         }
         @include flexbox-direction;
         .gallery-flex-between {
