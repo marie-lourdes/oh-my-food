@@ -30,6 +30,8 @@ body {
   body {
     font-size: 100%;
     width: auto;
+    height: 100vh;
+    justify-content: space-between;
   }
 }
 
@@ -549,6 +551,11 @@ main {
   padding: 0.5rem 2rem 1.5rem;
   width: 100%;
   box-sizing: border-box;
+}
+@media screen and (min-width: 992px) {
+  .footer {
+    height: 100%;
+  }
 }
 .footer a {
   color: #fff;

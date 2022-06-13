@@ -5,12 +5,18 @@ header {
     justify-content: center;
     
     position:relative;
+    @include desktop {
+      
+    }
     >.header__logo {
         display: flex;
         position: relative;
         top: 5px;
         @include tablet {
             top: 10px;
+        }
+        @include desktop {
+        
         }
         .logo-svg {
             padding: 0.8rem;
