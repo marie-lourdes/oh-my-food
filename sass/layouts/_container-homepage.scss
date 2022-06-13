@@ -148,6 +148,12 @@ main {
             padding-left:0rem;
             padding-right:0rem;
         }
+        @include desktop-large {
+            width:50vw;
+        }
+       /* @include desktop-large {
+            width:50vw;
+        }*/
         @include flexbox-direction;
         .gallery-flex-between {
             height: 63rem;
@@ -192,6 +198,10 @@ main {
            min-height: 13rem;
            
         }
+        @include desktop-large {
+            width:20vw;
+        }
+          
       
         > a {
             position: relative;

@@ -412,6 +412,9 @@ main {
   padding-bottom: 4rem;
   box-sizing: border-box;
   width: 100%;
+  /* @include desktop-large {
+       width:50vw;
+   }*/
   display: flex;
   flex-direction: column;
 }
@@ -439,6 +442,11 @@ main {
     padding-bottom: 1rem;
     padding-left: 0rem;
     padding-right: 0rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery-restaurants {
+    width: 50vw;
   }
 }
 .gallery-restaurants .gallery-flex-between {
@@ -489,6 +497,11 @@ main {
   .gallery__card {
     width: 26vw;
     min-height: 13rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery__card {
+    width: 20vw;
   }
 }
 .gallery__card > a {
