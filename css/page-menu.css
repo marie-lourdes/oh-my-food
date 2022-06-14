@@ -203,7 +203,6 @@ label > p {
   margin-right: 1rem;
   margin-left: -3rem;
   transform: translateX(-45px);
-  line-height: 6;
 }
 @media screen and (max-width: 360px) {
   .starter__menu:active .starter__price, .starter__menu:active .dish__price, .starter__menu:active .dessert__price, .dish__menu:active .starter__price, .dish__menu:active .dish__price, .dish__menu:active .dessert__price, .dessert__menu:active .starter__price, .dessert__menu:active .dish__price, .dessert__menu:active .dessert__price {
@@ -332,7 +331,6 @@ label > p {
     margin-right: 1rem;
     margin-left: -3rem;
     transform: translateX(-45px);
-    line-height: 6;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 360px) {
@@ -648,6 +646,7 @@ main {
   box-shadow: 0px 5px 10px 2px #eaeaea;
   border-radius: 1rem;
   padding: 0.3rem 1rem 0rem 0.5rem;
+  align-items: center;
   height: 5rem;
   background: #fff;
   margin-bottom: 1rem;
@@ -663,7 +662,6 @@ main {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  display: inline-block;
   font-size: 0.8rem;
   margin-top: -0.8rem;
 }
@@ -685,11 +683,10 @@ main {
 .form-menu .starter__price {
   display: flex;
   flex-direction: column;
-  width: 50%;
   font-size: 0.8rem;
-  line-height: 5;
   text-align: right;
   position: absolute;
+  top: 34px;
   right: 20px;
   z-index: 1;
 }
@@ -700,6 +697,7 @@ main {
   box-shadow: 0px 5px 10px 2px #eaeaea;
   border-radius: 1rem;
   padding: 0.3rem 1rem 0rem 0.5rem;
+  align-items: center;
   height: 5rem;
   background: #fff;
   margin-bottom: 1rem;
@@ -715,7 +713,6 @@ main {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  display: inline-block;
   font-size: 0.8rem;
   margin-top: -0.8rem;
 }
@@ -737,11 +734,10 @@ main {
 .form-menu .dish__price {
   display: flex;
   flex-direction: column;
-  width: 50%;
   font-size: 0.8rem;
-  line-height: 5;
   text-align: right;
   position: absolute;
+  top: 34px;
   right: 20px;
   z-index: 1;
 }
@@ -752,6 +748,7 @@ main {
   box-shadow: 0px 5px 10px 2px #eaeaea;
   border-radius: 1rem;
   padding: 0.3rem 1rem 0rem 0.5rem;
+  align-items: center;
   height: 5rem;
   background: #fff;
   margin-bottom: 1rem;
@@ -767,7 +764,6 @@ main {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  display: inline-block;
   font-size: 0.8rem;
   margin-top: -0.8rem;
 }
@@ -789,11 +785,10 @@ main {
 .form-menu .dessert__price {
   display: flex;
   flex-direction: column;
-  width: 50%;
   font-size: 0.8rem;
-  line-height: 5;
   text-align: right;
   position: absolute;
+  top: 34px;
   right: 20px;
   z-index: 1;
 }
