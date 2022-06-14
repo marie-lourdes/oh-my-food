@@ -45,7 +45,7 @@ main{
 .form-menu {
     @include flexbox-direction;
     justify-content: space-between;
-    height: 50rem;
+    height: 60rem;
     appearance: none;
     padding-bottom: 10rem;
     @include form-menu-fieldset;

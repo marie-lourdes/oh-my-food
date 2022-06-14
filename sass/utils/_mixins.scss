@@ -51,7 +51,7 @@
             @include box-shadow ($color-shadow: map-get($color-gray, background-search-bar), $offset-y: 5px, $blur-radius: 10px, $spread-radius: 2px);
             border-radius: 1rem;
             padding: 0.3rem 1rem 0rem 0.5rem;
-            align-items: flex-end;
+           
             
             background:$color-white;
             margin-bottom:1rem;
@@ -61,21 +61,44 @@
        
         .#{$value}__details {
             @include flexbox-direction;
-            line-height: 0.4rem;
-            white-space: nowrap;
+            
+           /* white-space: nowrap;*/
+            label {
+                p{
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    display:inline-block;
+                    font-size: 0.8rem;
+                   
+                }
+                .starter--homard{
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    display:inline-block;
+                    width: 70%;
+                }
+                p{
+                    margin-top: -0.6rem;
+                }
+                .dish--beef{
+                    width: 98%;
+                }
+            }
             
 
         }
         .#{$value}__price {
             @include flexbox-direction;
             width: 50%;
-            
-            line-height: 0.3rem;
+            font-size: 0.8rem;
+            line-height: 4.4rem;
             text-align:right;
 
             position:absolute;
             
-            bottom:-1px;
+           
             
           right:20px;
            z-index:1;
