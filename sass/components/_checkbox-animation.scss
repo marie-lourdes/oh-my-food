@@ -69,7 +69,7 @@ label{
         margin-right: 1rem;
         margin-left: -3rem;
         transform:translateX(-45px);
-        line-height: 3.5rem;
+        line-height: 3rem;
     }
     label{
 
@@ -96,13 +96,13 @@ label{
             width: 90%;
         } 
         .dish--beef{
-            width: 83%;
+            width: 77%!important;
         }
         .dish--beef-parmentier {
             width: 87%;
         }
         .dessert--mousse {
-            width: 92%;
+            width: 77%;
         }
 
         /* "french menu" */
@@ -127,14 +127,7 @@ label{
         .dessert--ice{
             width: 83%;
         }
-
-        /* "le délice des sens */
-        .details{
-            width: 100%;
-        }
-        .dessert--tiramisu{
-            width: 92%;
-        }
+      
   
     .starter__details, .dish__details, .dessert__details {
      

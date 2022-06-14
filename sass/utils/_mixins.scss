@@ -80,10 +80,13 @@
                     width: 70%;
                 }
                 p{
-                    margin-top: -0.6rem;
+                    margin-top: -0.8rem;
                 }
                 .dish--beef{
                     width: 98%;
+                }
+                .dessert--tiramisu{
+                    width: 70%;
                 }
             }
             
@@ -93,7 +96,7 @@
             @include flexbox-direction;
             width: 50%;
             font-size: 0.8rem;
-            line-height: 4.4rem;
+            line-height: 4rem;
             text-align:right;
 
             position:absolute;
