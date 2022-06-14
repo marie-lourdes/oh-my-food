@@ -78,9 +78,7 @@
                 }
               
                 .dish--beef{
-                    @include small-mobile{
-                        width: 98%;
-                    }
+                   width: 98%;
                 }
                 .dessert--ice{
                     @include small-mobile{
