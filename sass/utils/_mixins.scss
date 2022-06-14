@@ -70,18 +70,28 @@
                     overflow: hidden;
                     display:inline-block;
                     font-size: 0.8rem;
-                   
-                   
-                }
-                .starter--homard{
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                    overflow: hidden;
-                    display:inline-block;
-                    width: 70%;
-                }
-                p{
                     margin-top: -0.8rem;
+                   
+                   
+                }
+              
+                .dish--beef{
+                    @include small-mobile{
+                        width: 98%;
+                    }
+                }
+                .dessert--ice{
+                    @include small-mobile{
+                        width: 83%;
+                    }
+
+                }
+
+                .dessert--tiramisu{
+                    @include small-mobile {
+                        width: 70%;
+                    }
+                   
                 }
           
             }
@@ -162,7 +172,7 @@
     }
   }
 
-  @mixin checkbox-cursor {
+@mixin checkbox-cursor {
     /*padding: 0rem 0rem 0rem 0.5rem;*/
     overflow: hidden;
     
@@ -255,19 +265,38 @@
         .starter--ravioli{
             width: 91%;
         }
+        .starter--lobster{
+            @include small-mobile {
+            width: 70%;
+            }
+        }
+        
        
         .dessert--ice{
             width: 83%;
         }
+
+        /* "le delice des sens"*/
+        .crisp-lobster{
+            @include small-mobile{
+            width:70%;
+           
+            
+            }
+        }
+
+        .dessert--tiramisu{
+            width: 70%;
+        }
+
+
         .dish--beef{
             width: 98%;
             @include small-mobile {
                 width: 84%;
             }
         }
-        .dessert--tiramisu{
-            width: 70%;
-        }
+       
         .macaroon{
             @include small-mobile {
                 width:70%;
@@ -284,16 +313,7 @@
         }
         
          }
-        .crisp-lobster{
-            @include small-mobile{
-            width:70%;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            display:inline-block;
-            
-            }
-        }
+       
         .roast-chicken{
             @include small-mobile {
                 white-space: nowrap;

@@ -172,12 +172,12 @@ label > p {
   transition: transform 1s ease-in-out;
   display: block;
   position: absolute;
-  top: 2.1rem;
+  top: 2rem;
   right: 0.9rem;
 }
 @media screen and (max-width: 360px) {
   .checkbox-animation .circle-checked {
-    top: 2.1rem;
+    top: 2rem;
   }
 }
 
@@ -190,6 +190,7 @@ label > p {
     }*/
   /* "french menu" */
   /* "la note enchantée" */
+  /* "le delice des sens"*/
 }
 .starter__menu:active .checkbox-animation, .dish__menu:active .checkbox-animation, .dessert__menu:active .checkbox-animation {
   display: flex;
@@ -257,8 +258,21 @@ label > p {
 .starter__menu:active .starter--ravioli, .dish__menu:active .starter--ravioli, .dessert__menu:active .starter--ravioli {
   width: 91%;
 }
+@media screen and (max-width: 360px) {
+  .starter__menu:active .starter--lobster, .dish__menu:active .starter--lobster, .dessert__menu:active .starter--lobster {
+    width: 70%;
+  }
+}
 .starter__menu:active .dessert--ice, .dish__menu:active .dessert--ice, .dessert__menu:active .dessert--ice {
   width: 83%;
+}
+@media screen and (max-width: 360px) {
+  .starter__menu:active .crisp-lobster, .dish__menu:active .crisp-lobster, .dessert__menu:active .crisp-lobster {
+    width: 70%;
+  }
+}
+.starter__menu:active .dessert--tiramisu, .dish__menu:active .dessert--tiramisu, .dessert__menu:active .dessert--tiramisu {
+  width: 70%;
 }
 .starter__menu:active .dish--beef, .dish__menu:active .dish--beef, .dessert__menu:active .dish--beef {
   width: 98%;
@@ -267,9 +281,6 @@ label > p {
   .starter__menu:active .dish--beef, .dish__menu:active .dish--beef, .dessert__menu:active .dish--beef {
     width: 84%;
   }
-}
-.starter__menu:active .dessert--tiramisu, .dish__menu:active .dessert--tiramisu, .dessert__menu:active .dessert--tiramisu {
-  width: 70%;
 }
 @media screen and (max-width: 360px) {
   .starter__menu:active .macaroon, .dish__menu:active .macaroon, .dessert__menu:active .macaroon {
@@ -283,15 +294,6 @@ label > p {
 @media screen and (max-width: 360px) {
   .starter__menu:active .dessert--mousse, .dish__menu:active .dessert--mousse, .dessert__menu:active .dessert--mousse {
     width: 75%;
-  }
-}
-@media screen and (max-width: 360px) {
-  .starter__menu:active .crisp-lobster, .dish__menu:active .crisp-lobster, .dessert__menu:active .crisp-lobster {
-    width: 70%;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    display: inline-block;
   }
 }
 @media screen and (max-width: 360px) {
@@ -317,6 +319,7 @@ label > p {
       }*/
     /* "french menu" */
     /* "la note enchantée" */
+    /* "le delice des sens"*/
   }
   .starter__menu:hover .checkbox-animation, .dish__menu:hover .checkbox-animation, .dessert__menu:hover .checkbox-animation {
     display: flex;
@@ -403,9 +406,24 @@ label > p {
     width: 91%;
   }
 }
+@media screen and (min-width: 992px) and (max-width: 360px) {
+  .starter__menu:hover .starter--lobster, .dish__menu:hover .starter--lobster, .dessert__menu:hover .starter--lobster {
+    width: 70%;
+  }
+}
 @media screen and (min-width: 992px) {
   .starter__menu:hover .dessert--ice, .dish__menu:hover .dessert--ice, .dessert__menu:hover .dessert--ice {
     width: 83%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 360px) {
+  .starter__menu:hover .crisp-lobster, .dish__menu:hover .crisp-lobster, .dessert__menu:hover .crisp-lobster {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .starter__menu:hover .dessert--tiramisu, .dish__menu:hover .dessert--tiramisu, .dessert__menu:hover .dessert--tiramisu {
+    width: 70%;
   }
 }
 @media screen and (min-width: 992px) {
@@ -416,11 +434,6 @@ label > p {
 @media screen and (min-width: 992px) and (max-width: 360px) {
   .starter__menu:hover .dish--beef, .dish__menu:hover .dish--beef, .dessert__menu:hover .dish--beef {
     width: 84%;
-  }
-}
-@media screen and (min-width: 992px) {
-  .starter__menu:hover .dessert--tiramisu, .dish__menu:hover .dessert--tiramisu, .dessert__menu:hover .dessert--tiramisu {
-    width: 70%;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 360px) {
@@ -435,15 +448,6 @@ label > p {
 @media screen and (min-width: 992px) and (max-width: 360px) {
   .starter__menu:hover .dessert--mousse, .dish__menu:hover .dessert--mousse, .dessert__menu:hover .dessert--mousse {
     width: 75%;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 360px) {
-  .starter__menu:hover .crisp-lobster, .dish__menu:hover .crisp-lobster, .dessert__menu:hover .crisp-lobster {
-    width: 70%;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    display: inline-block;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 360px) {
@@ -661,16 +665,22 @@ main {
   overflow: hidden;
   display: inline-block;
   font-size: 0.8rem;
-}
-.form-menu .starter__details label .starter--homard {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  display: inline-block;
-  width: 70%;
-}
-.form-menu .starter__details label p {
   margin-top: -0.8rem;
+}
+@media screen and (max-width: 360px) {
+  .form-menu .starter__details label .dish--beef {
+    width: 98%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .form-menu .starter__details label .dessert--ice {
+    width: 83%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .form-menu .starter__details label .dessert--tiramisu {
+    width: 70%;
+  }
 }
 .form-menu .starter__price {
   display: flex;
@@ -707,16 +717,22 @@ main {
   overflow: hidden;
   display: inline-block;
   font-size: 0.8rem;
-}
-.form-menu .dish__details label .starter--homard {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  display: inline-block;
-  width: 70%;
-}
-.form-menu .dish__details label p {
   margin-top: -0.8rem;
+}
+@media screen and (max-width: 360px) {
+  .form-menu .dish__details label .dish--beef {
+    width: 98%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .form-menu .dish__details label .dessert--ice {
+    width: 83%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .form-menu .dish__details label .dessert--tiramisu {
+    width: 70%;
+  }
 }
 .form-menu .dish__price {
   display: flex;
@@ -753,16 +769,22 @@ main {
   overflow: hidden;
   display: inline-block;
   font-size: 0.8rem;
-}
-.form-menu .dessert__details label .starter--homard {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  display: inline-block;
-  width: 70%;
-}
-.form-menu .dessert__details label p {
   margin-top: -0.8rem;
+}
+@media screen and (max-width: 360px) {
+  .form-menu .dessert__details label .dish--beef {
+    width: 98%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .form-menu .dessert__details label .dessert--ice {
+    width: 83%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .form-menu .dessert__details label .dessert--tiramisu {
+    width: 70%;
+  }
 }
 .form-menu .dessert__price {
   display: flex;

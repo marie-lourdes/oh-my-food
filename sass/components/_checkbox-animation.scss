@@ -45,10 +45,10 @@ label{
         transition: transform 1s ease-in-out;
         display:block;
         position:absolute;
-        top:2.1rem;
+        top: 2rem;
         right: 0.9rem;
         @include small-mobile{
-            top: 2.1rem;
+            top: 2rem;
         }
     }
 } 
