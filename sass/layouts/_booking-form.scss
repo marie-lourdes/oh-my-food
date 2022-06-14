@@ -6,6 +6,7 @@
         text-align: center;
         background: map-get($color-gray, main-background);
         appearance: none;
+        width:100%;
         @include desktop {
             width: 100vw;
         }  
@@ -44,6 +45,9 @@
                 }
                 @include desktop {
                     left: -1%;
+                }
+                @include desktop-large {
+                    left: -1.5%;
                 }
                 input{
                 box-sizing: border-box;

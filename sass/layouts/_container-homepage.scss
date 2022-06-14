@@ -131,7 +131,8 @@ main {
         width:100%;
         h2{
             @include tablet {
-                padding-left: 2rem;
+                padding-left: 1.5rem;
+                
             }
             @include desktop {
                 padding-left: 2rem;
@@ -140,7 +141,8 @@ main {
         }
         @include tablet {
             width:auto;
-            padding: 0rem;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
         }
         @include desktop{
             width:auto;
@@ -190,7 +192,7 @@ main {
         box-sizing: border-box;
         width: 100%;
         @include tablet {
-            width: 45vw;
+            width: 43vw;
             min-height: 20rem;
                
         }
@@ -204,7 +206,8 @@ main {
            
         }
         @include desktop-large {
-            width:26.5vw;
+            width:26vw;
+            min-height: 17rem;
         }
           
       
@@ -250,7 +253,7 @@ main {
                 }
                 &.la-note-enchantee {
                     @include desktop-large {
-                        max-height: 12.6rem;
+                        min-height: 12.6rem;
                      }
                 }
             }     
@@ -273,6 +276,9 @@ main {
                 margin-top: -0.1rem;
                 @include tablet {
                     margin-top: 0;
+                }
+                @include desktop-large {
+                    margin-top: 0.3rem;
                 }
                
                 

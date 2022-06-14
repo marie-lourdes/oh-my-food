@@ -237,6 +237,7 @@ main {
   text-align: center;
   background: #f6f6f6;
   appearance: none;
+  width: 100%;
 }
 @media screen and (min-width: 992px) {
   .booking-menu {
@@ -288,6 +289,11 @@ main {
 @media screen and (min-width: 992px) {
   .booking-form__search-bar > .search-field {
     left: -1%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .booking-form__search-bar > .search-field {
+    left: -1.5%;
   }
 }
 .booking-form__search-bar > .search-field input {
@@ -465,7 +471,7 @@ main {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
   .gallery-restaurants h2 {
-    padding-left: 2rem;
+    padding-left: 1.5rem;
   }
 }
 @media screen and (min-width: 992px) {
@@ -476,7 +482,8 @@ main {
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
   .gallery-restaurants {
     width: auto;
-    padding: 0rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
 @media screen and (min-width: 992px) {
@@ -532,7 +539,7 @@ main {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
   .gallery__card {
-    width: 45vw;
+    width: 43vw;
     min-height: 20rem;
   }
 }
@@ -549,7 +556,8 @@ main {
 }
 @media screen and (min-width: 1200px) {
   .gallery__card {
-    width: 26.5vw;
+    width: 26vw;
+    min-height: 17rem;
   }
 }
 .gallery__card > a {
@@ -608,7 +616,7 @@ main {
 }
 @media screen and (min-width: 1200px) {
   .card__image img.la-note-enchantee {
-    max-height: 12.6rem;
+    min-height: 12.6rem;
   }
 }
 .card__description {
@@ -636,6 +644,11 @@ main {
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
   .card__description.card__description--margin-top {
     margin-top: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card__description.card__description--margin-top {
+    margin-top: 0.3rem;
   }
 }
 .card__description .description__text {
@@ -672,7 +685,7 @@ main {
 @media screen and (min-width: 992px) {
   .footer__logo {
     position: relative;
-    top: -0.5rem;
+    top: -25%;
   }
 }
 .footer a {
@@ -692,6 +705,11 @@ main {
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
   .footer h1 {
     font-size: 110%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .footer h1 {
+    font-size: 120%;
   }
 }
 .footer h3 {
@@ -717,7 +735,7 @@ main {
     width: 100%;
     align-items: baseline;
     justify-content: space-between;
-    font-size: 100%;
+    font-size: 95%;
   }
 }
 @media screen and (min-width: 992px) {
