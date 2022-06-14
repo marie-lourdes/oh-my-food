@@ -386,6 +386,11 @@ main {
     margin-top: 2rem;
   }
 }
+@media screen and (min-width: 1200px) {
+  .proceeding-site {
+    margin-right: 1rem;
+  }
+}
 
 .proceeding {
   display: flex;
@@ -556,7 +561,7 @@ main {
 }
 @media screen and (min-width: 1200px) {
   .gallery__card {
-    width: 26vw;
+    width: 26.5vw;
     min-height: 17rem;
   }
 }

@@ -50,6 +50,9 @@ main {
     padding: 0 2rem;
     margin-top: 2rem;
     } 
+    @include desktop-large{
+        margin-right: 1rem;
+    }
       
 } 
 
@@ -206,7 +209,7 @@ main {
            
         }
         @include desktop-large {
-            width:26vw;
+            width:26.5vw;
             min-height: 17rem;
         }
           
