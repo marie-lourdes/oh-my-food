@@ -648,8 +648,13 @@ main {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-top: -0.8rem;
+}
+@media screen and (max-width: 360px) {
+  .form-menu .starter__details label p {
+    font-size: 0.8rem;
+  }
 }
 @media screen and (max-width: 360px) {
   .form-menu .starter__details label .dish--beef {
@@ -704,8 +709,13 @@ main {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-top: -0.8rem;
+}
+@media screen and (max-width: 360px) {
+  .form-menu .dish__details label p {
+    font-size: 0.8rem;
+  }
 }
 @media screen and (max-width: 360px) {
   .form-menu .dish__details label .dish--beef {
@@ -760,8 +770,13 @@ main {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-top: -0.8rem;
+}
+@media screen and (max-width: 360px) {
+  .form-menu .dessert__details label p {
+    font-size: 0.8rem;
+  }
 }
 @media screen and (max-width: 360px) {
   .form-menu .dessert__details label .dish--beef {

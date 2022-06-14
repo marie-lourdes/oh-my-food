@@ -68,8 +68,11 @@
                     white-space: nowrap;
                     text-overflow: ellipsis;
                     overflow: hidden;
-                    font-size: 0.8rem;
+                    font-size: 1rem;
                     margin-top: -0.8rem;
+                    @include small-mobile(){
+                        font-size: 0.8rem;
+                    }
                    
                    
                 }
