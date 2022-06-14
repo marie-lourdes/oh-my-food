@@ -39,14 +39,16 @@ main {
     @include tablet {
         padding: 0 2rem;
         width: 100vw;
+        
     }
     @include tablet-landscape {
         width: 100vw;
     } 
     
     @include desktop {
-    width: 40vw;
+    width: 35vw;
     padding: 0 2rem;
+    margin-top: 2rem;
     } 
       
 } 
@@ -132,7 +134,7 @@ main {
                 padding-left: 2rem;
             }
             @include desktop {
-                padding-left: 2.5rem;
+                padding-left: 2rem;
             }
            
         }
@@ -142,14 +144,16 @@ main {
         }
         @include desktop{
             width:auto;
-            margin-top:0rem;
-            width: 60vw;
+            margin-top:2rem;
+            width: 61vw;
             padding-bottom:1rem;
             padding-left:0rem;
             padding-right:0rem;
+            margin-bottom: 2rem;
+            margin-right: 2rem;
         }
         @include desktop-large {
-            width:50vw;
+            width:60vw;
         }
        /* @include desktop-large {
             width:50vw;
@@ -200,7 +204,7 @@ main {
            
         }
         @include desktop-large {
-            width:21.6vw;
+            width:26.5vw;
         }
           
       

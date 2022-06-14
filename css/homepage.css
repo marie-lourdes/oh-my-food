@@ -98,8 +98,23 @@ a {
   right: 0;
   z-index: 0;
 }
-
-.full-heart {
+.icon-like .empty-heart {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.icon-like .empty-heart > .border {
+  opacity: 1;
+  transition: opacity 0.1s linear 0.9s;
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+  .icon-like .empty-heart > .border {
+    font-size: 130%;
+  }
+}
+.icon-like .empty-heart > .full-heart {
   background: linear-gradient(purple, pink);
   display: flex;
   justify-content: center;
@@ -115,39 +130,31 @@ a {
   overflow: hidden;
   opacity: 0;
 }
-
-.full-heart i {
+.icon-like .empty-heart > .full-heart i {
   font-size: 1.5rem;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
-  .full-heart i {
+  .icon-like .empty-heart > .full-heart i {
     font-size: 130%;
   }
 }
-
-.empty-heart {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  position: relative;
-}
-.empty-heart > .border {
-  opacity: 1;
-  transition: opacity 0.1s linear 0.9s;
-  font-size: 1.5rem;
-}
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
-  .empty-heart > .border {
-    font-size: 130%;
-  }
-}
-.empty-heart:hover:active .border {
+.icon-like .empty-heart:hover:active .border {
   opacity: 0;
 }
-.empty-heart:hover:active > .full-heart {
+.icon-like .empty-heart:hover:active > .full-heart {
   transform: scale(1);
   opacity: 1;
   cursor: pointer;
+}
+@media screen and (min-width: 992px) {
+  .icon-like .empty-heart:hover .border {
+    opacity: 0;
+  }
+  .icon-like .empty-heart:hover > .full-heart {
+    transform: scale(1);
+    opacity: 1;
+    cursor: pointer;
+  }
 }
 
 /*header*/
@@ -368,8 +375,9 @@ main {
 }
 @media screen and (min-width: 992px) {
   .proceeding-site {
-    width: 40vw;
+    width: 35vw;
     padding: 0 2rem;
+    margin-top: 2rem;
   }
 }
 
@@ -462,7 +470,7 @@ main {
 }
 @media screen and (min-width: 992px) {
   .gallery-restaurants h2 {
-    padding-left: 2.5rem;
+    padding-left: 2rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
@@ -474,16 +482,18 @@ main {
 @media screen and (min-width: 992px) {
   .gallery-restaurants {
     width: auto;
-    margin-top: 0rem;
-    width: 60vw;
+    margin-top: 2rem;
+    width: 61vw;
     padding-bottom: 1rem;
     padding-left: 0rem;
     padding-right: 0rem;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
   }
 }
 @media screen and (min-width: 1200px) {
   .gallery-restaurants {
-    width: 50vw;
+    width: 60vw;
   }
 }
 .gallery-restaurants .gallery-flex-between {
@@ -539,7 +549,7 @@ main {
 }
 @media screen and (min-width: 1200px) {
   .gallery__card {
-    width: 21.6vw;
+    width: 26.5vw;
   }
 }
 .gallery__card > a {
