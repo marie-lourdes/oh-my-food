@@ -110,6 +110,9 @@
            top:34px; 
           right:20px;
            z-index:1;
+           @include small-mobile{
+            top: 34px;
+           }
             
            
         }
@@ -189,9 +192,7 @@
         margin-right: 1rem;
         margin-left: -3rem;
         transform:translateX(-45px);
-        @include small-mobile{
-            line-height: 4.8rem;
-        }
+       
     }
     label{
 

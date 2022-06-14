@@ -204,11 +204,6 @@ label > p {
   margin-left: -3rem;
   transform: translateX(-45px);
 }
-@media screen and (max-width: 360px) {
-  .starter__menu:active .starter__price, .starter__menu:active .dish__price, .starter__menu:active .dessert__price, .dish__menu:active .starter__price, .dish__menu:active .dish__price, .dish__menu:active .dessert__price, .dessert__menu:active .starter__price, .dessert__menu:active .dish__price, .dessert__menu:active .dessert__price {
-    line-height: 4.8rem;
-  }
-}
 .starter__menu:active label p, .starter__menu:active label h3, .dish__menu:active label p, .dish__menu:active label h3, .dessert__menu:active label p, .dessert__menu:active label h3 {
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -332,13 +327,6 @@ label > p {
     margin-left: -3rem;
     transform: translateX(-45px);
   }
-}
-@media screen and (min-width: 992px) and (max-width: 360px) {
-  .starter__menu:hover .starter__price, .starter__menu:hover .dish__price, .starter__menu:hover .dessert__price, .dish__menu:hover .starter__price, .dish__menu:hover .dish__price, .dish__menu:hover .dessert__price, .dessert__menu:hover .starter__price, .dessert__menu:hover .dish__price, .dessert__menu:hover .dessert__price {
-    line-height: 4.8rem;
-  }
-}
-@media screen and (min-width: 992px) {
   .starter__menu:hover label p, .starter__menu:hover label h3, .dish__menu:hover label p, .dish__menu:hover label h3, .dessert__menu:hover label p, .dessert__menu:hover label h3 {
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -348,8 +336,6 @@ label > p {
     line-height: 2rem;
     transform: scaleX(0.9);
   }
-}
-@media screen and (min-width: 992px) {
   .starter__menu:hover .starter--duck, .dish__menu:hover .starter--duck, .dessert__menu:hover .starter--duck {
     width: 57%;
   }
@@ -690,6 +676,11 @@ main {
   right: 20px;
   z-index: 1;
 }
+@media screen and (max-width: 360px) {
+  .form-menu .starter__price {
+    top: 34px;
+  }
+}
 .form-menu .dish__menu {
   position: relative;
   display: flex;
@@ -741,6 +732,11 @@ main {
   right: 20px;
   z-index: 1;
 }
+@media screen and (max-width: 360px) {
+  .form-menu .dish__price {
+    top: 34px;
+  }
+}
 .form-menu .dessert__menu {
   position: relative;
   display: flex;
@@ -791,6 +787,11 @@ main {
   top: 34px;
   right: 20px;
   z-index: 1;
+}
+@media screen and (max-width: 360px) {
+  .form-menu .dessert__price {
+    top: 34px;
+  }
 }
 .form-menu input[type=checkbox] {
   display: none;
