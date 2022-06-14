@@ -171,8 +171,9 @@ main {
             @include desktop {
                 flex-direction:row;
                 flex-wrap:wrap;
-                max-height: 44rem;
+                max-height: 40rem;
                 justify-content: space-evenly;
+                margin-top: -2rem;
             }
            
         }
@@ -199,7 +200,7 @@ main {
            
         }
         @include desktop-large {
-            width:20vw;
+            width:21.6vw;
         }
           
       

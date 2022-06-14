@@ -40,7 +40,7 @@
                 position: relative;
                 left: 10%;
                 @include tablet {
-                    left: -1%
+                    left: 0%
                 }
                 @include desktop {
                     left: -1%;
