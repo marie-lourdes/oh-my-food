@@ -28,20 +28,35 @@
             >.icon-location {
                 position: relative;
                 left:6%;
+                @include tablet {
+                    left: -4%;
+                }
+                @include desktop {
+                    left: -3%;
+                }
                 
             }
             >.search-field {
-                position:relative;
+                position: relative;
                 left: 10%;
+                @include tablet {
+                    left: -1%
+                }
+                @include desktop {
+                    left: -1%;
+                }
                 input{
                 box-sizing: border-box;
                 padding: 0.8rem 0rem;
-                background:none;
-                border:0;
+                background: none;
+                border: 0;
                 font-weight: 700;
                 color: map-get($color-gray,dark-gray);
                 @include tablet {
                     font-size: 1.8rem;
+                }
+                @include desktop {
+                    font-size: 110%;
                 }
     
                 }

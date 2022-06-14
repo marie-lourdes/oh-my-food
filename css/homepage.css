@@ -253,9 +253,29 @@ main {
   position: relative;
   left: 6%;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+  .booking-form__search-bar > .icon-location {
+    left: -4%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .booking-form__search-bar > .icon-location {
+    left: -3%;
+  }
+}
 .booking-form__search-bar > .search-field {
   position: relative;
   left: 10%;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+  .booking-form__search-bar > .search-field {
+    left: -1%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .booking-form__search-bar > .search-field {
+    left: -1%;
+  }
 }
 .booking-form__search-bar > .search-field input {
   box-sizing: border-box;
@@ -268,6 +288,11 @@ main {
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
   .booking-form__search-bar > .search-field input {
     font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .booking-form__search-bar > .search-field input {
+    font-size: 110%;
   }
 }
 .booking-form__call-to-action {
@@ -558,9 +583,6 @@ main {
     min-height: 13rem;
   }
 }
-.card__image img.la-note-enchantee {
-  /* min-height: 12.6rem;*/
-}
 @media screen and (min-width: 1200px) {
   .card__image img.la-note-enchantee {
     max-height: 12.6rem;
@@ -572,20 +594,25 @@ main {
   align-items: center;
   padding: 0 1.5rem 1rem 0.8rem;
   box-sizing: border-box;
-  /* margin-top: -0.5rem;*/
+  margin-top: -0.5rem;
   position: relative;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+  .card__description {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .card__description {
+    margin-top: -0.1rem;
+  }
 }
 .card__description.card__description--margin-top {
   margin-top: -0.1rem;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
   .card__description.card__description--margin-top {
-    /* margin-top: 0.5rem;*/
-  }
-}
-@media screen and (min-width: 1200px) {
-  .card__description.card__description--margin-top {
-    margin-top: 0.1rem;
+    margin-top: 0;
   }
 }
 .card__description .description__text {

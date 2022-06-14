@@ -244,7 +244,6 @@ main {
                    min-height: 13rem;
                 }
                 &.la-note-enchantee {
-                   /* min-height: 12.6rem;*/
                     @include desktop-large {
                         max-height: 12.6rem;
                      }
@@ -257,16 +256,21 @@ main {
             align-items: center;
             padding: 0 1.5rem 1rem 0.8rem;
             box-sizing: border-box;
-           /* margin-top: -0.5rem;*/
+            margin-top: -0.5rem;
             position: relative;
+            @include tablet {
+                margin-top: 0;
+            }
+            @include desktop {
+                 margin-top: -0.1rem;
+               }
             &.card__description--margin-top{
                 margin-top: -0.1rem;
-                @include desktop {
-                   /* margin-top: 0.5rem;*/
-                 }
-                 @include desktop-large {
-                   margin-top: 0.1rem;
+                @include tablet {
+                    margin-top: 0;
                 }
+               
+                
             }
             .description { 
                 &__text {
