@@ -71,6 +71,7 @@
                     display:inline-block;
                     font-size: 0.8rem;
                    
+                   
                 }
                 .starter--homard{
                     white-space: nowrap;
@@ -82,12 +83,7 @@
                 p{
                     margin-top: -0.8rem;
                 }
-                .dish--beef{
-                    width: 98%;
-                }
-                .dessert--tiramisu{
-                    width: 70%;
-                }
+          
             }
             
 
@@ -96,7 +92,7 @@
             @include flexbox-direction;
             width: 50%;
             font-size: 0.8rem;
-            line-height: 4rem;
+            line-height: 5;
             text-align:right;
 
             position:absolute;
@@ -138,6 +134,11 @@
 }
 
 /* responsive*/
+@mixin small-mobile {
+    @media screen and (max-width:360px) {
+        @content;
+    }
+}
 @mixin tablet {
     @media screen and (min-width:768px) and (max-width:991px) and (orientation:portrait), (min-width:768px) and (max-width:1024px){
         @content;
