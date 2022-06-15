@@ -67,18 +67,24 @@ label{
 
 
 
-@include desktop{
-    .starter__menu:hover, .dish__menu:hover, .dessert__menu:hover {
-        @include checkbox-cursor;
-                        
-        }
-}   
 
-.starter__menu:hover:active, .dish__menu:hover:active, .dessert__menu:hover:hover {
+
+
+.starter__menu:hover:active, .dish__menu:hover:active, .dessert__menu:hover:active {
     
     @include checkbox-cursor;
+    
                     
 }
+
+.starter__menu:hover, .dish__menu:hover, .dessert__menu:hover {
+    @include desktop {
+         @include checkbox-cursor;
+                    
+    }
+}
+
+
 
 @keyframes rotate-check {
     0%{
