@@ -132,7 +132,10 @@
             margin:0;
             padding:0;
            
-            justify-content: space-around;          
+            justify-content: space-around;
+            @include tablet {
+                width: 80vw;
+            }          
         }
     }   
 }

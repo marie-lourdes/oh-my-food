@@ -616,6 +616,11 @@ main {
   appearance: none;
   padding-bottom: 10rem;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+  .form-menu {
+    align-items: center;
+  }
+}
 .form-menu__starter {
   position: relative;
   display: flex;
@@ -623,6 +628,11 @@ main {
   margin: 0;
   padding: 0;
   justify-content: space-around;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+  .form-menu__starter {
+    width: 80vw;
+  }
 }
 .form-menu__dish {
   position: relative;
@@ -632,6 +642,11 @@ main {
   padding: 0;
   justify-content: space-around;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+  .form-menu__dish {
+    width: 80vw;
+  }
+}
 .form-menu__dessert {
   position: relative;
   display: flex;
@@ -639,6 +654,11 @@ main {
   margin: 0;
   padding: 0;
   justify-content: space-around;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+  .form-menu__dessert {
+    width: 80vw;
+  }
 }
 .form-menu legend::after {
   content: "";

@@ -51,6 +51,9 @@ main{
     height: 60rem;
     appearance: none;
     padding-bottom: 10rem;
+    @include tablet {
+        align-items:center;
+    }
     @include form-menu-fieldset;
     legend {
         &::after {
