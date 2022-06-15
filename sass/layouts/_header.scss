@@ -40,6 +40,10 @@ header {
         left:1.5rem;
         top:1.5rem;
         font-size: 1.2rem;
+        @include tablet {
+            top: 37%;
+            font-size: 130%;
+        }
         
         
         
