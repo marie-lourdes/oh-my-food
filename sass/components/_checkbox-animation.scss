@@ -28,7 +28,7 @@ label{
   /*  display:none;*/
     background: $color-tertiary;
     padding: 1.6rem;
-    border-radius: 0 1rem 1rem 0;
+    border-radius: 0 0.8rem 0.8rem 0;
     color: $color-white;
     transform-origin:right;
     transform:scaleX(0);
@@ -39,7 +39,7 @@ label{
     bottom:0;
     z-index:0;
     @include tablet {
-      
+        border-radius: 0 1.2rem 1.2rem 0;
         padding: 2rem;
     }
 
