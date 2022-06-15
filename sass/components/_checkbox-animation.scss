@@ -28,7 +28,7 @@ label{
   /*  display:none;*/
     background: $color-tertiary;
     padding: 1.6rem;
-    border-radius: 0 0.8rem 0.8rem 0;
+    border-radius: 0 1rem 1rem 0;
     color: $color-white;
     transform-origin:right;
     transform:scaleX(0);
@@ -45,8 +45,8 @@ label{
 
     & .circle-checked {
         font-size: 1.3rem; 
-        transform:  rotate(-360deg) scaleX(1);
-        transition: transform 1s ease-in-out;
+      /*  transform:  rotate(-360deg) scaleX(1);
+        transition: transform 1s ease-in-out;*/
         display:block;
         position:absolute;
         top: 2rem;
@@ -65,15 +65,26 @@ label{
 } 
 
 
-.starter__menu:active, .dish__menu:active, .dessert__menu:active {
-    
-    @include checkbox-cursor;
-                    
-}
+
 
 @include desktop{
     .starter__menu:hover, .dish__menu:hover, .dessert__menu:hover {
         @include checkbox-cursor;
                         
         }
-}    
+}   
+
+.starter__menu:active, .dish__menu:active, .dessert__menu:active {
+    
+    @include checkbox-cursor;
+                    
+}
+
+@keyframes rotate-check {
+    0%{
+        transform:rotate(-360deg) scaleX(1);
+    }
+    100%{
+        transform:rotate(360deg) scaleX(0.9);
+    }
+}
