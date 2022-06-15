@@ -155,7 +155,7 @@ label > p {
   /*  display:none;*/
   background: #99E2D0;
   padding: 1.6rem;
-  border-radius: 0 1rem 1rem 0;
+  border-radius: 0 0.8rem 0.8rem 0;
   color: #fff;
   transform-origin: right;
   transform: scaleX(0);
@@ -188,9 +188,9 @@ label > p {
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
   .checkbox-animation .circle-checked {
     transform: rotate(-360deg) scaleY(1);
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     top: 3.2rem;
-    right: 1.2rem;
+    right: 1.1rem;
   }
 }
 
@@ -211,7 +211,7 @@ label > p {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
   .starter__menu:active .checkbox-animation, .dish__menu:active .checkbox-animation, .dessert__menu:active .checkbox-animation {
-    transform: scaleX(1.9);
+    transform: scaleX(1.8);
     padding: 2rem;
   }
 }
@@ -367,7 +367,7 @@ label > p {
 }
 @media screen and (min-width: 992px) and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 992px) and (min-width: 768px) and (max-width: 1024px) {
   .starter__menu:hover .checkbox-animation, .dish__menu:hover .checkbox-animation, .dessert__menu:hover .checkbox-animation {
-    transform: scaleX(1.9);
+    transform: scaleX(1.8);
     padding: 2rem;
   }
 }
@@ -849,7 +849,7 @@ main {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
   .form-menu .starter__price {
-    top: 58px;
+    top: 57px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
@@ -929,7 +929,7 @@ main {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
   .form-menu .dish__price {
-    top: 58px;
+    top: 57px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
@@ -1009,7 +1009,7 @@ main {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
   .form-menu .dessert__price {
-    top: 58px;
+    top: 57px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
