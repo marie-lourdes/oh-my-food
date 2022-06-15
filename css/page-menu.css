@@ -607,12 +607,16 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 1.5rem 0rem 1.2rem;
+  padding: 1rem 1.5rem 0rem 0rem;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
   .menu__heading {
     font-size: 120%;
+    padding-left: 2rem;
   }
+}
+.menu .icon-like {
+  right: 3%;
 }
 
 .form-menu {
