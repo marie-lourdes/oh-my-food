@@ -224,6 +224,19 @@ label > p {
 .starter__menu:active .starter--egg, .dish__menu:active .starter--egg, .dessert__menu:active .starter--egg {
   width: 90%;
 }
+.starter__menu:active .dish--beef, .dish__menu:active .dish--beef, .dessert__menu:active .dish--beef {
+  width: 98%;
+}
+@media screen and (max-width: 360px) {
+  .starter__menu:active .dish--beef, .dish__menu:active .dish--beef, .dessert__menu:active .dish--beef {
+    width: 84%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .starter__menu:active .macaroon, .dish__menu:active .macaroon, .dessert__menu:active .macaroon {
+    width: 70%;
+  }
+}
 @media screen and (max-width: 360px) {
   .starter__menu:active .queue-de-boeuf, .dish__menu:active .queue-de-boeuf, .dessert__menu:active .queue-de-boeuf {
     width: 87%;
@@ -257,6 +270,21 @@ label > p {
     width: 70%;
   }
 }
+@media screen and (max-width: 360px) {
+  .starter__menu:active .foie-gras, .dish__menu:active .foie-gras, .dessert__menu:active .foie-gras {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .starter__menu:active .saint-jacques, .dish__menu:active .saint-jacques, .dessert__menu:active .saint-jacques {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .starter__menu:active .macaroon-hazelnut, .dish__menu:active .macaroon-hazelnut, .dessert__menu:active .macaroon-hazelnut {
+    width: 70%;
+  }
+}
 .starter__menu:active .dessert--ice, .dish__menu:active .dessert--ice, .dessert__menu:active .dessert--ice {
   width: 83%;
 }
@@ -267,23 +295,6 @@ label > p {
 }
 .starter__menu:active .dessert--tiramisu, .dish__menu:active .dessert--tiramisu, .dessert__menu:active .dessert--tiramisu {
   width: 70%;
-}
-.starter__menu:active .dish--beef, .dish__menu:active .dish--beef, .dessert__menu:active .dish--beef {
-  width: 98%;
-}
-@media screen and (max-width: 360px) {
-  .starter__menu:active .dish--beef, .dish__menu:active .dish--beef, .dessert__menu:active .dish--beef {
-    width: 84%;
-  }
-}
-@media screen and (max-width: 360px) {
-  .starter__menu:active .macaroon, .dish__menu:active .macaroon, .dessert__menu:active .macaroon {
-    width: 70%;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    display: inline-block;
-  }
 }
 @media screen and (max-width: 360px) {
   .starter__menu:active .dessert--mousse, .dish__menu:active .dessert--mousse, .dessert__menu:active .dessert--mousse {
@@ -350,6 +361,21 @@ label > p {
     width: 90%;
   }
 }
+@media screen and (min-width: 992px) {
+  .starter__menu:hover .dish--beef, .dish__menu:hover .dish--beef, .dessert__menu:hover .dish--beef {
+    width: 98%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 360px) {
+  .starter__menu:hover .dish--beef, .dish__menu:hover .dish--beef, .dessert__menu:hover .dish--beef {
+    width: 84%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 360px) {
+  .starter__menu:hover .macaroon, .dish__menu:hover .macaroon, .dessert__menu:hover .macaroon {
+    width: 70%;
+  }
+}
 @media screen and (min-width: 992px) and (max-width: 360px) {
   .starter__menu:hover .queue-de-boeuf, .dish__menu:hover .queue-de-boeuf, .dessert__menu:hover .queue-de-boeuf {
     width: 87%;
@@ -395,6 +421,21 @@ label > p {
     width: 70%;
   }
 }
+@media screen and (min-width: 992px) and (max-width: 360px) {
+  .starter__menu:hover .foie-gras, .dish__menu:hover .foie-gras, .dessert__menu:hover .foie-gras {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 360px) {
+  .starter__menu:hover .saint-jacques, .dish__menu:hover .saint-jacques, .dessert__menu:hover .saint-jacques {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 360px) {
+  .starter__menu:hover .macaroon-hazelnut, .dish__menu:hover .macaroon-hazelnut, .dessert__menu:hover .macaroon-hazelnut {
+    width: 70%;
+  }
+}
 @media screen and (min-width: 992px) {
   .starter__menu:hover .dessert--ice, .dish__menu:hover .dessert--ice, .dessert__menu:hover .dessert--ice {
     width: 83%;
@@ -408,25 +449,6 @@ label > p {
 @media screen and (min-width: 992px) {
   .starter__menu:hover .dessert--tiramisu, .dish__menu:hover .dessert--tiramisu, .dessert__menu:hover .dessert--tiramisu {
     width: 70%;
-  }
-}
-@media screen and (min-width: 992px) {
-  .starter__menu:hover .dish--beef, .dish__menu:hover .dish--beef, .dessert__menu:hover .dish--beef {
-    width: 98%;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 360px) {
-  .starter__menu:hover .dish--beef, .dish__menu:hover .dish--beef, .dessert__menu:hover .dish--beef {
-    width: 84%;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 360px) {
-  .starter__menu:hover .macaroon, .dish__menu:hover .macaroon, .dessert__menu:hover .macaroon {
-    width: 70%;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    display: inline-block;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 360px) {

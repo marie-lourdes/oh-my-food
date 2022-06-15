@@ -223,6 +223,20 @@
         .starter--egg {
             width: 90%;
         }
+        
+        .dish--beef{
+            width: 98%;
+            @include small-mobile {
+                width: 84%;
+            }
+        }
+        .macaroon{
+            @include small-mobile {
+                width:70%;
+                
+            }
+            
+        }
  
       /*  .dish--beef{
             width: 77%!important;
@@ -270,6 +284,21 @@
             width: 70%;
             }
         }
+        .foie-gras {
+            @include small-mobile {
+                width:70%;
+            }
+        }
+        .saint-jacques {
+            @include small-mobile {
+                width: 80%;
+            }
+        }
+        .macaroon-hazelnut {
+            @include small-mobile{
+                width: 70%;
+            }
+        }
         
        
         .dessert--ice{
@@ -278,35 +307,14 @@
 
         /* "le delice des sens"*/
         .crisp-lobster{
-            @include small-mobile{
-            width:70%;
-           
-            
-            }
-        }
-
-        .dessert--tiramisu{
+            @include small-mobile {
             width: 70%;
-        }
-
-
-        .dish--beef{
-            width: 98%;
-            @include small-mobile {
-                width: 84%;
             }
         }
-       
-        .macaroon{
-            @include small-mobile {
-                width:70%;
-                white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            display:inline-block;
-            }
-            
-        }
+
+        .dessert--tiramisu {
+            width: 70%;
+        }    
         .dessert--mousse{
         @include small-mobile {
             width:75%;
