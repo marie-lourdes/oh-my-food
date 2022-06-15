@@ -525,7 +525,7 @@ header > .header__logo .logo-svg {
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
   header > .header__logo .logo-svg {
     padding: 2rem;
-    width: 15rem;
+    width: 300px;
     height: 45px;
   }
 }
@@ -602,6 +602,11 @@ main {
   justify-content: space-between;
   padding: 1rem 1.5rem 0rem 1.2rem;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+  .menu__heading {
+    font-size: 120%;
+  }
+}
 
 .form-menu {
   display: flex;
@@ -643,9 +648,20 @@ main {
   position: absolute;
   top: 2rem;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+  .form-menu legend::after {
+    top: 3rem;
+    width: 4rem;
+  }
+}
 .form-menu legend h2 {
   font-size: 1rem;
   font-weight: 500;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+  .form-menu legend h2 {
+    font-size: 100%;
+  }
 }
 .form-menu .starter__menu {
   position: relative;
@@ -660,6 +676,11 @@ main {
   margin-bottom: 1rem;
   box-sizing: border-box;
   cursor: pointer;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+  .form-menu .starter__menu {
+    min-height: 8rem;
+  }
 }
 .form-menu .starter__details {
   display: flex;
@@ -676,6 +697,11 @@ main {
 @media screen and (max-width: 360px) {
   .form-menu .starter__details label p {
     font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+  .form-menu .starter__details label p {
+    font-size: 100%;
   }
 }
 .form-menu .starter__details label .dish--beef {
@@ -706,6 +732,11 @@ main {
     top: 34px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+  .form-menu .starter__price {
+    font-size: 90%;
+  }
+}
 .form-menu .dish__menu {
   position: relative;
   display: flex;
@@ -719,6 +750,11 @@ main {
   margin-bottom: 1rem;
   box-sizing: border-box;
   cursor: pointer;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+  .form-menu .dish__menu {
+    min-height: 8rem;
+  }
 }
 .form-menu .dish__details {
   display: flex;
@@ -735,6 +771,11 @@ main {
 @media screen and (max-width: 360px) {
   .form-menu .dish__details label p {
     font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+  .form-menu .dish__details label p {
+    font-size: 100%;
   }
 }
 .form-menu .dish__details label .dish--beef {
@@ -765,6 +806,11 @@ main {
     top: 34px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+  .form-menu .dish__price {
+    font-size: 90%;
+  }
+}
 .form-menu .dessert__menu {
   position: relative;
   display: flex;
@@ -778,6 +824,11 @@ main {
   margin-bottom: 1rem;
   box-sizing: border-box;
   cursor: pointer;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+  .form-menu .dessert__menu {
+    min-height: 8rem;
+  }
 }
 .form-menu .dessert__details {
   display: flex;
@@ -794,6 +845,11 @@ main {
 @media screen and (max-width: 360px) {
   .form-menu .dessert__details label p {
     font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+  .form-menu .dessert__details label p {
+    font-size: 100%;
   }
 }
 .form-menu .dessert__details label .dish--beef {
@@ -822,6 +878,11 @@ main {
 @media screen and (max-width: 360px) {
   .form-menu .dessert__price {
     top: 34px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+  .form-menu .dessert__price {
+    font-size: 90%;
   }
 }
 .form-menu input[type=checkbox] {

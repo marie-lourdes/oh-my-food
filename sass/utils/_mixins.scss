@@ -51,12 +51,15 @@
             @include box-shadow ($color-shadow: map-get($color-gray, background-search-bar), $offset-y: 5px, $blur-radius: 10px, $spread-radius: 2px);
             border-radius: 1rem;
             padding: 0.3rem 1rem 0rem 0.5rem;
-           align-items: center;
+            align-items: center;
             height: 5rem;
             background:$color-white;
             margin-bottom:1rem;
             box-sizing:border-box;
             cursor:pointer;
+            @include tablet {
+                min-height: 8rem;
+            }
         }
        
         .#{$value}__details {
@@ -70,8 +73,11 @@
                     overflow: hidden;
                     font-size: 1rem;
                     margin-top: -0.8rem;
-                    @include small-mobile(){
+                    @include small-mobile{
                         font-size: 0.8rem;
+                    }
+                    @include tablet {
+                        font-size: 100%;
                     }
                    
                    
@@ -100,19 +106,17 @@
         }
         .#{$value}__price {
             @include flexbox-direction;
-            
             font-size: 0.8rem;
-            
             text-align:right;
-
             position:absolute;
-            
-           
-           top:34px; 
-          right:20px;
-           z-index:1;
-           @include small-mobile{
+            top:34px; 
+            right:20px;
+            z-index:1;
+            @include small-mobile{
             top: 34px;
+           }
+           @include tablet {
+            font-size: 90%;
            }
             
            

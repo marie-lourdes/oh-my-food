@@ -38,6 +38,9 @@ main{
         align-items: center;
         justify-content: space-between;
         padding: 1rem 1.5rem 0rem 1.2rem;
+        @include tablet {
+            font-size: 120%;
+        }
     }
 }
 
@@ -57,10 +60,17 @@ main{
             background: $color-tertiary;
             position: absolute;
             top: 2rem;
+            @include tablet {
+                top: 3rem;
+                width:4rem;
+            }
         }
         h2 {
             font-size: 1rem;
             font-weight: 500;
+            @include tablet {
+                font-size: 100%;
+            }
         }       
     }
     @include menu-details;
