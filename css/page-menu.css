@@ -594,6 +594,13 @@ main {
   margin-bottom: 12.7rem;
   padding: 0 1rem;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+  .menu {
+    padding: 0;
+    top: 28.8rem;
+    margin-bottom: 29.7rem;
+  }
+}
 .menu__heading {
   font-family: "Shrikhand", cursive, arial, sans-serif;
   display: flex;
@@ -619,6 +626,8 @@ main {
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
   .form-menu {
     align-items: center;
+    min-height: 108rem;
+    padding-bottom: 7rem;
   }
 }
 .form-menu__starter {

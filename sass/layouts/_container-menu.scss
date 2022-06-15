@@ -32,6 +32,11 @@ main{
     top: 12.8rem;
     margin-bottom: 12.7rem;
     padding: 0 1rem;
+    @include tablet {
+        padding: 0;
+        top: 28.8rem;
+        margin-bottom: 29.7rem;
+    }
     &__heading {
         font-family: "Shrikhand", cursive, arial, sans-serif;
         @include flexbox-direction(row);
@@ -53,6 +58,8 @@ main{
     padding-bottom: 10rem;
     @include tablet {
         align-items:center;
+        min-height: 108rem;
+        padding-bottom: 7rem;
     }
     @include form-menu-fieldset;
     legend {
