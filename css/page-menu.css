@@ -710,7 +710,7 @@ main {
   justify-content: space-between;
   height: 70rem;
   appearance: none;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
   .form-menu {
