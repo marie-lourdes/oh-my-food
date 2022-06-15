@@ -59,6 +59,7 @@
             cursor:pointer;
             @include tablet {
                 min-height: 8rem;
+                border-radius: 1.8rem;
             }
         }
        
@@ -116,6 +117,9 @@
             top: 34px;
            }
            @include tablet {
+            top: 58px;
+           }
+           @include tablet {
             font-size: 90%;
            }
             
@@ -157,35 +161,6 @@
     }
 }
 
-/* responsive*/
-@mixin small-mobile {
-    @media screen and (max-width:360px) {
-        @content;
-    }
-}
-@mixin tablet {
-    @media screen and (min-width:768px) and (max-width:991px) and (orientation:portrait), (min-width:768px) and (max-width:1024px){
-        @content;
-    }
-  }
-  @mixin tablet-landscape {
-    @media screen and (min-width:991px) and (max-width:1024px) and (orientation:landscape){
-        @content;
-    }
-  }
-  
-  @mixin desktop{
-    @media screen and (min-width:992px){
-        @content;
-    }
-  }
-
-  @mixin desktop-large{
-    @media screen and (min-width:1200px){
-        @content;
-    }
-  }
-
 @mixin checkbox-cursor {
     /*padding: 0rem 0rem 0rem 0.5rem;*/
     overflow: hidden;
@@ -194,8 +169,16 @@
     .checkbox-animation {
          display:flex; 
          transform:scaleX(1.35);
+         @include tablet {
+            transform: scaleX(2.2);
+         }
          .circle-checked{
              transform:rotate(360deg) scaleX(0.9);
+             @include tablet {
+                transform: rotate(360deg) scaleX(0.5);
+
+             }
+            
         }   
 
     }
@@ -204,6 +187,9 @@
         margin-right: 1rem;
         margin-left: -3rem;
         transform:translateX(-45px);
+        @include tablet {
+            transform:translateX(-100px);  
+        }
        
     }
     label{
@@ -348,9 +334,43 @@
     .starter__details, .dish__details, .dessert__details {
      
        line-height:1rem;
+       @include tablet {
+        line-height: 2rem;
+       }
       
 
     }
 
  }
+
+/* responsive*/
+@mixin small-mobile {
+    @media screen and (max-width:360px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media screen and (min-width:768px) and (max-width:991px) and (orientation:portrait), (min-width:768px) and (max-width:1024px){
+        @content;
+    }
+  }
+  @mixin tablet-landscape {
+    @media screen and (min-width:991px) and (max-width:1024px) and (orientation:landscape){
+        @content;
+    }
+  }
+  
+  @mixin desktop{
+    @media screen and (min-width:992px){
+        @content;
+    }
+  }
+
+  @mixin desktop-large{
+    @media screen and (min-width:1200px){
+        @content;
+    }
+  }
+
+
 

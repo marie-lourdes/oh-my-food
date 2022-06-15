@@ -38,6 +38,9 @@ label{
     right:0;
     bottom:0;
     z-index:0;
+    @include tablet {
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
 
     & .circle-checked {
         font-size: 1.3rem; 
@@ -49,6 +52,13 @@ label{
         right: 0.9rem;
         @include small-mobile{
             top: 2rem;
+        }
+        @include tablet {
+            
+            font-size: 2rem;
+            top: 3.5rem;
+            right:0.9rem;
+          
         }
     }
 } 
