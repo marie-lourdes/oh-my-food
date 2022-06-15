@@ -176,10 +176,10 @@
          .circle-checked{
             transform:rotate(0deg) scale(1) ;
             animation: rotate-check 1s ease-in-out 1 ;
-             @include tablet {
+            /* @include tablet {
                 transform: rotate(0deg) scale(1.3);
 
-             }
+             }*/
             
         }   
 
