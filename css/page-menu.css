@@ -646,11 +646,15 @@ main {
   flex-direction: column;
   margin: 0;
   padding: 0;
+  border: none;
   justify-content: space-around;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
   .form-menu__starter {
     width: 80vw;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 2px groove rgb(192, 192, 192);
   }
 }
 .form-menu__dish {
@@ -659,11 +663,15 @@ main {
   flex-direction: column;
   margin: 0;
   padding: 0;
+  border: none;
   justify-content: space-around;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
   .form-menu__dish {
     width: 80vw;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 2px groove rgb(192, 192, 192);
   }
 }
 .form-menu__dessert {
@@ -672,11 +680,15 @@ main {
   flex-direction: column;
   margin: 0;
   padding: 0;
+  border: none;
   justify-content: space-around;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
   .form-menu__dessert {
     width: 80vw;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 2px groove rgb(192, 192, 192);
   }
 }
 .form-menu legend::after {
