@@ -63,7 +63,7 @@ main{
     padding-bottom: 5rem;
     @include tablet {
         align-items:center;
-        min-height: 108rem;
+        min-height: 120rem;
         padding-bottom: 7rem;
     }
     @include form-menu-fieldset;
@@ -114,6 +114,7 @@ main{
         width: 20rem;
         padding: 2rem;
         border-radius: 3rem;
+        font-size: 110%;
         
     }
 }

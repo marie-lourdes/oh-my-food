@@ -137,10 +137,10 @@
             padding: 0;
             border:none;
             justify-content: space-around;
+            box-sizing: border-box;
             @include tablet {
                 width: 80vw;
-                padding-left: 1rem;
-                padding-right: 1rem;
+                padding:2rem;
                 border: 2px groove rgb(192, 192, 192);
 
             }          

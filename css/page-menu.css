@@ -715,7 +715,7 @@ main {
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
   .form-menu {
     align-items: center;
-    min-height: 108rem;
+    min-height: 120rem;
     padding-bottom: 7rem;
   }
 }
@@ -727,12 +727,12 @@ main {
   padding: 0;
   border: none;
   justify-content: space-around;
+  box-sizing: border-box;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
   .form-menu__starter {
     width: 80vw;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 2rem;
     border: 2px groove rgb(192, 192, 192);
   }
 }
@@ -744,12 +744,12 @@ main {
   padding: 0;
   border: none;
   justify-content: space-around;
+  box-sizing: border-box;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
   .form-menu__dish {
     width: 80vw;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 2rem;
     border: 2px groove rgb(192, 192, 192);
   }
 }
@@ -761,12 +761,12 @@ main {
   padding: 0;
   border: none;
   justify-content: space-around;
+  box-sizing: border-box;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
   .form-menu__dessert {
     width: 80vw;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 2rem;
     border: 2px groove rgb(192, 192, 192);
   }
 }
@@ -1049,6 +1049,7 @@ main {
     width: 20rem;
     padding: 2rem;
     border-radius: 3rem;
+    font-size: 110%;
   }
 }
 
