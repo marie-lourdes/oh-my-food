@@ -42,7 +42,7 @@ main {
         
     }
     @include tablet-landscape {
-        width: 100vw;
+        width: 100vw !important;
     } 
     
     @include desktop {
@@ -137,6 +137,7 @@ main {
                 padding-left: 1.5rem;
                 
             }
+           
             @include desktop {
                 padding-left: 2rem;
             }
@@ -146,6 +147,14 @@ main {
             width:auto;
             padding-left: 0.5rem;
             padding-right: 0.5rem;
+        }
+        @include tablet-landscape {
+            width: 100vw !important;
+            margin-right:0rem !important;
+         
+            padding-bottom:4rem!important;
+           
+            
         }
         @include desktop{
             width:auto;
@@ -177,6 +186,10 @@ main {
                 justify-content: space-evenly;
                 
             }
+            @include tablet-landscape {
+                max-height: 50rem !important;
+                margin-top: 0!important;
+            }
             @include desktop {
                 flex-direction:row;
                 flex-wrap:wrap;
@@ -200,7 +213,8 @@ main {
                
         }
         @include tablet-landscape{
-            width: 45vw;
+            width: 45vw !important;
+            min-height: 22rem!important;
         }
         
         @include desktop {
@@ -251,6 +265,9 @@ main {
                 @include tablet {
                     max-height: 13rem;
                 }
+                @include tablet-landscape {
+                    max-height: 15rem;
+                }
                 @include desktop {
                    min-height: 13rem;
                 }
@@ -258,6 +275,9 @@ main {
                     @include desktop-large {
                         min-height: 12.6rem;
                      }
+                     @include tablet-landscape {
+                        max-height: 14.6rem;
+                    }
                 }
             }     
         }
