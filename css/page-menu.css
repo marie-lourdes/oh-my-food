@@ -233,6 +233,7 @@ label > p {
   .starter__menu:hover .starter__price, .starter__menu:hover .dish__price, .starter__menu:hover .dessert__price, .dish__menu:hover .starter__price, .dish__menu:hover .dish__price, .dish__menu:hover .dessert__price, .dessert__menu:hover .starter__price, .dessert__menu:hover .dish__price, .dessert__menu:hover .dessert__price {
     margin-right: 1rem;
     margin-left: -3rem;
+    top: 33px;
     transform: translateX(-45px);
   }
 }
@@ -384,21 +385,21 @@ label > p {
   }
 }
 
-.starter__menu:hover, .dish__menu:hover, .dessert__menu:hover {
+.starter__menuactive:hover, .dish__menu:active:hover, .dessert__menu:active:hover {
   /*padding: 0rem 0rem 0rem 0.5rem;*/
   overflow: hidden;
 }
-.starter__menu:hover .checkbox-animation, .dish__menu:hover .checkbox-animation, .dessert__menu:hover .checkbox-animation {
+.starter__menuactive:hover .checkbox-animation, .dish__menu:active:hover .checkbox-animation, .dessert__menu:active:hover .checkbox-animation {
   display: flex;
   transform: scaleX(1.35);
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
-  .starter__menu:hover .checkbox-animation, .dish__menu:hover .checkbox-animation, .dessert__menu:hover .checkbox-animation {
+  .starter__menuactive:hover .checkbox-animation, .dish__menu:active:hover .checkbox-animation, .dessert__menu:active:hover .checkbox-animation {
     transform: scaleX(1.8);
     padding: 2rem;
   }
 }
-.starter__menu:hover .checkbox-animation .circle-checked, .dish__menu:hover .checkbox-animation .circle-checked, .dessert__menu:hover .checkbox-animation .circle-checked {
+.starter__menuactive:hover .checkbox-animation .circle-checked, .dish__menu:active:hover .checkbox-animation .circle-checked, .dessert__menu:active:hover .checkbox-animation .circle-checked {
   transform: rotate(0deg) scale(1);
   animation: rotate-check 1s ease-in-out 1;
   /* @include tablet {
@@ -406,17 +407,18 @@ label > p {
 
    }*/
 }
-.starter__menu:hover .starter__price, .starter__menu:hover .dish__price, .starter__menu:hover .dessert__price, .dish__menu:hover .starter__price, .dish__menu:hover .dish__price, .dish__menu:hover .dessert__price, .dessert__menu:hover .starter__price, .dessert__menu:hover .dish__price, .dessert__menu:hover .dessert__price {
+.starter__menuactive:hover .starter__price, .starter__menuactive:hover .dish__price, .starter__menuactive:hover .dessert__price, .dish__menu:active:hover .starter__price, .dish__menu:active:hover .dish__price, .dish__menu:active:hover .dessert__price, .dessert__menu:active:hover .starter__price, .dessert__menu:active:hover .dish__price, .dessert__menu:active:hover .dessert__price {
   margin-right: 1rem;
   margin-left: -3rem;
+  top: 33px;
   transform: translateX(-45px);
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
-  .starter__menu:hover .starter__price, .starter__menu:hover .dish__price, .starter__menu:hover .dessert__price, .dish__menu:hover .starter__price, .dish__menu:hover .dish__price, .dish__menu:hover .dessert__price, .dessert__menu:hover .starter__price, .dessert__menu:hover .dish__price, .dessert__menu:hover .dessert__price {
+  .starter__menuactive:hover .starter__price, .starter__menuactive:hover .dish__price, .starter__menuactive:hover .dessert__price, .dish__menu:active:hover .starter__price, .dish__menu:active:hover .dish__price, .dish__menu:active:hover .dessert__price, .dessert__menu:active:hover .starter__price, .dessert__menu:active:hover .dish__price, .dessert__menu:active:hover .dessert__price {
     transform: translateX(-100px);
   }
 }
-.starter__menu:hover label, .dish__menu:hover label, .dessert__menu:hover label {
+.starter__menuactive:hover label, .dish__menu:active:hover label, .dessert__menu:active:hover label {
   /* paragraph width-ellipsis: " menu palette du goût" */
   /*  .dish--beef{
         width: 77%!important;
@@ -425,100 +427,100 @@ label > p {
   /* "la note enchantée" */
   /* "le delice des sens"*/
 }
-.starter__menu:hover label p, .starter__menu:hover label h3, .dish__menu:hover label p, .dish__menu:hover label h3, .dessert__menu:hover label p, .dessert__menu:hover label h3 {
+.starter__menuactive:hover label p, .starter__menuactive:hover label h3, .dish__menu:active:hover label p, .dish__menu:active:hover label h3, .dessert__menu:active:hover label p, .dessert__menu:active:hover label h3 {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.starter__menu:hover label p, .dish__menu:hover label p, .dessert__menu:hover label p {
+.starter__menuactive:hover label p, .dish__menu:active:hover label p, .dessert__menu:active:hover label p {
   line-height: 2rem;
   transform: scaleX(0.9);
 }
-.starter__menu:hover label .starter--duck, .dish__menu:hover label .starter--duck, .dessert__menu:hover label .starter--duck {
+.starter__menuactive:hover label .starter--duck, .dish__menu:active:hover label .starter--duck, .dessert__menu:active:hover label .starter--duck {
   width: 57%;
 }
 @media screen and (max-width: 360px) {
-  .starter__menu:hover label .starter--duck, .dish__menu:hover label .starter--duck, .dessert__menu:hover label .starter--duck {
+  .starter__menuactive:hover label .starter--duck, .dish__menu:active:hover label .starter--duck, .dessert__menu:active:hover label .starter--duck {
     width: 58%;
   }
 }
-.starter__menu:hover label .starter--egg, .dish__menu:hover label .starter--egg, .dessert__menu:hover label .starter--egg {
+.starter__menuactive:hover label .starter--egg, .dish__menu:active:hover label .starter--egg, .dessert__menu:active:hover label .starter--egg {
   width: 90%;
 }
-.starter__menu:hover label .dish--beef, .dish__menu:hover label .dish--beef, .dessert__menu:hover label .dish--beef {
+.starter__menuactive:hover label .dish--beef, .dish__menu:active:hover label .dish--beef, .dessert__menu:active:hover label .dish--beef {
   width: 75% !important;
 }
 @media screen and (max-width: 360px) {
-  .starter__menu:hover label .macaroon, .dish__menu:hover label .macaroon, .dessert__menu:hover label .macaroon {
+  .starter__menuactive:hover label .macaroon, .dish__menu:active:hover label .macaroon, .dessert__menu:active:hover label .macaroon {
     width: 70%;
   }
 }
 @media screen and (max-width: 360px) {
-  .starter__menu:hover label .queue-de-boeuf, .dish__menu:hover label .queue-de-boeuf, .dessert__menu:hover label .queue-de-boeuf {
+  .starter__menuactive:hover label .queue-de-boeuf, .dish__menu:active:hover label .queue-de-boeuf, .dessert__menu:active:hover label .queue-de-boeuf {
     width: 87%;
   }
 }
-.starter__menu:hover label .dish--beef-parmentier, .dish__menu:hover label .dish--beef-parmentier, .dessert__menu:hover label .dish--beef-parmentier {
+.starter__menuactive:hover label .dish--beef-parmentier, .dish__menu:active:hover label .dish--beef-parmentier, .dessert__menu:active:hover label .dish--beef-parmentier {
   width: 87%;
 }
 @media screen and (max-width: 360px) {
-  .starter__menu:hover label .dish--mada, .dish__menu:hover label .dish--mada, .dessert__menu:hover label .dish--mada {
+  .starter__menuactive:hover label .dish--mada, .dish__menu:active:hover label .dish--mada, .dessert__menu:active:hover label .dish--mada {
     width: 57%;
   }
 }
-.starter__menu:hover label .dessert--mousse, .dish__menu:hover label .dessert--mousse, .dessert__menu:hover label .dessert--mousse {
+.starter__menuactive:hover label .dessert--mousse, .dish__menu:active:hover label .dessert--mousse, .dessert__menu:active:hover label .dessert--mousse {
   width: 77%;
 }
-.starter__menu:hover label .dish--potatoes, .dish__menu:hover label .dish--potatoes, .dessert__menu:hover label .dish--potatoes {
+.starter__menuactive:hover label .dish--potatoes, .dish__menu:active:hover label .dish--potatoes, .dessert__menu:active:hover label .dish--potatoes {
   width: 85%;
 }
-.starter__menu:hover label .dish--parmentier, .dish__menu:hover label .dish--parmentier, .dessert__menu:hover label .dish--parmentier {
+.starter__menuactive:hover label .dish--parmentier, .dish__menu:active:hover label .dish--parmentier, .dessert__menu:active:hover label .dish--parmentier {
   width: 91%;
 }
-.starter__menu:hover label .dish--gnocchis, .dish__menu:hover label .dish--gnocchis, .dessert__menu:hover label .dish--gnocchis {
+.starter__menuactive:hover label .dish--gnocchis, .dish__menu:active:hover label .dish--gnocchis, .dessert__menu:active:hover label .dish--gnocchis {
   width: 81%;
 }
-.starter__menu:hover label .starter--ravioli, .dish__menu:hover label .starter--ravioli, .dessert__menu:hover label .starter--ravioli {
+.starter__menuactive:hover label .starter--ravioli, .dish__menu:active:hover label .starter--ravioli, .dessert__menu:active:hover label .starter--ravioli {
   width: 91%;
 }
 @media screen and (max-width: 360px) {
-  .starter__menu:hover label .starter--lobster, .dish__menu:hover label .starter--lobster, .dessert__menu:hover label .starter--lobster {
+  .starter__menuactive:hover label .starter--lobster, .dish__menu:active:hover label .starter--lobster, .dessert__menu:active:hover label .starter--lobster {
     width: 70%;
   }
 }
 @media screen and (max-width: 360px) {
-  .starter__menu:hover label .foie-gras, .dish__menu:hover label .foie-gras, .dessert__menu:hover label .foie-gras {
+  .starter__menuactive:hover label .foie-gras, .dish__menu:active:hover label .foie-gras, .dessert__menu:active:hover label .foie-gras {
     width: 70%;
   }
 }
 @media screen and (max-width: 360px) {
-  .starter__menu:hover label .saint-jacques, .dish__menu:hover label .saint-jacques, .dessert__menu:hover label .saint-jacques {
+  .starter__menuactive:hover label .saint-jacques, .dish__menu:active:hover label .saint-jacques, .dessert__menu:active:hover label .saint-jacques {
     width: 80%;
   }
 }
 @media screen and (max-width: 360px) {
-  .starter__menu:hover label .macaroon-hazelnut, .dish__menu:hover label .macaroon-hazelnut, .dessert__menu:hover label .macaroon-hazelnut {
+  .starter__menuactive:hover label .macaroon-hazelnut, .dish__menu:active:hover label .macaroon-hazelnut, .dessert__menu:active:hover label .macaroon-hazelnut {
     width: 70%;
   }
 }
-.starter__menu:hover label .dessert--ice, .dish__menu:hover label .dessert--ice, .dessert__menu:hover label .dessert--ice {
+.starter__menuactive:hover label .dessert--ice, .dish__menu:active:hover label .dessert--ice, .dessert__menu:active:hover label .dessert--ice {
   width: 83%;
 }
 @media screen and (max-width: 360px) {
-  .starter__menu:hover label .crisp-lobster, .dish__menu:hover label .crisp-lobster, .dessert__menu:hover label .crisp-lobster {
+  .starter__menuactive:hover label .crisp-lobster, .dish__menu:active:hover label .crisp-lobster, .dessert__menu:active:hover label .crisp-lobster {
     width: 70%;
   }
 }
-.starter__menu:hover label .dessert--tiramisu, .dish__menu:hover label .dessert--tiramisu, .dessert__menu:hover label .dessert--tiramisu {
+.starter__menuactive:hover label .dessert--tiramisu, .dish__menu:active:hover label .dessert--tiramisu, .dessert__menu:active:hover label .dessert--tiramisu {
   width: 70%;
 }
 @media screen and (max-width: 360px) {
-  .starter__menu:hover label .dessert--mousse, .dish__menu:hover label .dessert--mousse, .dessert__menu:hover label .dessert--mousse {
+  .starter__menuactive:hover label .dessert--mousse, .dish__menu:active:hover label .dessert--mousse, .dessert__menu:active:hover label .dessert--mousse {
     width: 75%;
   }
 }
 @media screen and (max-width: 360px) {
-  .starter__menu:hover label .roast-chicken, .dish__menu:hover label .roast-chicken, .dessert__menu:hover label .roast-chicken {
+  .starter__menuactive:hover label .roast-chicken, .dish__menu:active:hover label .roast-chicken, .dessert__menu:active:hover label .roast-chicken {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -526,11 +528,11 @@ label > p {
     width: 70%;
   }
 }
-.starter__menu:hover .starter__details, .starter__menu:hover .dish__details, .starter__menu:hover .dessert__details, .dish__menu:hover .starter__details, .dish__menu:hover .dish__details, .dish__menu:hover .dessert__details, .dessert__menu:hover .starter__details, .dessert__menu:hover .dish__details, .dessert__menu:hover .dessert__details {
+.starter__menuactive:hover .starter__details, .starter__menuactive:hover .dish__details, .starter__menuactive:hover .dessert__details, .dish__menu:active:hover .starter__details, .dish__menu:active:hover .dish__details, .dish__menu:active:hover .dessert__details, .dessert__menu:active:hover .starter__details, .dessert__menu:active:hover .dish__details, .dessert__menu:active:hover .dessert__details {
   line-height: 1rem;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
-  .starter__menu:hover .starter__details, .starter__menu:hover .dish__details, .starter__menu:hover .dessert__details, .dish__menu:hover .starter__details, .dish__menu:hover .dish__details, .dish__menu:hover .dessert__details, .dessert__menu:hover .starter__details, .dessert__menu:hover .dish__details, .dessert__menu:hover .dessert__details {
+  .starter__menuactive:hover .starter__details, .starter__menuactive:hover .dish__details, .starter__menuactive:hover .dessert__details, .dish__menu:active:hover .starter__details, .dish__menu:active:hover .dish__details, .dish__menu:active:hover .dessert__details, .dessert__menu:active:hover .starter__details, .dessert__menu:active:hover .dish__details, .dessert__menu:active:hover .dessert__details {
     line-height: 2rem;
   }
 }

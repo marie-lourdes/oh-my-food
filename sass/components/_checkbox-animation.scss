@@ -79,7 +79,7 @@ label{
                     
 }
 
-.starter__menu:hover, .dish__menu:hover, .dessert__menu:hover {
+.starter__menuactive:hover, .dish__menu:active:hover, .dessert__menu:active:hover {
    
          @include checkbox-cursor;
                     
