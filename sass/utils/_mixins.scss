@@ -174,7 +174,7 @@
             padding: 2rem;
          }
          .circle-checked{
-            transform:rotate(0deg) scale(1) ;
+           /* transform:rotate(0deg) scale(1) ;*/
             animation: rotate-check 1s ease-in-out 1 ;
             /* @include tablet {
                 transform: rotate(0deg) scale(1.3);

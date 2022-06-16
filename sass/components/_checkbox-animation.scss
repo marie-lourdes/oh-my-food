@@ -40,6 +40,7 @@ label{
     right:0;
     bottom:0;
     z-index:0;
+    box-sizing:border-box;
     @include tablet {
         border-radius: 0 1.2rem 1.2rem 0;
         padding: 2rem;
@@ -53,11 +54,12 @@ label{
         position:absolute;
         top: 2rem;
         right: 0.9rem;
+        transform:scale(0.8,1.1);
         @include small-mobile{
             top: 2rem;
         }
         @include tablet {
-            transform:rotate(-360deg) scaleY(1);
+          /*  transform:rotate(-360deg) scaleY(1);*/
             font-size: 1.8rem;
             top: 3.2rem;
             right:1.1rem;
@@ -79,7 +81,7 @@ label{
                     
 }
 
-.starter__menuactive:hover, .dish__menu:active:hover, .dessert__menu:active:hover {
+.starter__menu:active, .dish__menu:active, .dessert__menu:active {
    
          @include checkbox-cursor;
                     
@@ -91,9 +93,9 @@ label{
 
 @keyframes rotate-check {
     0%{
-        transform:rotate(-360deg) scaleX(1);
+        transform:rotate(-360deg)/* scale(1,1); */scaleX(0.9);
     }
     100%{
-        transform:rotate(360deg) scaleX(0.9);
+        transform:rotate(360deg) /*scale(0.9,1.1);*/ scaleX(0.8);
     }
 }
