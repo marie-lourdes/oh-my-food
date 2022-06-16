@@ -7,6 +7,9 @@
     padding: 1.5rem 2rem 1.5rem;
     width:100%;
     box-sizing: border-box;
+    @include tablet-landscape{
+        min-height:25vh;
+    }
     @include desktop {
         height: 17vh;
         justify-content: center;
@@ -15,6 +18,10 @@
         @include desktop {
             position: relative;
             top: -25%;
+        }
+        @include tablet-landscape{
+          postion:relative;
+          top:-10%;
         }
 
          

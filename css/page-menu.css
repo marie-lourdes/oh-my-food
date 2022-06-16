@@ -29,10 +29,10 @@ body {
   font-size: 1rem;
   position: relative;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   body {
     width: auto;
-    font-size: 160%;
+    font-size: 160% !important;
   }
 }
 @media screen and (min-width: 992px) {
@@ -46,7 +46,7 @@ body {
 h1, h2 {
   font-size: 1.5rem;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   h1, h2 {
     font-size: 130%;
   }
@@ -59,7 +59,7 @@ h2 {
 h3 {
   font-size: 1rem;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   h3 {
     font-size: 110%;
   }
@@ -93,7 +93,7 @@ a {
   transition: opacity 0.1s linear 0.9s;
   font-size: 1.5rem;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .icon-like .empty-heart > .border {
     font-size: 130%;
   }
@@ -117,7 +117,7 @@ a {
 .icon-like .empty-heart > .full-heart i {
   font-size: 1.5rem;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .icon-like .empty-heart > .full-heart i {
     font-size: 130%;
   }
@@ -175,7 +175,7 @@ label > p {
   z-index: 0;
   box-sizing: border-box;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .checkbox-animation {
     border-radius: 0 1.2rem 1.2rem 0;
     padding: 2rem;
@@ -196,7 +196,7 @@ label > p {
     top: 2rem;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .checkbox-animation .circle-checked {
     /*  transform:rotate(-360deg) scaleY(1);*/
     font-size: 1.8rem;
@@ -396,7 +396,7 @@ label > p {
   display: flex;
   transform: scaleX(1.35);
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .starter__menu:active .checkbox-animation, .dish__menu:active .checkbox-animation, .dessert__menu:active .checkbox-animation {
     transform: scaleX(1.8);
     padding: 2rem;
@@ -416,7 +416,7 @@ label > p {
   top: 33px;
   transform: translateX(-45px);
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .starter__menu:active .starter__price, .starter__menu:active .dish__price, .starter__menu:active .dessert__price, .dish__menu:active .starter__price, .dish__menu:active .dish__price, .dish__menu:active .dessert__price, .dessert__menu:active .starter__price, .dessert__menu:active .dish__price, .dessert__menu:active .dessert__price {
     transform: translateX(-100px);
     top: 57px;
@@ -535,7 +535,7 @@ label > p {
 .starter__menu:active .starter__details, .starter__menu:active .dish__details, .starter__menu:active .dessert__details, .dish__menu:active .starter__details, .dish__menu:active .dish__details, .dish__menu:active .dessert__details, .dessert__menu:active .starter__details, .dessert__menu:active .dish__details, .dessert__menu:active .dessert__details {
   line-height: 1rem;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .starter__menu:active .starter__details, .starter__menu:active .dish__details, .starter__menu:active .dessert__details, .dish__menu:active .starter__details, .dish__menu:active .dish__details, .dish__menu:active .dessert__details, .dessert__menu:active .starter__details, .dessert__menu:active .dish__details, .dessert__menu:active .dessert__details {
     line-height: 2rem;
   }
@@ -557,7 +557,7 @@ label > p {
   background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 0px 10px 20px -5px rgba(53, 53, 53, 0.5);
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .button-primary {
     padding: 1.5rem;
     border-radius: 2.5rem;
@@ -582,7 +582,7 @@ header {
   position: relative;
   background: #fff;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   header {
     width: 100%;
   }
@@ -592,7 +592,7 @@ header > .header__logo {
   position: relative;
   top: 5px;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   header > .header__logo {
     top: 10px;
   }
@@ -601,7 +601,7 @@ header > .header__logo .logo-svg {
   padding: 0.8rem;
   width: 10rem;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   header > .header__logo .logo-svg {
     padding: 2rem;
     width: 300px;
@@ -618,7 +618,7 @@ header button {
   top: 1.5rem;
   font-size: 1.2rem;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   header button {
     top: 37%;
     font-size: 130%;
@@ -679,7 +679,7 @@ main {
   margin-bottom: 12.7rem;
   padding: 0 1rem;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .menu {
     padding: 0;
     top: 28.8rem;
@@ -694,7 +694,7 @@ main {
   justify-content: space-between;
   padding: 1rem 1.5rem 0rem 0rem;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .menu__heading {
     font-size: 120%;
     padding-left: 2rem;
@@ -712,7 +712,7 @@ main {
   appearance: none;
   padding-bottom: 5rem;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .form-menu {
     align-items: center;
     min-height: 120rem;
@@ -729,7 +729,7 @@ main {
   justify-content: space-around;
   box-sizing: border-box;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .form-menu__starter {
     width: 80vw;
     padding: 2rem;
@@ -746,7 +746,7 @@ main {
   justify-content: space-around;
   box-sizing: border-box;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .form-menu__dish {
     width: 80vw;
     padding: 2rem;
@@ -763,7 +763,7 @@ main {
   justify-content: space-around;
   box-sizing: border-box;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .form-menu__dessert {
     width: 80vw;
     padding: 2rem;
@@ -778,7 +778,7 @@ main {
   position: absolute;
   top: 2rem;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .form-menu legend::after {
     top: 3rem;
     width: 4rem;
@@ -788,7 +788,7 @@ main {
   font-size: 1rem;
   font-weight: 500;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .form-menu legend h2 {
     font-size: 100%;
   }
@@ -807,7 +807,7 @@ main {
   box-sizing: border-box;
   cursor: pointer;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .form-menu .starter__menu {
     min-height: 8rem;
     border-radius: 1.8rem;
@@ -830,7 +830,7 @@ main {
     font-size: 0.8rem;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .form-menu .starter__details label p {
     font-size: 100%;
   }
@@ -863,12 +863,12 @@ main {
     top: 34px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .form-menu .starter__price {
     top: 57px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .form-menu .starter__price {
     font-size: 90%;
   }
@@ -887,7 +887,7 @@ main {
   box-sizing: border-box;
   cursor: pointer;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .form-menu .dish__menu {
     min-height: 8rem;
     border-radius: 1.8rem;
@@ -910,7 +910,7 @@ main {
     font-size: 0.8rem;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .form-menu .dish__details label p {
     font-size: 100%;
   }
@@ -943,12 +943,12 @@ main {
     top: 34px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .form-menu .dish__price {
     top: 57px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .form-menu .dish__price {
     font-size: 90%;
   }
@@ -967,7 +967,7 @@ main {
   box-sizing: border-box;
   cursor: pointer;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .form-menu .dessert__menu {
     min-height: 8rem;
     border-radius: 1.8rem;
@@ -990,7 +990,7 @@ main {
     font-size: 0.8rem;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .form-menu .dessert__details label p {
     font-size: 100%;
   }
@@ -1023,12 +1023,12 @@ main {
     top: 34px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .form-menu .dessert__price {
     top: 57px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .form-menu .dessert__price {
     font-size: 90%;
   }
@@ -1044,7 +1044,7 @@ main {
   width: 13rem;
   margin: 0rem auto;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .button-primary {
     width: 20rem;
     padding: 2rem;
@@ -1062,6 +1062,11 @@ main {
   width: 100%;
   box-sizing: border-box;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .footer {
+    min-height: 25vh;
+  }
+}
 @media screen and (min-width: 992px) {
   .footer {
     height: 17vh;
@@ -1074,11 +1079,17 @@ main {
     top: -25%;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .footer__logo {
+    postion: relative;
+    top: -10%;
+  }
+}
 .footer a {
   color: #fff;
   font-size: 0.9rem;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .footer a {
     font-size: 80%;
   }
@@ -1088,7 +1099,7 @@ main {
   font-size: 1.1rem;
   font-weight: 400;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .footer h1 {
     font-size: 110%;
   }
@@ -1103,7 +1114,7 @@ main {
   font-size: 0.9rem;
   text-shadow: 0.03rem -0.02rem;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .footer h3 {
     font-size: 100%;
   }
@@ -1114,7 +1125,7 @@ main {
   margin-top: -0.5rem;
   align-items: flex-start;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .footer__bloc-links {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1136,7 +1147,7 @@ main {
 .footer__link {
   height: 1.5rem;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .footer__link {
     height: 100%;
   }
@@ -1153,7 +1164,7 @@ main {
   margin-right: 0.5rem;
   font-size: 0.7rem;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .footer__link a > .footer__icon {
     font-size: 100%;
   }

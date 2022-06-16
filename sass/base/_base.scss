@@ -15,8 +15,9 @@ body {
     position:relative;
     @include tablet {
         width:auto;
-        font-size:160%;
+        font-size:160%!important;
     }
+   
     @include desktop {
         font-size: 100%;
         width: auto;
