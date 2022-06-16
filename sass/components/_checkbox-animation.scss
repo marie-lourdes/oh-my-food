@@ -16,6 +16,8 @@ label{
         
         
     }
+    
+
 }
 
 .starter__price, .dish__price, .dessert__price{
@@ -70,12 +72,12 @@ label{
 
 
 
-/*.starter__menu:hover, .dish__menu:hover:active, .dessert__menu:hover:active {
-    
+.starter__menu:hover, .dish__menu:hover, .dessert__menu:hover {
+    @include desktop {
     @include checkbox-cursor;
-    
+    }
                     
-}*/
+}
 
 .starter__menu:hover, .dish__menu:hover, .dessert__menu:hover {
    

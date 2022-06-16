@@ -210,8 +210,6 @@
            line-height: 2rem;
            transform: scaleX(0.9);
         }
-
-    }
         /* paragraph width-ellipsis: " menu palette du goût" */
         
         .starter--duck {
@@ -225,10 +223,8 @@
         }
         
         .dish--beef{
-            width: 98%;
-            @include small-mobile {
-                width: 84%;
-            }
+            width: 75%!important;
+            
         }
         .macaroon{
             @include small-mobile {
@@ -332,6 +328,9 @@
 
             }
         }
+
+    }
+        
       
   
     .starter__details, .dish__details, .dessert__details {
