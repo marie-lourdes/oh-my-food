@@ -192,7 +192,8 @@
         top: 33px;
         transform:translateX(-45px);
         @include tablet {
-            transform:translateX(-100px);  
+            transform:translateX(-100px); 
+            top: 57px; 
         }
        
     }

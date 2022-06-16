@@ -110,6 +110,12 @@ main{
 .button-primary {
     width: 13rem;
     margin: 0rem auto;
+    @include tablet {
+        width: 20rem;
+        padding: 2rem;
+        border-radius: 3rem;
+        
+    }
 }
  
 
