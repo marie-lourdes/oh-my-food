@@ -896,6 +896,7 @@ main {
   .form-menu .starter__menu {
     min-height: 8rem;
     border-radius: 1.8rem;
+    padding-left: 1rem;
   }
 }
 @media screen and (min-width: 992px) {
@@ -981,6 +982,7 @@ main {
   .form-menu .dish__menu {
     min-height: 8rem;
     border-radius: 1.8rem;
+    padding-left: 1rem;
   }
 }
 @media screen and (min-width: 992px) {
@@ -1066,6 +1068,7 @@ main {
   .form-menu .dessert__menu {
     min-height: 8rem;
     border-radius: 1.8rem;
+    padding-left: 1rem;
   }
 }
 @media screen and (min-width: 992px) {
