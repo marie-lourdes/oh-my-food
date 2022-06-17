@@ -94,7 +94,7 @@ main{
     }
     @include desktop {
         align-items: center;
-        min-height: 90rem;
+        min-height: 120rem;
     }
     @include form-menu-fieldset;
     legend {

@@ -775,7 +775,7 @@ main {
 @media screen and (min-width: 992px) {
   .form-menu {
     align-items: center;
-    min-height: 90rem;
+    min-height: 120rem;
   }
 }
 .form-menu__starter {
