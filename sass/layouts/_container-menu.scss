@@ -2,6 +2,11 @@
 
 main{
     @include flexbox-direction;
+    width:100%;
+    @include desktop {
+        align-items: center;
+        
+    }
 }
 
 /*banner-menu*/
@@ -51,7 +56,7 @@ main{
     }
     @include desktop {
         top: 27rem;
-        
+        width:94vw;
     }
     &__heading {
         font-family: "Shrikhand", cursive, arial, sans-serif;

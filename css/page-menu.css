@@ -649,6 +649,12 @@ header button {
 main {
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  main {
+    align-items: center;
+  }
 }
 
 /*banner-menu*/
@@ -704,6 +710,7 @@ main {
 @media screen and (min-width: 992px) {
   .menu {
     top: 27rem;
+    width: 94vw;
   }
 }
 .menu__heading {
