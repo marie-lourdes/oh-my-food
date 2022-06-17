@@ -58,15 +58,20 @@ main{
         border-radius: 4.5rem 4.5rem 0 0;
     }
     @include tablet-landscape {
-        top: 27rem!important;
+        top: 32rem!important;
         width: 100vw!important;
-        margin-bottom: 27rem!important;
+        margin-bottom: 32rem!important;
     }
     @include desktop {
         top: 27rem;
         width: 94vw;
         margin-bottom: 30rem;
-       
+        border-radius: 7rem 7rem 0 0;
+    }  
+    @include desktop-large {
+        top: 35rem;
+        border-radius: 7rem 7rem 0 0;
+        margin-bottom: 35rem;
     }
     &__heading {
         font-family: "Shrikhand", cursive, arial, sans-serif;
