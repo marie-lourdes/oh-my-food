@@ -194,7 +194,7 @@ label > p {
   position: absolute;
   top: 2rem;
   right: 0.9rem;
-  transform: scale(0.9, 1.1);
+  transform: scale(0.9, 1);
 }
 @media screen and (max-width: 360px) {
   .checkbox-animation .circle-checked {
@@ -203,7 +203,7 @@ label > p {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .checkbox-animation .circle-checked {
-    /*  transform:rotate(-360deg) scaleY(1);*/
+    /*transform:scale(0.9,1.3);*/
     font-size: 1.8rem;
     top: 3.2rem;
     right: 1.1rem;
@@ -566,7 +566,7 @@ label > p {
     transform: rotate(-360deg);
   }
   100% {
-    transform: rotate(360deg) scaleX(0.9);
+    transform: rotate(360deg) scale(0.9);
   }
 }
 .button-primary {
