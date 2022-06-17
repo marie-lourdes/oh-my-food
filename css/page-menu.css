@@ -546,7 +546,7 @@ label > p {
     transform: rotate(-360deg);
   }
   100% {
-    transform: rotate(360deg) scaleX(0.8);
+    transform: rotate(360deg) scaleX(0.9);
   }
 }
 .button-primary {
