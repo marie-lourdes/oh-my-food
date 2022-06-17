@@ -52,6 +52,7 @@ main {
     } 
     @include desktop-large{
         margin-right: 1rem;
+        padding: 0 3rem;
     }
       
 } 
@@ -159,7 +160,7 @@ main {
         @include desktop{
             width:auto;
             margin-top:2rem;
-            width: 61vw;
+            width: 60vw;
             padding-bottom:1rem;
             padding-left:0rem;
             padding-right:0rem;
@@ -167,7 +168,8 @@ main {
             margin-right: 2rem;
         }
         @include desktop-large {
-            width:60vw;
+          
+            margin-right: 0rem;
         }
        /* @include desktop-large {
             width:50vw;
@@ -219,7 +221,7 @@ main {
         
         @include desktop {
            width: 26vw;
-           min-height: 13rem;
+           max-height: 19rem;
            
         }
         @include desktop-large {
@@ -263,6 +265,7 @@ main {
                 @include object-position($img-restaurant);
                 overflow: hidden;
                 @include tablet {
+                    
                     max-height: 13rem;
                 }
                 @include tablet-landscape {
@@ -270,10 +273,12 @@ main {
                 }
                 @include desktop {
                    min-height: 13rem;
+                  
                 }
                 &.la-note-enchantee {
                     @include desktop-large {
                         min-height: 12.6rem;
+                        max-height: 12.6rem
                      }
                      @include tablet-landscape {
                         max-height: 14.6rem;
@@ -311,6 +316,7 @@ main {
                 @include flexbox-direction;
                 line-height: 0.5rem;
                 @include desktop {
+                    font-size: 86%;
                     line-height: 0.4rem;
                    }
                 @include desktop-large {
