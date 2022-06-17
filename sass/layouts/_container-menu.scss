@@ -30,6 +30,16 @@ main{
         min-height: 17.2rem;
         &.img--max-height {
              max-height: 17.2rem;
+            @include tablet {
+                max-height: 28.2rem;
+            }
+            @include tablet-landscape {
+                max-height: 40rem;
+            }
+            @include desktop-large {
+                max-height: 50rem;
+            }
+
         }
         @include tablet-landscape {
             width:100%!important;
@@ -69,10 +79,22 @@ main{
         border-radius: 7rem 7rem 0 0;
     }  
     @include desktop-large {
-        top: 35rem;
-        border-radius: 7rem 7rem 0 0;
-        margin-bottom: 35rem;
+        top: 40rem;
+        border-radius: 5rem 5rem 0 0;
+        margin-bottom: 40rem;
     }
+    
+    &.menu--note-enchantee{
+        @include tablet {
+        top: 24.8rem;
+         }
+         @include desktop-large {
+            top: 46rem;
+            margin-bottom: 46rem;
+         }
+    }
+
+    
     &__heading {
         font-family: "Shrikhand", cursive, arial, sans-serif;
         @include flexbox-direction(row);
@@ -100,22 +122,24 @@ main{
     height: 70rem;
     appearance: none;
     padding-bottom: 5rem;
+    
     @include tablet {
         align-items:center;
-        min-height: 120rem;
-        padding-bottom: 7rem;
+        min-height: 130rem!important;
+        padding-bottom: 8rem!important;
     }
-    @include tablet-landscape {
+   /* @include tablet-landscape {
         min-height: 130rem!important;
         padding-bottom: 8rem;
-    }
+    }*/
     @include desktop {
         align-items: center;
         min-height: 90rem;
     }
     @include desktop-large {
         min-height: 90rem;
-    }
+    }     
+    
     @include form-menu-fieldset;
     legend {
         &::after {
@@ -149,8 +173,17 @@ main{
 
 
     
-    &.form-menu--note-enchantee {
+    &.form-menu--note-enchantee{
         padding-bottom: 15rem;
+        @include tablet {
+            min-height:140rem!important; 
+            padding-bottom: 8rem;
+         }
+        @include desktop-large {
+            min-height: 100rem;
+            padding-bottom: 8rem;
+
+        }
     }    
 }
 
@@ -165,7 +198,7 @@ main{
         padding: 2rem;
         border-radius: 3rem;
         font-size: 110%;
-        margin-top: 4rem;
+       margin-top:-1rem;
         
     }
 

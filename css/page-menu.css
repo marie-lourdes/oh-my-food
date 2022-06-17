@@ -700,6 +700,21 @@ main {
 .banner-menu img.img--max-height {
   max-height: 17.2rem;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+  .banner-menu img.img--max-height {
+    max-height: 28.2rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .banner-menu img.img--max-height {
+    max-height: 40rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .banner-menu img.img--max-height {
+    max-height: 50rem;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .banner-menu img {
     width: 100% !important;
@@ -748,9 +763,20 @@ main {
 }
 @media screen and (min-width: 1200px) {
   .menu {
-    top: 35rem;
-    border-radius: 7rem 7rem 0 0;
-    margin-bottom: 35rem;
+    top: 40rem;
+    border-radius: 5rem 5rem 0 0;
+    margin-bottom: 40rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu.menu--note-enchantee {
+    top: 24.8rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu.menu--note-enchantee {
+    top: 46rem;
+    margin-bottom: 46rem;
   }
 }
 .menu__heading {
@@ -783,18 +809,16 @@ main {
   height: 70rem;
   appearance: none;
   padding-bottom: 5rem;
+  /* @include tablet-landscape {
+       min-height: 130rem!important;
+       padding-bottom: 8rem;
+   }*/
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .form-menu {
     align-items: center;
-    min-height: 120rem;
-    padding-bottom: 7rem;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .form-menu {
     min-height: 130rem !important;
-    padding-bottom: 8rem;
+    padding-bottom: 8rem !important;
   }
 }
 @media screen and (min-width: 992px) {
@@ -1182,6 +1206,18 @@ main {
 .form-menu.form-menu--note-enchantee {
   padding-bottom: 15rem;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+  .form-menu.form-menu--note-enchantee {
+    min-height: 140rem !important;
+    padding-bottom: 8rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-menu.form-menu--note-enchantee {
+    min-height: 100rem;
+    padding-bottom: 8rem;
+  }
+}
 
 .button-primary {
   width: 13rem;
@@ -1193,7 +1229,7 @@ main {
     padding: 2rem;
     border-radius: 3rem;
     font-size: 110%;
-    margin-top: 4rem;
+    margin-top: -1rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
