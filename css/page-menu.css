@@ -189,7 +189,7 @@ label > p {
   position: absolute;
   top: 2rem;
   right: 0.9rem;
-  transform: scale(0.8, 1.1);
+  transform: scale(0.9, 1.1);
 }
 @media screen and (max-width: 360px) {
   .checkbox-animation .circle-checked {
@@ -655,6 +655,14 @@ main {
 .banner-menu {
   width: 100%;
   box-sizing: border-box;
+  display: flex;
+  position: relative;
+}
+@media screen and (min-width: 992px) {
+  .banner-menu {
+    justify-content: center;
+    width: 100%;
+  }
 }
 .banner-menu img {
   width: 100%;
@@ -665,6 +673,13 @@ main {
 }
 .banner-menu img.img--max-height {
   max-height: 17.2rem;
+}
+@media screen and (min-width: 992px) {
+  .banner-menu img {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .menu {
@@ -684,6 +699,11 @@ main {
     padding: 0;
     top: 28.8rem;
     margin-bottom: 29.7rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu {
+    top: 27rem;
   }
 }
 .menu__heading {

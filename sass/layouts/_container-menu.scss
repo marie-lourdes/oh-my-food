@@ -9,6 +9,13 @@ main{
 .banner-menu {
     width: 100%;
     box-sizing: border-box;
+    display: flex;
+    position: relative;
+    @include desktop {
+        justify-content: center;
+        
+        width:100%;
+    }
 
     img {
         width:100%;
@@ -18,6 +25,11 @@ main{
         min-height: 17.2rem;
         &.img--max-height {
              max-height: 17.2rem;
+        }
+        @include desktop {
+            width: 95%;
+            display:flex;
+            justify-content: center;
         }          
      } 
 }
@@ -36,6 +48,10 @@ main{
         padding: 0;
         top: 28.8rem;
         margin-bottom: 29.7rem;
+    }
+    @include desktop {
+        top: 27rem;
+        
     }
     &__heading {
         font-family: "Shrikhand", cursive, arial, sans-serif;
