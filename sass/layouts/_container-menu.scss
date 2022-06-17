@@ -31,10 +31,12 @@ main{
         &.img--max-height {
              max-height: 17.2rem;
         }
+        @include tablet-landscape {
+            width:100%!important;
+        }
         @include desktop {
             width: 95%;
-            display:flex;
-            justify-content: center;
+          
         }          
      } 
 }
@@ -46,13 +48,19 @@ main{
     box-sizing: border-box;
     width: 100%;
     position: relative;
-    top: 12.8rem;
+    top: 13.8rem;
     margin-bottom: 12.7rem;
     padding: 0 1rem;
     @include tablet {
         padding: 0;
-        top: 28.8rem;
-        margin-bottom: 29.7rem;
+        top: 25.8rem;
+        margin-bottom: 25.7rem;
+        border-radius: 4.5rem 4.5rem 0 0;
+    }
+    @include tablet-landscape {
+        top: 27rem!important;
+        width: 100vw!important;
+        margin-bottom: 27rem!important;
     }
     @include desktop {
         top: 27rem;
@@ -91,6 +99,9 @@ main{
         align-items:center;
         min-height: 120rem;
         padding-bottom: 7rem;
+    }
+    @include tablet-landscape {
+        min-height: 130rem!important;
     }
     @include desktop {
         align-items: center;

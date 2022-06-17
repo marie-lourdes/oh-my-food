@@ -700,11 +700,14 @@ main {
 .banner-menu img.img--max-height {
   max-height: 17.2rem;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .banner-menu img {
+    width: 100% !important;
+  }
+}
 @media screen and (min-width: 992px) {
   .banner-menu img {
     width: 95%;
-    display: flex;
-    justify-content: center;
   }
 }
 
@@ -716,15 +719,23 @@ main {
   box-sizing: border-box;
   width: 100%;
   position: relative;
-  top: 12.8rem;
+  top: 13.8rem;
   margin-bottom: 12.7rem;
   padding: 0 1rem;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .menu {
     padding: 0;
-    top: 28.8rem;
-    margin-bottom: 29.7rem;
+    top: 25.8rem;
+    margin-bottom: 25.7rem;
+    border-radius: 4.5rem 4.5rem 0 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .menu {
+    top: 27rem !important;
+    width: 100vw !important;
+    margin-bottom: 27rem !important;
   }
 }
 @media screen and (min-width: 992px) {
@@ -770,6 +781,11 @@ main {
     align-items: center;
     min-height: 120rem;
     padding-bottom: 7rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .form-menu {
+    min-height: 130rem !important;
   }
 }
 @media screen and (min-width: 992px) {
