@@ -45,6 +45,9 @@ label{
         border-radius: 0 1.2rem 1.2rem 0;
         padding: 2rem;
     }
+    @include desktop-large {
+        padding: 1.8rem;
+    }
 
     & .circle-checked {
         font-size: 1.3rem; 
@@ -64,6 +67,9 @@ label{
             top: 3.2rem;
             right:1.1rem;
           
+        }
+        @include desktop-large {
+            right: 1.1rem;
         }
     }
 } 

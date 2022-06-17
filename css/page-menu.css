@@ -181,6 +181,11 @@ label > p {
     padding: 2rem;
   }
 }
+@media screen and (min-width: 1200px) {
+  .checkbox-animation {
+    padding: 1.8rem;
+  }
+}
 .checkbox-animation .circle-checked {
   font-size: 1.3rem;
   /*  transform:  rotate(-360deg) scaleX(1);
@@ -201,6 +206,11 @@ label > p {
     /*  transform:rotate(-360deg) scaleY(1);*/
     font-size: 1.8rem;
     top: 3.2rem;
+    right: 1.1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-animation .circle-checked {
     right: 1.1rem;
   }
 }
@@ -243,6 +253,11 @@ label > p {
   .starter__menu:hover .starter__price, .starter__menu:hover .dish__price, .starter__menu:hover .dessert__price, .dish__menu:hover .starter__price, .dish__menu:hover .dish__price, .dish__menu:hover .dessert__price, .dessert__menu:hover .starter__price, .dessert__menu:hover .dish__price, .dessert__menu:hover .dessert__price {
     transform: translateX(-100px);
     top: 57px;
+  }
+}
+@media screen and (min-width: 992px) and (min-width: 1200px) {
+  .starter__menu:hover .starter__price, .starter__menu:hover .dish__price, .starter__menu:hover .dessert__price, .dish__menu:hover .starter__price, .dish__menu:hover .dish__price, .dish__menu:hover .dessert__price, .dessert__menu:hover .starter__price, .dessert__menu:hover .dish__price, .dessert__menu:hover .dessert__price {
+    transform: translateX(-60px);
   }
 }
 @media screen and (min-width: 992px) {
@@ -420,6 +435,11 @@ label > p {
   .starter__menu:active .starter__price, .starter__menu:active .dish__price, .starter__menu:active .dessert__price, .dish__menu:active .starter__price, .dish__menu:active .dish__price, .dish__menu:active .dessert__price, .dessert__menu:active .starter__price, .dessert__menu:active .dish__price, .dessert__menu:active .dessert__price {
     transform: translateX(-100px);
     top: 57px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .starter__menu:active .starter__price, .starter__menu:active .dish__price, .starter__menu:active .dessert__price, .dish__menu:active .starter__price, .dish__menu:active .dish__price, .dish__menu:active .dessert__price, .dessert__menu:active .starter__price, .dessert__menu:active .dish__price, .dessert__menu:active .dessert__price {
+    transform: translateX(-60px);
   }
 }
 .starter__menu:active label, .dish__menu:active label, .dessert__menu:active label {
@@ -728,6 +748,11 @@ main {
     padding-left: 2rem;
   }
 }
+@media screen and (min-width: 992px) {
+  .menu__heading {
+    padding-left: 2rem;
+  }
+}
 .menu .icon-like {
   right: 3%;
 }
@@ -868,6 +893,11 @@ main {
     border-radius: 1.8rem;
   }
 }
+@media screen and (min-width: 992px) {
+  .form-menu .starter__menu {
+    padding-left: 1rem;
+  }
+}
 .form-menu .starter__details {
   display: flex;
   flex-direction: column;
@@ -948,6 +978,11 @@ main {
     border-radius: 1.8rem;
   }
 }
+@media screen and (min-width: 992px) {
+  .form-menu .dish__menu {
+    padding-left: 1rem;
+  }
+}
 .form-menu .dish__details {
   display: flex;
   flex-direction: column;
@@ -1026,6 +1061,11 @@ main {
   .form-menu .dessert__menu {
     min-height: 8rem;
     border-radius: 1.8rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .form-menu .dessert__menu {
+    padding-left: 1rem;
   }
 }
 .form-menu .dessert__details {

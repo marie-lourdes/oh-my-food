@@ -56,8 +56,9 @@ main{
     }
     @include desktop {
         top: 27rem;
-        width:94vw;
+        width: 94vw;
         margin-bottom: 30rem;
+       
     }
     &__heading {
         font-family: "Shrikhand", cursive, arial, sans-serif;
@@ -67,6 +68,9 @@ main{
         padding: 1rem 1.5rem 0rem 0rem;
         @include tablet {
             font-size: 120%;
+            padding-left: 2rem;
+        }
+        @include desktop {
             padding-left: 2rem;
         }
     }
