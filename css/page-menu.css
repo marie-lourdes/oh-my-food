@@ -964,6 +964,11 @@ main {
     font-size: 90%;
   }
 }
+@media screen and (min-width: 1200px) {
+  .form-menu .starter__price {
+    font-size: 85%;
+  }
+}
 .form-menu .dish__menu {
   position: relative;
   display: flex;
@@ -1050,6 +1055,11 @@ main {
     font-size: 90%;
   }
 }
+@media screen and (min-width: 1200px) {
+  .form-menu .dish__price {
+    font-size: 85%;
+  }
+}
 .form-menu .dessert__menu {
   position: relative;
   display: flex;
@@ -1134,6 +1144,11 @@ main {
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .form-menu .dessert__price {
     font-size: 90%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-menu .dessert__price {
+    font-size: 85%;
   }
 }
 .form-menu input[type=checkbox] {
