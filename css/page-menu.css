@@ -778,6 +778,11 @@ main {
     min-height: 120rem;
   }
 }
+@media screen and (min-width: 1200px) {
+  .form-menu {
+    min-height: 90rem;
+  }
+}
 .form-menu__starter {
   position: relative;
   display: flex;
@@ -1145,6 +1150,14 @@ main {
     padding: 2rem;
     border-radius: 3rem;
     font-size: 110%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button-primary {
+    width: 17rem;
+    padding: 1.5rem;
+    border-radius: 2.5rem;
+    font-size: 130%;
   }
 }
 
