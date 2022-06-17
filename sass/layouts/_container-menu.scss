@@ -102,6 +102,7 @@ main{
     }
     @include tablet-landscape {
         min-height: 130rem!important;
+        padding-bottom: 8rem;
     }
     @include desktop {
         align-items: center;
@@ -161,6 +162,10 @@ main{
         font-size: 110%;
         margin-top: 4rem;
         
+    }
+
+    @include tablet-landscape{
+        margin-top: 0rem;
     }
     @include desktop-large {
         width: 16rem;
