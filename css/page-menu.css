@@ -711,6 +711,7 @@ main {
   .menu {
     top: 27rem;
     width: 94vw;
+    margin-bottom: 30rem;
   }
 }
 .menu__heading {
@@ -746,6 +747,12 @@ main {
     padding-bottom: 7rem;
   }
 }
+@media screen and (min-width: 992px) {
+  .form-menu {
+    align-items: center;
+    min-height: 90rem;
+  }
+}
 .form-menu__starter {
   position: relative;
   display: flex;
@@ -757,6 +764,13 @@ main {
   box-sizing: border-box;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+  .form-menu__starter {
+    width: 80vw;
+    padding: 2rem;
+    border: 2px groove rgb(192, 192, 192);
+  }
+}
+@media screen and (min-width: 992px) {
   .form-menu__starter {
     width: 80vw;
     padding: 2rem;
@@ -780,6 +794,13 @@ main {
     border: 2px groove rgb(192, 192, 192);
   }
 }
+@media screen and (min-width: 992px) {
+  .form-menu__dish {
+    width: 80vw;
+    padding: 2rem;
+    border: 2px groove rgb(192, 192, 192);
+  }
+}
 .form-menu__dessert {
   position: relative;
   display: flex;
@@ -791,6 +812,13 @@ main {
   box-sizing: border-box;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+  .form-menu__dessert {
+    width: 80vw;
+    padding: 2rem;
+    border: 2px groove rgb(192, 192, 192);
+  }
+}
+@media screen and (min-width: 992px) {
   .form-menu__dessert {
     width: 80vw;
     padding: 2rem;

@@ -57,6 +57,7 @@ main{
     @include desktop {
         top: 27rem;
         width:94vw;
+        margin-bottom: 30rem;
     }
     &__heading {
         font-family: "Shrikhand", cursive, arial, sans-serif;
@@ -86,6 +87,10 @@ main{
         align-items:center;
         min-height: 120rem;
         padding-bottom: 7rem;
+    }
+    @include desktop {
+        align-items: center;
+        min-height: 90rem;
     }
     @include form-menu-fieldset;
     legend {
