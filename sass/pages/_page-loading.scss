@@ -23,7 +23,7 @@
         top: 10%;
        /* border: 10px solid ;*/
        /* border-top-color: $color-primary;*/
-        animation: loading-spinner 16s  -2s ease-in 1,loading-start 4s ease-out 2;
+        animation: loading-spinner 16s  -2s ease-in infinite,loading-start 4s ease-out 2;
         opacity: 0;
         transform: rotate(-360deg);
         height: 50px;
