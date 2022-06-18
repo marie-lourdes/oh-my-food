@@ -4,7 +4,7 @@
     position: absolute;
     z-index: 1;
     font-weight: 900;
-    animation: page-loading 16s ease-in-out 1;
+    animation: page-loading 16s -2s ease-in-out 1;
     opacity: 0;
     background:#fff;
     /* filter:brightness(110%) contrast(130%) saturate(110%);
