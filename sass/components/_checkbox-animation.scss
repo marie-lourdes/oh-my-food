@@ -78,7 +78,12 @@ label{
 
 
 
-
+.starter__menu, .dish__menu, .dessert__menu {
+    .input-check:checked {
+        
+        @include checkbox-cursor;
+    }
+    }
 
 .starter__menu:hover, .dish__menu:hover, .dessert__menu:hover {
     @include desktop {
@@ -87,16 +92,13 @@ label{
                     
 }
 
-.starter__menu:active, .dish__menu:active, .dessert__menu:active {
+/*.starter__menu:active, .dish__menu:active, .dessert__menu:active {
    
          @include checkbox-cursor;
                     
     
-}
-
-/*.input-check:checked {
-    @include checkbox-cursor;
 }*/
+
 
 
 

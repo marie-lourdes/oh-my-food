@@ -173,31 +173,158 @@
     }
 }
 
+/*checkbox cursor animation*/
+
 @mixin checkbox-cursor {
     /*padding: 0rem 0rem 0rem 0.5rem;*/
     overflow: hidden;
-    
    
-    .checkbox-animation {
-         display:flex; 
-         transform:scaleX(1.35);
-         @include tablet {
-            transform: scaleX(1.8);
-            padding: 2rem;
-         }
-         .circle-checked{
-           /* transform:rotate(0deg) scale(1) ;*/
-            animation: rotate-check 1s ease-in-out 1 ;
-            /* @include tablet {
-                transform: rotate(0deg) scale(1.3);
+    ~.starter__details, ~.dish__details, ~.dessert__details,
+    .starter__details, .dish__details, .dessert__details { /* start__menu, dish__menu, dessert__menu cursor:hover desktop*/
+     
+       line-height:1rem;
+       @include tablet {
+            line-height: 2rem;
+       
+       }
+       label{
 
-             }*/
+            p,h3{
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow :hidden;
+                
+                
             
-        }   
+        
+            }
+            p{
+            line-height: 2rem;
+            transform: scaleX(0.9);
+            }
+            /* paragraph width-ellipsis: " menu palette du goût" */
+            
+            .starter--duck {
+                width: 57%;
+                @include small-mobile {
+                    width:58%;
+                }
+            }
+            .starter--egg {
+                width: 90%;
+            }
+            
+            .dish--beef{
+                width: 75%!important;
+                
+            }
+            .macaroon{
+                @include small-mobile {
+                    width:70%;
+                    
+                }
+                
+            }
+    
+        /*  .dish--beef{
+                width: 77%!important;
+            }*/
+            .queue-de-boeuf {
+                @include small-mobile{
+                    width: 87%;
+                    
+                }
+            }
+            .dish--beef-parmentier {
+                width: 87%;
+            }
+        
+            .dish--mada{
+                @include small-mobile {
+                    width:57%;
+                }
+            }
+            .dessert--mousse {
+                width: 77%;
+                
+            }
 
+            /* "french menu" */
+        
+            .dish--potatoes{
+                width: 85%;
+            }
+            .dish--parmentier {
+                width: 91%;
+            }
+        
+            .dish--gnocchis{
+                width:81%;
+            }
+
+            /* "la note enchantée" */
+            
+            .starter--ravioli{
+                width: 91%;
+            }
+            .starter--lobster{
+                @include small-mobile {
+                width: 70%;
+                }
+            }
+            .foie-gras {
+                @include small-mobile {
+                    width:70%;
+                }
+            }
+            .saint-jacques {
+                @include small-mobile {
+                    width: 80%;
+                }
+            }
+            .macaroon-hazelnut {
+                @include small-mobile{
+                    width: 70%;
+                }
+            }
+            
+        
+            .dessert--ice{
+                width: 83%;
+            }
+
+            /* "le delice des sens"*/
+            .crisp-lobster{
+                @include small-mobile {
+                width: 70%;
+                }
+            }
+
+            .dessert--tiramisu {
+                width: 70%;
+            }    
+            .dessert--mousse{
+            @include small-mobile {
+                width:75%;
+            }
+            
+            }
+        
+            .roast-chicken{
+                @include small-mobile {
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    display:inline-block;
+                    width:70%;
+
+                }
+            }
+       }
     }
-
-    .starter__price, .dish__price, .dessert__price{
+    
+    ~.starter__price, ~.dish__price, ~.dessert__price,
+    .starter__price, .dish__price, .dessert__price { /* start__menu, dish__menu, dessert__menu cursor:hover desktop*/
        
         margin-right: 1rem;
         margin-left: -3rem;
@@ -214,155 +341,28 @@
         }
        
     }
-    label{
+    ~.checkbox-animation,
+    .checkbox-animation { /* start__menu, dish__menu, dessert__menu cursor:hover desktop*/
+        display:flex; 
+        transform:scaleX(1.35);
+        @include tablet {
+           transform: scaleX(1.8);
+           padding: 2rem;
+        }
+        .circle-checked{
+          /* transform:rotate(0deg) scale(1) ;*/
+           animation: rotate-check 1s ease-in-out 1 ;
+           /* @include tablet {
+               transform: rotate(0deg) scale(1.3);
 
-        p,h3{
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow :hidden;
-            
-            
+            }*/
            
-    
-        }
-        p{
-           line-height: 2rem;
-           transform: scaleX(0.9);
-        }
-        /* paragraph width-ellipsis: " menu palette du goût" */
-        
-        .starter--duck {
-            width: 57%;
-            @include small-mobile {
-                width:58%;
-            }
-        }
-        .starter--egg {
-            width: 90%;
-        }
-        
-        .dish--beef{
-            width: 75%!important;
-            
-        }
-        .macaroon{
-            @include small-mobile {
-                width:70%;
-                
-            }
-            
-        }
- 
-      /*  .dish--beef{
-            width: 77%!important;
-        }*/
-        .queue-de-boeuf {
-            @include small-mobile{
-                width: 87%;
-                
-            }
-        }
-        .dish--beef-parmentier {
-            width: 87%;
-        }
-      
-        .dish--mada{
-            @include small-mobile {
-                width:57%;
-            }
-        }
-        .dessert--mousse {
-            width: 77%;
-            
-        }
+       }   
 
-        /* "french menu" */
-       
-        .dish--potatoes{
-            width: 85%;
-        }
-        .dish--parmentier {
-            width: 91%;
-        }
-      
-        .dish--gnocchis{
-            width:81%;
-        }
-
-        /* "la note enchantée" */
-        
-        .starter--ravioli{
-            width: 91%;
-        }
-        .starter--lobster{
-            @include small-mobile {
-            width: 70%;
-            }
-        }
-        .foie-gras {
-            @include small-mobile {
-                width:70%;
-            }
-        }
-        .saint-jacques {
-            @include small-mobile {
-                width: 80%;
-            }
-        }
-        .macaroon-hazelnut {
-            @include small-mobile{
-                width: 70%;
-            }
-        }
-        
-       
-        .dessert--ice{
-            width: 83%;
-        }
-
-        /* "le delice des sens"*/
-        .crisp-lobster{
-            @include small-mobile {
-            width: 70%;
-            }
-        }
-
-        .dessert--tiramisu {
-            width: 70%;
-        }    
-        .dessert--mousse{
-        @include small-mobile {
-            width:75%;
-        }
-        
-         }
-       
-        .roast-chicken{
-            @include small-mobile {
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                overflow: hidden;
-                display:inline-block;
-                width:70%;
-
-            }
-        }
-
-    }
-        
-      
-  
-    .starter__details, .dish__details, .dessert__details {
-     
-       line-height:1rem;
-       @include tablet {
-        line-height: 2rem;
-       }
-      
-
-    }
+   }
 
  }
+
 
 
 /* responsive*/
