@@ -696,33 +696,34 @@ main {
   position: absolute;
   z-index: -1;
   min-height: 17.2rem;
+  /*  @include tablet-landscape {
+        width:100%!important;
+    }*/
 }
 .banner-menu img.img--max-height {
   max-height: 17.2rem;
+  /*  @include tablet-landscape {
+        max-height: 40rem;
+    }*/
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .banner-menu img.img--max-height {
-    max-height: 28.2rem;
+    max-height: 30rem;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media screen and (min-width: 992px) {
   .banner-menu img.img--max-height {
     max-height: 40rem;
   }
 }
 @media screen and (min-width: 1200px) {
   .banner-menu img.img--max-height {
-    max-height: 50rem;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .banner-menu img {
-    width: 100% !important;
+    max-height: 52rem;
   }
 }
 @media screen and (min-width: 992px) {
   .banner-menu img {
-    width: 95%;
+    width: 94.5%;
   }
 }
 
@@ -737,6 +738,11 @@ main {
   top: 13.8rem;
   margin-bottom: 12.7rem;
   padding: 0 1rem;
+  /*  @include tablet-landscape {
+        top: 32rem!important;
+        width: 100%!important;
+        margin-bottom: 32rem;
+    }*/
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .menu {
@@ -746,26 +752,19 @@ main {
     border-radius: 4.5rem 4.5rem 0 0;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .menu {
-    top: 32rem !important;
-    width: 100vw !important;
-    margin-bottom: 32rem !important;
-  }
-}
 @media screen and (min-width: 992px) {
   .menu {
     top: 27rem;
-    width: 94vw;
-    margin-bottom: 30rem;
-    border-radius: 7rem 7rem 0 0;
+    width: 95%;
+    margin-bottom: 32rem;
+    border-radius: 4.5rem 4.5rem 0 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .menu {
     top: 40rem;
     border-radius: 5rem 5rem 0 0;
-    margin-bottom: 40rem;
+    margin-bottom: 43rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
@@ -773,10 +772,15 @@ main {
     top: 24.8rem;
   }
 }
+@media screen and (min-width: 992px) {
+  .menu.menu--note-enchantee {
+    margin-bottom: 30rem;
+  }
+}
 @media screen and (min-width: 1200px) {
   .menu.menu--note-enchantee {
     top: 46rem;
-    margin-bottom: 46rem;
+    margin-bottom: 49rem;
   }
 }
 .menu__heading {
@@ -825,6 +829,7 @@ main {
   .form-menu {
     align-items: center;
     min-height: 90rem;
+    padding-bottom: 8rem;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1209,6 +1214,11 @@ main {
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .form-menu.form-menu--note-enchantee {
     min-height: 140rem !important;
+    padding-bottom: 8rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .form-menu.form-menu--note-enchantee {
     padding-bottom: 8rem;
   }
 }

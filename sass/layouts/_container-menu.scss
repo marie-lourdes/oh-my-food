@@ -31,21 +31,24 @@ main{
         &.img--max-height {
              max-height: 17.2rem;
             @include tablet {
-                max-height: 28.2rem;
+                max-height: 30rem;
             }
-            @include tablet-landscape {
+          /*  @include tablet-landscape {
+                max-height: 40rem;
+            }*/
+            @include desktop {
                 max-height: 40rem;
             }
             @include desktop-large {
-                max-height: 50rem;
+                max-height: 52rem;
             }
 
         }
-        @include tablet-landscape {
+      /*  @include tablet-landscape {
             width:100%!important;
-        }
+        }*/
         @include desktop {
-            width: 95%;
+            width: 94.5%;
           
         }          
      } 
@@ -67,30 +70,33 @@ main{
         margin-bottom: 25.7rem;
         border-radius: 4.5rem 4.5rem 0 0;
     }
-    @include tablet-landscape {
+  /*  @include tablet-landscape {
         top: 32rem!important;
-        width: 100vw!important;
-        margin-bottom: 32rem!important;
-    }
+        width: 100%!important;
+        margin-bottom: 32rem;
+    }*/
     @include desktop {
         top: 27rem;
-        width: 94vw;
-        margin-bottom: 30rem;
-        border-radius: 7rem 7rem 0 0;
+        width: 95%;
+        margin-bottom: 32rem;
+        border-radius: 4.5rem 4.5rem 0 0;
     }  
     @include desktop-large {
         top: 40rem;
         border-radius: 5rem 5rem 0 0;
-        margin-bottom: 40rem;
+        margin-bottom: 43rem;
     }
     
     &.menu--note-enchantee{
         @include tablet {
         top: 24.8rem;
          }
+         @include desktop {
+            margin-bottom: 30rem;
+         }
          @include desktop-large {
             top: 46rem;
-            margin-bottom: 46rem;
+            margin-bottom: 49rem;
          }
     }
 
@@ -135,6 +141,7 @@ main{
     @include desktop {
         align-items: center;
         min-height: 90rem;
+        padding-bottom: 8rem;
     }
     @include desktop-large {
         min-height: 90rem;
@@ -177,8 +184,11 @@ main{
         padding-bottom: 15rem;
         @include tablet {
             min-height:140rem!important; 
-            padding-bottom: 8rem;
+           padding-bottom: 8rem;
          }
+        @include desktop {
+            padding-bottom: 8rem;
+        }
         @include desktop-large {
             min-height: 100rem;
             padding-bottom: 8rem;
