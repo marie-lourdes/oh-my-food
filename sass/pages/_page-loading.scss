@@ -28,6 +28,18 @@
         transform: rotate(-360deg);
         height: 50px;
         width: 50px;
+        @include desktop {
+          top: 15%;
+        }
+        @include desktop-large {
+          top: 20%;
+        }
+        @include tablet {
+          top: 15%;
+        }
+        @include tablet-landscape{
+          top: 12%; 
+        }
       & .loading__spinner {
         border: 6px solid ;
         position: absolute;
@@ -51,7 +63,7 @@
         animation:loading-spinner 4s 2s infinite;
         animation-timing-function:ease-in-out;
         z-index:0;
-          opacity:0;
+        opacity:0;
         transform:rotate(0deg);
       }
       &--2 {

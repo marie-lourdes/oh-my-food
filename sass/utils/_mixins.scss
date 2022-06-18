@@ -376,29 +376,31 @@
     @media screen and (min-width:768px) and (max-width:991px) and (orientation:portrait),screen and (min-width:768px) and (max-width:1024px){
         @content;
     }
-  }
-  @mixin tablet-landscape {
+}
+
+ @mixin tablet-landscape {
     @media screen and (min-width:768px) and  (max-width:1024px) and (orientation:landscape){
         @content;
     }
-  }
-  @mixin desktop{
+}
+  
+@mixin desktop{
     @media screen and (min-width:992px){
         @content;
     }
-  }
+}
 
-  @mixin desktop-large{
+@mixin desktop-large{
     @media screen and (min-width:1200px){
         @content;
     }
-  }
+}
   
   
 
 
 
-  @keyframes rotate-check {
+@keyframes rotate-check {
     0%{
         transform:rotate(-360deg) scaleX(1);
     }
