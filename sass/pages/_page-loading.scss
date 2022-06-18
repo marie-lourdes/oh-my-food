@@ -21,15 +21,15 @@
         position: relative;
         margin:0 auto;
         top: 10%;
-        border: 10px solid ;
-        border-top-color: $color-primary;
+       /* border: 10px solid ;*/
+       /* border-top-color: $color-primary;*/
         animation: loading-spinner 16s  -2s ease-in 1,loading-start 4s ease-out 2;
         opacity: 0;
         transform: rotate(-360deg);
         height: 50px;
         width: 50px;
       & .loading__spinner {
-        border: 10px solid ;
+        border: 6px solid ;
         position: absolute;
         top: 0;
         left: 0;
@@ -39,7 +39,7 @@
         border-radius: 50%; 
            
       &--0 {
-        border-top-color:green;
+        border-top-color:$color-primary;
         animation: loading-spinner 4s 1s  infinite ;
         animation-timing-function: ease-in;
         z-index: 0;
@@ -47,7 +47,7 @@
         transform: rotate(0deg);
      }
       &--1 {
-        border-right-color:green;
+        border-right-color:$color-secondary;
         animation:loading-spinner 4s 2s infinite;
         animation-timing-function:ease-in-out;
         z-index:0;
@@ -55,7 +55,7 @@
         transform:rotate(0deg);
       }
       &--2 {
-        border-bottom-color:green;
+        border-bottom-color:$color-primary;
         animation: loading-spinner 4s 3s infinite;
         animation-timing-function: ease-out;
         z-index: 0;
@@ -63,7 +63,7 @@
         transform: rotate(0deg);
       }
       &--3 {
-        border-left-color: green;
+        border-left-color: $color-secondary;
         animation: loading-spinner 4s 3s infinite;
         animation-timing-function: ease-in-out;
         z-index: 0;
@@ -73,7 +73,7 @@
       &--4 {
         animation: loading-spinner 4s  infinite;
         animation-timing-function: ease-out;
-        border-top-color: green;
+        border-top-color: $color-primary;
         z-index: 0;
         opacity: 0;
       }  
