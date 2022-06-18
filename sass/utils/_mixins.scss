@@ -179,15 +179,8 @@
     /*padding: 0rem 0rem 0rem 0.5rem;*/
     overflow: hidden;
    
-   
-   
-
-  
-
-  
-      
-  
-    ~.starter__details, ~.dish__details, .dessert__details,.starter__details {
+    ~.starter__details, ~.dish__details, ~.dessert__details,
+    .starter__details, .dish__details, .dessert__details { /* start__menu, dish__menu, dessert__menu cursor:hover desktop*/
      
        line-height:1rem;
        @include tablet {
@@ -330,7 +323,8 @@
        }
     }
     
-    ~.starter__price, ~.dish__price, .dessert__price,.starter__price{
+    ~.starter__price, ~.dish__price, ~.dessert__price,
+    .starter__price, .dish__price, .dessert__price { /* start__menu, dish__menu, dessert__menu cursor:hover desktop*/
        
         margin-right: 1rem;
         margin-left: -3rem;
@@ -347,7 +341,8 @@
         }
        
     }
-    ~.checkbox-animation,.checkbox-animation {
+    ~.checkbox-animation,
+    .checkbox-animation { /* start__menu, dish__menu, dessert__menu cursor:hover desktop*/
         display:flex; 
         transform:scaleX(1.35);
         @include tablet {
