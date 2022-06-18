@@ -187,13 +187,13 @@
   
       
   
-    .starter__details, .dish__details, .dessert__details {
+    ~.starter__details, ~.dish__details, .dessert__details,.starter__details {
      
        line-height:1rem;
        @include tablet {
             line-height: 2rem;
        
-      
+       }
        label{
 
             p,h3{
@@ -329,8 +329,8 @@
             }
        }
     }
-    }
-    ~.starter__price, .dish__price, .dessert__price{
+    
+    ~.starter__price, ~.dish__price, .dessert__price,.starter__price{
        
         margin-right: 1rem;
         margin-left: -3rem;
@@ -347,7 +347,7 @@
         }
        
     }
-    ~.checkbox-animation {
+    ~.checkbox-animation,.checkbox-animation {
         display:flex; 
         transform:scaleX(1.35);
         @include tablet {
