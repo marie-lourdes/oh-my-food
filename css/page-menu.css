@@ -9,14 +9,6 @@
 /*page-menu form*/
 /* responsive*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Shrikhand&display=swap");
-@keyframes rotate-check {
-  0% {
-    transform: rotate(-360deg) scaleX(1);
-  }
-  100% {
-    transform: rotate(360deg) scaleX(0.9);
-  }
-}
 html {
   font-size: 62, 5%;
 }
@@ -561,6 +553,9 @@ label > p {
   }
 }
 
+/*.input-check:checked {
+    @include checkbox-cursor;
+}*/
 @keyframes rotate-check {
   0% {
     transform: rotate(-360deg);
