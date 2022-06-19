@@ -334,6 +334,11 @@ main {
   width: 80%;
   margin: 0 auto;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+  .booking-form__call-to-action h1 {
+    font-size: 140%;
+  }
+}
 .booking-form__call-to-action label {
   appearance: none;
   display: inline-block;
@@ -344,7 +349,7 @@ main {
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .booking-form__call-to-action label {
     white-space: pre-wrap;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
 }
 .booking-form__call-to-action .button-primary {
