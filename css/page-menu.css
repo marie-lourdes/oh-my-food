@@ -1180,35 +1180,37 @@ main {
   flex-direction: column;
   width: 100%;
   /* white-space: nowrap;*/
+  /*label {*/
+  /*}*/
 }
-.form-menu .starter__details label p {
+.form-menu .starter__details p label {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   font-size: 1rem;
-  margin-top: -0.8rem;
+  margin-top: -1.8rem;
   display: block;
 }
 @media screen and (max-width: 360px) {
-  .form-menu .starter__details label p {
+  .form-menu .starter__details p label {
     font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
-  .form-menu .starter__details label p {
+  .form-menu .starter__details p label {
     font-size: 100%;
   }
 }
-.form-menu .starter__details label .dish--beef {
+.form-menu .starter__details .dish--beef {
   width: 98%;
 }
 @media screen and (max-width: 360px) {
-  .form-menu .starter__details label .dessert--ice {
+  .form-menu .starter__details .dessert--ice {
     width: 83%;
   }
 }
 @media screen and (max-width: 360px) {
-  .form-menu .starter__details label .dessert--tiramisu {
+  .form-menu .starter__details .dessert--tiramisu {
     width: 70%;
   }
 }
@@ -1269,35 +1271,37 @@ main {
   flex-direction: column;
   width: 100%;
   /* white-space: nowrap;*/
+  /*label {*/
+  /*}*/
 }
-.form-menu .dish__details label p {
+.form-menu .dish__details p label {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   font-size: 1rem;
-  margin-top: -0.8rem;
+  margin-top: -1.8rem;
   display: block;
 }
 @media screen and (max-width: 360px) {
-  .form-menu .dish__details label p {
+  .form-menu .dish__details p label {
     font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
-  .form-menu .dish__details label p {
+  .form-menu .dish__details p label {
     font-size: 100%;
   }
 }
-.form-menu .dish__details label .dish--beef {
+.form-menu .dish__details .dish--beef {
   width: 98%;
 }
 @media screen and (max-width: 360px) {
-  .form-menu .dish__details label .dessert--ice {
+  .form-menu .dish__details .dessert--ice {
     width: 83%;
   }
 }
 @media screen and (max-width: 360px) {
-  .form-menu .dish__details label .dessert--tiramisu {
+  .form-menu .dish__details .dessert--tiramisu {
     width: 70%;
   }
 }
@@ -1358,35 +1362,37 @@ main {
   flex-direction: column;
   width: 100%;
   /* white-space: nowrap;*/
+  /*label {*/
+  /*}*/
 }
-.form-menu .dessert__details label p {
+.form-menu .dessert__details p label {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   font-size: 1rem;
-  margin-top: -0.8rem;
+  margin-top: -1.8rem;
   display: block;
 }
 @media screen and (max-width: 360px) {
-  .form-menu .dessert__details label p {
+  .form-menu .dessert__details p label {
     font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
-  .form-menu .dessert__details label p {
+  .form-menu .dessert__details p label {
     font-size: 100%;
   }
 }
-.form-menu .dessert__details label .dish--beef {
+.form-menu .dessert__details .dish--beef {
   width: 98%;
 }
 @media screen and (max-width: 360px) {
-  .form-menu .dessert__details label .dessert--ice {
+  .form-menu .dessert__details .dessert--ice {
     width: 83%;
   }
 }
 @media screen and (max-width: 360px) {
-  .form-menu .dessert__details label .dessert--tiramisu {
+  .form-menu .dessert__details .dessert--tiramisu {
     width: 70%;
   }
 }

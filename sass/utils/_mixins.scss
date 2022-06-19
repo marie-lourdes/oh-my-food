@@ -74,13 +74,14 @@
             width: 100%;
             
            /* white-space: nowrap;*/
-            label {
+            /*label {*/
                 p{
+                    label{
                     white-space: nowrap;
                     text-overflow: ellipsis;
                     overflow: hidden;
                     font-size: 1rem;
-                    margin-top: -0.8rem;
+                    margin-top: -1.8rem;
                     display:block;
                     @include small-mobile{
                         font-size: 0.8rem;
@@ -88,7 +89,7 @@
                     @include tablet {
                         font-size: 100%;
                     }
-                    
+                }  
                 }
               
                 .dish--beef{
@@ -108,7 +109,7 @@
                    
                 }
           
-            }
+            /*}*/
             
 
         }
