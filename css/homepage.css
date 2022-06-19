@@ -325,7 +325,7 @@ main {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 2rem 2rem 3.5rem;
+  padding: 2rem 2rem 3rem;
 }
 .booking-form__call-to-action h1 {
   font-weight: 900;
@@ -338,6 +338,8 @@ main {
   appearance: none;
   display: inline-block;
   font-size: 1.1rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .booking-form__call-to-action label {

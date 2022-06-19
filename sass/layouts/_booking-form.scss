@@ -74,7 +74,8 @@
         &__call-to-action {
             @include flexbox-direction;
             margin:0 auto;
-            padding: 2rem 2rem 3.5rem;
+            padding: 2rem 2rem 3rem;
+            
             h1 {
                 font-weight:900;
                 margin:0;
@@ -86,6 +87,9 @@
                 appearance: none;
                 display:inline-block;
                 font-size: 1.1rem;
+                margin-bottom: 2rem;
+                margin-top: 1rem;
+
                
                 @include tablet {
                     /*white-space: pre-wrap;*/
