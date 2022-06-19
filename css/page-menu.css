@@ -1178,6 +1178,7 @@ main {
 .form-menu .starter__details {
   display: flex;
   flex-direction: column;
+  width: 100%;
   /* white-space: nowrap;*/
 }
 .form-menu .starter__details label p {
@@ -1266,6 +1267,7 @@ main {
 .form-menu .dish__details {
   display: flex;
   flex-direction: column;
+  width: 100%;
   /* white-space: nowrap;*/
 }
 .form-menu .dish__details label p {
@@ -1354,6 +1356,7 @@ main {
 .form-menu .dessert__details {
   display: flex;
   flex-direction: column;
+  width: 100%;
   /* white-space: nowrap;*/
 }
 .form-menu .dessert__details label p {

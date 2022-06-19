@@ -71,6 +71,7 @@
        
         .#{$value}__details {
             @include flexbox-direction;
+            width: 100%;
             
            /* white-space: nowrap;*/
             label {
