@@ -80,6 +80,7 @@
                     overflow: hidden;
                     font-size: 1rem;
                     margin-top: -0.8rem;
+                    display:block;
                     @include small-mobile{
                         font-size: 0.8rem;
                     }
