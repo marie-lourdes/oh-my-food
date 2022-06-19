@@ -252,8 +252,17 @@ a {
   line-height: 2rem;
   transform: scaleX(0.9);
   display: block;
-  appearance: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
   cursor: pointer;
+  appearance: none;
+}
+.starter__menu .input-check:checked ~ .starter__details p .dish--gnocchis, .starter__menu .input-check:checked ~ .dish__details p .dish--gnocchis, .starter__menu .input-check:checked ~ .dessert__details p .dish--gnocchis,
+.starter__menu .input-check:checked .starter__details p .dish--gnocchis, .starter__menu .input-check:checked .dish__details p .dish--gnocchis, .starter__menu .input-check:checked .dessert__details p .dish--gnocchis, .dish__menu .input-check:checked ~ .starter__details p .dish--gnocchis, .dish__menu .input-check:checked ~ .dish__details p .dish--gnocchis, .dish__menu .input-check:checked ~ .dessert__details p .dish--gnocchis,
+.dish__menu .input-check:checked .starter__details p .dish--gnocchis, .dish__menu .input-check:checked .dish__details p .dish--gnocchis, .dish__menu .input-check:checked .dessert__details p .dish--gnocchis, .dessert__menu .input-check:checked ~ .starter__details p .dish--gnocchis, .dessert__menu .input-check:checked ~ .dish__details p .dish--gnocchis, .dessert__menu .input-check:checked ~ .dessert__details p .dish--gnocchis,
+.dessert__menu .input-check:checked .starter__details p .dish--gnocchis, .dessert__menu .input-check:checked .dish__details p .dish--gnocchis, .dessert__menu .input-check:checked .dessert__details p .dish--gnocchis {
+  width: 65%;
 }
 .starter__menu .input-check:checked ~ .starter__details .starter--duck, .starter__menu .input-check:checked ~ .dish__details .starter--duck, .starter__menu .input-check:checked ~ .dessert__details .starter--duck,
 .starter__menu .input-check:checked .starter__details .starter--duck, .starter__menu .input-check:checked .dish__details .starter--duck, .starter__menu .input-check:checked .dessert__details .starter--duck, .dish__menu .input-check:checked ~ .starter__details .starter--duck, .dish__menu .input-check:checked ~ .dish__details .starter--duck, .dish__menu .input-check:checked ~ .dessert__details .starter--duck,
@@ -328,12 +337,6 @@ a {
 .dish__menu .input-check:checked .starter__details .dish--parmentier, .dish__menu .input-check:checked .dish__details .dish--parmentier, .dish__menu .input-check:checked .dessert__details .dish--parmentier, .dessert__menu .input-check:checked ~ .starter__details .dish--parmentier, .dessert__menu .input-check:checked ~ .dish__details .dish--parmentier, .dessert__menu .input-check:checked ~ .dessert__details .dish--parmentier,
 .dessert__menu .input-check:checked .starter__details .dish--parmentier, .dessert__menu .input-check:checked .dish__details .dish--parmentier, .dessert__menu .input-check:checked .dessert__details .dish--parmentier {
   width: 91%;
-}
-.starter__menu .input-check:checked ~ .starter__details .dish--gnocchis, .starter__menu .input-check:checked ~ .dish__details .dish--gnocchis, .starter__menu .input-check:checked ~ .dessert__details .dish--gnocchis,
-.starter__menu .input-check:checked .starter__details .dish--gnocchis, .starter__menu .input-check:checked .dish__details .dish--gnocchis, .starter__menu .input-check:checked .dessert__details .dish--gnocchis, .dish__menu .input-check:checked ~ .starter__details .dish--gnocchis, .dish__menu .input-check:checked ~ .dish__details .dish--gnocchis, .dish__menu .input-check:checked ~ .dessert__details .dish--gnocchis,
-.dish__menu .input-check:checked .starter__details .dish--gnocchis, .dish__menu .input-check:checked .dish__details .dish--gnocchis, .dish__menu .input-check:checked .dessert__details .dish--gnocchis, .dessert__menu .input-check:checked ~ .starter__details .dish--gnocchis, .dessert__menu .input-check:checked ~ .dish__details .dish--gnocchis, .dessert__menu .input-check:checked ~ .dessert__details .dish--gnocchis,
-.dessert__menu .input-check:checked .starter__details .dish--gnocchis, .dessert__menu .input-check:checked .dish__details .dish--gnocchis, .dessert__menu .input-check:checked .dessert__details .dish--gnocchis {
-  width: 81%;
 }
 .starter__menu .input-check:checked ~ .starter__details .starter--ravioli, .starter__menu .input-check:checked ~ .dish__details .starter--ravioli, .starter__menu .input-check:checked ~ .dessert__details .starter--ravioli,
 .starter__menu .input-check:checked .starter__details .starter--ravioli, .starter__menu .input-check:checked .dish__details .starter--ravioli, .starter__menu .input-check:checked .dessert__details .starter--ravioli, .dish__menu .input-check:checked ~ .starter__details .starter--ravioli, .dish__menu .input-check:checked ~ .dish__details .starter--ravioli, .dish__menu .input-check:checked ~ .dessert__details .starter--ravioli,
@@ -520,8 +523,17 @@ a {
     line-height: 2rem;
     transform: scaleX(0.9);
     display: block;
-    appearance: none;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
     cursor: pointer;
+    appearance: none;
+  }
+  .starter__menu:hover ~ .starter__details p .dish--gnocchis, .starter__menu:hover ~ .dish__details p .dish--gnocchis, .starter__menu:hover ~ .dessert__details p .dish--gnocchis,
+.starter__menu:hover .starter__details p .dish--gnocchis, .starter__menu:hover .dish__details p .dish--gnocchis, .starter__menu:hover .dessert__details p .dish--gnocchis, .dish__menu:hover ~ .starter__details p .dish--gnocchis, .dish__menu:hover ~ .dish__details p .dish--gnocchis, .dish__menu:hover ~ .dessert__details p .dish--gnocchis,
+.dish__menu:hover .starter__details p .dish--gnocchis, .dish__menu:hover .dish__details p .dish--gnocchis, .dish__menu:hover .dessert__details p .dish--gnocchis, .dessert__menu:hover ~ .starter__details p .dish--gnocchis, .dessert__menu:hover ~ .dish__details p .dish--gnocchis, .dessert__menu:hover ~ .dessert__details p .dish--gnocchis,
+.dessert__menu:hover .starter__details p .dish--gnocchis, .dessert__menu:hover .dish__details p .dish--gnocchis, .dessert__menu:hover .dessert__details p .dish--gnocchis {
+    width: 65%;
   }
 }
 @media screen and (min-width: 992px) {
@@ -610,14 +622,6 @@ a {
 .dish__menu:hover .starter__details .dish--parmentier, .dish__menu:hover .dish__details .dish--parmentier, .dish__menu:hover .dessert__details .dish--parmentier, .dessert__menu:hover ~ .starter__details .dish--parmentier, .dessert__menu:hover ~ .dish__details .dish--parmentier, .dessert__menu:hover ~ .dessert__details .dish--parmentier,
 .dessert__menu:hover .starter__details .dish--parmentier, .dessert__menu:hover .dish__details .dish--parmentier, .dessert__menu:hover .dessert__details .dish--parmentier {
     width: 91%;
-  }
-}
-@media screen and (min-width: 992px) {
-  .starter__menu:hover ~ .starter__details .dish--gnocchis, .starter__menu:hover ~ .dish__details .dish--gnocchis, .starter__menu:hover ~ .dessert__details .dish--gnocchis,
-.starter__menu:hover .starter__details .dish--gnocchis, .starter__menu:hover .dish__details .dish--gnocchis, .starter__menu:hover .dessert__details .dish--gnocchis, .dish__menu:hover ~ .starter__details .dish--gnocchis, .dish__menu:hover ~ .dish__details .dish--gnocchis, .dish__menu:hover ~ .dessert__details .dish--gnocchis,
-.dish__menu:hover .starter__details .dish--gnocchis, .dish__menu:hover .dish__details .dish--gnocchis, .dish__menu:hover .dessert__details .dish--gnocchis, .dessert__menu:hover ~ .starter__details .dish--gnocchis, .dessert__menu:hover ~ .dish__details .dish--gnocchis, .dessert__menu:hover ~ .dessert__details .dish--gnocchis,
-.dessert__menu:hover .starter__details .dish--gnocchis, .dessert__menu:hover .dish__details .dish--gnocchis, .dessert__menu:hover .dessert__details .dish--gnocchis {
-    width: 81%;
   }
 }
 @media screen and (min-width: 992px) {
