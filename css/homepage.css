@@ -748,18 +748,18 @@ main {
     font-size: 80%;
   }
 }
-.footer h1 {
+.footer__heading {
   font-family: "Shrikhand", cursive, arial, sans-serif;
   font-size: 1.1rem;
   font-weight: 400;
 }
 @media screen and (min-width: 992px) {
-  .footer h1 {
+  .footer__heading {
     font-size: 120%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
-  .footer h1 {
+  .footer__heading {
     font-size: 110%;
   }
 }
