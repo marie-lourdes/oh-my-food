@@ -182,16 +182,30 @@
             line-height: 2rem;
        
        }
-       label{
+       /*label{*/
 
-            p, h3{
+            h3 {
+                >label{
                 white-space: nowrap;
                 text-overflow: ellipsis;
                 overflow: hidden;
+                display:block;
+                appearance:none;
+               cursor:pointer;
+                }
+               
             }
+            
             p{
-            line-height: 2rem;
-            transform: scaleX(0.9);
+            >label{
+                line-height: 2rem;
+                transform: scaleX(0.9);
+                display:block;
+                appearance:none;
+                cursor:pointer;
+
+            }
+           
             }
 
             /* paragraph width-ellipsis: " menu palette du goût" */
@@ -310,7 +324,7 @@
 
                 }
             }
-       }
+      /* }*/
     }
     
     ~.starter__price, ~.dish__price, ~.dessert__price,

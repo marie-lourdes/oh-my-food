@@ -1,14 +1,19 @@
 /*checkbox-animation*/
-label{
-    appearance:none;
-    cursor:pointer;
-    & > p{
-        transform-origin: left;
-        transition: transform ,text-overflow ;
-        transition-duration: 1s;
-        transition-timing-function: ease-in-out;         
+/*label{*/
+    .starter__details,.dish__details,.dessert__details{
+        & p{
+            label{
+            transform-origin: left;
+            transition: transform ,text-overflow ;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;     
+            }    
+        }
+
     }
-}
+    
+  
+/*}*/
 
 .starter__price, .dish__price, .dessert__price{
     transform-origin:right;
