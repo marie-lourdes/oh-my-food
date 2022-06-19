@@ -1,23 +1,13 @@
 /*checkbox-animation*/
 label{
-            
     appearance:none;
     cursor:pointer;
-    
-    
     & > p{
-        
         transform-origin: left;
-       
         transition: transform ,text-overflow ;
         transition-duration: 1s;
-        transition-timing-function: ease-in-out;
-
-        
-        
+        transition-timing-function: ease-in-out;         
     }
-    
-
 }
 
 .starter__price, .dish__price, .dessert__price{
@@ -26,6 +16,7 @@ label{
     transition: transform  1s ease-in-out;
     
 }
+
 .checkbox-animation {
   /*  display:none;*/
     background: $color-tertiary;
@@ -74,10 +65,6 @@ label{
     }
 } 
 
-
-
-
-
 .starter__menu, .dish__menu, .dessert__menu {
     .input-check:checked {
         @include checkbox-cursor;
@@ -98,15 +85,11 @@ label{
     
 }*/
 
-
-
-
-
 @keyframes rotate-check {
-    0%{
+    0% {
         transform:rotate(-360deg)/* scale(1,1); */;
     }
-    100%{
+    100% {
         transform:rotate(360deg) /*scale(0.9,1.1);*/ scaleX(0.9);
     }
 }
