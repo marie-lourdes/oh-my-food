@@ -86,13 +86,15 @@
             label {
                 appearance: none;
                 display:inline-block;
-                font-size: 1.1rem;
+                font-size: 1.07rem;
                 margin-bottom: 2rem;
                 margin-top: 1rem;
+               
 
                
                 @include tablet {
-                    /*white-space: pre-wrap;*/
+                    white-space: pre-wrap;
+                    font-size: 1.6rem;
                 }
                
                

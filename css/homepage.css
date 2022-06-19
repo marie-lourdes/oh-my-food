@@ -337,13 +337,14 @@ main {
 .booking-form__call-to-action label {
   appearance: none;
   display: inline-block;
-  font-size: 1.1rem;
+  font-size: 1.07rem;
   margin-bottom: 2rem;
   margin-top: 1rem;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .booking-form__call-to-action label {
-    /*white-space: pre-wrap;*/
+    white-space: pre-wrap;
+    font-size: 1.6rem;
   }
 }
 .booking-form__call-to-action .button-primary {
