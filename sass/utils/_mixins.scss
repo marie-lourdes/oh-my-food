@@ -161,8 +161,8 @@
 @mixin fadein {
     @for $i from 1 through 2 {
          .form-menu--#{$i}-fadein{
-            animation-delay:$anim-dur $anim-delay*$i;
-            animation: fadein $anim-dur both;
+            animation-delay: $anim-delay*$i;
+            animation: fadein $anim-dur ease-out both;
         } 
     }
 }
