@@ -684,7 +684,12 @@ main {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .card__description {
-    margin-top: 0;
+    margin-top: 0rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .card__description {
+    margin-top: -0.3rem;
   }
 }
 .card__description.card__description--margin-top {
@@ -697,13 +702,13 @@ main {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .card__description.card__description--margin-top {
-    margin-top: 0;
+    margin-top: 0rem;
   }
 }
 .card__description .description__text {
   display: flex;
   flex-direction: column;
-  line-height: 0.5rem;
+  line-height: 0.3rem;
 }
 @media screen and (min-width: 992px) {
   .card__description .description__text {
@@ -715,6 +720,27 @@ main {
   .card__description .description__text {
     line-height: 0.4rem;
   }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+  .card__description .description__text {
+    line-height: 0.4rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .card__description .description__text {
+    line-height: 1rem;
+  }
+}
+.card__description .description__text h3 {
+  font-size: 1.1rem;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+  .card__description .description__text h3 {
+    font-size: 110%;
+  }
+}
+.card__description .description__text address {
+  font-style: normal;
 }
 
 /*footer*/
@@ -753,11 +779,6 @@ main {
   color: #fff;
   font-size: 0.9rem;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
-  .footer a {
-    font-size: 80%;
-  }
-}
 .footer__heading {
   font-family: "Shrikhand", cursive, arial, sans-serif;
   font-size: 1.1rem;
@@ -770,7 +791,7 @@ main {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .footer__heading {
-    font-size: 110%;
+    font-size: 160%;
   }
 }
 .footer h3 {
@@ -823,6 +844,11 @@ main {
   display: flex;
   flex-direction: row;
   align-items: baseline;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+  .footer__link a {
+    font-size: 80%;
+  }
 }
 .footer__link a > .footer__icon {
   margin-right: 0.5rem;

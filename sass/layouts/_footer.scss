@@ -30,9 +30,7 @@
     a {
         color: $color-white;
         font-size: 0.9rem;
-        @include tablet {
-            font-size: 80%;
-        }
+      
         
     }
     &__heading {
@@ -43,7 +41,7 @@
             font-size:120%;
         }
         @include tablet {
-            font-size: 110%;
+            font-size: 160%;
         }
        
     }
@@ -91,6 +89,9 @@
         a {
             @include flexbox-direction(row);
             align-items: baseline;
+            @include tablet {
+                font-size: 80%;
+            }
             > .footer__icon {
                 margin-right: 0.5rem;
                 font-size: 0.7rem;
