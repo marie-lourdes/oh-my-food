@@ -22,17 +22,17 @@ body {
   font-size: 1rem;
   position: relative;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
-  body {
-    width: auto;
-    font-size: 160% !important;
-  }
-}
 @media screen and (min-width: 992px) {
   body {
     font-size: 100%;
     width: auto;
     min-height: 100vh;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    width: auto;
+    font-size: 160%;
   }
 }
 
@@ -915,11 +915,6 @@ main {
         max-height: 40rem;
     }*/
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
-  .banner-menu img.img--max-height {
-    max-height: 30rem;
-  }
-}
 @media screen and (min-width: 992px) {
   .banner-menu img.img--max-height {
     max-height: 40rem;
@@ -928,6 +923,11 @@ main {
 @media screen and (min-width: 1200px) {
   .banner-menu img.img--max-height {
     max-height: 52rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+  .banner-menu img.img--max-height {
+    max-height: 30rem;
   }
 }
 @media screen and (min-width: 992px) {
@@ -953,14 +953,6 @@ main {
         margin-bottom: 32rem;
     }*/
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
-  .menu {
-    padding: 0;
-    top: 25.8rem;
-    margin-bottom: 25.7rem;
-    border-radius: 4.5rem 4.5rem 0 0;
-  }
-}
 @media screen and (min-width: 992px) {
   .menu {
     top: 27rem;
@@ -977,8 +969,11 @@ main {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
-  .menu.menu--note-enchantee {
-    top: 24.8rem;
+  .menu {
+    padding: 0;
+    top: 25.8rem;
+    margin-bottom: 25.7rem;
+    border-radius: 4.5rem 4.5rem 0 0;
   }
 }
 @media screen and (min-width: 992px) {
@@ -992,6 +987,11 @@ main {
     margin-bottom: 49rem;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu.menu--note-enchantee {
+    top: 24.8rem;
+  }
+}
 .menu__heading {
   font-family: "Shrikhand", cursive, arial, sans-serif;
   display: flex;
@@ -1000,14 +1000,14 @@ main {
   justify-content: space-between;
   padding: 1rem 1.5rem 0rem 0rem;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 992px) {
   .menu__heading {
-    font-size: 120%;
     padding-left: 2rem;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .menu__heading {
+    font-size: 120%;
     padding-left: 2rem;
   }
 }
@@ -1027,13 +1027,6 @@ main {
        padding-bottom: 8rem;
    }*/
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
-  .form-menu {
-    align-items: center;
-    min-height: 130rem !important;
-    padding-bottom: 8rem !important;
-  }
-}
 @media screen and (min-width: 992px) {
   .form-menu {
     align-items: center;
@@ -1046,6 +1039,13 @@ main {
     min-height: 90rem;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+  .form-menu {
+    align-items: center;
+    min-height: 130rem;
+    padding-bottom: 8rem;
+  }
+}
 .form-menu__starter {
   position: relative;
   display: flex;
@@ -1056,14 +1056,14 @@ main {
   justify-content: space-around;
   box-sizing: border-box;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 992px) {
   .form-menu__starter {
     width: 80vw;
     padding: 2rem;
     border: 2px groove rgb(192, 192, 192);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .form-menu__starter {
     width: 80vw;
     padding: 2rem;
@@ -1080,14 +1080,14 @@ main {
   justify-content: space-around;
   box-sizing: border-box;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 992px) {
   .form-menu__dish {
     width: 80vw;
     padding: 2rem;
     border: 2px groove rgb(192, 192, 192);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .form-menu__dish {
     width: 80vw;
     padding: 2rem;
@@ -1104,14 +1104,14 @@ main {
   justify-content: space-around;
   box-sizing: border-box;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 992px) {
   .form-menu__dessert {
     width: 80vw;
     padding: 2rem;
     border: 2px groove rgb(192, 192, 192);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .form-menu__dessert {
     width: 80vw;
     padding: 2rem;
@@ -1420,12 +1420,6 @@ main {
 .form-menu.form-menu--note-enchantee {
   padding-bottom: 15rem;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
-  .form-menu.form-menu--note-enchantee {
-    min-height: 140rem !important;
-    padding-bottom: 8rem;
-  }
-}
 @media screen and (min-width: 992px) {
   .form-menu.form-menu--note-enchantee {
     padding-bottom: 8rem;
@@ -1437,10 +1431,24 @@ main {
     padding-bottom: 8rem;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+  .form-menu.form-menu--note-enchantee {
+    min-height: 140rem;
+    padding-bottom: 8rem;
+  }
+}
 
 .button-primary {
   width: 13rem;
   margin: 0rem auto;
+}
+@media screen and (min-width: 1200px) {
+  .button-primary {
+    width: 16rem;
+    padding: 1.5rem;
+    border-radius: 2.5rem;
+    font-size: 130%;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .button-primary {
@@ -1454,14 +1462,6 @@ main {
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .button-primary {
     margin-top: 0rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .button-primary {
-    width: 16rem;
-    padding: 1.5rem;
-    border-radius: 2.5rem;
-    font-size: 130%;
   }
 }
 
