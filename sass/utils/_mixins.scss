@@ -20,7 +20,7 @@
     color: $color-white;
     background: linear-gradient( $color1, $color2);
     box-shadow: 0px 10px 20px -5px rgb(map-get($color-gray, dark-gray),0.5);
-    @include tablet{
+    @include tablet {
         padding:1.5rem;
         border-radius:2.5rem;
     }
@@ -57,14 +57,15 @@
             margin-bottom:1rem;
             box-sizing:border-box;
             cursor:pointer;
+            @include desktop {
+                padding-left: 1rem;
+            }
             @include tablet {
                 min-height: 8rem;
                 border-radius: 1.8rem;
                 padding-left: 1rem;
             }
-            @include desktop {
-                padding-left: 1rem;
-            }
+           
         }
        
         .#{$value}__details {
@@ -84,8 +85,7 @@
                     @include tablet {
                         font-size: 100%;
                     }
-                   
-                   
+                    
                 }
               
                 .dish--beef{
@@ -117,20 +117,16 @@
             top:34px; 
             right:20px;
             z-index:1;
+            @include desktop-large {
+                font-size: 85%;
+            }
             @include small-mobile{
                 top: 34px;
-           }
-           @include tablet {
+            }
+            @include tablet {
                 top: 57px;
-           }
-           @include tablet {
                 font-size: 90%;
-           }
-           @include desktop-large {
-                font-size: 85%;
-           }
-            
-           
+            }         
         }
     }  
  } 
@@ -155,8 +151,8 @@
                 padding:2rem;
                 border: 2px groove rgb(192, 192, 192);
 
-            }  
-                   
+            }       
+
         }
     }   
 }
@@ -166,11 +162,7 @@
          .form-menu--#{$i}-fadein{
             animation-delay:$anim-dur $anim-delay*$i;
             animation: fadein $anim-dur both;
-          
-
         } 
-
-       
     }
 }
 
@@ -190,19 +182,16 @@
        }
        label{
 
-            p,h3{
+            p, h3{
                 white-space: nowrap;
                 text-overflow: ellipsis;
-                overflow :hidden;
-                
-                
-            
-        
+                overflow: hidden;
             }
             p{
             line-height: 2rem;
             transform: scaleX(0.9);
             }
+
             /* paragraph width-ellipsis: " menu palette du goût" */
             
             .starter--duck {
@@ -270,7 +259,7 @@
             }
             .starter--lobster{
                 @include small-mobile {
-                width: 70%;
+                    width: 70%;
                 }
             }
             .foie-gras {
@@ -287,17 +276,16 @@
                 @include small-mobile{
                     width: 70%;
                 }
-            }
-            
-        
+            }            
             .dessert--ice{
                 width: 83%;
             }
 
             /* "le delice des sens"*/
+
             .crisp-lobster{
                 @include small-mobile {
-                width: 70%;
+                    width: 70%;
                 }
             }
 
@@ -305,18 +293,17 @@
                 width: 70%;
             }    
             .dessert--mousse{
-            @include small-mobile {
-                width:75%;
-            }
+                @include small-mobile {
+                    width: 75%;
+                }
             
             }
-        
             .roast-chicken{
                 @include small-mobile {
                     white-space: nowrap;
                     text-overflow: ellipsis;
                     overflow: hidden;
-                    display:inline-block;
+                    display: inline-block;
                     width:70%;
 
                 }
@@ -331,21 +318,19 @@
         margin-left: -3rem;
         top: 33px;
         transform:translateX(-45px);
+        @include desktop-large {
+            transform:translateX(-60px); 
+        }
         @include tablet {
             transform:translateX(-100px); 
             top: 57px; 
         }
-        @include desktop-large {
-            transform:translateX(-60px); 
-            
-
-        }
-       
+         
     }
     ~.checkbox-animation,
     .checkbox-animation { /* start__menu, dish__menu, dessert__menu cursor:hover desktop*/
-        display:flex; 
-        transform:scaleX(1.35);
+        display: flex; 
+        transform: scaleX(1.35);
         @include tablet {
            transform: scaleX(1.8);
            padding: 2rem;
@@ -356,13 +341,11 @@
            /* @include tablet {
                transform: rotate(0deg) scale(1.3);
 
-            }*/
-           
+            }*/      
        }   
-
    }
 
- }
+}
 
 
 

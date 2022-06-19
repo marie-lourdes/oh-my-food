@@ -16,9 +16,6 @@ header {
         @include tablet {
             top: 10px;
         }
-        @include desktop {
-        
-        }
         .logo-svg {
             padding: 0.8rem;
             width: 10rem;

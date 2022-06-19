@@ -29,39 +29,42 @@
             >.icon-location {
                 position: relative;
                 left:6%;
-                @include tablet {
-                    left: -4%;
-                }
                 @include desktop {
                     left: -3%;
                 }
+                @include tablet {
+                    left: -4%;
+                }
+                
                 
             }
             >.search-field {
                 position: relative;
                 left: 10%;
-                @include tablet {
-                    left: 0%
-                }
                 @include desktop {
                     left: -1%;
                 }
                 @include desktop-large {
                     left: -1.5%;
                 }
-                input{
-                box-sizing: border-box;
-                padding: 0.8rem 0rem;
-                background: none;
-                border: 0;
-                font-weight: 700;
-                color: map-get($color-gray,dark-gray);
                 @include tablet {
-                    font-size: 1.8rem;
+                    left: 0%
                 }
-                @include desktop {
-                    font-size: 110%;
-                }
+               
+                input{
+                    box-sizing: border-box;
+                    padding: 0.8rem 0rem;
+                    background: none;
+                    border: 0;
+                    font-weight: 700;
+                    color: map-get($color-gray,dark-gray);
+                    @include desktop {
+                        font-size: 110%;
+                    }
+                    @include tablet {
+                        font-size: 1.8rem;
+                    }
+             
     
                 }
                 
@@ -80,18 +83,16 @@
                     font-weight:900;
                     margin:0;
                     color:$color-black;
-                 }
+                }
                
             }
-            p{
+            p{ 
                 @include tablet {
                     white-space: pre-wrap;
                 }
             }
 
-            @import "../components/button-primary";
-            
-            
+            @import "../components/button-primary";   
             
         }
     }

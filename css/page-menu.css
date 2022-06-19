@@ -425,6 +425,14 @@ label > p {
   top: 33px;
   transform: translateX(-45px);
 }
+@media screen and (min-width: 1200px) {
+  .starter__menu .input-check:checked ~ .starter__price, .starter__menu .input-check:checked ~ .dish__price, .starter__menu .input-check:checked ~ .dessert__price,
+.starter__menu .input-check:checked .starter__price, .starter__menu .input-check:checked .dish__price, .starter__menu .input-check:checked .dessert__price, .dish__menu .input-check:checked ~ .starter__price, .dish__menu .input-check:checked ~ .dish__price, .dish__menu .input-check:checked ~ .dessert__price,
+.dish__menu .input-check:checked .starter__price, .dish__menu .input-check:checked .dish__price, .dish__menu .input-check:checked .dessert__price, .dessert__menu .input-check:checked ~ .starter__price, .dessert__menu .input-check:checked ~ .dish__price, .dessert__menu .input-check:checked ~ .dessert__price,
+.dessert__menu .input-check:checked .starter__price, .dessert__menu .input-check:checked .dish__price, .dessert__menu .input-check:checked .dessert__price {
+    transform: translateX(-60px);
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .starter__menu .input-check:checked ~ .starter__price, .starter__menu .input-check:checked ~ .dish__price, .starter__menu .input-check:checked ~ .dessert__price,
 .starter__menu .input-check:checked .starter__price, .starter__menu .input-check:checked .dish__price, .starter__menu .input-check:checked .dessert__price, .dish__menu .input-check:checked ~ .starter__price, .dish__menu .input-check:checked ~ .dish__price, .dish__menu .input-check:checked ~ .dessert__price,
@@ -432,14 +440,6 @@ label > p {
 .dessert__menu .input-check:checked .starter__price, .dessert__menu .input-check:checked .dish__price, .dessert__menu .input-check:checked .dessert__price {
     transform: translateX(-100px);
     top: 57px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .starter__menu .input-check:checked ~ .starter__price, .starter__menu .input-check:checked ~ .dish__price, .starter__menu .input-check:checked ~ .dessert__price,
-.starter__menu .input-check:checked .starter__price, .starter__menu .input-check:checked .dish__price, .starter__menu .input-check:checked .dessert__price, .dish__menu .input-check:checked ~ .starter__price, .dish__menu .input-check:checked ~ .dish__price, .dish__menu .input-check:checked ~ .dessert__price,
-.dish__menu .input-check:checked .starter__price, .dish__menu .input-check:checked .dish__price, .dish__menu .input-check:checked .dessert__price, .dessert__menu .input-check:checked ~ .starter__price, .dessert__menu .input-check:checked ~ .dish__price, .dessert__menu .input-check:checked ~ .dessert__price,
-.dessert__menu .input-check:checked .starter__price, .dessert__menu .input-check:checked .dish__price, .dessert__menu .input-check:checked .dessert__price {
-    transform: translateX(-60px);
   }
 }
 .starter__menu .input-check:checked ~ .checkbox-animation,
@@ -714,6 +714,14 @@ label > p {
     transform: translateX(-45px);
   }
 }
+@media screen and (min-width: 992px) and (min-width: 1200px) {
+  .starter__menu:hover ~ .starter__price, .starter__menu:hover ~ .dish__price, .starter__menu:hover ~ .dessert__price,
+.starter__menu:hover .starter__price, .starter__menu:hover .dish__price, .starter__menu:hover .dessert__price, .dish__menu:hover ~ .starter__price, .dish__menu:hover ~ .dish__price, .dish__menu:hover ~ .dessert__price,
+.dish__menu:hover .starter__price, .dish__menu:hover .dish__price, .dish__menu:hover .dessert__price, .dessert__menu:hover ~ .starter__price, .dessert__menu:hover ~ .dish__price, .dessert__menu:hover ~ .dessert__price,
+.dessert__menu:hover .starter__price, .dessert__menu:hover .dish__price, .dessert__menu:hover .dessert__price {
+    transform: translateX(-60px);
+  }
+}
 @media screen and (min-width: 992px) and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 992px) and (min-width: 768px) and (max-width: 1024px) {
   .starter__menu:hover ~ .starter__price, .starter__menu:hover ~ .dish__price, .starter__menu:hover ~ .dessert__price,
 .starter__menu:hover .starter__price, .starter__menu:hover .dish__price, .starter__menu:hover .dessert__price, .dish__menu:hover ~ .starter__price, .dish__menu:hover ~ .dish__price, .dish__menu:hover ~ .dessert__price,
@@ -721,14 +729,6 @@ label > p {
 .dessert__menu:hover .starter__price, .dessert__menu:hover .dish__price, .dessert__menu:hover .dessert__price {
     transform: translateX(-100px);
     top: 57px;
-  }
-}
-@media screen and (min-width: 992px) and (min-width: 1200px) {
-  .starter__menu:hover ~ .starter__price, .starter__menu:hover ~ .dish__price, .starter__menu:hover ~ .dessert__price,
-.starter__menu:hover .starter__price, .starter__menu:hover .dish__price, .starter__menu:hover .dessert__price, .dish__menu:hover ~ .starter__price, .dish__menu:hover ~ .dish__price, .dish__menu:hover ~ .dessert__price,
-.dish__menu:hover .starter__price, .dish__menu:hover .dish__price, .dish__menu:hover .dessert__price, .dessert__menu:hover ~ .starter__price, .dessert__menu:hover ~ .dish__price, .dessert__menu:hover ~ .dessert__price,
-.dessert__menu:hover .starter__price, .dessert__menu:hover .dish__price, .dessert__menu:hover .dessert__price {
-    transform: translateX(-60px);
   }
 }
 @media screen and (min-width: 992px) {
@@ -1155,15 +1155,15 @@ main {
   box-sizing: border-box;
   cursor: pointer;
 }
+@media screen and (min-width: 992px) {
+  .form-menu .starter__menu {
+    padding-left: 1rem;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .form-menu .starter__menu {
     min-height: 8rem;
     border-radius: 1.8rem;
-    padding-left: 1rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  .form-menu .starter__menu {
     padding-left: 1rem;
   }
 }
@@ -1212,6 +1212,11 @@ main {
   right: 20px;
   z-index: 1;
 }
+@media screen and (min-width: 1200px) {
+  .form-menu .starter__price {
+    font-size: 85%;
+  }
+}
 @media screen and (max-width: 360px) {
   .form-menu .starter__price {
     top: 34px;
@@ -1220,16 +1225,7 @@ main {
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .form-menu .starter__price {
     top: 57px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
-  .form-menu .starter__price {
     font-size: 90%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .form-menu .starter__price {
-    font-size: 85%;
   }
 }
 .form-menu .dish__menu {
@@ -1246,15 +1242,15 @@ main {
   box-sizing: border-box;
   cursor: pointer;
 }
+@media screen and (min-width: 992px) {
+  .form-menu .dish__menu {
+    padding-left: 1rem;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .form-menu .dish__menu {
     min-height: 8rem;
     border-radius: 1.8rem;
-    padding-left: 1rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  .form-menu .dish__menu {
     padding-left: 1rem;
   }
 }
@@ -1303,6 +1299,11 @@ main {
   right: 20px;
   z-index: 1;
 }
+@media screen and (min-width: 1200px) {
+  .form-menu .dish__price {
+    font-size: 85%;
+  }
+}
 @media screen and (max-width: 360px) {
   .form-menu .dish__price {
     top: 34px;
@@ -1311,16 +1312,7 @@ main {
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .form-menu .dish__price {
     top: 57px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
-  .form-menu .dish__price {
     font-size: 90%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .form-menu .dish__price {
-    font-size: 85%;
   }
 }
 .form-menu .dessert__menu {
@@ -1337,15 +1329,15 @@ main {
   box-sizing: border-box;
   cursor: pointer;
 }
+@media screen and (min-width: 992px) {
+  .form-menu .dessert__menu {
+    padding-left: 1rem;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .form-menu .dessert__menu {
     min-height: 8rem;
     border-radius: 1.8rem;
-    padding-left: 1rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  .form-menu .dessert__menu {
     padding-left: 1rem;
   }
 }
@@ -1394,6 +1386,11 @@ main {
   right: 20px;
   z-index: 1;
 }
+@media screen and (min-width: 1200px) {
+  .form-menu .dessert__price {
+    font-size: 85%;
+  }
+}
 @media screen and (max-width: 360px) {
   .form-menu .dessert__price {
     top: 34px;
@@ -1402,16 +1399,7 @@ main {
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .form-menu .dessert__price {
     top: 57px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
-  .form-menu .dessert__price {
     font-size: 90%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .form-menu .dessert__price {
-    font-size: 85%;
   }
 }
 .form-menu input[type=checkbox] {
@@ -1474,15 +1462,15 @@ main {
   width: 100%;
   box-sizing: border-box;
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .footer {
-    min-height: 25vh;
-  }
-}
 @media screen and (min-width: 992px) {
   .footer {
     height: 17vh;
     justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .footer {
+    min-height: 25vh;
   }
 }
 @media screen and (min-width: 992px) {
@@ -1511,14 +1499,14 @@ main {
   font-size: 1.1rem;
   font-weight: 400;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
-  .footer h1 {
-    font-size: 110%;
-  }
-}
 @media screen and (min-width: 992px) {
   .footer h1 {
     font-size: 120%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+  .footer h1 {
+    font-size: 110%;
   }
 }
 .footer h3 {
@@ -1537,6 +1525,15 @@ main {
   margin-top: -0.5rem;
   align-items: flex-start;
 }
+@media screen and (min-width: 992px) {
+  .footer__bloc-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .footer__bloc-links {
     flex-direction: row;
@@ -1545,15 +1542,6 @@ main {
     align-items: baseline;
     justify-content: space-between;
     font-size: 95%;
-  }
-}
-@media screen and (min-width: 992px) {
-  .footer__bloc-links {
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    align-items: baseline;
-    justify-content: space-between;
   }
 }
 .footer__link {

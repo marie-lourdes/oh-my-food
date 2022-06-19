@@ -23,6 +23,8 @@ body {
         width:auto;
         font-size:160%;
     }  
+
+         
 }
 
 h1, h2 {
@@ -36,7 +38,7 @@ h2 {
     font-weight: 700;
   
 }
-h3{
+h3 {
     font-size: 1rem;
     @include tablet {
         font-size:110%;
