@@ -6,6 +6,7 @@
 /*search-bar*/
 /*gallery-restaurants homepage*/
 /*page-menu form*/
+/*checkbox cursor animation*/
 /* responsive*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Shrikhand&display=swap");
 html {
@@ -20,17 +21,17 @@ body {
   font-size: 1rem;
   position: relative;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
-  body {
-    width: auto;
-    font-size: 160% !important;
-  }
-}
 @media screen and (min-width: 992px) {
   body {
     font-size: 100%;
     width: auto;
     min-height: 100vh;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    width: auto;
+    font-size: 160%;
   }
 }
 
@@ -273,24 +274,19 @@ main {
   position: relative;
   left: 6%;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
-  .booking-form__search-bar > .icon-location {
-    left: -4%;
-  }
-}
 @media screen and (min-width: 992px) {
   .booking-form__search-bar > .icon-location {
     left: -3%;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+  .booking-form__search-bar > .icon-location {
+    left: -4%;
+  }
+}
 .booking-form__search-bar > .search-field {
   position: relative;
   left: 10%;
-}
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
-  .booking-form__search-bar > .search-field {
-    left: 0%;
-  }
 }
 @media screen and (min-width: 992px) {
   .booking-form__search-bar > .search-field {
@@ -302,6 +298,11 @@ main {
     left: -1.5%;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+  .booking-form__search-bar > .search-field {
+    left: 0%;
+  }
+}
 .booking-form__search-bar > .search-field input {
   box-sizing: border-box;
   padding: 0.8rem 0rem;
@@ -310,14 +311,14 @@ main {
   font-weight: 700;
   color: #353535;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
-  .booking-form__search-bar > .search-field input {
-    font-size: 1.8rem;
-  }
-}
 @media screen and (min-width: 992px) {
   .booking-form__search-bar > .search-field input {
     font-size: 110%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+  .booking-form__search-bar > .search-field input {
+    font-size: 1.8rem;
   }
 }
 .booking-form__call-to-action {
@@ -374,17 +375,6 @@ main {
   width: 100%;
   box-sizing: border-box;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
-  .proceeding-site {
-    padding: 0 2rem;
-    width: 100vw;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .proceeding-site {
-    width: 100vw !important;
-  }
-}
 @media screen and (min-width: 992px) {
   .proceeding-site {
     width: 35vw;
@@ -396,6 +386,17 @@ main {
   .proceeding-site {
     margin-right: 1rem;
     padding: 0 3rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+  .proceeding-site {
+    padding: 0 2rem;
+    width: 100vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .proceeding-site {
+    width: 100vw;
   }
 }
 
@@ -481,29 +482,14 @@ main {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
-  .gallery-restaurants h2 {
-    padding-left: 1.5rem;
-  }
-}
 @media screen and (min-width: 992px) {
   .gallery-restaurants h2 {
     padding-left: 2rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
-  .gallery-restaurants {
-    width: auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .gallery-restaurants {
-    width: 100vw !important;
-    margin-right: 0rem !important;
-    margin-bottom: 0 !important;
-    padding-bottom: 4rem !important;
+  .gallery-restaurants h2 {
+    padding-left: 1.5rem;
   }
 }
 @media screen and (min-width: 992px) {
@@ -523,6 +509,21 @@ main {
     margin-right: 0rem;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+  .gallery-restaurants {
+    width: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .gallery-restaurants {
+    width: 100vw;
+    margin-right: 0rem;
+    margin-bottom: 0;
+    padding-bottom: 4rem;
+  }
+}
 .gallery-restaurants .gallery-flex-between {
   height: 63rem;
   display: flex;
@@ -530,6 +531,15 @@ main {
   justify-content: space-between;
   /* flex-wrap: wrap;*/
   align-content: space-evenly;
+}
+@media screen and (min-width: 992px) {
+  .gallery-restaurants .gallery-flex-between {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: 40rem;
+    justify-content: space-evenly;
+    margin-top: -2rem;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .gallery-restaurants .gallery-flex-between {
@@ -541,17 +551,8 @@ main {
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .gallery-restaurants .gallery-flex-between {
-    max-height: 50rem !important;
-    margin-top: 0 !important;
-  }
-}
-@media screen and (min-width: 992px) {
-  .gallery-restaurants .gallery-flex-between {
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-height: 40rem;
-    justify-content: space-evenly;
-    margin-top: -2rem;
+    max-height: 50rem;
+    margin-top: 0;
   }
 }
 .gallery__card {
@@ -563,18 +564,6 @@ main {
   box-sizing: border-box;
   width: 100%;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
-  .gallery__card {
-    width: 43vw;
-    min-height: 20rem;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .gallery__card {
-    width: 45vw !important;
-    min-height: 22rem !important;
-  }
-}
 @media screen and (min-width: 992px) {
   .gallery__card {
     width: 26vw;
@@ -585,6 +574,18 @@ main {
   .gallery__card {
     width: 26.5vw;
     min-height: 17rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+  .gallery__card {
+    width: 43vw;
+    min-height: 20rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .gallery__card {
+    width: 45vw;
+    min-height: 22rem;
   }
 }
 .gallery__card > a {
@@ -631,6 +632,11 @@ main {
 .card__image img.le-delice-des-sens {
   object-position: center 108%;
 }
+@media screen and (min-width: 992px) {
+  .card__image img {
+    min-height: 13rem;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .card__image img {
     max-height: 13rem;
@@ -639,11 +645,6 @@ main {
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .card__image img {
     max-height: 15rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  .card__image img {
-    min-height: 13rem;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -666,27 +667,27 @@ main {
   margin-top: -0.5rem;
   position: relative;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
-  .card__description {
-    margin-top: 0;
-  }
-}
 @media screen and (min-width: 992px) {
   .card__description {
     margin-top: -0.1rem;
   }
 }
-.card__description.card__description--margin-top {
-  margin-top: -0.1rem;
-}
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
-  .card__description.card__description--margin-top {
+  .card__description {
     margin-top: 0;
   }
+}
+.card__description.card__description--margin-top {
+  margin-top: -0.1rem;
 }
 @media screen and (min-width: 1200px) {
   .card__description.card__description--margin-top {
     margin-top: 0.3rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+  .card__description.card__description--margin-top {
+    margin-top: 0;
   }
 }
 .card__description .description__text {
@@ -715,15 +716,15 @@ main {
   width: 100%;
   box-sizing: border-box;
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .footer {
-    min-height: 25vh;
-  }
-}
 @media screen and (min-width: 992px) {
   .footer {
     height: 17vh;
     justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .footer {
+    min-height: 25vh;
   }
 }
 @media screen and (min-width: 992px) {
@@ -752,14 +753,14 @@ main {
   font-size: 1.1rem;
   font-weight: 400;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
-  .footer h1 {
-    font-size: 110%;
-  }
-}
 @media screen and (min-width: 992px) {
   .footer h1 {
     font-size: 120%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+  .footer h1 {
+    font-size: 110%;
   }
 }
 .footer h3 {
@@ -778,6 +779,15 @@ main {
   margin-top: -0.5rem;
   align-items: flex-start;
 }
+@media screen and (min-width: 992px) {
+  .footer__bloc-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .footer__bloc-links {
     flex-direction: row;
@@ -786,15 +796,6 @@ main {
     align-items: baseline;
     justify-content: space-between;
     font-size: 95%;
-  }
-}
-@media screen and (min-width: 992px) {
-  .footer__bloc-links {
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    align-items: baseline;
-    justify-content: space-between;
   }
 }
 .footer__link {

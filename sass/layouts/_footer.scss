@@ -7,13 +7,14 @@
     padding: 1.5rem 2rem 1.5rem;
     width:100%;
     box-sizing: border-box;
-    @include tablet-landscape{
-        min-height:25vh;
-    }
     @include desktop {
         height: 17vh;
         justify-content: center;
     }
+    @include tablet-landscape{
+        min-height:25vh;
+    }
+   
     &__logo {
         @include desktop {
             position: relative;
@@ -38,12 +39,13 @@
         font-family: 'Shrikhand', cursive, arial, sans-serif;
         font-size: 1.1rem;
         font-weight: 400;
-        @include tablet {
-            font-size: 110%;
-        }
         @include desktop {
             font-size:120%;
         }
+        @include tablet {
+            font-size: 110%;
+        }
+       
     }
     h3 {
         font-weight: 500;
@@ -59,6 +61,13 @@
         @include flexbox-direction;
         margin-top:-0.5rem;
         align-items:flex-start;
+        @include desktop {
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            align-items: baseline;
+            justify-content: space-between;
+        }
         @include tablet {
             flex-direction: row;
             flex-wrap: wrap;
@@ -67,13 +76,7 @@
             justify-content: space-between;
             font-size: 95%;
         }
-        @include desktop {
-            flex-direction: row;
-            flex-wrap: wrap;
-            width: 100%;
-            align-items: baseline;
-            justify-content: space-between;
-        }
+        
     }
     &__link{
         height: 1.5rem;

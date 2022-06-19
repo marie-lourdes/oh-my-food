@@ -13,20 +13,16 @@ body {
     @include flexbox-direction;
     font-size: 1rem;
     position:relative;
-    @include tablet {
-        width:auto;
-        font-size:160%!important;
-    }
-   
     @include desktop {
         font-size: 100%;
         width: auto;
         min-height: 100vh;
         
     }
-   
-    
-    
+    @include tablet {
+        width:auto;
+        font-size:160%;
+    }      
 }
 
 h1, h2 {
