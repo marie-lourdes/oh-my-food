@@ -327,19 +327,21 @@ main {
   margin: 0 auto;
   padding: 2rem 2rem 3.5rem;
 }
-.booking-form__call-to-action label {
-  appearance: none;
-  width: 80%;
-  margin: 0 auto;
-}
-.booking-form__call-to-action label h1 {
+.booking-form__call-to-action h1 {
   font-weight: 900;
   margin: 0;
   color: #000;
+  width: 80%;
+  margin: 0 auto;
+}
+.booking-form__call-to-action label {
+  appearance: none;
+  display: inline-block;
+  font-size: 1.1rem;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
-  .booking-form__call-to-action p {
-    white-space: pre-wrap;
+  .booking-form__call-to-action label {
+    /*white-space: pre-wrap;*/
   }
 }
 .booking-form__call-to-action .button-primary {
