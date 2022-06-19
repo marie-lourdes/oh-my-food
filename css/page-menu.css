@@ -855,19 +855,26 @@ header button {
 }
 
 .form-menu .form-menu--1-fadein {
-  animation-delay: 1s;
-  animation: fadein 3s ease-out both;
+  animation-delay: 0.6666666667s;
+  animation: fadein 2s ease-out both;
 }
 .form-menu .form-menu--2-fadein {
-  animation-delay: 2s;
-  animation: fadein 3s ease-out both;
+  animation-delay: 1.3333333333s;
+  animation: fadein 2s ease-out both;
 }
 .form-menu__starter {
   animation: fadein 500ms ease-out both;
 }
+.form-menu .form-menu--2-fadein {
+  opacity: 0;
+  animation-delay: 0.7166666667s;
+}
 
 @keyframes fadein {
   0% {
+    transform: translateY(-40px);
+  }
+  10% {
     opacity: 0;
   }
   100% {

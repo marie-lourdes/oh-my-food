@@ -5,12 +5,23 @@
    &__starter{
     animation: fadein 500ms ease-out both;
     }
+    .form-menu--2-fadein {
+        opacity: 0;
+        animation-delay: calc($anim-dur/3)+0.05 ;
+        
+    }
    
 }
 
 
 @keyframes fadein{
     0%{
+        transform: translateY(-40px);
+        
+       
+        
+    }
+    10%{
         opacity:0;
     }
     
