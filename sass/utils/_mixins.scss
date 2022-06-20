@@ -124,12 +124,12 @@
             @include desktop-large {
                 font-size: 85%;
             }
-            @include small-mobile{
-                top: 34px;
-            }
             @include tablet {
-                top: 57px;
+                top: 61px;
                 font-size: 90%;
+            }
+            @include small-mobile{
+                top: 26px;
             }         
         }
     }  
@@ -341,14 +341,17 @@
        
         margin-right: 1rem;
         margin-left: -3rem;
-        top: 32px;
+        top: 33px;
         transform:translateX(-45px);
         @include desktop-large {
             transform:translateX(-60px); 
         }
         @include tablet {
             transform:translateX(-100px); 
-            top: 57px; 
+            top: 61px; 
+        }
+        @include small-mobile {
+            top: 32px;
         }
          
     }
