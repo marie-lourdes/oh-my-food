@@ -436,7 +436,7 @@ a {
   /* start__menu, dish__menu, dessert__menu cursor:hover desktop*/
   margin-right: 1rem;
   margin-left: -3rem;
-  top: 33px;
+  top: 32px;
   transform: translateX(-45px);
 }
 @media screen and (min-width: 1200px) {
@@ -738,7 +738,7 @@ a {
     /* start__menu, dish__menu, dessert__menu cursor:hover desktop*/
     margin-right: 1rem;
     margin-left: -3rem;
-    top: 33px;
+    top: 32px;
     transform: translateX(-45px);
   }
 }
@@ -1246,7 +1246,7 @@ main {
   font-size: 0.8rem;
   text-align: right;
   position: absolute;
-  top: 34px;
+  top: 30px;
   right: 20px;
   z-index: 1;
 }
@@ -1337,7 +1337,7 @@ main {
   font-size: 0.8rem;
   text-align: right;
   position: absolute;
-  top: 34px;
+  top: 30px;
   right: 20px;
   z-index: 1;
 }
@@ -1428,7 +1428,7 @@ main {
   font-size: 0.8rem;
   text-align: right;
   position: absolute;
-  top: 34px;
+  top: 30px;
   right: 20px;
   z-index: 1;
 }

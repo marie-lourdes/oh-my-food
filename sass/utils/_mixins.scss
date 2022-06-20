@@ -118,7 +118,7 @@
             font-size: 0.8rem;
             text-align:right;
             position:absolute;
-            top:34px; 
+            top:30px; 
             right:20px;
             z-index:1;
             @include desktop-large {
@@ -186,172 +186,153 @@
        }
        /*label{*/
 
-            h3,p {
-                >label{
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                overflow: hidden;
-                display:block;
-                appearance:none;
-               cursor:pointer;
-                }
-               
+        h3,p {
+            >label{
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display:block;
+            appearance:none;
+           cursor:pointer;
             }
-            h3 {
-               /* >label{
+           
+        }
+        h3 {
+           /* >label{
 
-                }*/
+            }*/
 
-                /* paraagraphe, h3 ellipsis: "la note enchantée" */
+            /* paraagraphe, h3 ellipsis: "la note enchantée" */
 
-                .starter--lobster{
-                    @include small-mobile {
-                        width: 70%;
-                    }
-                }
-                .foie-gras {
-                    @include small-mobile {
-                        width:70%;
-                    }
-                }
-                /* "la palette du gout"*/  
-
-                .queue-de-boeuf {
-                    @include small-mobile{
-                        width: 87%;   
-                    }
-                }
-                .macaroon{
-                    @include small-mobile {
-                        width:70%;  
-                    }
-                    
-                }
-
-                 /* "le delice des sens"*/
-
-                .crisp-lobster{
-                    @include small-mobile {
-                        width: 70%;
-                    }
-                 }
-                 .roast-chicken{
-                    @include small-mobile {
-                        white-space: nowrap;
-                        text-overflow: ellipsis;
-                        overflow: hidden;
-                        display: inline-block;
-                        width:70%;
-    
-                    }
-                }
-            }
-            
-            p {
-                >label{
-                    line-height: 2rem;
-                    transform: scaleX(0.9);
-                }
-
-                /* "french menu" */
-            
-                .dish--potatoes{
-                    width: 85%;
-                }
-                .dish--parmentier {
-                    width: 91%;
-                }
-                .dish--gnocchis{
-                    width:65%;
-
-                } 
-
-                /* "la note enchantée" */
-                
-                .starter--ravioli{
-                    width: 91%;
-                }
-            
-                .saint-jacques {
-                    @include small-mobile {
-                        width: 80%;
-                    }
-                }
-                .macaroon-hazelnut {
-                    @include small-mobile{
-                        width: 70%;
-                    }
-                }            
-                .dessert--ice{
-                    width: 83%;
-                }
-
-                /* la palette du gout */
-                
-                .starter--duck {
-                    width: 57%;
-                    @include small-mobile {
-                        width:58%;
-                    }
-                }
-                .starter--egg {
-                    width: 90%;
-                }
-                
-                .dish--beef{
-                    width: 75%!important;
-                    
-                }
-            
-        
-            /*  .dish--beef{
-                    width: 77%!important;
-                }*/
-            
-                .dish--beef-parmentier {
-                    width: 87%;
-                }
-            
-                .dish--mada{
-                    @include small-mobile {
-                        width:57%;
-                    }
-                }
-                .dessert--mousse {
-                    width: 77%;
-                    
-                }
-                
-                /* "le delice des sens"*/
-
-                .dessert--tiramisu {
+            .starter--lobster{
+                @include small-mobile {
                     width: 70%;
-                }    
-                .dessert--mousse{
-                    @include small-mobile {
-                        width: 75%;
-                    }
-                
                 }
-          
-           
+            }
+            .foie-gras {
+                @include small-mobile {
+                    width:70%;
+                }
+            }
+            /* "la palette du gout"*/  
+
+            .queue-de-boeuf {
+                @include small-mobile{
+                    width: 87%;   
+                }
+            }
+            .macaroon{
+                @include small-mobile {
+                    width:70%;  
+                }
+                
             }
 
-         
-            
-     
+             /* "le delice des sens"*/
 
-           
-           
+            .crisp-lobster{
+                @include small-mobile {
+                    width: 70%;
+                }
+             }
+             .roast-chicken{
+                @include small-mobile {
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    display: inline-block;
+                    width:70%;
+
+                }
+            }
+        }
         
-           
+        p {
+            >label{
+                line-height: 2rem;
+                transform: scaleX(0.9);
+            }
 
-           
+            /* "french menu" */
+        
+            .dish--potatoes{
+                width: 85%;
+            }
+            .dish--parmentier {
+                width: 91%;
+            }
+            .dish--gnocchis{
+                width:65%;
 
-           
+            } 
 
-          
-           
+            /* "la note enchantée" */
+            
+            .starter--ravioli{
+                width: 91%;
+            }
+        
+            .saint-jacques {
+                @include small-mobile {
+                    width: 80%;
+                }
+            }
+            .macaroon-hazelnut {
+                @include small-mobile{
+                    width: 70%;
+                }
+            }            
+            .dessert--ice{
+                width: 83%;
+            }
+
+            /* la palette du gout */
+            
+            .starter--duck {
+                width: 57%;
+                @include small-mobile {
+                    width:58%;
+                }
+            }
+            .starter--egg {
+                width: 90%;
+            }
+            
+            .dish--beef{
+                width: 75%!important;
+                
+            }
+        
+    
+        /*  .dish--beef{
+                width: 77%!important;
+            }*/
+        
+            .dish--beef-parmentier {
+                width: 87%;
+            }
+        
+            .dish--mada{
+                @include small-mobile {
+                    width:57%;
+                }
+            }
+            .dessert--mousse {
+                width: 77%;
+                
+            }
+            
+            /* "le delice des sens"*/
+
+            .dessert--tiramisu {
+                width: 70%;
+            }    
+            .dessert--mousse{
+                @include small-mobile {
+                    width: 75%;
+                }    
+            }     
+        }                
       /* }*/
     }
     
@@ -360,7 +341,7 @@
        
         margin-right: 1rem;
         margin-left: -3rem;
-        top: 33px;
+        top: 32px;
         transform:translateX(-45px);
         @include desktop-large {
             transform:translateX(-60px); 
