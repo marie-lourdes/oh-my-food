@@ -51,9 +51,9 @@
             @include flexbox-direction(row);
             @include box-shadow ($color-shadow: map-get($color-gray, background-search-bar), $offset-y: 5px, $blur-radius: 10px, $spread-radius: 2px);
             border-radius: 1rem;
-            padding: 0.3rem 1rem 0rem 0.5rem;
+            padding: 0.3rem 1rem 0.3rem 0.6rem;
             align-items: center;
-            height: 5rem;
+            height: 4rem;
             background:$color-white;
             margin-bottom:1rem;
             box-sizing:border-box;
@@ -66,14 +66,20 @@
                 border-radius: 1.6rem;
                 padding-left: 1rem;
             }
+            @include small-mobile {
+                border-radius: 0.8rem;
+                height: 3.5rem;
+            }
            
         }
        
         .#{$value}__details {
             @include flexbox-direction;
             width: 100%;
+            justify-content: center;
             h3 {
                 font-size: 1.1rem;
+                margin-top: 1.5rem;
                 @include small-mobile {
                     font-size: 0.9rem;
                 }
@@ -140,7 +146,7 @@
                 font-size: 90%;
             }
             @include small-mobile{
-                top: 26px;
+                top: 14px;
             }         
         }
     }  
@@ -374,7 +380,7 @@
        
         margin-right: 1rem;
         margin-left: -3rem;
-        top: 33px;
+        top: 26px;
         transform:translateX(-45px);
         @include desktop-large {
             transform:translateX(-60px); 
@@ -384,7 +390,7 @@
             top: 61px; 
         }
         @include small-mobile {
-            top: 31px;
+            top: 20px;
         }
          
     }

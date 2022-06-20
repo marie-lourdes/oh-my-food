@@ -177,19 +177,26 @@ a {
     padding: 1.8rem;
   }
 }
+@media screen and (max-width: 360px) {
+  .checkbox-animation {
+    padding: 1.3rem;
+  }
+}
 .checkbox-animation .circle-checked {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   /*  transform:  rotate(-360deg) scaleX(1);
     transition: transform 1s ease-in-out;*/
   display: block;
   position: absolute;
-  top: 2rem;
-  right: 0.9rem;
+  top: 1.5rem;
+  right: 1rem;
   transform: scale(0.9, 1);
 }
 @media screen and (max-width: 360px) {
   .checkbox-animation .circle-checked {
-    top: 2rem;
+    top: 1.4rem;
+    right: 0.75rem;
+    font-size: 1.1rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
@@ -476,7 +483,7 @@ a {
   /* start__menu, dish__menu, dessert__menu cursor:hover desktop*/
   margin-right: 1rem;
   margin-left: -3rem;
-  top: 33px;
+  top: 26px;
   transform: translateX(-45px);
 }
 @media screen and (min-width: 1200px) {
@@ -501,7 +508,7 @@ a {
 .starter__menu .input-check:checked .starter__price, .starter__menu .input-check:checked .dish__price, .starter__menu .input-check:checked .dessert__price, .dish__menu .input-check:checked ~ .starter__price, .dish__menu .input-check:checked ~ .dish__price, .dish__menu .input-check:checked ~ .dessert__price,
 .dish__menu .input-check:checked .starter__price, .dish__menu .input-check:checked .dish__price, .dish__menu .input-check:checked .dessert__price, .dessert__menu .input-check:checked ~ .starter__price, .dessert__menu .input-check:checked ~ .dish__price, .dessert__menu .input-check:checked ~ .dessert__price,
 .dessert__menu .input-check:checked .starter__price, .dessert__menu .input-check:checked .dish__price, .dessert__menu .input-check:checked .dessert__price {
-    top: 31px;
+    top: 20px;
   }
 }
 .starter__menu .input-check:checked ~ .checkbox-animation,
@@ -832,7 +839,7 @@ a {
     /* start__menu, dish__menu, dessert__menu cursor:hover desktop*/
     margin-right: 1rem;
     margin-left: -3rem;
-    top: 33px;
+    top: 26px;
     transform: translateX(-45px);
   }
 }
@@ -858,7 +865,7 @@ a {
 .starter__menu:hover .starter__price, .starter__menu:hover .dish__price, .starter__menu:hover .dessert__price, .dish__menu:hover ~ .starter__price, .dish__menu:hover ~ .dish__price, .dish__menu:hover ~ .dessert__price,
 .dish__menu:hover .starter__price, .dish__menu:hover .dish__price, .dish__menu:hover .dessert__price, .dessert__menu:hover ~ .starter__price, .dessert__menu:hover ~ .dish__price, .dessert__menu:hover ~ .dessert__price,
 .dessert__menu:hover .starter__price, .dessert__menu:hover .dish__price, .dessert__menu:hover .dessert__price {
-    top: 31px;
+    top: 20px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -1283,9 +1290,9 @@ main {
   flex-direction: row;
   box-shadow: 0px 5px 10px 2px #eaeaea;
   border-radius: 1rem;
-  padding: 0.3rem 1rem 0rem 0.5rem;
+  padding: 0.3rem 1rem 0.3rem 0.6rem;
   align-items: center;
-  height: 5rem;
+  height: 4rem;
   background: #fff;
   margin-bottom: 1rem;
   box-sizing: border-box;
@@ -1303,16 +1310,24 @@ main {
     padding-left: 1rem;
   }
 }
+@media screen and (max-width: 360px) {
+  .form-menu .starter__menu {
+    border-radius: 0.8rem;
+    height: 3.5rem;
+  }
+}
 .form-menu .starter__details {
   display: flex;
   flex-direction: column;
   width: 100%;
+  justify-content: center;
   /* white-space: nowrap;*/
   /*label {*/
   /*}*/
 }
 .form-menu .starter__details h3 {
   font-size: 1.1rem;
+  margin-top: 1.5rem;
 }
 @media screen and (max-width: 360px) {
   .form-menu .starter__details h3 {
@@ -1384,7 +1399,7 @@ main {
 }
 @media screen and (max-width: 360px) {
   .form-menu .starter__price {
-    top: 26px;
+    top: 14px;
   }
 }
 .form-menu .dish__menu {
@@ -1393,9 +1408,9 @@ main {
   flex-direction: row;
   box-shadow: 0px 5px 10px 2px #eaeaea;
   border-radius: 1rem;
-  padding: 0.3rem 1rem 0rem 0.5rem;
+  padding: 0.3rem 1rem 0.3rem 0.6rem;
   align-items: center;
-  height: 5rem;
+  height: 4rem;
   background: #fff;
   margin-bottom: 1rem;
   box-sizing: border-box;
@@ -1413,16 +1428,24 @@ main {
     padding-left: 1rem;
   }
 }
+@media screen and (max-width: 360px) {
+  .form-menu .dish__menu {
+    border-radius: 0.8rem;
+    height: 3.5rem;
+  }
+}
 .form-menu .dish__details {
   display: flex;
   flex-direction: column;
   width: 100%;
+  justify-content: center;
   /* white-space: nowrap;*/
   /*label {*/
   /*}*/
 }
 .form-menu .dish__details h3 {
   font-size: 1.1rem;
+  margin-top: 1.5rem;
 }
 @media screen and (max-width: 360px) {
   .form-menu .dish__details h3 {
@@ -1494,7 +1517,7 @@ main {
 }
 @media screen and (max-width: 360px) {
   .form-menu .dish__price {
-    top: 26px;
+    top: 14px;
   }
 }
 .form-menu .dessert__menu {
@@ -1503,9 +1526,9 @@ main {
   flex-direction: row;
   box-shadow: 0px 5px 10px 2px #eaeaea;
   border-radius: 1rem;
-  padding: 0.3rem 1rem 0rem 0.5rem;
+  padding: 0.3rem 1rem 0.3rem 0.6rem;
   align-items: center;
-  height: 5rem;
+  height: 4rem;
   background: #fff;
   margin-bottom: 1rem;
   box-sizing: border-box;
@@ -1523,16 +1546,24 @@ main {
     padding-left: 1rem;
   }
 }
+@media screen and (max-width: 360px) {
+  .form-menu .dessert__menu {
+    border-radius: 0.8rem;
+    height: 3.5rem;
+  }
+}
 .form-menu .dessert__details {
   display: flex;
   flex-direction: column;
   width: 100%;
+  justify-content: center;
   /* white-space: nowrap;*/
   /*label {*/
   /*}*/
 }
 .form-menu .dessert__details h3 {
   font-size: 1.1rem;
+  margin-top: 1.5rem;
 }
 @media screen and (max-width: 360px) {
   .form-menu .dessert__details h3 {
@@ -1604,7 +1635,7 @@ main {
 }
 @media screen and (max-width: 360px) {
   .form-menu .dessert__price {
-    top: 26px;
+    top: 14px;
   }
 }
 .form-menu input[type=checkbox] {

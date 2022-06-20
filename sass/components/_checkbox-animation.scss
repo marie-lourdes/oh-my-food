@@ -46,18 +46,23 @@
     @include desktop-large {
         padding: 1.8rem;
     }
+    @include small-mobile {
+        padding: 1.3rem;
+    }
 
     & .circle-checked {
-        font-size: 1.3rem; 
+        font-size: 1.2rem; 
       /*  transform:  rotate(-360deg) scaleX(1);
         transition: transform 1s ease-in-out;*/
         display: block;
         position: absolute;
-        top: 2rem;
-        right: 0.9rem;
+        top: 1.5rem;
+        right: 1rem;
         transform: scale(0.9,1);
         @include small-mobile {
-            top: 2rem;
+            top: 1.4rem;
+            right: 0.75rem;
+            font-size: 1.1rem;
         }
         @include tablet {
             transform: scale(0.9,1.4);
