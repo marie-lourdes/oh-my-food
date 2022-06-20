@@ -72,11 +72,17 @@
         .#{$value}__details {
             @include flexbox-direction;
             width: 100%;
+            h3 {
+                font-size: 1.1rem;
+                @include small-mobile {
+                    font-size: 0.9rem;
+                }
+            }
             
            /* white-space: nowrap;*/
             /*label {*/
-                p{
-                    label{
+            p {
+                label{
                     white-space: nowrap;
                     text-overflow: ellipsis;
                     overflow: hidden;
@@ -90,35 +96,40 @@
                         font-size: 100%;
                     }
                 }  
-                }
+            }
               
-                .dish--beef{
-                   width: 98%;
-                }
-                .dessert--ice{
-                    @include small-mobile{
-                        width: 83%;
-                    }
+            .dish--beef {
+                width: 89%;
+             }
+             .dessert--ice {
+                 @include small-mobile{
+                     width: 83%;
+                 }
 
-                }
+             }
 
-                .dessert--tiramisu{
-                    @include small-mobile {
-                        width: 70%;
-                    }
-                   
-                }
+             .dessert--tiramisu {
+                 width: 81%;
+                 @include small-mobile {
+                     width: 67%;
+                 }
+                
+             }
+             .dessert--ice {
+                 width: 76%;
+                 @include small-mobile {
+                    width:71%;
+                 }
+             }      
           
             /*}*/
-            
-
         }
         .#{$value}__price {
             @include flexbox-direction;
             font-size: 0.8rem;
             text-align:right;
             position:absolute;
-            top:30px; 
+            top:24px; 
             right:20px;
             z-index:1;
             @include desktop-large {
@@ -206,12 +217,17 @@
 
             .starter--lobster{
                 @include small-mobile {
-                    width: 70%;
+                    width: 59%;
                 }
+            }
+            .saint-jacques {
+                @include small-mobile{
+                    width: 63%;
+                }  
             }
             .foie-gras {
                 @include small-mobile {
-                    width:70%;
+                    width:62%;
                 }
             }
             /* "la palette du gout"*/  
@@ -221,7 +237,7 @@
                     width: 87%;   
                 }
             }
-            .macaroon{
+            .macaroon {
                 @include small-mobile {
                     width:70%;  
                 }
@@ -256,26 +272,43 @@
             /* "french menu" */
         
             .dish--potatoes{
-                width: 85%;
+                width: 66%;
+                @include small-mobile {
+                    width: 70%;
+                }
             }
             .dish--parmentier {
-                width: 91%;
+                @include small-mobile {
+                    width: 67%;
+                }
+                
             }
             .dish--gnocchis{
                 width:65%;
+                @include small-mobile {
+                    width: 62%;
+                }
 
             } 
 
             /* "la note enchantée" */
             
             .starter--ravioli{
-                width: 91%;
+                width: 73%;
+                @include small-mobile {
+                    width: 69%;
+                }
             }
         
             .saint-jacques {
                 @include small-mobile {
                     width: 80%;
                 }
+            }
+            .dish--wild-rice {
+                @include small-mobile {
+                    width: 64%;
+                }   
             }
             .macaroon-hazelnut {
                 @include small-mobile{
@@ -284,22 +317,22 @@
             }            
             .dessert--ice{
                 width: 83%;
+                @include small-mobile {
+                    width: 67%;
+                }
             }
 
             /* la palette du gout */
             
             .starter--duck {
-                width: 57%;
-                @include small-mobile {
-                    width:58%;
-                }
+                width: 58%;
             }
             .starter--egg {
-                width: 90%;
+                width: 71%;
             }
             
             .dish--beef{
-                width: 75%!important;
+                width: 72%;
                 
             }
         
@@ -309,29 +342,29 @@
             }*/
         
             .dish--beef-parmentier {
-                width: 87%;
+                width: 74%;
             }
         
             .dish--mada{
                 @include small-mobile {
-                    width:57%;
+                    width:51%;
                 }
             }
             .dessert--mousse {
-                width: 77%;
+                width: 67%;
                 
             }
             
             /* "le delice des sens"*/
 
+            .farandole {
+                width: 64%;
+            }
+
             .dessert--tiramisu {
-                width: 70%;
+                width: 67%;
             }    
-            .dessert--mousse{
-                @include small-mobile {
-                    width: 75%;
-                }    
-            }     
+                
         }                
       /* }*/
     }
@@ -351,7 +384,7 @@
             top: 61px; 
         }
         @include small-mobile {
-            top: 32px;
+            top: 31px;
         }
          
     }

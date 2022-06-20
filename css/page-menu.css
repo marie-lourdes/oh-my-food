@@ -257,7 +257,15 @@ a {
 .starter__menu .input-check:checked .starter__details h3 .starter--lobster, .starter__menu .input-check:checked .dish__details h3 .starter--lobster, .starter__menu .input-check:checked .dessert__details h3 .starter--lobster, .dish__menu .input-check:checked ~ .starter__details h3 .starter--lobster, .dish__menu .input-check:checked ~ .dish__details h3 .starter--lobster, .dish__menu .input-check:checked ~ .dessert__details h3 .starter--lobster,
 .dish__menu .input-check:checked .starter__details h3 .starter--lobster, .dish__menu .input-check:checked .dish__details h3 .starter--lobster, .dish__menu .input-check:checked .dessert__details h3 .starter--lobster, .dessert__menu .input-check:checked ~ .starter__details h3 .starter--lobster, .dessert__menu .input-check:checked ~ .dish__details h3 .starter--lobster, .dessert__menu .input-check:checked ~ .dessert__details h3 .starter--lobster,
 .dessert__menu .input-check:checked .starter__details h3 .starter--lobster, .dessert__menu .input-check:checked .dish__details h3 .starter--lobster, .dessert__menu .input-check:checked .dessert__details h3 .starter--lobster {
-    width: 70%;
+    width: 59%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .starter__menu .input-check:checked ~ .starter__details h3 .saint-jacques, .starter__menu .input-check:checked ~ .dish__details h3 .saint-jacques, .starter__menu .input-check:checked ~ .dessert__details h3 .saint-jacques,
+.starter__menu .input-check:checked .starter__details h3 .saint-jacques, .starter__menu .input-check:checked .dish__details h3 .saint-jacques, .starter__menu .input-check:checked .dessert__details h3 .saint-jacques, .dish__menu .input-check:checked ~ .starter__details h3 .saint-jacques, .dish__menu .input-check:checked ~ .dish__details h3 .saint-jacques, .dish__menu .input-check:checked ~ .dessert__details h3 .saint-jacques,
+.dish__menu .input-check:checked .starter__details h3 .saint-jacques, .dish__menu .input-check:checked .dish__details h3 .saint-jacques, .dish__menu .input-check:checked .dessert__details h3 .saint-jacques, .dessert__menu .input-check:checked ~ .starter__details h3 .saint-jacques, .dessert__menu .input-check:checked ~ .dish__details h3 .saint-jacques, .dessert__menu .input-check:checked ~ .dessert__details h3 .saint-jacques,
+.dessert__menu .input-check:checked .starter__details h3 .saint-jacques, .dessert__menu .input-check:checked .dish__details h3 .saint-jacques, .dessert__menu .input-check:checked .dessert__details h3 .saint-jacques {
+    width: 63%;
   }
 }
 @media screen and (max-width: 360px) {
@@ -265,7 +273,7 @@ a {
 .starter__menu .input-check:checked .starter__details h3 .foie-gras, .starter__menu .input-check:checked .dish__details h3 .foie-gras, .starter__menu .input-check:checked .dessert__details h3 .foie-gras, .dish__menu .input-check:checked ~ .starter__details h3 .foie-gras, .dish__menu .input-check:checked ~ .dish__details h3 .foie-gras, .dish__menu .input-check:checked ~ .dessert__details h3 .foie-gras,
 .dish__menu .input-check:checked .starter__details h3 .foie-gras, .dish__menu .input-check:checked .dish__details h3 .foie-gras, .dish__menu .input-check:checked .dessert__details h3 .foie-gras, .dessert__menu .input-check:checked ~ .starter__details h3 .foie-gras, .dessert__menu .input-check:checked ~ .dish__details h3 .foie-gras, .dessert__menu .input-check:checked ~ .dessert__details h3 .foie-gras,
 .dessert__menu .input-check:checked .starter__details h3 .foie-gras, .dessert__menu .input-check:checked .dish__details h3 .foie-gras, .dessert__menu .input-check:checked .dessert__details h3 .foie-gras {
-    width: 70%;
+    width: 62%;
   }
 }
 @media screen and (max-width: 360px) {
@@ -327,13 +335,23 @@ a {
 .starter__menu .input-check:checked .starter__details p .dish--potatoes, .starter__menu .input-check:checked .dish__details p .dish--potatoes, .starter__menu .input-check:checked .dessert__details p .dish--potatoes, .dish__menu .input-check:checked ~ .starter__details p .dish--potatoes, .dish__menu .input-check:checked ~ .dish__details p .dish--potatoes, .dish__menu .input-check:checked ~ .dessert__details p .dish--potatoes,
 .dish__menu .input-check:checked .starter__details p .dish--potatoes, .dish__menu .input-check:checked .dish__details p .dish--potatoes, .dish__menu .input-check:checked .dessert__details p .dish--potatoes, .dessert__menu .input-check:checked ~ .starter__details p .dish--potatoes, .dessert__menu .input-check:checked ~ .dish__details p .dish--potatoes, .dessert__menu .input-check:checked ~ .dessert__details p .dish--potatoes,
 .dessert__menu .input-check:checked .starter__details p .dish--potatoes, .dessert__menu .input-check:checked .dish__details p .dish--potatoes, .dessert__menu .input-check:checked .dessert__details p .dish--potatoes {
-  width: 85%;
+  width: 66%;
 }
-.starter__menu .input-check:checked ~ .starter__details p .dish--parmentier, .starter__menu .input-check:checked ~ .dish__details p .dish--parmentier, .starter__menu .input-check:checked ~ .dessert__details p .dish--parmentier,
+@media screen and (max-width: 360px) {
+  .starter__menu .input-check:checked ~ .starter__details p .dish--potatoes, .starter__menu .input-check:checked ~ .dish__details p .dish--potatoes, .starter__menu .input-check:checked ~ .dessert__details p .dish--potatoes,
+.starter__menu .input-check:checked .starter__details p .dish--potatoes, .starter__menu .input-check:checked .dish__details p .dish--potatoes, .starter__menu .input-check:checked .dessert__details p .dish--potatoes, .dish__menu .input-check:checked ~ .starter__details p .dish--potatoes, .dish__menu .input-check:checked ~ .dish__details p .dish--potatoes, .dish__menu .input-check:checked ~ .dessert__details p .dish--potatoes,
+.dish__menu .input-check:checked .starter__details p .dish--potatoes, .dish__menu .input-check:checked .dish__details p .dish--potatoes, .dish__menu .input-check:checked .dessert__details p .dish--potatoes, .dessert__menu .input-check:checked ~ .starter__details p .dish--potatoes, .dessert__menu .input-check:checked ~ .dish__details p .dish--potatoes, .dessert__menu .input-check:checked ~ .dessert__details p .dish--potatoes,
+.dessert__menu .input-check:checked .starter__details p .dish--potatoes, .dessert__menu .input-check:checked .dish__details p .dish--potatoes, .dessert__menu .input-check:checked .dessert__details p .dish--potatoes {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .starter__menu .input-check:checked ~ .starter__details p .dish--parmentier, .starter__menu .input-check:checked ~ .dish__details p .dish--parmentier, .starter__menu .input-check:checked ~ .dessert__details p .dish--parmentier,
 .starter__menu .input-check:checked .starter__details p .dish--parmentier, .starter__menu .input-check:checked .dish__details p .dish--parmentier, .starter__menu .input-check:checked .dessert__details p .dish--parmentier, .dish__menu .input-check:checked ~ .starter__details p .dish--parmentier, .dish__menu .input-check:checked ~ .dish__details p .dish--parmentier, .dish__menu .input-check:checked ~ .dessert__details p .dish--parmentier,
 .dish__menu .input-check:checked .starter__details p .dish--parmentier, .dish__menu .input-check:checked .dish__details p .dish--parmentier, .dish__menu .input-check:checked .dessert__details p .dish--parmentier, .dessert__menu .input-check:checked ~ .starter__details p .dish--parmentier, .dessert__menu .input-check:checked ~ .dish__details p .dish--parmentier, .dessert__menu .input-check:checked ~ .dessert__details p .dish--parmentier,
 .dessert__menu .input-check:checked .starter__details p .dish--parmentier, .dessert__menu .input-check:checked .dish__details p .dish--parmentier, .dessert__menu .input-check:checked .dessert__details p .dish--parmentier {
-  width: 91%;
+    width: 67%;
+  }
 }
 .starter__menu .input-check:checked ~ .starter__details p .dish--gnocchis, .starter__menu .input-check:checked ~ .dish__details p .dish--gnocchis, .starter__menu .input-check:checked ~ .dessert__details p .dish--gnocchis,
 .starter__menu .input-check:checked .starter__details p .dish--gnocchis, .starter__menu .input-check:checked .dish__details p .dish--gnocchis, .starter__menu .input-check:checked .dessert__details p .dish--gnocchis, .dish__menu .input-check:checked ~ .starter__details p .dish--gnocchis, .dish__menu .input-check:checked ~ .dish__details p .dish--gnocchis, .dish__menu .input-check:checked ~ .dessert__details p .dish--gnocchis,
@@ -341,11 +359,27 @@ a {
 .dessert__menu .input-check:checked .starter__details p .dish--gnocchis, .dessert__menu .input-check:checked .dish__details p .dish--gnocchis, .dessert__menu .input-check:checked .dessert__details p .dish--gnocchis {
   width: 65%;
 }
+@media screen and (max-width: 360px) {
+  .starter__menu .input-check:checked ~ .starter__details p .dish--gnocchis, .starter__menu .input-check:checked ~ .dish__details p .dish--gnocchis, .starter__menu .input-check:checked ~ .dessert__details p .dish--gnocchis,
+.starter__menu .input-check:checked .starter__details p .dish--gnocchis, .starter__menu .input-check:checked .dish__details p .dish--gnocchis, .starter__menu .input-check:checked .dessert__details p .dish--gnocchis, .dish__menu .input-check:checked ~ .starter__details p .dish--gnocchis, .dish__menu .input-check:checked ~ .dish__details p .dish--gnocchis, .dish__menu .input-check:checked ~ .dessert__details p .dish--gnocchis,
+.dish__menu .input-check:checked .starter__details p .dish--gnocchis, .dish__menu .input-check:checked .dish__details p .dish--gnocchis, .dish__menu .input-check:checked .dessert__details p .dish--gnocchis, .dessert__menu .input-check:checked ~ .starter__details p .dish--gnocchis, .dessert__menu .input-check:checked ~ .dish__details p .dish--gnocchis, .dessert__menu .input-check:checked ~ .dessert__details p .dish--gnocchis,
+.dessert__menu .input-check:checked .starter__details p .dish--gnocchis, .dessert__menu .input-check:checked .dish__details p .dish--gnocchis, .dessert__menu .input-check:checked .dessert__details p .dish--gnocchis {
+    width: 62%;
+  }
+}
 .starter__menu .input-check:checked ~ .starter__details p .starter--ravioli, .starter__menu .input-check:checked ~ .dish__details p .starter--ravioli, .starter__menu .input-check:checked ~ .dessert__details p .starter--ravioli,
 .starter__menu .input-check:checked .starter__details p .starter--ravioli, .starter__menu .input-check:checked .dish__details p .starter--ravioli, .starter__menu .input-check:checked .dessert__details p .starter--ravioli, .dish__menu .input-check:checked ~ .starter__details p .starter--ravioli, .dish__menu .input-check:checked ~ .dish__details p .starter--ravioli, .dish__menu .input-check:checked ~ .dessert__details p .starter--ravioli,
 .dish__menu .input-check:checked .starter__details p .starter--ravioli, .dish__menu .input-check:checked .dish__details p .starter--ravioli, .dish__menu .input-check:checked .dessert__details p .starter--ravioli, .dessert__menu .input-check:checked ~ .starter__details p .starter--ravioli, .dessert__menu .input-check:checked ~ .dish__details p .starter--ravioli, .dessert__menu .input-check:checked ~ .dessert__details p .starter--ravioli,
 .dessert__menu .input-check:checked .starter__details p .starter--ravioli, .dessert__menu .input-check:checked .dish__details p .starter--ravioli, .dessert__menu .input-check:checked .dessert__details p .starter--ravioli {
-  width: 91%;
+  width: 73%;
+}
+@media screen and (max-width: 360px) {
+  .starter__menu .input-check:checked ~ .starter__details p .starter--ravioli, .starter__menu .input-check:checked ~ .dish__details p .starter--ravioli, .starter__menu .input-check:checked ~ .dessert__details p .starter--ravioli,
+.starter__menu .input-check:checked .starter__details p .starter--ravioli, .starter__menu .input-check:checked .dish__details p .starter--ravioli, .starter__menu .input-check:checked .dessert__details p .starter--ravioli, .dish__menu .input-check:checked ~ .starter__details p .starter--ravioli, .dish__menu .input-check:checked ~ .dish__details p .starter--ravioli, .dish__menu .input-check:checked ~ .dessert__details p .starter--ravioli,
+.dish__menu .input-check:checked .starter__details p .starter--ravioli, .dish__menu .input-check:checked .dish__details p .starter--ravioli, .dish__menu .input-check:checked .dessert__details p .starter--ravioli, .dessert__menu .input-check:checked ~ .starter__details p .starter--ravioli, .dessert__menu .input-check:checked ~ .dish__details p .starter--ravioli, .dessert__menu .input-check:checked ~ .dessert__details p .starter--ravioli,
+.dessert__menu .input-check:checked .starter__details p .starter--ravioli, .dessert__menu .input-check:checked .dish__details p .starter--ravioli, .dessert__menu .input-check:checked .dessert__details p .starter--ravioli {
+    width: 69%;
+  }
 }
 @media screen and (max-width: 360px) {
   .starter__menu .input-check:checked ~ .starter__details p .saint-jacques, .starter__menu .input-check:checked ~ .dish__details p .saint-jacques, .starter__menu .input-check:checked ~ .dessert__details p .saint-jacques,
@@ -353,6 +387,14 @@ a {
 .dish__menu .input-check:checked .starter__details p .saint-jacques, .dish__menu .input-check:checked .dish__details p .saint-jacques, .dish__menu .input-check:checked .dessert__details p .saint-jacques, .dessert__menu .input-check:checked ~ .starter__details p .saint-jacques, .dessert__menu .input-check:checked ~ .dish__details p .saint-jacques, .dessert__menu .input-check:checked ~ .dessert__details p .saint-jacques,
 .dessert__menu .input-check:checked .starter__details p .saint-jacques, .dessert__menu .input-check:checked .dish__details p .saint-jacques, .dessert__menu .input-check:checked .dessert__details p .saint-jacques {
     width: 80%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .starter__menu .input-check:checked ~ .starter__details p .dish--wild-rice, .starter__menu .input-check:checked ~ .dish__details p .dish--wild-rice, .starter__menu .input-check:checked ~ .dessert__details p .dish--wild-rice,
+.starter__menu .input-check:checked .starter__details p .dish--wild-rice, .starter__menu .input-check:checked .dish__details p .dish--wild-rice, .starter__menu .input-check:checked .dessert__details p .dish--wild-rice, .dish__menu .input-check:checked ~ .starter__details p .dish--wild-rice, .dish__menu .input-check:checked ~ .dish__details p .dish--wild-rice, .dish__menu .input-check:checked ~ .dessert__details p .dish--wild-rice,
+.dish__menu .input-check:checked .starter__details p .dish--wild-rice, .dish__menu .input-check:checked .dish__details p .dish--wild-rice, .dish__menu .input-check:checked .dessert__details p .dish--wild-rice, .dessert__menu .input-check:checked ~ .starter__details p .dish--wild-rice, .dessert__menu .input-check:checked ~ .dish__details p .dish--wild-rice, .dessert__menu .input-check:checked ~ .dessert__details p .dish--wild-rice,
+.dessert__menu .input-check:checked .starter__details p .dish--wild-rice, .dessert__menu .input-check:checked .dish__details p .dish--wild-rice, .dessert__menu .input-check:checked .dessert__details p .dish--wild-rice {
+    width: 64%;
   }
 }
 @media screen and (max-width: 360px) {
@@ -369,65 +411,63 @@ a {
 .dessert__menu .input-check:checked .starter__details p .dessert--ice, .dessert__menu .input-check:checked .dish__details p .dessert--ice, .dessert__menu .input-check:checked .dessert__details p .dessert--ice {
   width: 83%;
 }
+@media screen and (max-width: 360px) {
+  .starter__menu .input-check:checked ~ .starter__details p .dessert--ice, .starter__menu .input-check:checked ~ .dish__details p .dessert--ice, .starter__menu .input-check:checked ~ .dessert__details p .dessert--ice,
+.starter__menu .input-check:checked .starter__details p .dessert--ice, .starter__menu .input-check:checked .dish__details p .dessert--ice, .starter__menu .input-check:checked .dessert__details p .dessert--ice, .dish__menu .input-check:checked ~ .starter__details p .dessert--ice, .dish__menu .input-check:checked ~ .dish__details p .dessert--ice, .dish__menu .input-check:checked ~ .dessert__details p .dessert--ice,
+.dish__menu .input-check:checked .starter__details p .dessert--ice, .dish__menu .input-check:checked .dish__details p .dessert--ice, .dish__menu .input-check:checked .dessert__details p .dessert--ice, .dessert__menu .input-check:checked ~ .starter__details p .dessert--ice, .dessert__menu .input-check:checked ~ .dish__details p .dessert--ice, .dessert__menu .input-check:checked ~ .dessert__details p .dessert--ice,
+.dessert__menu .input-check:checked .starter__details p .dessert--ice, .dessert__menu .input-check:checked .dish__details p .dessert--ice, .dessert__menu .input-check:checked .dessert__details p .dessert--ice {
+    width: 67%;
+  }
+}
 .starter__menu .input-check:checked ~ .starter__details p .starter--duck, .starter__menu .input-check:checked ~ .dish__details p .starter--duck, .starter__menu .input-check:checked ~ .dessert__details p .starter--duck,
 .starter__menu .input-check:checked .starter__details p .starter--duck, .starter__menu .input-check:checked .dish__details p .starter--duck, .starter__menu .input-check:checked .dessert__details p .starter--duck, .dish__menu .input-check:checked ~ .starter__details p .starter--duck, .dish__menu .input-check:checked ~ .dish__details p .starter--duck, .dish__menu .input-check:checked ~ .dessert__details p .starter--duck,
 .dish__menu .input-check:checked .starter__details p .starter--duck, .dish__menu .input-check:checked .dish__details p .starter--duck, .dish__menu .input-check:checked .dessert__details p .starter--duck, .dessert__menu .input-check:checked ~ .starter__details p .starter--duck, .dessert__menu .input-check:checked ~ .dish__details p .starter--duck, .dessert__menu .input-check:checked ~ .dessert__details p .starter--duck,
 .dessert__menu .input-check:checked .starter__details p .starter--duck, .dessert__menu .input-check:checked .dish__details p .starter--duck, .dessert__menu .input-check:checked .dessert__details p .starter--duck {
-  width: 57%;
-}
-@media screen and (max-width: 360px) {
-  .starter__menu .input-check:checked ~ .starter__details p .starter--duck, .starter__menu .input-check:checked ~ .dish__details p .starter--duck, .starter__menu .input-check:checked ~ .dessert__details p .starter--duck,
-.starter__menu .input-check:checked .starter__details p .starter--duck, .starter__menu .input-check:checked .dish__details p .starter--duck, .starter__menu .input-check:checked .dessert__details p .starter--duck, .dish__menu .input-check:checked ~ .starter__details p .starter--duck, .dish__menu .input-check:checked ~ .dish__details p .starter--duck, .dish__menu .input-check:checked ~ .dessert__details p .starter--duck,
-.dish__menu .input-check:checked .starter__details p .starter--duck, .dish__menu .input-check:checked .dish__details p .starter--duck, .dish__menu .input-check:checked .dessert__details p .starter--duck, .dessert__menu .input-check:checked ~ .starter__details p .starter--duck, .dessert__menu .input-check:checked ~ .dish__details p .starter--duck, .dessert__menu .input-check:checked ~ .dessert__details p .starter--duck,
-.dessert__menu .input-check:checked .starter__details p .starter--duck, .dessert__menu .input-check:checked .dish__details p .starter--duck, .dessert__menu .input-check:checked .dessert__details p .starter--duck {
-    width: 58%;
-  }
+  width: 58%;
 }
 .starter__menu .input-check:checked ~ .starter__details p .starter--egg, .starter__menu .input-check:checked ~ .dish__details p .starter--egg, .starter__menu .input-check:checked ~ .dessert__details p .starter--egg,
 .starter__menu .input-check:checked .starter__details p .starter--egg, .starter__menu .input-check:checked .dish__details p .starter--egg, .starter__menu .input-check:checked .dessert__details p .starter--egg, .dish__menu .input-check:checked ~ .starter__details p .starter--egg, .dish__menu .input-check:checked ~ .dish__details p .starter--egg, .dish__menu .input-check:checked ~ .dessert__details p .starter--egg,
 .dish__menu .input-check:checked .starter__details p .starter--egg, .dish__menu .input-check:checked .dish__details p .starter--egg, .dish__menu .input-check:checked .dessert__details p .starter--egg, .dessert__menu .input-check:checked ~ .starter__details p .starter--egg, .dessert__menu .input-check:checked ~ .dish__details p .starter--egg, .dessert__menu .input-check:checked ~ .dessert__details p .starter--egg,
 .dessert__menu .input-check:checked .starter__details p .starter--egg, .dessert__menu .input-check:checked .dish__details p .starter--egg, .dessert__menu .input-check:checked .dessert__details p .starter--egg {
-  width: 90%;
+  width: 71%;
 }
 .starter__menu .input-check:checked ~ .starter__details p .dish--beef, .starter__menu .input-check:checked ~ .dish__details p .dish--beef, .starter__menu .input-check:checked ~ .dessert__details p .dish--beef,
 .starter__menu .input-check:checked .starter__details p .dish--beef, .starter__menu .input-check:checked .dish__details p .dish--beef, .starter__menu .input-check:checked .dessert__details p .dish--beef, .dish__menu .input-check:checked ~ .starter__details p .dish--beef, .dish__menu .input-check:checked ~ .dish__details p .dish--beef, .dish__menu .input-check:checked ~ .dessert__details p .dish--beef,
 .dish__menu .input-check:checked .starter__details p .dish--beef, .dish__menu .input-check:checked .dish__details p .dish--beef, .dish__menu .input-check:checked .dessert__details p .dish--beef, .dessert__menu .input-check:checked ~ .starter__details p .dish--beef, .dessert__menu .input-check:checked ~ .dish__details p .dish--beef, .dessert__menu .input-check:checked ~ .dessert__details p .dish--beef,
 .dessert__menu .input-check:checked .starter__details p .dish--beef, .dessert__menu .input-check:checked .dish__details p .dish--beef, .dessert__menu .input-check:checked .dessert__details p .dish--beef {
-  width: 75% !important;
+  width: 72%;
 }
 .starter__menu .input-check:checked ~ .starter__details p .dish--beef-parmentier, .starter__menu .input-check:checked ~ .dish__details p .dish--beef-parmentier, .starter__menu .input-check:checked ~ .dessert__details p .dish--beef-parmentier,
 .starter__menu .input-check:checked .starter__details p .dish--beef-parmentier, .starter__menu .input-check:checked .dish__details p .dish--beef-parmentier, .starter__menu .input-check:checked .dessert__details p .dish--beef-parmentier, .dish__menu .input-check:checked ~ .starter__details p .dish--beef-parmentier, .dish__menu .input-check:checked ~ .dish__details p .dish--beef-parmentier, .dish__menu .input-check:checked ~ .dessert__details p .dish--beef-parmentier,
 .dish__menu .input-check:checked .starter__details p .dish--beef-parmentier, .dish__menu .input-check:checked .dish__details p .dish--beef-parmentier, .dish__menu .input-check:checked .dessert__details p .dish--beef-parmentier, .dessert__menu .input-check:checked ~ .starter__details p .dish--beef-parmentier, .dessert__menu .input-check:checked ~ .dish__details p .dish--beef-parmentier, .dessert__menu .input-check:checked ~ .dessert__details p .dish--beef-parmentier,
 .dessert__menu .input-check:checked .starter__details p .dish--beef-parmentier, .dessert__menu .input-check:checked .dish__details p .dish--beef-parmentier, .dessert__menu .input-check:checked .dessert__details p .dish--beef-parmentier {
-  width: 87%;
+  width: 74%;
 }
 @media screen and (max-width: 360px) {
   .starter__menu .input-check:checked ~ .starter__details p .dish--mada, .starter__menu .input-check:checked ~ .dish__details p .dish--mada, .starter__menu .input-check:checked ~ .dessert__details p .dish--mada,
 .starter__menu .input-check:checked .starter__details p .dish--mada, .starter__menu .input-check:checked .dish__details p .dish--mada, .starter__menu .input-check:checked .dessert__details p .dish--mada, .dish__menu .input-check:checked ~ .starter__details p .dish--mada, .dish__menu .input-check:checked ~ .dish__details p .dish--mada, .dish__menu .input-check:checked ~ .dessert__details p .dish--mada,
 .dish__menu .input-check:checked .starter__details p .dish--mada, .dish__menu .input-check:checked .dish__details p .dish--mada, .dish__menu .input-check:checked .dessert__details p .dish--mada, .dessert__menu .input-check:checked ~ .starter__details p .dish--mada, .dessert__menu .input-check:checked ~ .dish__details p .dish--mada, .dessert__menu .input-check:checked ~ .dessert__details p .dish--mada,
 .dessert__menu .input-check:checked .starter__details p .dish--mada, .dessert__menu .input-check:checked .dish__details p .dish--mada, .dessert__menu .input-check:checked .dessert__details p .dish--mada {
-    width: 57%;
+    width: 51%;
   }
 }
 .starter__menu .input-check:checked ~ .starter__details p .dessert--mousse, .starter__menu .input-check:checked ~ .dish__details p .dessert--mousse, .starter__menu .input-check:checked ~ .dessert__details p .dessert--mousse,
 .starter__menu .input-check:checked .starter__details p .dessert--mousse, .starter__menu .input-check:checked .dish__details p .dessert--mousse, .starter__menu .input-check:checked .dessert__details p .dessert--mousse, .dish__menu .input-check:checked ~ .starter__details p .dessert--mousse, .dish__menu .input-check:checked ~ .dish__details p .dessert--mousse, .dish__menu .input-check:checked ~ .dessert__details p .dessert--mousse,
 .dish__menu .input-check:checked .starter__details p .dessert--mousse, .dish__menu .input-check:checked .dish__details p .dessert--mousse, .dish__menu .input-check:checked .dessert__details p .dessert--mousse, .dessert__menu .input-check:checked ~ .starter__details p .dessert--mousse, .dessert__menu .input-check:checked ~ .dish__details p .dessert--mousse, .dessert__menu .input-check:checked ~ .dessert__details p .dessert--mousse,
 .dessert__menu .input-check:checked .starter__details p .dessert--mousse, .dessert__menu .input-check:checked .dish__details p .dessert--mousse, .dessert__menu .input-check:checked .dessert__details p .dessert--mousse {
-  width: 77%;
+  width: 67%;
+}
+.starter__menu .input-check:checked ~ .starter__details p .farandole, .starter__menu .input-check:checked ~ .dish__details p .farandole, .starter__menu .input-check:checked ~ .dessert__details p .farandole,
+.starter__menu .input-check:checked .starter__details p .farandole, .starter__menu .input-check:checked .dish__details p .farandole, .starter__menu .input-check:checked .dessert__details p .farandole, .dish__menu .input-check:checked ~ .starter__details p .farandole, .dish__menu .input-check:checked ~ .dish__details p .farandole, .dish__menu .input-check:checked ~ .dessert__details p .farandole,
+.dish__menu .input-check:checked .starter__details p .farandole, .dish__menu .input-check:checked .dish__details p .farandole, .dish__menu .input-check:checked .dessert__details p .farandole, .dessert__menu .input-check:checked ~ .starter__details p .farandole, .dessert__menu .input-check:checked ~ .dish__details p .farandole, .dessert__menu .input-check:checked ~ .dessert__details p .farandole,
+.dessert__menu .input-check:checked .starter__details p .farandole, .dessert__menu .input-check:checked .dish__details p .farandole, .dessert__menu .input-check:checked .dessert__details p .farandole {
+  width: 64%;
 }
 .starter__menu .input-check:checked ~ .starter__details p .dessert--tiramisu, .starter__menu .input-check:checked ~ .dish__details p .dessert--tiramisu, .starter__menu .input-check:checked ~ .dessert__details p .dessert--tiramisu,
 .starter__menu .input-check:checked .starter__details p .dessert--tiramisu, .starter__menu .input-check:checked .dish__details p .dessert--tiramisu, .starter__menu .input-check:checked .dessert__details p .dessert--tiramisu, .dish__menu .input-check:checked ~ .starter__details p .dessert--tiramisu, .dish__menu .input-check:checked ~ .dish__details p .dessert--tiramisu, .dish__menu .input-check:checked ~ .dessert__details p .dessert--tiramisu,
 .dish__menu .input-check:checked .starter__details p .dessert--tiramisu, .dish__menu .input-check:checked .dish__details p .dessert--tiramisu, .dish__menu .input-check:checked .dessert__details p .dessert--tiramisu, .dessert__menu .input-check:checked ~ .starter__details p .dessert--tiramisu, .dessert__menu .input-check:checked ~ .dish__details p .dessert--tiramisu, .dessert__menu .input-check:checked ~ .dessert__details p .dessert--tiramisu,
 .dessert__menu .input-check:checked .starter__details p .dessert--tiramisu, .dessert__menu .input-check:checked .dish__details p .dessert--tiramisu, .dessert__menu .input-check:checked .dessert__details p .dessert--tiramisu {
-  width: 70%;
-}
-@media screen and (max-width: 360px) {
-  .starter__menu .input-check:checked ~ .starter__details p .dessert--mousse, .starter__menu .input-check:checked ~ .dish__details p .dessert--mousse, .starter__menu .input-check:checked ~ .dessert__details p .dessert--mousse,
-.starter__menu .input-check:checked .starter__details p .dessert--mousse, .starter__menu .input-check:checked .dish__details p .dessert--mousse, .starter__menu .input-check:checked .dessert__details p .dessert--mousse, .dish__menu .input-check:checked ~ .starter__details p .dessert--mousse, .dish__menu .input-check:checked ~ .dish__details p .dessert--mousse, .dish__menu .input-check:checked ~ .dessert__details p .dessert--mousse,
-.dish__menu .input-check:checked .starter__details p .dessert--mousse, .dish__menu .input-check:checked .dish__details p .dessert--mousse, .dish__menu .input-check:checked .dessert__details p .dessert--mousse, .dessert__menu .input-check:checked ~ .starter__details p .dessert--mousse, .dessert__menu .input-check:checked ~ .dish__details p .dessert--mousse, .dessert__menu .input-check:checked ~ .dessert__details p .dessert--mousse,
-.dessert__menu .input-check:checked .starter__details p .dessert--mousse, .dessert__menu .input-check:checked .dish__details p .dessert--mousse, .dessert__menu .input-check:checked .dessert__details p .dessert--mousse {
-    width: 75%;
-  }
+  width: 67%;
 }
 .starter__menu .input-check:checked ~ .starter__price, .starter__menu .input-check:checked ~ .dish__price, .starter__menu .input-check:checked ~ .dessert__price,
 .starter__menu .input-check:checked .starter__price, .starter__menu .input-check:checked .dish__price, .starter__menu .input-check:checked .dessert__price, .dish__menu .input-check:checked ~ .starter__price, .dish__menu .input-check:checked ~ .dish__price, .dish__menu .input-check:checked ~ .dessert__price,
@@ -461,7 +501,7 @@ a {
 .starter__menu .input-check:checked .starter__price, .starter__menu .input-check:checked .dish__price, .starter__menu .input-check:checked .dessert__price, .dish__menu .input-check:checked ~ .starter__price, .dish__menu .input-check:checked ~ .dish__price, .dish__menu .input-check:checked ~ .dessert__price,
 .dish__menu .input-check:checked .starter__price, .dish__menu .input-check:checked .dish__price, .dish__menu .input-check:checked .dessert__price, .dessert__menu .input-check:checked ~ .starter__price, .dessert__menu .input-check:checked ~ .dish__price, .dessert__menu .input-check:checked ~ .dessert__price,
 .dessert__menu .input-check:checked .starter__price, .dessert__menu .input-check:checked .dish__price, .dessert__menu .input-check:checked .dessert__price {
-    top: 32px;
+    top: 31px;
   }
 }
 .starter__menu .input-check:checked ~ .checkbox-animation,
@@ -550,7 +590,15 @@ a {
 .starter__menu:hover .starter__details h3 .starter--lobster, .starter__menu:hover .dish__details h3 .starter--lobster, .starter__menu:hover .dessert__details h3 .starter--lobster, .dish__menu:hover ~ .starter__details h3 .starter--lobster, .dish__menu:hover ~ .dish__details h3 .starter--lobster, .dish__menu:hover ~ .dessert__details h3 .starter--lobster,
 .dish__menu:hover .starter__details h3 .starter--lobster, .dish__menu:hover .dish__details h3 .starter--lobster, .dish__menu:hover .dessert__details h3 .starter--lobster, .dessert__menu:hover ~ .starter__details h3 .starter--lobster, .dessert__menu:hover ~ .dish__details h3 .starter--lobster, .dessert__menu:hover ~ .dessert__details h3 .starter--lobster,
 .dessert__menu:hover .starter__details h3 .starter--lobster, .dessert__menu:hover .dish__details h3 .starter--lobster, .dessert__menu:hover .dessert__details h3 .starter--lobster {
-    width: 70%;
+    width: 59%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 360px) {
+  .starter__menu:hover ~ .starter__details h3 .saint-jacques, .starter__menu:hover ~ .dish__details h3 .saint-jacques, .starter__menu:hover ~ .dessert__details h3 .saint-jacques,
+.starter__menu:hover .starter__details h3 .saint-jacques, .starter__menu:hover .dish__details h3 .saint-jacques, .starter__menu:hover .dessert__details h3 .saint-jacques, .dish__menu:hover ~ .starter__details h3 .saint-jacques, .dish__menu:hover ~ .dish__details h3 .saint-jacques, .dish__menu:hover ~ .dessert__details h3 .saint-jacques,
+.dish__menu:hover .starter__details h3 .saint-jacques, .dish__menu:hover .dish__details h3 .saint-jacques, .dish__menu:hover .dessert__details h3 .saint-jacques, .dessert__menu:hover ~ .starter__details h3 .saint-jacques, .dessert__menu:hover ~ .dish__details h3 .saint-jacques, .dessert__menu:hover ~ .dessert__details h3 .saint-jacques,
+.dessert__menu:hover .starter__details h3 .saint-jacques, .dessert__menu:hover .dish__details h3 .saint-jacques, .dessert__menu:hover .dessert__details h3 .saint-jacques {
+    width: 63%;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 360px) {
@@ -558,7 +606,7 @@ a {
 .starter__menu:hover .starter__details h3 .foie-gras, .starter__menu:hover .dish__details h3 .foie-gras, .starter__menu:hover .dessert__details h3 .foie-gras, .dish__menu:hover ~ .starter__details h3 .foie-gras, .dish__menu:hover ~ .dish__details h3 .foie-gras, .dish__menu:hover ~ .dessert__details h3 .foie-gras,
 .dish__menu:hover .starter__details h3 .foie-gras, .dish__menu:hover .dish__details h3 .foie-gras, .dish__menu:hover .dessert__details h3 .foie-gras, .dessert__menu:hover ~ .starter__details h3 .foie-gras, .dessert__menu:hover ~ .dish__details h3 .foie-gras, .dessert__menu:hover ~ .dessert__details h3 .foie-gras,
 .dessert__menu:hover .starter__details h3 .foie-gras, .dessert__menu:hover .dish__details h3 .foie-gras, .dessert__menu:hover .dessert__details h3 .foie-gras {
-    width: 70%;
+    width: 62%;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 360px) {
@@ -621,25 +669,55 @@ a {
 .starter__menu:hover .starter__details p .dish--potatoes, .starter__menu:hover .dish__details p .dish--potatoes, .starter__menu:hover .dessert__details p .dish--potatoes, .dish__menu:hover ~ .starter__details p .dish--potatoes, .dish__menu:hover ~ .dish__details p .dish--potatoes, .dish__menu:hover ~ .dessert__details p .dish--potatoes,
 .dish__menu:hover .starter__details p .dish--potatoes, .dish__menu:hover .dish__details p .dish--potatoes, .dish__menu:hover .dessert__details p .dish--potatoes, .dessert__menu:hover ~ .starter__details p .dish--potatoes, .dessert__menu:hover ~ .dish__details p .dish--potatoes, .dessert__menu:hover ~ .dessert__details p .dish--potatoes,
 .dessert__menu:hover .starter__details p .dish--potatoes, .dessert__menu:hover .dish__details p .dish--potatoes, .dessert__menu:hover .dessert__details p .dish--potatoes {
-    width: 85%;
+    width: 66%;
   }
+}
+@media screen and (min-width: 992px) and (max-width: 360px) {
+  .starter__menu:hover ~ .starter__details p .dish--potatoes, .starter__menu:hover ~ .dish__details p .dish--potatoes, .starter__menu:hover ~ .dessert__details p .dish--potatoes,
+.starter__menu:hover .starter__details p .dish--potatoes, .starter__menu:hover .dish__details p .dish--potatoes, .starter__menu:hover .dessert__details p .dish--potatoes, .dish__menu:hover ~ .starter__details p .dish--potatoes, .dish__menu:hover ~ .dish__details p .dish--potatoes, .dish__menu:hover ~ .dessert__details p .dish--potatoes,
+.dish__menu:hover .starter__details p .dish--potatoes, .dish__menu:hover .dish__details p .dish--potatoes, .dish__menu:hover .dessert__details p .dish--potatoes, .dessert__menu:hover ~ .starter__details p .dish--potatoes, .dessert__menu:hover ~ .dish__details p .dish--potatoes, .dessert__menu:hover ~ .dessert__details p .dish--potatoes,
+.dessert__menu:hover .starter__details p .dish--potatoes, .dessert__menu:hover .dish__details p .dish--potatoes, .dessert__menu:hover .dessert__details p .dish--potatoes {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 360px) {
   .starter__menu:hover ~ .starter__details p .dish--parmentier, .starter__menu:hover ~ .dish__details p .dish--parmentier, .starter__menu:hover ~ .dessert__details p .dish--parmentier,
 .starter__menu:hover .starter__details p .dish--parmentier, .starter__menu:hover .dish__details p .dish--parmentier, .starter__menu:hover .dessert__details p .dish--parmentier, .dish__menu:hover ~ .starter__details p .dish--parmentier, .dish__menu:hover ~ .dish__details p .dish--parmentier, .dish__menu:hover ~ .dessert__details p .dish--parmentier,
 .dish__menu:hover .starter__details p .dish--parmentier, .dish__menu:hover .dish__details p .dish--parmentier, .dish__menu:hover .dessert__details p .dish--parmentier, .dessert__menu:hover ~ .starter__details p .dish--parmentier, .dessert__menu:hover ~ .dish__details p .dish--parmentier, .dessert__menu:hover ~ .dessert__details p .dish--parmentier,
 .dessert__menu:hover .starter__details p .dish--parmentier, .dessert__menu:hover .dish__details p .dish--parmentier, .dessert__menu:hover .dessert__details p .dish--parmentier {
-    width: 91%;
+    width: 67%;
   }
+}
+@media screen and (min-width: 992px) {
   .starter__menu:hover ~ .starter__details p .dish--gnocchis, .starter__menu:hover ~ .dish__details p .dish--gnocchis, .starter__menu:hover ~ .dessert__details p .dish--gnocchis,
 .starter__menu:hover .starter__details p .dish--gnocchis, .starter__menu:hover .dish__details p .dish--gnocchis, .starter__menu:hover .dessert__details p .dish--gnocchis, .dish__menu:hover ~ .starter__details p .dish--gnocchis, .dish__menu:hover ~ .dish__details p .dish--gnocchis, .dish__menu:hover ~ .dessert__details p .dish--gnocchis,
 .dish__menu:hover .starter__details p .dish--gnocchis, .dish__menu:hover .dish__details p .dish--gnocchis, .dish__menu:hover .dessert__details p .dish--gnocchis, .dessert__menu:hover ~ .starter__details p .dish--gnocchis, .dessert__menu:hover ~ .dish__details p .dish--gnocchis, .dessert__menu:hover ~ .dessert__details p .dish--gnocchis,
 .dessert__menu:hover .starter__details p .dish--gnocchis, .dessert__menu:hover .dish__details p .dish--gnocchis, .dessert__menu:hover .dessert__details p .dish--gnocchis {
     width: 65%;
   }
+}
+@media screen and (min-width: 992px) and (max-width: 360px) {
+  .starter__menu:hover ~ .starter__details p .dish--gnocchis, .starter__menu:hover ~ .dish__details p .dish--gnocchis, .starter__menu:hover ~ .dessert__details p .dish--gnocchis,
+.starter__menu:hover .starter__details p .dish--gnocchis, .starter__menu:hover .dish__details p .dish--gnocchis, .starter__menu:hover .dessert__details p .dish--gnocchis, .dish__menu:hover ~ .starter__details p .dish--gnocchis, .dish__menu:hover ~ .dish__details p .dish--gnocchis, .dish__menu:hover ~ .dessert__details p .dish--gnocchis,
+.dish__menu:hover .starter__details p .dish--gnocchis, .dish__menu:hover .dish__details p .dish--gnocchis, .dish__menu:hover .dessert__details p .dish--gnocchis, .dessert__menu:hover ~ .starter__details p .dish--gnocchis, .dessert__menu:hover ~ .dish__details p .dish--gnocchis, .dessert__menu:hover ~ .dessert__details p .dish--gnocchis,
+.dessert__menu:hover .starter__details p .dish--gnocchis, .dessert__menu:hover .dish__details p .dish--gnocchis, .dessert__menu:hover .dessert__details p .dish--gnocchis {
+    width: 62%;
+  }
+}
+@media screen and (min-width: 992px) {
   .starter__menu:hover ~ .starter__details p .starter--ravioli, .starter__menu:hover ~ .dish__details p .starter--ravioli, .starter__menu:hover ~ .dessert__details p .starter--ravioli,
 .starter__menu:hover .starter__details p .starter--ravioli, .starter__menu:hover .dish__details p .starter--ravioli, .starter__menu:hover .dessert__details p .starter--ravioli, .dish__menu:hover ~ .starter__details p .starter--ravioli, .dish__menu:hover ~ .dish__details p .starter--ravioli, .dish__menu:hover ~ .dessert__details p .starter--ravioli,
 .dish__menu:hover .starter__details p .starter--ravioli, .dish__menu:hover .dish__details p .starter--ravioli, .dish__menu:hover .dessert__details p .starter--ravioli, .dessert__menu:hover ~ .starter__details p .starter--ravioli, .dessert__menu:hover ~ .dish__details p .starter--ravioli, .dessert__menu:hover ~ .dessert__details p .starter--ravioli,
 .dessert__menu:hover .starter__details p .starter--ravioli, .dessert__menu:hover .dish__details p .starter--ravioli, .dessert__menu:hover .dessert__details p .starter--ravioli {
-    width: 91%;
+    width: 73%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 360px) {
+  .starter__menu:hover ~ .starter__details p .starter--ravioli, .starter__menu:hover ~ .dish__details p .starter--ravioli, .starter__menu:hover ~ .dessert__details p .starter--ravioli,
+.starter__menu:hover .starter__details p .starter--ravioli, .starter__menu:hover .dish__details p .starter--ravioli, .starter__menu:hover .dessert__details p .starter--ravioli, .dish__menu:hover ~ .starter__details p .starter--ravioli, .dish__menu:hover ~ .dish__details p .starter--ravioli, .dish__menu:hover ~ .dessert__details p .starter--ravioli,
+.dish__menu:hover .starter__details p .starter--ravioli, .dish__menu:hover .dish__details p .starter--ravioli, .dish__menu:hover .dessert__details p .starter--ravioli, .dessert__menu:hover ~ .starter__details p .starter--ravioli, .dessert__menu:hover ~ .dish__details p .starter--ravioli, .dessert__menu:hover ~ .dessert__details p .starter--ravioli,
+.dessert__menu:hover .starter__details p .starter--ravioli, .dessert__menu:hover .dish__details p .starter--ravioli, .dessert__menu:hover .dessert__details p .starter--ravioli {
+    width: 69%;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 360px) {
@@ -648,6 +726,14 @@ a {
 .dish__menu:hover .starter__details p .saint-jacques, .dish__menu:hover .dish__details p .saint-jacques, .dish__menu:hover .dessert__details p .saint-jacques, .dessert__menu:hover ~ .starter__details p .saint-jacques, .dessert__menu:hover ~ .dish__details p .saint-jacques, .dessert__menu:hover ~ .dessert__details p .saint-jacques,
 .dessert__menu:hover .starter__details p .saint-jacques, .dessert__menu:hover .dish__details p .saint-jacques, .dessert__menu:hover .dessert__details p .saint-jacques {
     width: 80%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 360px) {
+  .starter__menu:hover ~ .starter__details p .dish--wild-rice, .starter__menu:hover ~ .dish__details p .dish--wild-rice, .starter__menu:hover ~ .dessert__details p .dish--wild-rice,
+.starter__menu:hover .starter__details p .dish--wild-rice, .starter__menu:hover .dish__details p .dish--wild-rice, .starter__menu:hover .dessert__details p .dish--wild-rice, .dish__menu:hover ~ .starter__details p .dish--wild-rice, .dish__menu:hover ~ .dish__details p .dish--wild-rice, .dish__menu:hover ~ .dessert__details p .dish--wild-rice,
+.dish__menu:hover .starter__details p .dish--wild-rice, .dish__menu:hover .dish__details p .dish--wild-rice, .dish__menu:hover .dessert__details p .dish--wild-rice, .dessert__menu:hover ~ .starter__details p .dish--wild-rice, .dessert__menu:hover ~ .dish__details p .dish--wild-rice, .dessert__menu:hover ~ .dessert__details p .dish--wild-rice,
+.dessert__menu:hover .starter__details p .dish--wild-rice, .dessert__menu:hover .dish__details p .dish--wild-rice, .dessert__menu:hover .dessert__details p .dish--wild-rice {
+    width: 64%;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 360px) {
@@ -666,15 +752,15 @@ a {
     width: 83%;
   }
 }
-@media screen and (min-width: 992px) {
-  .starter__menu:hover ~ .starter__details p .starter--duck, .starter__menu:hover ~ .dish__details p .starter--duck, .starter__menu:hover ~ .dessert__details p .starter--duck,
-.starter__menu:hover .starter__details p .starter--duck, .starter__menu:hover .dish__details p .starter--duck, .starter__menu:hover .dessert__details p .starter--duck, .dish__menu:hover ~ .starter__details p .starter--duck, .dish__menu:hover ~ .dish__details p .starter--duck, .dish__menu:hover ~ .dessert__details p .starter--duck,
-.dish__menu:hover .starter__details p .starter--duck, .dish__menu:hover .dish__details p .starter--duck, .dish__menu:hover .dessert__details p .starter--duck, .dessert__menu:hover ~ .starter__details p .starter--duck, .dessert__menu:hover ~ .dish__details p .starter--duck, .dessert__menu:hover ~ .dessert__details p .starter--duck,
-.dessert__menu:hover .starter__details p .starter--duck, .dessert__menu:hover .dish__details p .starter--duck, .dessert__menu:hover .dessert__details p .starter--duck {
-    width: 57%;
+@media screen and (min-width: 992px) and (max-width: 360px) {
+  .starter__menu:hover ~ .starter__details p .dessert--ice, .starter__menu:hover ~ .dish__details p .dessert--ice, .starter__menu:hover ~ .dessert__details p .dessert--ice,
+.starter__menu:hover .starter__details p .dessert--ice, .starter__menu:hover .dish__details p .dessert--ice, .starter__menu:hover .dessert__details p .dessert--ice, .dish__menu:hover ~ .starter__details p .dessert--ice, .dish__menu:hover ~ .dish__details p .dessert--ice, .dish__menu:hover ~ .dessert__details p .dessert--ice,
+.dish__menu:hover .starter__details p .dessert--ice, .dish__menu:hover .dish__details p .dessert--ice, .dish__menu:hover .dessert__details p .dessert--ice, .dessert__menu:hover ~ .starter__details p .dessert--ice, .dessert__menu:hover ~ .dish__details p .dessert--ice, .dessert__menu:hover ~ .dessert__details p .dessert--ice,
+.dessert__menu:hover .starter__details p .dessert--ice, .dessert__menu:hover .dish__details p .dessert--ice, .dessert__menu:hover .dessert__details p .dessert--ice {
+    width: 67%;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 360px) {
+@media screen and (min-width: 992px) {
   .starter__menu:hover ~ .starter__details p .starter--duck, .starter__menu:hover ~ .dish__details p .starter--duck, .starter__menu:hover ~ .dessert__details p .starter--duck,
 .starter__menu:hover .starter__details p .starter--duck, .starter__menu:hover .dish__details p .starter--duck, .starter__menu:hover .dessert__details p .starter--duck, .dish__menu:hover ~ .starter__details p .starter--duck, .dish__menu:hover ~ .dish__details p .starter--duck, .dish__menu:hover ~ .dessert__details p .starter--duck,
 .dish__menu:hover .starter__details p .starter--duck, .dish__menu:hover .dish__details p .starter--duck, .dish__menu:hover .dessert__details p .starter--duck, .dessert__menu:hover ~ .starter__details p .starter--duck, .dessert__menu:hover ~ .dish__details p .starter--duck, .dessert__menu:hover ~ .dessert__details p .starter--duck,
@@ -687,7 +773,7 @@ a {
 .starter__menu:hover .starter__details p .starter--egg, .starter__menu:hover .dish__details p .starter--egg, .starter__menu:hover .dessert__details p .starter--egg, .dish__menu:hover ~ .starter__details p .starter--egg, .dish__menu:hover ~ .dish__details p .starter--egg, .dish__menu:hover ~ .dessert__details p .starter--egg,
 .dish__menu:hover .starter__details p .starter--egg, .dish__menu:hover .dish__details p .starter--egg, .dish__menu:hover .dessert__details p .starter--egg, .dessert__menu:hover ~ .starter__details p .starter--egg, .dessert__menu:hover ~ .dish__details p .starter--egg, .dessert__menu:hover ~ .dessert__details p .starter--egg,
 .dessert__menu:hover .starter__details p .starter--egg, .dessert__menu:hover .dish__details p .starter--egg, .dessert__menu:hover .dessert__details p .starter--egg {
-    width: 90%;
+    width: 71%;
   }
 }
 @media screen and (min-width: 992px) {
@@ -695,7 +781,7 @@ a {
 .starter__menu:hover .starter__details p .dish--beef, .starter__menu:hover .dish__details p .dish--beef, .starter__menu:hover .dessert__details p .dish--beef, .dish__menu:hover ~ .starter__details p .dish--beef, .dish__menu:hover ~ .dish__details p .dish--beef, .dish__menu:hover ~ .dessert__details p .dish--beef,
 .dish__menu:hover .starter__details p .dish--beef, .dish__menu:hover .dish__details p .dish--beef, .dish__menu:hover .dessert__details p .dish--beef, .dessert__menu:hover ~ .starter__details p .dish--beef, .dessert__menu:hover ~ .dish__details p .dish--beef, .dessert__menu:hover ~ .dessert__details p .dish--beef,
 .dessert__menu:hover .starter__details p .dish--beef, .dessert__menu:hover .dish__details p .dish--beef, .dessert__menu:hover .dessert__details p .dish--beef {
-    width: 75% !important;
+    width: 72%;
   }
 }
 @media screen and (min-width: 992px) {
@@ -703,7 +789,7 @@ a {
 .starter__menu:hover .starter__details p .dish--beef-parmentier, .starter__menu:hover .dish__details p .dish--beef-parmentier, .starter__menu:hover .dessert__details p .dish--beef-parmentier, .dish__menu:hover ~ .starter__details p .dish--beef-parmentier, .dish__menu:hover ~ .dish__details p .dish--beef-parmentier, .dish__menu:hover ~ .dessert__details p .dish--beef-parmentier,
 .dish__menu:hover .starter__details p .dish--beef-parmentier, .dish__menu:hover .dish__details p .dish--beef-parmentier, .dish__menu:hover .dessert__details p .dish--beef-parmentier, .dessert__menu:hover ~ .starter__details p .dish--beef-parmentier, .dessert__menu:hover ~ .dish__details p .dish--beef-parmentier, .dessert__menu:hover ~ .dessert__details p .dish--beef-parmentier,
 .dessert__menu:hover .starter__details p .dish--beef-parmentier, .dessert__menu:hover .dish__details p .dish--beef-parmentier, .dessert__menu:hover .dessert__details p .dish--beef-parmentier {
-    width: 87%;
+    width: 74%;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 360px) {
@@ -711,7 +797,7 @@ a {
 .starter__menu:hover .starter__details p .dish--mada, .starter__menu:hover .dish__details p .dish--mada, .starter__menu:hover .dessert__details p .dish--mada, .dish__menu:hover ~ .starter__details p .dish--mada, .dish__menu:hover ~ .dish__details p .dish--mada, .dish__menu:hover ~ .dessert__details p .dish--mada,
 .dish__menu:hover .starter__details p .dish--mada, .dish__menu:hover .dish__details p .dish--mada, .dish__menu:hover .dessert__details p .dish--mada, .dessert__menu:hover ~ .starter__details p .dish--mada, .dessert__menu:hover ~ .dish__details p .dish--mada, .dessert__menu:hover ~ .dessert__details p .dish--mada,
 .dessert__menu:hover .starter__details p .dish--mada, .dessert__menu:hover .dish__details p .dish--mada, .dessert__menu:hover .dessert__details p .dish--mada {
-    width: 57%;
+    width: 51%;
   }
 }
 @media screen and (min-width: 992px) {
@@ -719,7 +805,15 @@ a {
 .starter__menu:hover .starter__details p .dessert--mousse, .starter__menu:hover .dish__details p .dessert--mousse, .starter__menu:hover .dessert__details p .dessert--mousse, .dish__menu:hover ~ .starter__details p .dessert--mousse, .dish__menu:hover ~ .dish__details p .dessert--mousse, .dish__menu:hover ~ .dessert__details p .dessert--mousse,
 .dish__menu:hover .starter__details p .dessert--mousse, .dish__menu:hover .dish__details p .dessert--mousse, .dish__menu:hover .dessert__details p .dessert--mousse, .dessert__menu:hover ~ .starter__details p .dessert--mousse, .dessert__menu:hover ~ .dish__details p .dessert--mousse, .dessert__menu:hover ~ .dessert__details p .dessert--mousse,
 .dessert__menu:hover .starter__details p .dessert--mousse, .dessert__menu:hover .dish__details p .dessert--mousse, .dessert__menu:hover .dessert__details p .dessert--mousse {
-    width: 77%;
+    width: 67%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .starter__menu:hover ~ .starter__details p .farandole, .starter__menu:hover ~ .dish__details p .farandole, .starter__menu:hover ~ .dessert__details p .farandole,
+.starter__menu:hover .starter__details p .farandole, .starter__menu:hover .dish__details p .farandole, .starter__menu:hover .dessert__details p .farandole, .dish__menu:hover ~ .starter__details p .farandole, .dish__menu:hover ~ .dish__details p .farandole, .dish__menu:hover ~ .dessert__details p .farandole,
+.dish__menu:hover .starter__details p .farandole, .dish__menu:hover .dish__details p .farandole, .dish__menu:hover .dessert__details p .farandole, .dessert__menu:hover ~ .starter__details p .farandole, .dessert__menu:hover ~ .dish__details p .farandole, .dessert__menu:hover ~ .dessert__details p .farandole,
+.dessert__menu:hover .starter__details p .farandole, .dessert__menu:hover .dish__details p .farandole, .dessert__menu:hover .dessert__details p .farandole {
+    width: 64%;
   }
 }
 @media screen and (min-width: 992px) {
@@ -727,15 +821,7 @@ a {
 .starter__menu:hover .starter__details p .dessert--tiramisu, .starter__menu:hover .dish__details p .dessert--tiramisu, .starter__menu:hover .dessert__details p .dessert--tiramisu, .dish__menu:hover ~ .starter__details p .dessert--tiramisu, .dish__menu:hover ~ .dish__details p .dessert--tiramisu, .dish__menu:hover ~ .dessert__details p .dessert--tiramisu,
 .dish__menu:hover .starter__details p .dessert--tiramisu, .dish__menu:hover .dish__details p .dessert--tiramisu, .dish__menu:hover .dessert__details p .dessert--tiramisu, .dessert__menu:hover ~ .starter__details p .dessert--tiramisu, .dessert__menu:hover ~ .dish__details p .dessert--tiramisu, .dessert__menu:hover ~ .dessert__details p .dessert--tiramisu,
 .dessert__menu:hover .starter__details p .dessert--tiramisu, .dessert__menu:hover .dish__details p .dessert--tiramisu, .dessert__menu:hover .dessert__details p .dessert--tiramisu {
-    width: 70%;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 360px) {
-  .starter__menu:hover ~ .starter__details p .dessert--mousse, .starter__menu:hover ~ .dish__details p .dessert--mousse, .starter__menu:hover ~ .dessert__details p .dessert--mousse,
-.starter__menu:hover .starter__details p .dessert--mousse, .starter__menu:hover .dish__details p .dessert--mousse, .starter__menu:hover .dessert__details p .dessert--mousse, .dish__menu:hover ~ .starter__details p .dessert--mousse, .dish__menu:hover ~ .dish__details p .dessert--mousse, .dish__menu:hover ~ .dessert__details p .dessert--mousse,
-.dish__menu:hover .starter__details p .dessert--mousse, .dish__menu:hover .dish__details p .dessert--mousse, .dish__menu:hover .dessert__details p .dessert--mousse, .dessert__menu:hover ~ .starter__details p .dessert--mousse, .dessert__menu:hover ~ .dish__details p .dessert--mousse, .dessert__menu:hover ~ .dessert__details p .dessert--mousse,
-.dessert__menu:hover .starter__details p .dessert--mousse, .dessert__menu:hover .dish__details p .dessert--mousse, .dessert__menu:hover .dessert__details p .dessert--mousse {
-    width: 75%;
+    width: 67%;
   }
 }
 @media screen and (min-width: 992px) {
@@ -772,7 +858,7 @@ a {
 .starter__menu:hover .starter__price, .starter__menu:hover .dish__price, .starter__menu:hover .dessert__price, .dish__menu:hover ~ .starter__price, .dish__menu:hover ~ .dish__price, .dish__menu:hover ~ .dessert__price,
 .dish__menu:hover .starter__price, .dish__menu:hover .dish__price, .dish__menu:hover .dessert__price, .dessert__menu:hover ~ .starter__price, .dessert__menu:hover ~ .dish__price, .dessert__menu:hover ~ .dessert__price,
 .dessert__menu:hover .starter__price, .dessert__menu:hover .dish__price, .dessert__menu:hover .dessert__price {
-    top: 32px;
+    top: 31px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -1225,6 +1311,14 @@ main {
   /*label {*/
   /*}*/
 }
+.form-menu .starter__details h3 {
+  font-size: 1.1rem;
+}
+@media screen and (max-width: 360px) {
+  .form-menu .starter__details h3 {
+    font-size: 0.9rem;
+  }
+}
 .form-menu .starter__details p label {
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -1244,16 +1338,27 @@ main {
   }
 }
 .form-menu .starter__details .dish--beef {
-  width: 98%;
+  width: 89%;
 }
 @media screen and (max-width: 360px) {
   .form-menu .starter__details .dessert--ice {
     width: 83%;
   }
 }
+.form-menu .starter__details .dessert--tiramisu {
+  width: 81%;
+}
 @media screen and (max-width: 360px) {
   .form-menu .starter__details .dessert--tiramisu {
-    width: 70%;
+    width: 67%;
+  }
+}
+.form-menu .starter__details .dessert--ice {
+  width: 76%;
+}
+@media screen and (max-width: 360px) {
+  .form-menu .starter__details .dessert--ice {
+    width: 71%;
   }
 }
 .form-menu .starter__price {
@@ -1262,7 +1367,7 @@ main {
   font-size: 0.8rem;
   text-align: right;
   position: absolute;
-  top: 30px;
+  top: 24px;
   right: 20px;
   z-index: 1;
 }
@@ -1316,6 +1421,14 @@ main {
   /*label {*/
   /*}*/
 }
+.form-menu .dish__details h3 {
+  font-size: 1.1rem;
+}
+@media screen and (max-width: 360px) {
+  .form-menu .dish__details h3 {
+    font-size: 0.9rem;
+  }
+}
 .form-menu .dish__details p label {
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -1335,16 +1448,27 @@ main {
   }
 }
 .form-menu .dish__details .dish--beef {
-  width: 98%;
+  width: 89%;
 }
 @media screen and (max-width: 360px) {
   .form-menu .dish__details .dessert--ice {
     width: 83%;
   }
 }
+.form-menu .dish__details .dessert--tiramisu {
+  width: 81%;
+}
 @media screen and (max-width: 360px) {
   .form-menu .dish__details .dessert--tiramisu {
-    width: 70%;
+    width: 67%;
+  }
+}
+.form-menu .dish__details .dessert--ice {
+  width: 76%;
+}
+@media screen and (max-width: 360px) {
+  .form-menu .dish__details .dessert--ice {
+    width: 71%;
   }
 }
 .form-menu .dish__price {
@@ -1353,7 +1477,7 @@ main {
   font-size: 0.8rem;
   text-align: right;
   position: absolute;
-  top: 30px;
+  top: 24px;
   right: 20px;
   z-index: 1;
 }
@@ -1407,6 +1531,14 @@ main {
   /*label {*/
   /*}*/
 }
+.form-menu .dessert__details h3 {
+  font-size: 1.1rem;
+}
+@media screen and (max-width: 360px) {
+  .form-menu .dessert__details h3 {
+    font-size: 0.9rem;
+  }
+}
 .form-menu .dessert__details p label {
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -1426,16 +1558,27 @@ main {
   }
 }
 .form-menu .dessert__details .dish--beef {
-  width: 98%;
+  width: 89%;
 }
 @media screen and (max-width: 360px) {
   .form-menu .dessert__details .dessert--ice {
     width: 83%;
   }
 }
+.form-menu .dessert__details .dessert--tiramisu {
+  width: 81%;
+}
 @media screen and (max-width: 360px) {
   .form-menu .dessert__details .dessert--tiramisu {
-    width: 70%;
+    width: 67%;
+  }
+}
+.form-menu .dessert__details .dessert--ice {
+  width: 76%;
+}
+@media screen and (max-width: 360px) {
+  .form-menu .dessert__details .dessert--ice {
+    width: 71%;
   }
 }
 .form-menu .dessert__price {
@@ -1444,7 +1587,7 @@ main {
   font-size: 0.8rem;
   text-align: right;
   position: absolute;
-  top: 30px;
+  top: 24px;
   right: 20px;
   z-index: 1;
 }
