@@ -37,18 +37,18 @@
                     sizes="(min-width: 1200px) 150vw, (min-width: 992px) 100vw, (min-width: 768px) and (max-width: 1024px) 45vw, (max-width: 768px) 45vw" 
                     src="images/a-la-francaise-m.jpg" alt="photo des plats du restaurant À la française"> 
             </div>
-            <section class="menu">
-                <div class="menu__heading">
-                <h1>À la française</h1>
-                <div class="icon-like" title="j'aime">
-                    <div class="empty-heart">
-                      <i class="fa-regular fa-heart border"></i>
-                      <div class="full-heart">
-                        <i class="fa-solid fa-heart"></i>
-                      </div>
-                    </div> 
-                </div>
-                </div>
+            <div class="menu">
+                <section class="menu__heading">
+                    <h1>À la française</h1>
+                    <div class="icon-like" title="j'aime">
+                        <div class="empty-heart">
+                            <i class="fa-regular fa-heart border"></i>
+                            <div class="full-heart">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div> 
+                    </div>
+                </section>
                 <form  method="post" action="user-order.php" class="form-menu">
                     <fieldset class="form-menu__starter"> 
                         <legend><h2>ENTRÉES</h2></legend>
@@ -141,9 +141,8 @@
                         </div>
                     </fieldset>
                     <button class="button-primary" type="submit" id="order" name="order" value="commande envoyé">Commander</button>
-
                 </form>
-            </section>
+            </div>
         </main>
         <footer class="footer">
             <div class="footer__logo">
