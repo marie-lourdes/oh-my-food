@@ -241,6 +241,14 @@ a {
 .dessert__menu .input-check:checked .starter__details h3 > label, .dessert__menu .input-check:checked .dish__details h3 > label, .dessert__menu .input-check:checked .dessert__details h3 > label {
   line-height: 1rem;
 }
+@media screen and (min-width: 992px) {
+  .starter__menu .input-check:checked ~ .starter__details h3 > label, .starter__menu .input-check:checked ~ .dish__details h3 > label, .starter__menu .input-check:checked ~ .dessert__details h3 > label,
+.starter__menu .input-check:checked .starter__details h3 > label, .starter__menu .input-check:checked .dish__details h3 > label, .starter__menu .input-check:checked .dessert__details h3 > label, .dish__menu .input-check:checked ~ .starter__details h3 > label, .dish__menu .input-check:checked ~ .dish__details h3 > label, .dish__menu .input-check:checked ~ .dessert__details h3 > label,
+.dish__menu .input-check:checked .starter__details h3 > label, .dish__menu .input-check:checked .dish__details h3 > label, .dish__menu .input-check:checked .dessert__details h3 > label, .dessert__menu .input-check:checked ~ .starter__details h3 > label, .dessert__menu .input-check:checked ~ .dish__details h3 > label, .dessert__menu .input-check:checked ~ .dessert__details h3 > label,
+.dessert__menu .input-check:checked .starter__details h3 > label, .dessert__menu .input-check:checked .dish__details h3 > label, .dessert__menu .input-check:checked .dessert__details h3 > label {
+    line-height: 1.5rem;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .starter__menu .input-check:checked ~ .starter__details h3 > label, .starter__menu .input-check:checked ~ .dish__details h3 > label, .starter__menu .input-check:checked ~ .dessert__details h3 > label,
 .starter__menu .input-check:checked .starter__details h3 > label, .starter__menu .input-check:checked .dish__details h3 > label, .starter__menu .input-check:checked .dessert__details h3 > label, .dish__menu .input-check:checked ~ .starter__details h3 > label, .dish__menu .input-check:checked ~ .dish__details h3 > label, .dish__menu .input-check:checked ~ .dessert__details h3 > label,
@@ -542,6 +550,14 @@ a {
 .dish__menu:hover .starter__details h3 > label, .dish__menu:hover .dish__details h3 > label, .dish__menu:hover .dessert__details h3 > label, .dessert__menu:hover ~ .starter__details h3 > label, .dessert__menu:hover ~ .dish__details h3 > label, .dessert__menu:hover ~ .dessert__details h3 > label,
 .dessert__menu:hover .starter__details h3 > label, .dessert__menu:hover .dish__details h3 > label, .dessert__menu:hover .dessert__details h3 > label {
     line-height: 1rem;
+  }
+}
+@media screen and (min-width: 992px) and (min-width: 992px) {
+  .starter__menu:hover ~ .starter__details h3 > label, .starter__menu:hover ~ .dish__details h3 > label, .starter__menu:hover ~ .dessert__details h3 > label,
+.starter__menu:hover .starter__details h3 > label, .starter__menu:hover .dish__details h3 > label, .starter__menu:hover .dessert__details h3 > label, .dish__menu:hover ~ .starter__details h3 > label, .dish__menu:hover ~ .dish__details h3 > label, .dish__menu:hover ~ .dessert__details h3 > label,
+.dish__menu:hover .starter__details h3 > label, .dish__menu:hover .dish__details h3 > label, .dish__menu:hover .dessert__details h3 > label, .dessert__menu:hover ~ .starter__details h3 > label, .dessert__menu:hover ~ .dish__details h3 > label, .dessert__menu:hover ~ .dessert__details h3 > label,
+.dessert__menu:hover .starter__details h3 > label, .dessert__menu:hover .dish__details h3 > label, .dessert__menu:hover .dessert__details h3 > label {
+    line-height: 1.5rem;
   }
 }
 @media screen and (min-width: 992px) and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 992px) and (min-width: 768px) and (max-width: 1024px) {
