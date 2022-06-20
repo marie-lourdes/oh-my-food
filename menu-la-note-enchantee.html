@@ -38,7 +38,7 @@
                     src="images/la-note-enchantee-m.jpg" alt="photo des plats du restaurant La note enchantée"> 
             </div>
             <div class="menu menu--note-enchantee">
-                <section class="menu__heading">
+                <div class="menu__heading">
                     <h1>La note enchantée</h1>
                     <div class="icon-like" title="j'aime">
                         <div class="empty-heart">
@@ -48,109 +48,111 @@
                             </div>
                         </div> 
                     </div>
+                </div>
+                <section>
+                    <form  method="post" action="user-order.php" class="form-menu form-menu--note-enchantee">
+                        <fieldset class="form-menu__starter"> 
+                            <legend><h2>ENTRÉES</h2></legend>
+                            <div class="starter__menu">
+                                <input type="checkbox" class="input-check" id="raviolesfoieGras" name="entrée" value="ravioles de foie gras"/>
+                                <div class="starter__details">
+                                    <h3><label for="raviolesfoieGras">Ravioles de foie gras</label></h3>
+                                    <p><label for="raviolesfoieGras" class="starter--ravioli">Accompagnés de leur crème à la truffe</label></p>
+                                </div>
+                                <p class="starter__price"><strong>25€</strong></p>
+                                <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
+                            </div>
+                            <div class="starter__menu">
+                                <input type="checkbox" class="input-check" id="caviarOscietre" name="entrée" value="caviar osciètre"/>
+                                <div class="starter__details">
+                                    <h3><label for="caviarOscietre">Caviar osciètre</label></h3>
+                                    <p><label for="caviarOscietre">Sur blini à la farine de blé noir</label></p>
+                                </div>
+                                <p class="starter__price"><strong>35€</strong></p>
+                                <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
+                            </div>
+                            <div class="starter__menu">
+                                <input type="checkbox" class="input-check" id="homardPotiron" name="entrée" value="homard et espuma de potiron"/>
+                                <div class="starter__details">
+                                    <h3><label for="homardPotiron" class="starter--lobster">Homard et espuma de potiron</label></h3>
+                                    <p><label for="homardPotiron">Mariné aux zestes d'orange</label></p>
+                                </div>
+                                <p class="starter__price"><strong>20€</strong></p>
+                                <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
+                            </div>
+                            <div class="starter__menu">
+                                <input type="checkbox" class="input-check" id="foiegrascuitEntier" name="entrée" value="foie gras de canard cuit entier"/>
+                                <div class="starter__details">
+                                    <h3><label for="foiegrascuitEntier" class="foie-gras">Foie gras de canard cuit entier</label></h3>
+                                    <p><label for="foiegrascuitEntier">Confiture de figue et pain toasté</label></p>
+                                </div>
+                                <p class="starter__price"><strong>35€</strong></p>
+                                <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form-menu__dish form-menu--1-fadein "> 
+                            <legend><h2>PLATS</h2></legend>
+                            <div class="dish__menu">
+                                <input type="checkbox" class="input-check" id="noixstJacques" name="plat" value="noix de coquilles de saint-jacques"/>
+                                <div class="dish__details">
+                                    <h3><label for="noixstJacques" class="saint-jacques">Noix de coquilles Saint-Jacques</label></h3>
+                                    <p><label for="noixstJacques">Sur lit de purée de céleri-rave</label></p>
+                                </div>
+                                <p class="dish__price"><strong>40€</strong></p>
+                                <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
+                            </div>
+                            <div class="dish__menu">
+                                <input type="checkbox" class="input-check" id="langoustinePoelee" name="plat" value="langoustine poêlée"/>
+                                <div class="dish__details">
+                                    <h3><label for="langoustinePoelee">Langoustine poêlée</label></h3>
+                                    <p><label for="langoustinePoelee">Purée de patate douce</label></p>
+                                </div>
+                                <p class="dish__price"><strong>35€</strong></p>
+                                <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
+                            </div>
+                            <div class="dish__menu">
+                                <input type="checkbox" class="input-check" id="queueBoeuf" name="plat" value="mijoté de queue de boeuf"/>
+                                <div class="dish__details">
+                                    <h3><label for="queueBoeuf">Mijoté de queue de boeuf</label></h3>
+                                    <p><label for="queueBoeuf" class="dish--wild-rice">Et riz sauvage aux zestes de citron</label></p>
+                                </div>
+                                <p class="dish__price"><strong>44€</strong></p>
+                                <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form-menu__dessert form-menu--2-fadein"> 
+                            <legend><h2>DESSERTS</h2></legend>
+                            <div class="dessert__menu">
+                                <input type="checkbox" class="input-check" id="macaronnoisetteChocolat" name="dessert" value="macaron noisette et chocolat"/>
+                                <div class="dessert__details">
+                                    <h3><label for="macaronnoisetteChocolat" class="macaroon-hazelnut">Macaron noisette et chocolat</label></h3>
+                                    <p><label for="macaronnoisetteChocolat" class="dessert--ice">Glace au caramel brun et sel de Guérande</label></p>
+                                </div>
+                                <p class="dessert__price"><strong>18€</strong></p>
+                                <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
+                            </div>
+                            <div class="dessert__menu">
+                                <input type="checkbox" class="input-check" id="babaRhum" name="dessert" value="baba au rhum revisité"/>
+                                <div class="dessert__details">
+                                    <h3><label for="babaRhum">Baba au rhum revisité</label></h3>
+                                    <p><label for="babaRhum">Avec son coulis de citron</label></p>
+                                </div>
+                                <p class="dessert__price"><strong>22€</strong></p>
+                                <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
+                            </div>
+                            <div class="dessert__menu">
+                                <input type="checkbox" class="input-check" id="tartareCitron" name="dessert" value="tartare au citron meringuée"/>
+                                <div class="dessert__details">
+                                    <h3><label for="tartareCitron">Tarte au citron meringuée</label></h3>
+                                    <p><label for="tartareCitron">Destructurée</label></p>
+                                </div>
+                                <p class="dessert__price"><strong>23€</strong></p>
+                                <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
+                            </div>
+                        </fieldset>
+                        <button class="button-primary" type="submit" id="order" name="order" value="commande envoyé">Commander</button>
+                    </form>
                 </section>
-                <form  method="post" action="user-order.php" class="form-menu form-menu--note-enchantee">
-                    <fieldset class="form-menu__starter"> 
-                        <legend><h2>ENTRÉES</h2></legend>
-                        <div class="starter__menu">
-                            <input type="checkbox" class="input-check" id="raviolesfoieGras" name="entrée" value="ravioles de foie gras"/>
-                            <div class="starter__details">
-                                <h3><label for="raviolesfoieGras">Ravioles de foie gras</label></h3>
-                                <p><label for="raviolesfoieGras" class="starter--ravioli">Accompagnés de leur crème à la truffe</label></p>
-                            </div>
-                            <p class="starter__price"><strong>25€</strong></p>
-                            <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
-                        </div>
-                        <div class="starter__menu">
-                            <input type="checkbox" class="input-check" id="caviarOscietre" name="entrée" value="caviar osciètre"/>
-                            <div class="starter__details">
-                                <h3><label for="caviarOscietre">Caviar osciètre</label></h3>
-                                <p><label for="caviarOscietre">Sur blini à la farine de blé noir</label></p>
-                            </div>
-                            <p class="starter__price"><strong>35€</strong></p>
-                            <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
-                        </div>
-                        <div class="starter__menu">
-                            <input type="checkbox" class="input-check" id="homardPotiron" name="entrée" value="homard et espuma de potiron"/>
-                            <div class="starter__details">
-                                <h3><label for="homardPotiron" class="starter--lobster">Homard et espuma de potiron</label></h3>
-                                <p><label for="homardPotiron">Mariné aux zestes d'orange</label></p>
-                            </div>
-                            <p class="starter__price"><strong>20€</strong></p>
-                            <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
-                        </div>
-                        <div class="starter__menu">
-                            <input type="checkbox" class="input-check" id="foiegrascuitEntier" name="entrée" value="foie gras de canard cuit entier"/>
-                            <div class="starter__details">
-                                <h3><label for="foiegrascuitEntier" class="foie-gras">Foie gras de canard cuit entier</label></h3>
-                                <p><label for="foiegrascuitEntier">Confiture de figue et pain toasté</label></p>
-                            </div>
-                            <p class="starter__price"><strong>35€</strong></p>
-                            <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
-                        </div>
-                    </fieldset>
-                    <fieldset class="form-menu__dish form-menu--1-fadein "> 
-                        <legend><h2>PLATS</h2></legend>
-                        <div class="dish__menu">
-                            <input type="checkbox" class="input-check" id="noixstJacques" name="plat" value="noix de coquilles de saint-jacques"/>
-                            <div class="dish__details">
-                                <h3><label for="noixstJacques" class="saint-jacques">Noix de coquilles Saint-Jacques</label></h3>
-                                <p><label for="noixstJacques">Sur lit de purée de céleri-rave</label></p>
-                            </div>
-                            <p class="dish__price"><strong>40€</strong></p>
-                            <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
-                        </div>
-                        <div class="dish__menu">
-                            <input type="checkbox" class="input-check" id="langoustinePoelee" name="plat" value="langoustine poêlée"/>
-                            <div class="dish__details">
-                                <h3><label for="langoustinePoelee">Langoustine poêlée</label></h3>
-                                <p><label for="langoustinePoelee">Purée de patate douce</label></p>
-                            </div>
-                            <p class="dish__price"><strong>35€</strong></p>
-                            <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
-                        </div>
-                        <div class="dish__menu">
-                            <input type="checkbox" class="input-check" id="queueBoeuf" name="plat" value="mijoté de queue de boeuf"/>
-                            <div class="dish__details">
-                                <h3><label for="queueBoeuf">Mijoté de queue de boeuf</label></h3>
-                                <p><label for="queueBoeuf" class="dish--wild-rice">Et riz sauvage aux zestes de citron</label></p>
-                            </div>
-                            <p class="dish__price"><strong>44€</strong></p>
-                            <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
-                        </div>
-                    </fieldset>
-                    <fieldset class="form-menu__dessert form-menu--2-fadein"> 
-                        <legend><h2>DESSERTS</h2></legend>
-                        <div class="dessert__menu">
-                            <input type="checkbox" class="input-check" id="macaronnoisetteChocolat" name="dessert" value="macaron noisette et chocolat"/>
-                            <div class="dessert__details">
-                                <h3><label for="macaronnoisetteChocolat" class="macaroon-hazelnut">Macaron noisette et chocolat</label></h3>
-                                <p><label for="macaronnoisetteChocolat" class="dessert--ice">Glace au caramel brun et sel de Guérande</label></p>
-                            </div>
-                            <p class="dessert__price"><strong>18€</strong></p>
-                            <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
-                        </div>
-                        <div class="dessert__menu">
-                            <input type="checkbox" class="input-check" id="babaRhum" name="dessert" value="baba au rhum revisité"/>
-                            <div class="dessert__details">
-                                <h3><label for="babaRhum">Baba au rhum revisité</label></h3>
-                                <p><label for="babaRhum">Avec son coulis de citron</label></p>
-                            </div>
-                            <p class="dessert__price"><strong>22€</strong></p>
-                            <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
-                        </div>
-                        <div class="dessert__menu">
-                            <input type="checkbox" class="input-check" id="tartareCitron" name="dessert" value="tartare au citron meringuée"/>
-                            <div class="dessert__details">
-                                <h3><label for="tartareCitron">Tarte au citron meringuée</label></h3>
-                                <p><label for="tartareCitron">Destructurée</label></p>
-                            </div>
-                            <p class="dessert__price"><strong>23€</strong></p>
-                            <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
-                        </div>
-                    </fieldset>
-                    <button class="button-primary"type="submit" id="order" name="order" value="commande envoyé">Commander</button>
-                </form>
             </div>
         </main>
         <footer class="footer">

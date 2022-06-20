@@ -38,7 +38,7 @@
                     src="images/la-palette-du-gout-m.jpg" alt="photo des plats du restaurant La palette du goût"> 
             </div>
             <div class="menu">
-                <section class="menu__heading">
+                <div class="menu__heading">
                     <h1>La palette du goût</h1>
                     <div class="icon-like" title="j'aime">
                         <div class="empty-heart">
@@ -48,100 +48,102 @@
                             </div>
                         </div> 
                     </div>
+                </div>
+                <section>
+                    <form  method="post" action="user-order.php" class="form-menu">
+                        <fieldset class="form-menu__starter"> 
+                            <legend><h2>ENTRÉES</h2></legend>
+                            <div class="starter__menu">
+                                <input type="checkbox" class="input-check" id="fricasseeEscargot" name="entrée" value="fricassée d escargot"/>
+                                <div class="starter__details">
+                                    <h3><label for="fricasseeEscargot">Fricassée d'escargot</label></h3>
+                                    <p><label for="fricasseeEscargot" class="starter--snail">Au piment d'Espelette</label></p>
+                                </div>
+                                <p class="starter__price"><strong>25€</strong></p>
+                                <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
+                            </div>
+                            <div class="starter__menu">
+                                <input type="checkbox" class="input-check" id="foiegrasmiCuit" name="entrée" value="foie gras de canard mi-cuit"/>
+                                <div class="starter__details">
+                                    <h3><label for="foiegrasmiCuit">Foie gras de canard mi-cuit</label></h3>
+                                    <p><label for="foiegrasmiCuit" class="starter--duck">Et ses copeaux de truffe noire</label></p>
+                                </div>
+                                <p class="starter__price"><strong>35€</strong></p>
+                                <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
+                            </div>
+                            <div class="starter__menu">
+                                <input type="checkbox" class="input-check" id="oeufPlat" name="entrée" value="oeuf au plat"/>
+                                <div class="starter__details">
+                                    <h3><label for="oeufPlat">Oeuf au plat</label></h3>
+                                    <p><label for="oeufPlat" class="starter--egg">Assaisonné à la truffe sur lit de caviar</label></p>
+                                </div>
+                                <p class="starter__price"><strong>35€</strong></p>
+                                <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form-menu__dish form-menu--1-fadein"> 
+                            <legend><h2>PLATS</h2></legend>
+                            <div class="dish__menu">
+                                <input type="checkbox" class="input-check" id="filetBoeuf" name="plat" value="filet de boeuf aux herbes"/>
+                                <div class="dish__details">
+                                    <h3><label for="filetBoeuf">Filet de boeuf aux herbes</label></h3>
+                                    <p><label for="filetBoeuf" class="dish--beef">Accompagné de sa ribambelle de légumes</label></p>
+                                </div>
+                                <p class="dish__price"><strong>40€</strong></p>
+                                <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
+                            </div>
+                            <div class="dish__menu">
+                                <input type="checkbox" class="input-check" id="parmentierqueueBoeuf" name="plat" value="parmentier de queue de boeuf"/>
+                                <div class="dish__details">
+                                    <h3><label for="parmentierqueueBoeuf" class="queue-de-boeuf">Parmentier de queue de boeuf</label></h3>
+                                    <p><label for="parmentierqueueBoeuf" class="dish--beef-parmentier">À la truffe noire sur sa purée de panais</label></p>
+                                </div>
+                                <p class="dish__price"><strong>35€</strong></p>
+                                <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
+                            </div>
+                            <div class="dish__menu">
+                                <input type="checkbox" class="input-check" id="filetTurbot" name="plat" value="filet de turbot"/>
+                                <div class="dish__details">
+                                    <h3><label for="filetTurbot">Filet de turbot</label></h3>
+                                    <p><label for="filetTurbot">Aux agrumes</label></p>
+                                </div>
+                                <p class="dish__price"><strong>44€</strong></p>
+                                <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form-menu__dessert form-menu--2-fadein"> 
+                            <legend><h2>DESSERTS</h2></legend>
+                            <div class="dessert__menu">
+                                <input type="checkbox" class="input-check" id="parisBrest" name="dessert" value="paris-brest"/>
+                                <div class="dessert__details">
+                                    <h3><label for="parisBrest">Paris-Brest</label></h3>
+                                    <p><label for="parisBrest">Revisité</label></p>
+                                </div>
+                                <p class="dessert__price"><strong>18€</strong></p>
+                                <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
+                            </div>
+                            <div class="dessert__menu">
+                                <input type="checkbox" class="input-check" id="macaronChocolat" name="dessert" value="macaron au chocolat d exception"/>
+                                <div class="dessert__details">
+                                    <h3><label for="macaronChocolat" class="macaroon">Macaron au chocolat d'exception</label></h3>
+                                    <p><label for="macaronChocolat" class="dish--mada">Et glace à la vanille de Madagascar</label></p>
+                                </div>
+                                <p class="dessert__price"><strong>22€</strong></p>
+                                <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
+                            </div>
+                            <div class="dessert__menu">
+                                <input type="checkbox" class="input-check" id="mousseChocolat" name="dessert" value="mousse au chocolat"/>
+                                <div class="dessert__details">
+                                    <h3><label for="mousseChocolat">Mousse au chocolat</label></h3>
+                                    <p><label for="mousseChocolat" class="dessert--mousse">Au piment d'Espelette et à la truffe noire</label></p>
+                                </div>
+                                <p class="dessert__price"><strong>23€</strong></p>
+                                <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
+                            </div>
+                        </fieldset>
+                        <button class="button-primary" type="submit" id="order" name="order" value="commande envoyé"> Commander</button>
+                    </form>
                 </section>
-                <form  method="post" action="user-order.php" class="form-menu">
-                    <fieldset class="form-menu__starter"> 
-                        <legend><h2>ENTRÉES</h2></legend>
-                        <div class="starter__menu">
-                            <input type="checkbox" class="input-check" id="fricasseeEscargot" name="entrée" value="fricassée d escargot"/>
-                            <div class="starter__details">
-                                <h3><label for="fricasseeEscargot">Fricassée d'escargot</label></h3>
-                                <p><label for="fricasseeEscargot" class="starter--snail">Au piment d'Espelette</label></p>
-                            </div>
-                            <p class="starter__price"><strong>25€</strong></p>
-                            <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
-                        </div>
-                        <div class="starter__menu">
-                            <input type="checkbox" class="input-check" id="foiegrasmiCuit" name="entrée" value="foie gras de canard mi-cuit"/>
-                            <div class="starter__details">
-                                <h3><label for="foiegrasmiCuit">Foie gras de canard mi-cuit</label></h3>
-                                <p><label for="foiegrasmiCuit" class="starter--duck">Et ses copeaux de truffe noire</label></p>
-                            </div>
-                            <p class="starter__price"><strong>35€</strong></p>
-                            <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
-                        </div>
-                        <div class="starter__menu">
-                            <input type="checkbox" class="input-check" id="oeufPlat" name="entrée" value="oeuf au plat"/>
-                            <div class="starter__details">
-                                <h3><label for="oeufPlat">Oeuf au plat</label></h3>
-                                <p><label for="oeufPlat" class="starter--egg">Assaisonné à la truffe sur lit de caviar</label></p>
-                            </div>
-                            <p class="starter__price"><strong>35€</strong></p>
-                            <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
-                        </div>
-                    </fieldset>
-                    <fieldset class="form-menu__dish form-menu--1-fadein"> 
-                        <legend><h2>PLATS</h2></legend>
-                        <div class="dish__menu">
-                            <input type="checkbox" class="input-check" id="filetBoeuf" name="plat" value="filet de boeuf aux herbes"/>
-                            <div class="dish__details">
-                                <h3><label for="filetBoeuf">Filet de boeuf aux herbes</label></h3>
-                                <p><label for="filetBoeuf" class="dish--beef">Accompagné de sa ribambelle de légumes</label></p>
-                            </div>
-                            <p class="dish__price"><strong>40€</strong></p>
-                            <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
-                        </div>
-                        <div class="dish__menu">
-                            <input type="checkbox" class="input-check" id="parmentierqueueBoeuf" name="plat" value="parmentier de queue de boeuf"/>
-                            <div class="dish__details">
-                                <h3><label for="parmentierqueueBoeuf" class="queue-de-boeuf">Parmentier de queue de boeuf</label></h3>
-                                <p><label for="parmentierqueueBoeuf" class="dish--beef-parmentier">À la truffe noire sur sa purée de panais</label></p>
-                            </div>
-                            <p class="dish__price"><strong>35€</strong></p>
-                            <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
-                        </div>
-                        <div class="dish__menu">
-                            <input type="checkbox" class="input-check" id="filetTurbot" name="plat" value="filet de turbot"/>
-                            <div class="dish__details">
-                                <h3><label for="filetTurbot">Filet de turbot</label></h3>
-                                <p><label for="filetTurbot">Aux agrumes</label></p>
-                            </div>
-                            <p class="dish__price"><strong>44€</strong></p>
-                            <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
-                        </div>
-                    </fieldset>
-                    <fieldset class="form-menu__dessert form-menu--2-fadein"> 
-                        <legend><h2>DESSERTS</h2></legend>
-                        <div class="dessert__menu">
-                            <input type="checkbox" class="input-check" id="parisBrest" name="dessert" value="paris-brest"/>
-                            <div class="dessert__details">
-                                <h3><label for="parisBrest">Paris-Brest</label></h3>
-                                <p><label for="parisBrest">Revisité</label></p>
-                            </div>
-                            <p class="dessert__price"><strong>18€</strong></p>
-                            <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
-                        </div>
-                        <div class="dessert__menu">
-                            <input type="checkbox" class="input-check" id="macaronChocolat" name="dessert" value="macaron au chocolat d exception"/>
-                            <div class="dessert__details">
-                                <h3><label for="macaronChocolat" class="macaroon">Macaron au chocolat d'exception</label></h3>
-                                <p><label for="macaronChocolat" class="dish--mada">Et glace à la vanille de Madagascar</label></p>
-                            </div>
-                            <p class="dessert__price"><strong>22€</strong></p>
-                            <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
-                        </div>
-                        <div class="dessert__menu">
-                            <input type="checkbox" class="input-check" id="mousseChocolat" name="dessert" value="mousse au chocolat"/>
-                            <div class="dessert__details">
-                                <h3><label for="mousseChocolat">Mousse au chocolat</label></h3>
-                                <p><label for="mousseChocolat" class="dessert--mousse">Au piment d'Espelette et à la truffe noire</label></p>
-                            </div>
-                            <p class="dessert__price"><strong>23€</strong></p>
-                            <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
-                        </div>
-                    </fieldset>
-                    <button class="button-primary" type="submit" id="order" name="order" value="commande envoyé"> Commander</button>
-                </form>
             </div>
         </main>
         <footer class="footer">

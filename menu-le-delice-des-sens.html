@@ -38,7 +38,7 @@
                     src="images/le-delice-des-sens-m.jpg" alt="photo des plats du restaurant Le délice des sens "> 
             </div>
             <div class="menu">
-                <section class="menu__heading">
+                <div class="menu__heading">
                     <h1>Le délice des sens</h1>
                     <div class="icon-like" title="j'aime">
                         <div class="empty-heart">
@@ -48,100 +48,102 @@
                             </div>
                         </div> 
                     </div>
+                </div>
+                <section>
+                    <form  method="post" action="user-order.php" class="form-menu">
+                        <fieldset class="form-menu__starter"> 
+                            <legend><h2>ENTRÉES</h2></legend>
+                            <div class="starter__menu">
+                                <input type="checkbox" class="input-check" id="tartareThon" name="entrée" value="Tartare de thon"/>
+                                <div class="starter__details">
+                                    <h3><label for="tartareThon">Tartare de thon</label></h3>
+                                    <p><label for="tartareThon">Assaisonné au yuzu</label></p>
+                                </div>
+                                <p class="starter__price"><strong>25€</strong></p>
+                                <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
+                            </div>
+                            <div class="starter__menu">
+                                <input type="checkbox" class="input-check" id="homardCroustillant" name="entrée" value="bouchée de homard croustillant"/>
+                                <div class="starter__details">
+                                    <h3><label for="homardCroustillant" class="crisp-lobster">Bouchée de homard croustillant</label></h3>
+                                    <p><label for="homardCroustillant" class="farandole">Et sa farandole de petits légumes</label></p>
+                                </div>
+                                <p class="starter__price"><strong>35€</strong></p>
+                                <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
+                            </div>
+                            <div class="starter__menu">
+                                <input type="checkbox" class="input-check" id="velouteCepes" name="entrée" value="velouté de cèpes"/>
+                                <div class="starter__details">
+                                    <h3><label for="velouteCepes">Velouté de cèpes</label></h3>
+                                    <p><label for="velouteCepes">Aux truffes</label></p>
+                                </div>
+                                <p class="starter__price"><strong>20€</strong></p>
+                                <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form-menu__dish form-menu--1-fadein"> 
+                            <legend><h2>PLATS</h2></legend>
+                            <div class="dish__menu">
+                                <input type="checkbox" class="input-check" id="pouletRoti" name="plat" value="poulet rôti aux herbes de provence"/>
+                                <div class="dish__details">
+                                    <h3><label for="pouletRoti" class="roast-chicken">Poulet rôti aux herbes de Provence</label></h3>
+                                    <p><label for="pouletRoti">Et sa crème de truffe</label></p>
+                                </div>
+                                <p class="dish__price"><strong>40€</strong></p>
+                                <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
+                            </div>
+                            <div class="dish__menu">
+                                <input type="checkbox" class="input-check" id="langousteRotie" name="plat" value="langouste rôtie"/>
+                                <div class="dish__details">
+                                    <h3><label for="langousteRotie">Langouste rôtie</label></h3>
+                                    <p><label for="langousteRotie">Et ses légumes de saison</label></p>
+                                </div>
+                                <p class="dish__price"><strong>35€</strong></p>
+                                <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
+                            </div>
+                            <div class="dish__menu">
+                                <input type="checkbox" class="input-check" id="coteboeufAngus" name="plat" value="côte de boeuf angus"/>
+                                <div class="dish__details">
+                                    <h3><label for="coteboeufAngus">Côte de boeuf Angus</label></h3>
+                                    <p><label for="coteboeufAngus">Et sa purée de panais</label></p>
+                                </div>
+                                <p class="dish__price"><strong>44€</strong></p>
+                                <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form-menu__dessert form-menu--2-fadein"> 
+                            <legend><h2>DESSERTS</h2></legend>
+                            <div class="dessert__menu">
+                                <input type="checkbox" class="input-check" id="farandoleDesserts" name="dessert" value="farandole de desserts"/>
+                                <div class="dessert__details">
+                                    <h3><label for="farandoleDesserts">Farandole de desserts</label></h3>
+                                    <p><label for="farandoleDesserts">Du chef</label></p>
+                                </div>
+                                <p class="dessert__price"><strong>18€</strong></p>
+                                <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
+                            </div>
+                            <div class="dessert__menu">
+                                <input type="checkbox" class="input-check" id="cremeBrulee" name="dessert" value="crème brulée"/>
+                                <div class="dessert__details">
+                                    <h3><label for="cremeBrulee">Crème brulée</label></h3>
+                                    <p><label for="cremeBrulee">Revisitée</label></p>
+                                </div>
+                                <p class="dessert__price"><strong>22€</strong></p>
+                                <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
+                            </div>
+                            <div class="dessert__menu">
+                                <input type="checkbox" class="input-check" id="tiramisu" name="dessert" value="tiramisu"/>
+                                <div class="dessert__details">
+                                    <h3><label for="tiramisu">Tiramisu</label></h3>
+                                    <p><label for="tiramisu" class="dessert--tiramisu">Au piment d'Espelette et à la truffe noire</label></p>
+                                </div>
+                                <p class="dessert__price"><strong>23€</strong></p>
+                                <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
+                            </div>
+                        </fieldset>
+                        <button class="button-primary" type="submit" id="order" name="order" value="commande envoyé"> Commander</button>
+                    </form>
                 </section>
-                <form  method="post" action="user-order.php" class="form-menu">
-                    <fieldset class="form-menu__starter"> 
-                        <legend><h2>ENTRÉES</h2></legend>
-                        <div class="starter__menu">
-                            <input type="checkbox" class="input-check" id="tartareThon" name="entrée" value="Tartare de thon"/>
-                            <div class="starter__details">
-                                <h3><label for="tartareThon">Tartare de thon</label></h3>
-                                <p><label for="tartareThon">Assaisonné au yuzu</label></p>
-                            </div>
-                            <p class="starter__price"><strong>25€</strong></p>
-                            <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
-                        </div>
-                        <div class="starter__menu">
-                            <input type="checkbox" class="input-check" id="homardCroustillant" name="entrée" value="bouchée de homard croustillant"/>
-                            <div class="starter__details">
-                                <h3><label for="homardCroustillant" class="crisp-lobster">Bouchée de homard croustillant</label></h3>
-                                <p><label for="homardCroustillant" class="farandole">Et sa farandole de petits légumes</label></p>
-                            </div>
-                            <p class="starter__price"><strong>35€</strong></p>
-                            <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
-                        </div>
-                        <div class="starter__menu">
-                            <input type="checkbox" class="input-check" id="velouteCepes" name="entrée" value="velouté de cèpes"/>
-                            <div class="starter__details">
-                                <h3><label for="velouteCepes">Velouté de cèpes</label></h3>
-                                <p><label for="velouteCepes">Aux truffes</label></p>
-                            </div>
-                            <p class="starter__price"><strong>20€</strong></p>
-                            <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
-                        </div>
-                    </fieldset>
-                    <fieldset class="form-menu__dish form-menu--1-fadein"> 
-                        <legend><h2>PLATS</h2></legend>
-                        <div class="dish__menu">
-                            <input type="checkbox" class="input-check" id="pouletRoti" name="plat" value="poulet rôti aux herbes de provence"/>
-                            <div class="dish__details">
-                                <h3><label for="pouletRoti" class="roast-chicken">Poulet rôti aux herbes de Provence</label></h3>
-                                <p><label for="pouletRoti">Et sa crème de truffe</label></p>
-                            </div>
-                            <p class="dish__price"><strong>40€</strong></p>
-                            <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
-                        </div>
-                        <div class="dish__menu">
-                            <input type="checkbox" class="input-check" id="langousteRotie" name="plat" value="langouste rôtie"/>
-                            <div class="dish__details">
-                                <h3><label for="langousteRotie">Langouste rôtie</label></h3>
-                                <p><label for="langousteRotie">Et ses légumes de saison</label></p>
-                            </div>
-                            <p class="dish__price"><strong>35€</strong></p>
-                            <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
-                        </div>
-                        <div class="dish__menu">
-                            <input type="checkbox" class="input-check" id="coteboeufAngus" name="plat" value="côte de boeuf angus"/>
-                            <div class="dish__details">
-                                <h3><label for="coteboeufAngus">Côte de boeuf Angus</label></h3>
-                                <p><label for="coteboeufAngus">Et sa purée de panais</label></p>
-                            </div>
-                            <p class="dish__price"><strong>44€</strong></p>
-                            <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
-                        </div>
-                    </fieldset>
-                    <fieldset class="form-menu__dessert form-menu--2-fadein"> 
-                        <legend><h2>DESSERTS</h2></legend>
-                        <div class="dessert__menu">
-                            <input type="checkbox" class="input-check" id="farandoleDesserts" name="dessert" value="farandole de desserts"/>
-                            <div class="dessert__details">
-                                <h3><label for="farandoleDesserts">Farandole de desserts</label></h3>
-                                <p><label for="farandoleDesserts">Du chef</label></p>
-                            </div>
-                            <p class="dessert__price"><strong>18€</strong></p>
-                            <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
-                        </div>
-                        <div class="dessert__menu">
-                            <input type="checkbox" class="input-check" id="cremeBrulee" name="dessert" value="crème brulée"/>
-                            <div class="dessert__details">
-                                <h3><label for="cremeBrulee">Crème brulée</label></h3>
-                                <p><label for="cremeBrulee">Revisitée</label></p>
-                            </div>
-                            <p class="dessert__price"><strong>22€</strong></p>
-                            <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
-                        </div>
-                        <div class="dessert__menu">
-                            <input type="checkbox" class="input-check" id="tiramisu" name="dessert" value="tiramisu"/>
-                            <div class="dessert__details">
-                                <h3><label for="tiramisu">Tiramisu</label></h3>
-                                <p><label for="tiramisu" class="dessert--tiramisu">Au piment d'Espelette et à la truffe noire</label></p>
-                            </div>
-                            <p class="dessert__price"><strong>23€</strong></p>
-                            <span class="checkbox-animation"><i class="fa-solid fa-circle-check circle-checked"></i></span>
-                        </div>
-                    </fieldset>
-                    <button class="button-primary" type="submit" id="order" name="order" value="commande envoyé"> Commander</button>
-                </form>
             </div>
         </main>
         <footer class="footer">
