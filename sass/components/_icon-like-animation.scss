@@ -1,44 +1,44 @@
 /* animation css icon-like*/
 
-.icon-like{
-    overflow:hidden;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    width:5rem;
-    height:5rem;
-    position:absolute;
-    right:0;
-    z-index:0;
-    .empty-heart{
-        width:100%;
-        display:flex;
-        justify-content:center;
-        position:relative;
-        >.border{
-            opacity:1;
-            transition:opacity 0.1s linear 0.9s;
+.icon-like {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    .empty-heart {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        >.border {
+            opacity :1;
+            transition: opacity 0.1s linear 0.9s;
             font-size: 1.5rem;
             @include tablet {
                 font-size: 130%;
             } 
         }
-        >.full-heart{
-            background:linear-gradient(purple,pink);
-            display:flex;
+        >.full-heart {
+            background: linear-gradient(purple,pink);
+            display: flex;
             justify-content: center;
-            align-items:center;
-            width:100%;
+            align-items: center;
+            width: 100%;
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
-            position:absolute;
-            transform:scale(0);
-            transition: transform 1s linear , opacity 0.4s ease-out ;
-            z-index:-1;
-            overflow:hidden;
-            opacity:0;  
-             i {
+            position: absolute;
+            transform: scale(0);
+            transition: transform 1s linear, opacity 0.4s ease-out ;
+            z-index: -1;
+            overflow: hidden;
+            opacity: 0;  
+            i {
                 font-size: 1.5rem;
                 @include tablet {
                     font-size: 130%;
@@ -46,33 +46,28 @@
             }    
         } 
         &:hover:active {
-            .border{
+            .border {
                 opacity:0;
-        }
-            >.full-heart{
+            }
+            >.full-heart {
                 transform: scale(1);
-                opacity:1;
-                cursor:pointer;
-                                
+                opacity: 1;
+                cursor: pointer;                   
             }
         }
         @include desktop {
-            &:hover{
-                .border{
-                    opacity:0;
-            }
-            >.full-heart{
-                    transform: scale(1);
-                    opacity:1;
-                    cursor:pointer;
-                                    
+            &:hover {
+                .border {
+                    opacity: 0;
                 }
-
+                >.full-heart {
+                    transform: scale(1);
+                    opacity: 1;
+                    cursor: pointer;                         
+                }
             }
-        }
-        
-   } 
-    
+        }       
+   }    
 }
         
       

@@ -1,5 +1,5 @@
 
-@mixin flexbox-direction($direction:column) {
+@mixin flexbox-direction($direction: column) {
     display: flex;
     flex-direction: $direction;
 }
@@ -13,32 +13,29 @@
    
 }
 
-@mixin button-primary($color1:$color-secondary ,$color2:$color-primary){
+@mixin button-primary($color1: $color-secondary, $color2: $color-primary) {
     padding: 1rem;
     border-radius: 2rem;
-    border:none;
+    border: none;
     color: $color-white;
     background: linear-gradient( $color1, $color2);
-    box-shadow: 0px 10px 20px -5px rgb(map-get($color-gray, dark-gray),0.5);
+    box-shadow: 0px 10px 20px -5px rgb(map-get($color-gray, dark-gray), 0.5);
     @include tablet {
-        padding:1.5rem;
-        border-radius:2.5rem;
+        padding: 1.5rem;
+        border-radius: 2.5rem;
     }
-
 }
+
 @mixin box-shadow ($color-shadow: rgb(map-get($color-gray, dark-gray),0.6), $offset-y:10px,$blur-radius: 20px, $spread-radius:-2px) {
-
     box-shadow: 0px $offset-y $blur-radius $spread-radius $color-shadow ;
-
 }
-
 
 /*gallery-restaurants homepage*/
 
 @mixin object-position ($map) {
     @each $key, $value in $map {
-        &.#{$key}{
-            object-position:center map-get($value,object-position);
+        &.#{$key} {
+            object-position: center map-get($value, object-position);
         }
     }
 }
@@ -47,17 +44,17 @@
 @mixin menu-details ($list: $menu-details) {
     @each $value in $list {
         & .#{$value}__menu {
-            position:relative;
+            position: relative;
             @include flexbox-direction(row);
             @include box-shadow ($color-shadow: map-get($color-gray, background-search-bar), $offset-y: 5px, $blur-radius: 10px, $spread-radius: 2px);
             border-radius: 1rem;
             padding: 0.3rem 1rem 0.3rem 0.6rem;
             align-items: center;
             height: 4rem;
-            background:$color-white;
-            margin-bottom:1rem;
-            box-sizing:border-box;
-            cursor:pointer;
+            background: $color-white;
+            margin-bottom: 1rem;
+            box-sizing: border-box;
+            cursor: pointer;
             @include desktop {
                 padding-left: 1rem;
             }
@@ -77,6 +74,16 @@
             @include flexbox-direction;
             width: 100%;
             justify-content: center;
+            h3, p {
+                > label {
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    display: block;
+                    appearance: none;
+                    cursor: pointer;
+                }
+            }
             h3 {
                 font-size: 1.1rem;
                 margin-top: 1.5rem;
@@ -84,18 +91,11 @@
                     font-size: 0.9rem;
                 }
             }
-            
-           /* white-space: nowrap;*/
-            /*label {*/
             p {
-                label{
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                    overflow: hidden;
+                label {
                     font-size: 1rem;
                     margin-top: -1.8rem;
-                    display:block;
-                    @include small-mobile{
+                    @include small-mobile {
                         font-size: 0.8rem;
                     }
                     @include tablet {
@@ -106,38 +106,34 @@
               
             .dish--beef {
                 width: 89%;
-             }
-             .dessert--ice {
-                 @include small-mobile{
-                     width: 83%;
-                 }
+            }
+            .dessert--ice {
+                @include small-mobile {
+                    width: 83%;
+                }
+            }
 
-             }
-
-             .dessert--tiramisu {
-                 width: 81%;
-                 @include small-mobile {
-                     width: 67%;
-                 }
-                
-             }
+            .dessert--tiramisu {
+                width: 81%;
+                @include small-mobile {
+                    width: 67%;
+                }
+            }
              .dessert--ice {
-                 width: 76%;
-                 @include small-mobile {
-                    width:71%;
-                 }
+                width: 76%;
+                @include small-mobile {
+                    width: 71%;
+                }
              }      
-          
-            /*}*/
         }
         .#{$value}__price {
             @include flexbox-direction;
             font-size: 0.8rem;
-            text-align:right;
-            position:absolute;
-            top:24px; 
-            right:20px;
-            z-index:1;
+            text-align: right;
+            position: absolute;
+            top: 24px; 
+            right: 20px;
+            z-index: 1;
             @include desktop-large {
                 font-size: 85%;
             }
@@ -145,7 +141,7 @@
                 top: 61px;
                 font-size: 90%;
             }
-            @include small-mobile{
+            @include small-mobile {
                 top: 14px;
             }         
         }
@@ -159,28 +155,26 @@
             @include flexbox-direction;
             margin: 0;
             padding: 0;
-            border:none;
+            border: none;
             justify-content: space-around;
             box-sizing: border-box;
             @include desktop {
                 width: 80vw;
-                padding:2rem;
+                padding: 2rem;
                 border: 2px groove rgb(192, 192, 192);
             }
             @include tablet {
                 width: 80vw;
-                padding:2rem;
+                padding: 2rem;
                 border: 2px groove rgb(192, 192, 192);
-
             }       
-
         }
     }   
 }
 
 @mixin fadein {
     @for $i from 1 through 2 {
-         .form-menu--#{$i}-fadein{
+         .form-menu--#{$i}-fadein {
             animation-delay: $anim-delay*$i;
             animation: fadein $anim-dur ease-out both;
         } 
@@ -190,94 +184,70 @@
 /*checkbox cursor animation*/
 
 @mixin checkbox-cursor {
-    /*padding: 0rem 0rem 0rem 0.5rem;*/
     overflow: hidden;
-   
     ~.starter__details, ~.dish__details, ~.dessert__details,
     .starter__details, .dish__details, .dessert__details { /* start__menu, dish__menu, dessert__menu cursor:hover desktop*/
-     
-       line-height:1rem;
-       @include tablet {
-            line-height: 2rem;
-       
-       }
-       /*label{*/
-
-        h3,p {
-            >label{
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            display:block;
-            appearance:none;
-           cursor:pointer;
-            }
-           
-        }
         h3 {
-           /* >label{
+            > label {
+                line-height: 1rem;
+                @include tablet {
+                    line-height: 2rem;       
+                }
+            }      
 
-            }*/
+            /* paragraphe, h3 ellipsis: "la note enchantée" */
 
-            /* paraagraphe, h3 ellipsis: "la note enchantée" */
-
-            .starter--lobster{
+            .starter--lobster {
                 @include small-mobile {
                     width: 59%;
                 }
             }
             .saint-jacques {
-                @include small-mobile{
+                @include small-mobile {
                     width: 63%;
                 }  
             }
             .foie-gras {
                 @include small-mobile {
-                    width:62%;
+                    width: 62%;
                 }
             }
+
             /* "la palette du gout"*/  
 
             .queue-de-boeuf {
-                @include small-mobile{
+                @include small-mobile {
                     width: 87%;   
                 }
             }
             .macaroon {
                 @include small-mobile {
-                    width:70%;  
-                }
-                
+                    width: 70%;  
+                }      
             }
 
              /* "le delice des sens"*/
 
-            .crisp-lobster{
+            .crisp-lobster {
                 @include small-mobile {
                     width: 70%;
                 }
              }
-             .roast-chicken{
+             .roast-chicken {
                 @include small-mobile {
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                    overflow: hidden;
-                    display: inline-block;
-                    width:70%;
-
+                    width: 70%;
                 }
             }
         }
-        
         p {
-            >label{
+            > label {
                 line-height: 2rem;
                 transform: scaleX(0.9);
             }
 
             /* "french menu" */
         
-            .dish--potatoes{
+            .dish--potatoes {
                 width: 66%;
                 @include small-mobile {
                     width: 70%;
@@ -286,26 +256,23 @@
             .dish--parmentier {
                 @include small-mobile {
                     width: 67%;
-                }
-                
+                }            
             }
-            .dish--gnocchis{
-                width:65%;
+            .dish--gnocchis {
+                width: 65%;
                 @include small-mobile {
                     width: 62%;
                 }
-
             } 
 
             /* "la note enchantée" */
             
-            .starter--ravioli{
+            .starter--ravioli {
                 width: 73%;
                 @include small-mobile {
                     width: 69%;
                 }
             }
-        
             .saint-jacques {
                 @include small-mobile {
                     width: 80%;
@@ -317,11 +284,11 @@
                 }   
             }
             .macaroon-hazelnut {
-                @include small-mobile{
+                @include small-mobile {
                     width: 70%;
                 }
             }            
-            .dessert--ice{
+            .dessert--ice {
                 width: 83%;
                 @include small-mobile {
                     width: 67%;
@@ -336,24 +303,16 @@
             .starter--egg {
                 width: 71%;
             }
-            
             .dish--beef{
                 width: 72%;
                 
-            }
-        
-    
-        /*  .dish--beef{
-                width: 77%!important;
-            }*/
-        
+            }   
             .dish--beef-parmentier {
                 width: 74%;
             }
-        
             .dish--mada{
                 @include small-mobile {
-                    width:51%;
+                    width: 51%;
                 }
             }
             .dessert--mousse {
@@ -366,7 +325,6 @@
             .farandole {
                 width: 64%;
             }
-
             .dessert--tiramisu {
                 width: 67%;
             }    
@@ -377,22 +335,20 @@
     
     ~.starter__price, ~.dish__price, ~.dessert__price,
     .starter__price, .dish__price, .dessert__price { /* start__menu, dish__menu, dessert__menu cursor:hover desktop*/
-       
         margin-right: 1rem;
         margin-left: -3rem;
         top: 26px;
-        transform:translateX(-45px);
+        transform: translateX(-45px);
         @include desktop-large {
-            transform:translateX(-60px); 
+            transform: translateX(-60px); 
         }
         @include tablet {
-            transform:translateX(-100px); 
+            transform: translateX(-100px); 
             top: 61px; 
         }
         @include small-mobile {
             top: 20px;
-        }
-         
+        }        
     }
     ~.checkbox-animation,
     .checkbox-animation { /* start__menu, dish__menu, dessert__menu cursor:hover desktop*/
@@ -402,47 +358,40 @@
            transform: scaleX(1.8);
            padding: 2rem;
         }
-        .circle-checked{
-          /* transform:rotate(0deg) scale(1) ;*/
-           animation: rotate-check 1s ease-in-out 1 ;
-           /* @include tablet {
-               transform: rotate(0deg) scale(1.3);
-
-            }*/      
+        .circle-checked {
+            animation: rotate-check 1s ease-in-out 1 ;              
        }   
    }
 
 }
 
-
-
 /* responsive*/
 
 @mixin small-mobile {
-    @media screen and (max-width:360px) {
+    @media screen and (max-width: 360px) {
         @content;
     }
 }
 @mixin tablet {
-    @media screen and (min-width:768px) and (max-width:991px) and (orientation:portrait),screen and (min-width:768px) and (max-width:1024px){
+    @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
         @content;
     }
 }
 
  @mixin tablet-landscape {
-    @media screen and (min-width:768px) and  (max-width:1024px) and (orientation:landscape){
+    @media screen and (min-width: 768px) and  (max-width: 1024px) and (orientation: landscape) {
         @content;
     }
 }
   
-@mixin desktop{
-    @media screen and (min-width:992px){
+@mixin desktop {
+    @media screen and (min-width: 992px) {
         @content;
     }
 }
 
-@mixin desktop-large{
-    @media screen and (min-width:1200px){
+@mixin desktop-large {
+    @media screen and (min-width: 1200px) {
         @content;
     }
 }

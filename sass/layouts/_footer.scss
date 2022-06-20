@@ -5,33 +5,28 @@
     background: map-get($color-gray, dark-gray);
     @include flexbox-direction;
     padding: 1.5rem 2rem 1.5rem;
-    width:100%;
+    width: 100%;
     box-sizing: border-box;
     @include desktop {
         height: 17vh;
         justify-content: center;
     }
     @include tablet-landscape{
-        min-height:25vh;
-    }
-   
+        min-height: 25vh;
+    }  
     &__logo {
         @include desktop {
             position: relative;
             top: -25%;
         }
         @include tablet-landscape{
-          postion:relative;
-          top:-10%;
-        }
-
-         
+          postion: relative;
+          top: -10%;
+        }       
     }
     a {
         color: $color-white;
-        font-size: 0.9rem;
-      
-        
+        font-size: 0.9rem;      
     }
     &__heading {
         font-family: 'Shrikhand', cursive, arial, sans-serif;
@@ -42,8 +37,7 @@
         }
         @include tablet {
             font-size: 160%;
-        }
-       
+        }      
     }
     h3 {
         font-weight: 500;
@@ -51,39 +45,34 @@
         text-shadow: 0.03rem -0.02rem;
         @include tablet {
             font-size: 100%;
-        }
-        
-    }
-   
+        }       
+    }  
     &__bloc-links {
         @include flexbox-direction;
-        margin-top:-0.5rem;
-        align-items:flex-start;
+        margin-top: -0.5rem;
+        align-items: flex-start;
         @include desktop {
-            flex-direction: row;
-            flex-wrap: wrap;
+            flex-flow: row wrap;
             width: 100%;
             align-items: baseline;
             justify-content: space-between;
         }
         @include tablet {
-            flex-direction: row;
-            flex-wrap: wrap;
+            flex-flow: row wrap;
             width: 100%;
             align-items: baseline;
             justify-content: space-between;
             font-size: 95%;
-        }
-        
+        }      
     }
-    &__link{
+    &__link {
         height: 1.5rem;
         @include tablet {
             height: 100%;
         }
         &.footer__link {
             &--padding {
-                padding-bottom:0.8rem;
+                padding-bottom: 0.8rem;
             } 
         }
         a {
@@ -98,9 +87,7 @@
                 @include tablet {
                     font-size: 100%;
                 }
-
             }
-        }
-       
+        }     
     }  
 }

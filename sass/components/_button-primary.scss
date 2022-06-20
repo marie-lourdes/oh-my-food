@@ -2,13 +2,12 @@
     @include button-primary;
     &:active {
        @include box-shadow;
-        filter:brightness(110%);
-
+        filter: brightness(110%);
     }
     @include desktop {
         &:hover {
             @include box-shadow;
-            filter:brightness(110%); 
+            filter: brightness(110%); 
         }
     }
 }

@@ -16,13 +16,13 @@ $img-restaurant:(
         object-position: 111%,
     ),
     la-note-enchantee:(
-        object-position:60%, 
+        object-position: 60%, 
     ),
     a-la-francaise:(
-        object-position:109%,
+        object-position: 109%,
     ),
     le-delice-des-sens:(
-        object-position:108%,
+        object-position: 108%,
     )
     ); 
     
@@ -33,8 +33,8 @@ $menu-details:
     dish,
     dessert;
 /* animation fade-in*/
-$anim-dur:2s;
- $anim-delay: calc($anim-dur / 3);
+$anim-dur: 2s;
+$anim-delay: calc($anim-dur / 3);
 
 
   

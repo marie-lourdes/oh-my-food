@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Shrikhand&display=swap');
 
-
-
-
 html {
     font-size: 62,5%;
 }
@@ -20,28 +17,29 @@ body {
         
     }
     @include tablet {
-        width:auto;
-        font-size:160%;
-    }  
-
-         
+        width: auto;
+        font-size: 160%;
+    }    
+    @include tablet-landscape{
+        width: auto;
+    }                    
 }
 
 h1, h2 {
     font-size: 1.5rem; 
     @include tablet {
-        font-size:130%;
+        font-size: 130%;
     }  
 }
 
 h2 {
-    font-weight: 700;
-  
+    font-weight: 700; 
 }
+
 h3 {
     font-size: 1rem;
     @include tablet {
-        font-size:110%;
+        font-size: 110%;
     } 
 }
 

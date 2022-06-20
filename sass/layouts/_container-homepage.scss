@@ -1,35 +1,19 @@
-
-
-  body{
-  
-    @include tablet-landscape{
-        width: auto;
-    }
-    @include desktop {
-        width:auto;
-    }
-  }
-
-
-
-
 main {
     @include flexbox-direction;
     @include tablet {
         width:auto;
     }
-    @include desktop{
-        flex-wrap: wrap;
-        flex-direction: row;
-        width:auto;
-        
+    @include desktop {
+        flex-flow: row wrap;
+        width: auto;      
     }
 }
 
 /*booking-menu*/
+
 @import "../layouts/booking-form";
 
-/* fonctionnement*/
+/*functioning*/
 
 .proceeding-site {
     @include flexbox-direction;
@@ -40,16 +24,14 @@ main {
         width: 35vw;
         padding: 0 2rem;
         margin-top: 2rem;
-        } 
-    @include desktop-large{
-         margin-right: 1rem;
+    } 
+    @include desktop-large {
+        margin-right: 1rem;
         padding: 0 3rem;
-    }
-        
+    }      
     @include tablet {
         padding: 0 2rem;
-        width: 100vw;
-        
+        width: 100vw;   
     }
     @include tablet-landscape {
         width: 100vw;
@@ -66,7 +48,6 @@ main {
     @include tablet {
         height: 24rem;
     }
-    
     &__steps {
         @include flexbox-direction(row);
         border-radius: 1.5rem;
@@ -74,13 +55,13 @@ main {
         align-items: center;
         position: relative;  
         padding: 1rem 0.8rem 0.5rem 0.8rem;
-        background: map-get($color-gray,main-background);
-        >span {
+        background: map-get($color-gray, main-background);
+        > span {
             position: absolute;
             display: flex;
             width: 1.5rem;
             height: 1.5rem;
-            border-radius:1rem;
+            border-radius: 1rem;
             background: $color-primary;
             align-items: center;
             justify-content: center;
@@ -97,27 +78,24 @@ main {
         .steps {
             &__icon{
                 margin: 0 1.5rem;
-                color:map-get($color-gray, icon);
+                color: map-get($color-gray, icon);
                 font-size: 1.1rem;
-                display:flex;
+                display: flex;
                 @include tablet {
                     font-size: 90%;
                 }   
             }
-            &__icon--purple{
-                color:$color-primary;
+            &__icon--purple {
+                color: $color-primary;
             }
-            &__heading{
+            &__heading {
                 font-size: 1rem;
                 @include tablet {
                     font-size: 100%;
-                }
-                
+                }               
             }  
         }
-
-    }
-        
+    }        
 }
 
 /*Gallery-restaurant*/
@@ -128,30 +106,29 @@ main {
         background: map-get($color-gray,main-background);
         margin-top: 4rem;
         padding-bottom: 4rem;
-        box-sizing:border-box;
-        width:100%;
-        h2{
+        box-sizing: border-box;
+        width: 100%;
+        @include flexbox-direction;
+        h2 {
             @include desktop {
                 padding-left: 2rem;
             }
             @include tablet {
-                padding-left: 1.5rem;
-                
+                padding-left: 1.5rem;       
             } 
         }
-        @include desktop{
-            width:auto;
-            margin-top:2rem;
+        @include desktop {
+            width: auto;
+            margin-top: 2rem;
             width: 60vw;
-            padding-bottom:1rem;
-            padding-left:0rem;
-            padding-right:0rem;
+            padding-bottom: 1rem;
+            padding-left: 0;
+            padding-right: 0;
             margin-bottom: 2rem;
             margin-right: 2rem;
         }
         @include desktop-large {
-          
-            margin-right: 0rem;
+            margin-right: 0;
         }
         @include tablet {
             width: auto;
@@ -160,41 +137,30 @@ main {
         }
         @include tablet-landscape {
             width: 100vw;
-            margin-right: 0rem;
+            margin-right: 0;
             margin-bottom: 0;
             padding-bottom: 4rem;   
-        }
-        
-       /* @include desktop-large {
-            width:50vw;
-        }*/
-        @include flexbox-direction;
+        }  
         .gallery-flex-between {
             height: 63rem;
             @include flexbox-direction;
                 justify-content: space-between;
-               /* flex-wrap: wrap;*/
                 align-content: space-evenly;
             @include desktop {
-                flex-direction:row;
-                flex-wrap:wrap;
+                flex-flow: row wrap;
                 max-height: 40rem;
                 justify-content: space-evenly;
                 margin-top: -2rem;
-                }
+            }
             @include tablet {
                 max-height: 46rem;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
-                
+                flex-flow: row wrap;
+                justify-content: space-evenly;               
             }
             @include tablet-landscape {
                 max-height: 50rem;
                 margin-top: 0;
-            }
-           
-           
+            }         
         }
     }
     &__card {
@@ -209,13 +175,12 @@ main {
             max-height: 19rem;   
         }
         @include desktop-large {
-            width:26.5vw;
+            width: 26.5vw;
             min-height: 17rem;
         }
         @include tablet {
             width: 43vw;
-            min-height: 20rem;
-               
+            min-height: 20rem;      
         }
         @include tablet-landscape {
             width: 45vw;
@@ -229,13 +194,12 @@ main {
     }  
 }
 
-
 .card {
     &__image {
         position: relative;
         box-sizing: border-box;
         width:100%;
-        >span {
+        > span {
             position: absolute;
             right: 0.8rem;
             top: 0.8rem;
@@ -256,9 +220,8 @@ main {
             @include object-position($img-restaurant);
             overflow: hidden;
             @include desktop {
-                min-height: 13rem;
-               
-             }
+                min-height: 13rem;             
+            }
             @include tablet {
                 max-height: 13rem;
             }
@@ -269,8 +232,8 @@ main {
                 @include desktop-large {
                     min-height: 12.6rem;
                     max-height: 12.6rem
-                 }
-                 @include tablet-landscape {
+                }
+                @include tablet-landscape {
                     max-height: 14.6rem;
                 }
             }
@@ -286,14 +249,13 @@ main {
         position: relative;
         @include desktop {
             margin-top: -0.1rem;
-       }
+        }
        @include tablet {
         margin-top: 0rem;
-       }
+        }
         @include tablet-landscape {
             margin-top: -0.3rem;
         }
-       
         &.card__description--margin-top{
             margin-top: -0.1rem;
             @include desktop-large {
@@ -320,15 +282,15 @@ main {
             @include tablet-landscape {
                 line-height: 1rem;
             }
-            h3 {
-                font-size: 1.1rem;
-                @include tablet {
-                    font-size: 110%;
+                h3 {
+                    font-size: 1.1rem;
+                    @include tablet {
+                        font-size: 110%;
+                    }
                 }
-            }
-            address{
-                font-style:normal;
-            }
+                address {
+                    font-style: normal;
+                }
             }
         }
     } 
