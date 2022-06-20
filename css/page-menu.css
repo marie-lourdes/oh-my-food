@@ -35,6 +35,11 @@ body {
     font-size: 160%;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  body {
+    width: auto;
+  }
+}
 
 h1, h2 {
   font-size: 1.5rem;
@@ -151,7 +156,6 @@ a {
 }
 
 .checkbox-animation {
-  /*  display:none;*/
   background: #99E2D0;
   padding: 1.6rem;
   border-radius: 0 0.8rem 0.8rem 0;
@@ -214,7 +218,6 @@ a {
 }
 
 .starter__menu .input-check:checked, .dish__menu .input-check:checked, .dessert__menu .input-check:checked {
-  /*padding: 0rem 0rem 0rem 0.5rem;*/
   overflow: hidden;
 }
 .starter__menu .input-check:checked ~ .starter__details, .starter__menu .input-check:checked ~ .dish__details, .starter__menu .input-check:checked ~ .dessert__details,
@@ -222,42 +225,29 @@ a {
 .dish__menu .input-check:checked .starter__details, .dish__menu .input-check:checked .dish__details, .dish__menu .input-check:checked .dessert__details, .dessert__menu .input-check:checked ~ .starter__details, .dessert__menu .input-check:checked ~ .dish__details, .dessert__menu .input-check:checked ~ .dessert__details,
 .dessert__menu .input-check:checked .starter__details, .dessert__menu .input-check:checked .dish__details, .dessert__menu .input-check:checked .dessert__details {
   /* start__menu, dish__menu, dessert__menu cursor:hover desktop*/
-  line-height: 1rem;
-  /*label{*/
   /* }*/
-}
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
-  .starter__menu .input-check:checked ~ .starter__details, .starter__menu .input-check:checked ~ .dish__details, .starter__menu .input-check:checked ~ .dessert__details,
-.starter__menu .input-check:checked .starter__details, .starter__menu .input-check:checked .dish__details, .starter__menu .input-check:checked .dessert__details, .dish__menu .input-check:checked ~ .starter__details, .dish__menu .input-check:checked ~ .dish__details, .dish__menu .input-check:checked ~ .dessert__details,
-.dish__menu .input-check:checked .starter__details, .dish__menu .input-check:checked .dish__details, .dish__menu .input-check:checked .dessert__details, .dessert__menu .input-check:checked ~ .starter__details, .dessert__menu .input-check:checked ~ .dish__details, .dessert__menu .input-check:checked ~ .dessert__details,
-.dessert__menu .input-check:checked .starter__details, .dessert__menu .input-check:checked .dish__details, .dessert__menu .input-check:checked .dessert__details {
-    line-height: 2rem;
-  }
-}
-.starter__menu .input-check:checked ~ .starter__details h3 > label, .starter__menu .input-check:checked ~ .starter__details p > label, .starter__menu .input-check:checked ~ .dish__details h3 > label, .starter__menu .input-check:checked ~ .dish__details p > label, .starter__menu .input-check:checked ~ .dessert__details h3 > label, .starter__menu .input-check:checked ~ .dessert__details p > label,
-.starter__menu .input-check:checked .starter__details h3 > label,
-.starter__menu .input-check:checked .starter__details p > label, .starter__menu .input-check:checked .dish__details h3 > label, .starter__menu .input-check:checked .dish__details p > label, .starter__menu .input-check:checked .dessert__details h3 > label, .starter__menu .input-check:checked .dessert__details p > label, .dish__menu .input-check:checked ~ .starter__details h3 > label, .dish__menu .input-check:checked ~ .starter__details p > label, .dish__menu .input-check:checked ~ .dish__details h3 > label, .dish__menu .input-check:checked ~ .dish__details p > label, .dish__menu .input-check:checked ~ .dessert__details h3 > label, .dish__menu .input-check:checked ~ .dessert__details p > label,
-.dish__menu .input-check:checked .starter__details h3 > label,
-.dish__menu .input-check:checked .starter__details p > label, .dish__menu .input-check:checked .dish__details h3 > label, .dish__menu .input-check:checked .dish__details p > label, .dish__menu .input-check:checked .dessert__details h3 > label, .dish__menu .input-check:checked .dessert__details p > label, .dessert__menu .input-check:checked ~ .starter__details h3 > label, .dessert__menu .input-check:checked ~ .starter__details p > label, .dessert__menu .input-check:checked ~ .dish__details h3 > label, .dessert__menu .input-check:checked ~ .dish__details p > label, .dessert__menu .input-check:checked ~ .dessert__details h3 > label, .dessert__menu .input-check:checked ~ .dessert__details p > label,
-.dessert__menu .input-check:checked .starter__details h3 > label,
-.dessert__menu .input-check:checked .starter__details p > label, .dessert__menu .input-check:checked .dish__details h3 > label, .dessert__menu .input-check:checked .dish__details p > label, .dessert__menu .input-check:checked .dessert__details h3 > label, .dessert__menu .input-check:checked .dessert__details p > label {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  display: block;
-  appearance: none;
-  cursor: pointer;
 }
 .starter__menu .input-check:checked ~ .starter__details h3, .starter__menu .input-check:checked ~ .dish__details h3, .starter__menu .input-check:checked ~ .dessert__details h3,
 .starter__menu .input-check:checked .starter__details h3, .starter__menu .input-check:checked .dish__details h3, .starter__menu .input-check:checked .dessert__details h3, .dish__menu .input-check:checked ~ .starter__details h3, .dish__menu .input-check:checked ~ .dish__details h3, .dish__menu .input-check:checked ~ .dessert__details h3,
 .dish__menu .input-check:checked .starter__details h3, .dish__menu .input-check:checked .dish__details h3, .dish__menu .input-check:checked .dessert__details h3, .dessert__menu .input-check:checked ~ .starter__details h3, .dessert__menu .input-check:checked ~ .dish__details h3, .dessert__menu .input-check:checked ~ .dessert__details h3,
 .dessert__menu .input-check:checked .starter__details h3, .dessert__menu .input-check:checked .dish__details h3, .dessert__menu .input-check:checked .dessert__details h3 {
-  /* >label{
-
-   }*/
-  /* paraagraphe, h3 ellipsis: "la note enchantée" */
+  /* paragraphe, h3 ellipsis: "la note enchantée" */
   /* "la palette du gout"*/
   /* "le delice des sens"*/
+}
+.starter__menu .input-check:checked ~ .starter__details h3 > label, .starter__menu .input-check:checked ~ .dish__details h3 > label, .starter__menu .input-check:checked ~ .dessert__details h3 > label,
+.starter__menu .input-check:checked .starter__details h3 > label, .starter__menu .input-check:checked .dish__details h3 > label, .starter__menu .input-check:checked .dessert__details h3 > label, .dish__menu .input-check:checked ~ .starter__details h3 > label, .dish__menu .input-check:checked ~ .dish__details h3 > label, .dish__menu .input-check:checked ~ .dessert__details h3 > label,
+.dish__menu .input-check:checked .starter__details h3 > label, .dish__menu .input-check:checked .dish__details h3 > label, .dish__menu .input-check:checked .dessert__details h3 > label, .dessert__menu .input-check:checked ~ .starter__details h3 > label, .dessert__menu .input-check:checked ~ .dish__details h3 > label, .dessert__menu .input-check:checked ~ .dessert__details h3 > label,
+.dessert__menu .input-check:checked .starter__details h3 > label, .dessert__menu .input-check:checked .dish__details h3 > label, .dessert__menu .input-check:checked .dessert__details h3 > label {
+  line-height: 1rem;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+  .starter__menu .input-check:checked ~ .starter__details h3 > label, .starter__menu .input-check:checked ~ .dish__details h3 > label, .starter__menu .input-check:checked ~ .dessert__details h3 > label,
+.starter__menu .input-check:checked .starter__details h3 > label, .starter__menu .input-check:checked .dish__details h3 > label, .starter__menu .input-check:checked .dessert__details h3 > label, .dish__menu .input-check:checked ~ .starter__details h3 > label, .dish__menu .input-check:checked ~ .dish__details h3 > label, .dish__menu .input-check:checked ~ .dessert__details h3 > label,
+.dish__menu .input-check:checked .starter__details h3 > label, .dish__menu .input-check:checked .dish__details h3 > label, .dish__menu .input-check:checked .dessert__details h3 > label, .dessert__menu .input-check:checked ~ .starter__details h3 > label, .dessert__menu .input-check:checked ~ .dish__details h3 > label, .dessert__menu .input-check:checked ~ .dessert__details h3 > label,
+.dessert__menu .input-check:checked .starter__details h3 > label, .dessert__menu .input-check:checked .dish__details h3 > label, .dessert__menu .input-check:checked .dessert__details h3 > label {
+    line-height: 2rem;
+  }
 }
 @media screen and (max-width: 360px) {
   .starter__menu .input-check:checked ~ .starter__details h3 .starter--lobster, .starter__menu .input-check:checked ~ .dish__details h3 .starter--lobster, .starter__menu .input-check:checked ~ .dessert__details h3 .starter--lobster,
@@ -312,10 +302,6 @@ a {
 .starter__menu .input-check:checked .starter__details h3 .roast-chicken, .starter__menu .input-check:checked .dish__details h3 .roast-chicken, .starter__menu .input-check:checked .dessert__details h3 .roast-chicken, .dish__menu .input-check:checked ~ .starter__details h3 .roast-chicken, .dish__menu .input-check:checked ~ .dish__details h3 .roast-chicken, .dish__menu .input-check:checked ~ .dessert__details h3 .roast-chicken,
 .dish__menu .input-check:checked .starter__details h3 .roast-chicken, .dish__menu .input-check:checked .dish__details h3 .roast-chicken, .dish__menu .input-check:checked .dessert__details h3 .roast-chicken, .dessert__menu .input-check:checked ~ .starter__details h3 .roast-chicken, .dessert__menu .input-check:checked ~ .dish__details h3 .roast-chicken, .dessert__menu .input-check:checked ~ .dessert__details h3 .roast-chicken,
 .dessert__menu .input-check:checked .starter__details h3 .roast-chicken, .dessert__menu .input-check:checked .dish__details h3 .roast-chicken, .dessert__menu .input-check:checked .dessert__details h3 .roast-chicken {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    display: inline-block;
     width: 70%;
   }
 }
@@ -326,9 +312,6 @@ a {
   /* "french menu" */
   /* "la note enchantée" */
   /* la palette du gout */
-  /*  .dish--beef{
-          width: 77%!important;
-      }*/
   /* "le delice des sens"*/
 }
 .starter__menu .input-check:checked ~ .starter__details p > label, .starter__menu .input-check:checked ~ .dish__details p > label, .starter__menu .input-check:checked ~ .dessert__details p > label,
@@ -532,17 +515,11 @@ a {
 .starter__menu .input-check:checked .checkbox-animation .circle-checked, .dish__menu .input-check:checked ~ .checkbox-animation .circle-checked,
 .dish__menu .input-check:checked .checkbox-animation .circle-checked, .dessert__menu .input-check:checked ~ .checkbox-animation .circle-checked,
 .dessert__menu .input-check:checked .checkbox-animation .circle-checked {
-  /* transform:rotate(0deg) scale(1) ;*/
   animation: rotate-check 1s ease-in-out 1;
-  /* @include tablet {
-      transform: rotate(0deg) scale(1.3);
-
-   }*/
 }
 
 @media screen and (min-width: 992px) {
   .starter__menu:hover, .dish__menu:hover, .dessert__menu:hover {
-    /*padding: 0rem 0rem 0rem 0.5rem;*/
     overflow: hidden;
   }
   .starter__menu:hover ~ .starter__details, .starter__menu:hover ~ .dish__details, .starter__menu:hover ~ .dessert__details,
@@ -550,46 +527,29 @@ a {
 .dish__menu:hover .starter__details, .dish__menu:hover .dish__details, .dish__menu:hover .dessert__details, .dessert__menu:hover ~ .starter__details, .dessert__menu:hover ~ .dish__details, .dessert__menu:hover ~ .dessert__details,
 .dessert__menu:hover .starter__details, .dessert__menu:hover .dish__details, .dessert__menu:hover .dessert__details {
     /* start__menu, dish__menu, dessert__menu cursor:hover desktop*/
-    line-height: 1rem;
-    /*label{*/
     /* }*/
   }
-}
-@media screen and (min-width: 992px) and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 992px) and (min-width: 768px) and (max-width: 1024px) {
-  .starter__menu:hover ~ .starter__details, .starter__menu:hover ~ .dish__details, .starter__menu:hover ~ .dessert__details,
-.starter__menu:hover .starter__details, .starter__menu:hover .dish__details, .starter__menu:hover .dessert__details, .dish__menu:hover ~ .starter__details, .dish__menu:hover ~ .dish__details, .dish__menu:hover ~ .dessert__details,
-.dish__menu:hover .starter__details, .dish__menu:hover .dish__details, .dish__menu:hover .dessert__details, .dessert__menu:hover ~ .starter__details, .dessert__menu:hover ~ .dish__details, .dessert__menu:hover ~ .dessert__details,
-.dessert__menu:hover .starter__details, .dessert__menu:hover .dish__details, .dessert__menu:hover .dessert__details {
-    line-height: 2rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  .starter__menu:hover ~ .starter__details h3 > label, .starter__menu:hover ~ .starter__details p > label, .starter__menu:hover ~ .dish__details h3 > label, .starter__menu:hover ~ .dish__details p > label, .starter__menu:hover ~ .dessert__details h3 > label, .starter__menu:hover ~ .dessert__details p > label,
-.starter__menu:hover .starter__details h3 > label,
-.starter__menu:hover .starter__details p > label, .starter__menu:hover .dish__details h3 > label, .starter__menu:hover .dish__details p > label, .starter__menu:hover .dessert__details h3 > label, .starter__menu:hover .dessert__details p > label, .dish__menu:hover ~ .starter__details h3 > label, .dish__menu:hover ~ .starter__details p > label, .dish__menu:hover ~ .dish__details h3 > label, .dish__menu:hover ~ .dish__details p > label, .dish__menu:hover ~ .dessert__details h3 > label, .dish__menu:hover ~ .dessert__details p > label,
-.dish__menu:hover .starter__details h3 > label,
-.dish__menu:hover .starter__details p > label, .dish__menu:hover .dish__details h3 > label, .dish__menu:hover .dish__details p > label, .dish__menu:hover .dessert__details h3 > label, .dish__menu:hover .dessert__details p > label, .dessert__menu:hover ~ .starter__details h3 > label, .dessert__menu:hover ~ .starter__details p > label, .dessert__menu:hover ~ .dish__details h3 > label, .dessert__menu:hover ~ .dish__details p > label, .dessert__menu:hover ~ .dessert__details h3 > label, .dessert__menu:hover ~ .dessert__details p > label,
-.dessert__menu:hover .starter__details h3 > label,
-.dessert__menu:hover .starter__details p > label, .dessert__menu:hover .dish__details h3 > label, .dessert__menu:hover .dish__details p > label, .dessert__menu:hover .dessert__details h3 > label, .dessert__menu:hover .dessert__details p > label {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    display: block;
-    appearance: none;
-    cursor: pointer;
-  }
-}
-@media screen and (min-width: 992px) {
   .starter__menu:hover ~ .starter__details h3, .starter__menu:hover ~ .dish__details h3, .starter__menu:hover ~ .dessert__details h3,
 .starter__menu:hover .starter__details h3, .starter__menu:hover .dish__details h3, .starter__menu:hover .dessert__details h3, .dish__menu:hover ~ .starter__details h3, .dish__menu:hover ~ .dish__details h3, .dish__menu:hover ~ .dessert__details h3,
 .dish__menu:hover .starter__details h3, .dish__menu:hover .dish__details h3, .dish__menu:hover .dessert__details h3, .dessert__menu:hover ~ .starter__details h3, .dessert__menu:hover ~ .dish__details h3, .dessert__menu:hover ~ .dessert__details h3,
 .dessert__menu:hover .starter__details h3, .dessert__menu:hover .dish__details h3, .dessert__menu:hover .dessert__details h3 {
-    /* >label{
-
-     }*/
-    /* paraagraphe, h3 ellipsis: "la note enchantée" */
+    /* paragraphe, h3 ellipsis: "la note enchantée" */
     /* "la palette du gout"*/
     /* "le delice des sens"*/
+  }
+  .starter__menu:hover ~ .starter__details h3 > label, .starter__menu:hover ~ .dish__details h3 > label, .starter__menu:hover ~ .dessert__details h3 > label,
+.starter__menu:hover .starter__details h3 > label, .starter__menu:hover .dish__details h3 > label, .starter__menu:hover .dessert__details h3 > label, .dish__menu:hover ~ .starter__details h3 > label, .dish__menu:hover ~ .dish__details h3 > label, .dish__menu:hover ~ .dessert__details h3 > label,
+.dish__menu:hover .starter__details h3 > label, .dish__menu:hover .dish__details h3 > label, .dish__menu:hover .dessert__details h3 > label, .dessert__menu:hover ~ .starter__details h3 > label, .dessert__menu:hover ~ .dish__details h3 > label, .dessert__menu:hover ~ .dessert__details h3 > label,
+.dessert__menu:hover .starter__details h3 > label, .dessert__menu:hover .dish__details h3 > label, .dessert__menu:hover .dessert__details h3 > label {
+    line-height: 1rem;
+  }
+}
+@media screen and (min-width: 992px) and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 992px) and (min-width: 768px) and (max-width: 1024px) {
+  .starter__menu:hover ~ .starter__details h3 > label, .starter__menu:hover ~ .dish__details h3 > label, .starter__menu:hover ~ .dessert__details h3 > label,
+.starter__menu:hover .starter__details h3 > label, .starter__menu:hover .dish__details h3 > label, .starter__menu:hover .dessert__details h3 > label, .dish__menu:hover ~ .starter__details h3 > label, .dish__menu:hover ~ .dish__details h3 > label, .dish__menu:hover ~ .dessert__details h3 > label,
+.dish__menu:hover .starter__details h3 > label, .dish__menu:hover .dish__details h3 > label, .dish__menu:hover .dessert__details h3 > label, .dessert__menu:hover ~ .starter__details h3 > label, .dessert__menu:hover ~ .dish__details h3 > label, .dessert__menu:hover ~ .dessert__details h3 > label,
+.dessert__menu:hover .starter__details h3 > label, .dessert__menu:hover .dish__details h3 > label, .dessert__menu:hover .dessert__details h3 > label {
+    line-height: 2rem;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 360px) {
@@ -645,10 +605,6 @@ a {
 .starter__menu:hover .starter__details h3 .roast-chicken, .starter__menu:hover .dish__details h3 .roast-chicken, .starter__menu:hover .dessert__details h3 .roast-chicken, .dish__menu:hover ~ .starter__details h3 .roast-chicken, .dish__menu:hover ~ .dish__details h3 .roast-chicken, .dish__menu:hover ~ .dessert__details h3 .roast-chicken,
 .dish__menu:hover .starter__details h3 .roast-chicken, .dish__menu:hover .dish__details h3 .roast-chicken, .dish__menu:hover .dessert__details h3 .roast-chicken, .dessert__menu:hover ~ .starter__details h3 .roast-chicken, .dessert__menu:hover ~ .dish__details h3 .roast-chicken, .dessert__menu:hover ~ .dessert__details h3 .roast-chicken,
 .dessert__menu:hover .starter__details h3 .roast-chicken, .dessert__menu:hover .dish__details h3 .roast-chicken, .dessert__menu:hover .dessert__details h3 .roast-chicken {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    display: inline-block;
     width: 70%;
   }
 }
@@ -660,9 +616,6 @@ a {
     /* "french menu" */
     /* "la note enchantée" */
     /* la palette du gout */
-    /*  .dish--beef{
-            width: 77%!important;
-        }*/
     /* "le delice des sens"*/
   }
   .starter__menu:hover ~ .starter__details p > label, .starter__menu:hover ~ .dish__details p > label, .starter__menu:hover ~ .dessert__details p > label,
@@ -892,12 +845,7 @@ a {
 .starter__menu:hover .checkbox-animation .circle-checked, .dish__menu:hover ~ .checkbox-animation .circle-checked,
 .dish__menu:hover .checkbox-animation .circle-checked, .dessert__menu:hover ~ .checkbox-animation .circle-checked,
 .dessert__menu:hover .checkbox-animation .circle-checked {
-    /* transform:rotate(0deg) scale(1) ;*/
     animation: rotate-check 1s ease-in-out 1;
-    /* @include tablet {
-        transform: rotate(0deg) scale(1.3);
-
-     }*/
   }
 }
 
@@ -978,7 +926,7 @@ header button {
   background: none;
   border: none;
   color: #353535;
-  text-shadow: 0rem -0.01rem;
+  text-shadow: 0 -0.01rem;
   position: absolute;
   left: 1.5rem;
   top: 1.5rem;
@@ -1162,7 +1110,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 70rem;
+  height: 65rem;
   appearance: none;
   padding-bottom: 5rem;
   /* @include tablet-landscape {
@@ -1292,7 +1240,7 @@ main {
   border-radius: 1rem;
   padding: 0.3rem 1rem 0.3rem 0.6rem;
   align-items: center;
-  height: 4rem;
+  height: 5rem;
   background: #fff;
   margin-bottom: 1rem;
   box-sizing: border-box;
@@ -1321,26 +1269,38 @@ main {
   flex-direction: column;
   width: 100%;
   justify-content: center;
-  /* white-space: nowrap;*/
-  /*label {*/
-  /*}*/
 }
-.form-menu .starter__details h3 {
-  font-size: 1.1rem;
-  margin-top: 1.5rem;
-}
-@media screen and (max-width: 360px) {
-  .form-menu .starter__details h3 {
-    font-size: 0.9rem;
-  }
-}
-.form-menu .starter__details p label {
+.form-menu .starter__details h3 > label, .form-menu .starter__details p > label {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  font-size: 1rem;
-  margin-top: -1.8rem;
   display: block;
+  appearance: none;
+  cursor: pointer;
+}
+.form-menu .starter__details h3 label {
+  font-size: 1.1rem;
+}
+@media screen and (max-width: 360px) {
+  .form-menu .starter__details h3 label {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+  .form-menu .starter__details h3 label {
+    font-size: 1.8rem;
+  }
+}
+.form-menu .starter__details p {
+  margin-top: -0.8rem;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+  .form-menu .starter__details p {
+    margin-top: -1.3rem;
+  }
+}
+.form-menu .starter__details p label {
+  font-size: 1rem;
 }
 @media screen and (max-width: 360px) {
   .form-menu .starter__details p label {
@@ -1410,7 +1370,7 @@ main {
   border-radius: 1rem;
   padding: 0.3rem 1rem 0.3rem 0.6rem;
   align-items: center;
-  height: 4rem;
+  height: 5rem;
   background: #fff;
   margin-bottom: 1rem;
   box-sizing: border-box;
@@ -1439,26 +1399,38 @@ main {
   flex-direction: column;
   width: 100%;
   justify-content: center;
-  /* white-space: nowrap;*/
-  /*label {*/
-  /*}*/
 }
-.form-menu .dish__details h3 {
-  font-size: 1.1rem;
-  margin-top: 1.5rem;
-}
-@media screen and (max-width: 360px) {
-  .form-menu .dish__details h3 {
-    font-size: 0.9rem;
-  }
-}
-.form-menu .dish__details p label {
+.form-menu .dish__details h3 > label, .form-menu .dish__details p > label {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  font-size: 1rem;
-  margin-top: -1.8rem;
   display: block;
+  appearance: none;
+  cursor: pointer;
+}
+.form-menu .dish__details h3 label {
+  font-size: 1.1rem;
+}
+@media screen and (max-width: 360px) {
+  .form-menu .dish__details h3 label {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+  .form-menu .dish__details h3 label {
+    font-size: 1.8rem;
+  }
+}
+.form-menu .dish__details p {
+  margin-top: -0.8rem;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+  .form-menu .dish__details p {
+    margin-top: -1.3rem;
+  }
+}
+.form-menu .dish__details p label {
+  font-size: 1rem;
 }
 @media screen and (max-width: 360px) {
   .form-menu .dish__details p label {
@@ -1528,7 +1500,7 @@ main {
   border-radius: 1rem;
   padding: 0.3rem 1rem 0.3rem 0.6rem;
   align-items: center;
-  height: 4rem;
+  height: 5rem;
   background: #fff;
   margin-bottom: 1rem;
   box-sizing: border-box;
@@ -1557,26 +1529,38 @@ main {
   flex-direction: column;
   width: 100%;
   justify-content: center;
-  /* white-space: nowrap;*/
-  /*label {*/
-  /*}*/
 }
-.form-menu .dessert__details h3 {
-  font-size: 1.1rem;
-  margin-top: 1.5rem;
-}
-@media screen and (max-width: 360px) {
-  .form-menu .dessert__details h3 {
-    font-size: 0.9rem;
-  }
-}
-.form-menu .dessert__details p label {
+.form-menu .dessert__details h3 > label, .form-menu .dessert__details p > label {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  font-size: 1rem;
-  margin-top: -1.8rem;
   display: block;
+  appearance: none;
+  cursor: pointer;
+}
+.form-menu .dessert__details h3 label {
+  font-size: 1.1rem;
+}
+@media screen and (max-width: 360px) {
+  .form-menu .dessert__details h3 label {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+  .form-menu .dessert__details h3 label {
+    font-size: 1.8rem;
+  }
+}
+.form-menu .dessert__details p {
+  margin-top: -0.8rem;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+  .form-menu .dessert__details p {
+    margin-top: -1.3rem;
+  }
+}
+.form-menu .dessert__details p label {
+  font-size: 1rem;
 }
 @media screen and (max-width: 360px) {
   .form-menu .dessert__details p label {
@@ -1758,8 +1742,7 @@ main {
 }
 @media screen and (min-width: 992px) {
   .footer__bloc-links {
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     width: 100%;
     align-items: baseline;
     justify-content: space-between;
@@ -1767,8 +1750,7 @@ main {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .footer__bloc-links {
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     width: 100%;
     align-items: baseline;
     justify-content: space-between;

@@ -124,7 +124,7 @@ main{
 .form-menu {
     @include flexbox-direction;
     justify-content: space-between;
-    height: 70rem;
+    height: 65rem;
     appearance: none;
     padding-bottom: 5rem;
     @include desktop {
