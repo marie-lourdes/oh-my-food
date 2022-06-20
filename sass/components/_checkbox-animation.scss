@@ -1,25 +1,19 @@
 /*checkbox-animation*/
-/*label{*/
-    .starter__details,.dish__details,.dessert__details{
-        & p{
-            label{
-                
+
+.starter__details, .dish__details, .dessert__details {
+    & p {
+        label{
             transform-origin: left;
-            transition: transform ,text-overflow ;
+            transition: transform, text-overflow ;
             transition-duration: 1s;
             transition-timing-function: ease-in-out;     
-            }   
-            
-        }
-
+        }          
     }
+}
     
-  
-/*}*/
-
-.starter__price, .dish__price, .dessert__price{
-    transform-origin:right;
-    transform:translateX(0);
+.starter__price, .dish__price, .dessert__price {
+    transform-origin: right;
+    transform: translateX(0);
     transition: transform  1s ease-in-out;
     
 }
@@ -30,7 +24,7 @@
     border-radius: 0 0.8rem 0.8rem 0;
     color: $color-white;
     transform-origin: right;
-    transform:scaleX(0);
+    transform: scaleX(0);
     transition: transform 1s ease-in-out;
     position: absolute;
     top: 0;
@@ -48,18 +42,15 @@
     @include small-mobile {
         padding: 1.3rem;
     }
-
     & .circle-checked {
         font-size: 1.2rem; 
-      /*  transform:  rotate(-360deg) scaleX(1);
-        transition: transform 1s ease-in-out;*/
         display: block;
         position: absolute;
         top: 1.8rem;
         right: 1rem;
         transform: scale(0.9,1);
         @include desktop-large {
-            right: 1.1rem;
+             right: 1.1rem;
         }
         @include tablet {
             transform: scale(0.9,1.4);
@@ -71,9 +62,7 @@
             top: 1.5rem;
             right: 0.8rem;
             font-size: 1rem;
-        }
-        
-       
+        }      
     }
 } 
 
@@ -81,7 +70,7 @@
     .input-check:checked {
         @include checkbox-cursor;
     }
-    }
+}
 
 .starter__menu:hover, .dish__menu:hover, .dessert__menu:hover {
     @include desktop {
@@ -90,18 +79,11 @@
                     
 }
 
-/*.starter__menu:active, .dish__menu:active, .dessert__menu:active {
-   
-         @include checkbox-cursor;
-                    
-    
-}*/
-
 @keyframes rotate-check {
     0% {
-        transform:rotate(-360deg)/* scale(1,1); */;
+        transform:rotate(-360deg);
     }
     100% {
-        transform:rotate(360deg) /*scale(0.9,1.1);*/ scaleX(0.9);
+        transform:rotate(360deg) scaleX(0.9);
     }
 }

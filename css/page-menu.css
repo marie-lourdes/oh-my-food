@@ -140,7 +140,6 @@ a {
 }
 
 /*checkbox-animation*/
-/*label{*/
 .starter__details p label, .dish__details p label, .dessert__details p label {
   transform-origin: left;
   transition: transform, text-overflow;
@@ -148,7 +147,6 @@ a {
   transition-timing-function: ease-in-out;
 }
 
-/*}*/
 .starter__price, .dish__price, .dessert__price {
   transform-origin: right;
   transform: translateX(0);
@@ -188,8 +186,6 @@ a {
 }
 .checkbox-animation .circle-checked {
   font-size: 1.2rem;
-  /*  transform:  rotate(-360deg) scaleX(1);
-    transition: transform 1s ease-in-out;*/
   display: block;
   position: absolute;
   top: 1.8rem;
@@ -225,7 +221,6 @@ a {
 .dish__menu .input-check:checked .starter__details, .dish__menu .input-check:checked .dish__details, .dish__menu .input-check:checked .dessert__details, .dessert__menu .input-check:checked ~ .starter__details, .dessert__menu .input-check:checked ~ .dish__details, .dessert__menu .input-check:checked ~ .dessert__details,
 .dessert__menu .input-check:checked .starter__details, .dessert__menu .input-check:checked .dish__details, .dessert__menu .input-check:checked .dessert__details {
   /* start__menu, dish__menu, dessert__menu cursor:hover desktop*/
-  /* }*/
 }
 .starter__menu .input-check:checked ~ .starter__details h3, .starter__menu .input-check:checked ~ .dish__details h3, .starter__menu .input-check:checked ~ .dessert__details h3,
 .starter__menu .input-check:checked .starter__details h3, .starter__menu .input-check:checked .dish__details h3, .starter__menu .input-check:checked .dessert__details h3, .dish__menu .input-check:checked ~ .starter__details h3, .dish__menu .input-check:checked ~ .dish__details h3, .dish__menu .input-check:checked ~ .dessert__details h3,
@@ -535,7 +530,6 @@ a {
 .dish__menu:hover .starter__details, .dish__menu:hover .dish__details, .dish__menu:hover .dessert__details, .dessert__menu:hover ~ .starter__details, .dessert__menu:hover ~ .dish__details, .dessert__menu:hover ~ .dessert__details,
 .dessert__menu:hover .starter__details, .dessert__menu:hover .dish__details, .dessert__menu:hover .dessert__details {
     /* start__menu, dish__menu, dessert__menu cursor:hover desktop*/
-    /* }*/
   }
   .starter__menu:hover ~ .starter__details h3, .starter__menu:hover ~ .dish__details h3, .starter__menu:hover ~ .dessert__details h3,
 .starter__menu:hover .starter__details h3, .starter__menu:hover .dish__details h3, .starter__menu:hover .dessert__details h3, .dish__menu:hover ~ .starter__details h3, .dish__menu:hover ~ .dish__details h3, .dish__menu:hover ~ .dessert__details h3,
@@ -865,12 +859,6 @@ a {
   }
 }
 
-/*.starter__menu:active, .dish__menu:active, .dessert__menu:active {
-
-         @include checkbox-cursor;
-
-
-}*/
 @keyframes rotate-check {
   0% {
     transform: rotate(-360deg);
@@ -955,6 +943,7 @@ header button {
   }
 }
 
+/*fadein animation*/
 .form-menu .form-menu--1-fadein {
   animation-delay: 0.6666666667s;
   animation: fadein 2s ease-out both;
@@ -968,7 +957,7 @@ header button {
 }
 .form-menu .form-menu--2-fadein {
   opacity: 0;
-  animation-delay: 0.7166666667s;
+  animation-delay: 0.7666666667s;
 }
 
 @keyframes fadein {
@@ -1012,15 +1001,9 @@ main {
   position: absolute;
   z-index: -1;
   min-height: 17.2rem;
-  /*  @include tablet-landscape {
-        width:100%!important;
-    }*/
 }
 .banner-menu img.img--max-height {
   max-height: 17.2rem;
-  /*  @include tablet-landscape {
-        max-height: 40rem;
-    }*/
 }
 @media screen and (min-width: 992px) {
   .banner-menu img.img--max-height {
@@ -1054,11 +1037,6 @@ main {
   top: 13.8rem;
   margin-bottom: 12.7rem;
   padding: 0 1rem;
-  /*  @include tablet-landscape {
-        top: 32rem!important;
-        width: 100%!important;
-        margin-bottom: 32rem;
-    }*/
 }
 @media screen and (min-width: 992px) {
   .menu {
@@ -1105,7 +1083,7 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 1.5rem 0rem 0rem;
+  padding: 1rem 1.5rem 0 0;
 }
 @media screen and (min-width: 992px) {
   .menu__heading {
@@ -1118,7 +1096,7 @@ main {
     padding-left: 2rem;
   }
 }
-.menu .icon-like {
+.menu__heading .icon-like {
   right: 3%;
 }
 
@@ -1665,7 +1643,7 @@ main {
 
 .button-primary {
   width: 13rem;
-  margin: 0rem auto;
+  margin: 0 auto;
 }
 @media screen and (min-width: 1200px) {
   .button-primary {
@@ -1686,7 +1664,7 @@ main {
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .button-primary {
-    margin-top: 0rem;
+    margin-top: 0;
   }
 }
 

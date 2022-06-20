@@ -15,7 +15,7 @@
         display: flex;
         justify-content: center;
         position: relative;
-        >.border {
+        > .border {
             opacity :1;
             transition: opacity 0.1s linear 0.9s;
             font-size: 1.5rem;
@@ -23,7 +23,7 @@
                 font-size: 130%;
             } 
         }
-        >.full-heart {
+        > .full-heart {
             background: linear-gradient(purple,pink);
             display: flex;
             justify-content: center;
@@ -49,7 +49,7 @@
             .border {
                 opacity:0;
             }
-            >.full-heart {
+            > .full-heart {
                 transform: scale(1);
                 opacity: 1;
                 cursor: pointer;                   
@@ -60,7 +60,7 @@
                 .border {
                     opacity: 0;
                 }
-                >.full-heart {
+                > .full-heart {
                     transform: scale(1);
                     opacity: 1;
                     cursor: pointer;                         
