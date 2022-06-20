@@ -168,7 +168,7 @@ a {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .checkbox-animation {
-    border-radius: 0 1.2rem 1.2rem 0;
+    border-radius: 0 1rem 1rem 0;
     padding: 2rem;
   }
 }
@@ -1213,7 +1213,7 @@ main {
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .form-menu .starter__menu {
     min-height: 8rem;
-    border-radius: 1.8rem;
+    border-radius: 1.6rem;
     padding-left: 1rem;
   }
 }
@@ -1304,7 +1304,7 @@ main {
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .form-menu .dish__menu {
     min-height: 8rem;
-    border-radius: 1.8rem;
+    border-radius: 1.6rem;
     padding-left: 1rem;
   }
 }
@@ -1395,7 +1395,7 @@ main {
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .form-menu .dessert__menu {
     min-height: 8rem;
-    border-radius: 1.8rem;
+    border-radius: 1.6rem;
     padding-left: 1rem;
   }
 }
