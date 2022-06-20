@@ -146,11 +146,11 @@
                 font-size: 85%;
             }
             @include tablet {
-                top: 61px;
+                top: 50px;
                 font-size: 90%;
             }
             @include small-mobile {
-                top: 18px;
+                top: 22px;
             }         
         }
     }  
@@ -345,17 +345,17 @@
     .starter__price, .dish__price, .dessert__price { /* start__menu, dish__menu, dessert__menu cursor:hover desktop*/
         margin-right: 1rem;
         margin-left: -3rem;
-        top: 23px;
+        top: 31px;
         transform: translateX(-45px);
         @include desktop-large {
             transform: translateX(-60px); 
         }
         @include tablet {
             transform: translateX(-100px); 
-            top: 61px; 
+            top: 50px; 
         }
         @include small-mobile {
-            top: 17px;
+            top: 22px;
         }        
     }
     ~.checkbox-animation,

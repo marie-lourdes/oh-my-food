@@ -58,21 +58,22 @@
         top: 1.8rem;
         right: 1rem;
         transform: scale(0.9,1);
-        @include small-mobile {
-            top: 1.3rem;
-            right: 0.8rem;
-            font-size: 1rem;
+        @include desktop-large {
+            right: 1.1rem;
         }
         @include tablet {
             transform: scale(0.9,1.4);
             font-size: 1.8rem;
             top: 3.2rem;
-            right: 1.1rem;
-          
+            right: 1.1rem; 
         }
-        @include desktop-large {
-            right: 1.1rem;
+        @include small-mobile {
+            top: 1.5rem;
+            right: 0.8rem;
+            font-size: 1rem;
         }
+        
+       
     }
 } 
 
