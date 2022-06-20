@@ -192,15 +192,15 @@ a {
     transition: transform 1s ease-in-out;*/
   display: block;
   position: absolute;
-  top: 1.5rem;
+  top: 1.8rem;
   right: 1rem;
   transform: scale(0.9, 1);
 }
 @media screen and (max-width: 360px) {
   .checkbox-animation .circle-checked {
-    top: 1.4rem;
-    right: 0.75rem;
-    font-size: 1.1rem;
+    top: 1.3rem;
+    right: 0.8rem;
+    font-size: 1rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
@@ -491,7 +491,7 @@ a {
 .starter__menu .input-check:checked .starter__price, .starter__menu .input-check:checked .dish__price, .starter__menu .input-check:checked .dessert__price, .dish__menu .input-check:checked ~ .starter__price, .dish__menu .input-check:checked ~ .dish__price, .dish__menu .input-check:checked ~ .dessert__price,
 .dish__menu .input-check:checked .starter__price, .dish__menu .input-check:checked .dish__price, .dish__menu .input-check:checked .dessert__price, .dessert__menu .input-check:checked ~ .starter__price, .dessert__menu .input-check:checked ~ .dish__price, .dessert__menu .input-check:checked ~ .dessert__price,
 .dessert__menu .input-check:checked .starter__price, .dessert__menu .input-check:checked .dish__price, .dessert__menu .input-check:checked .dessert__price {
-    top: 20px;
+    top: 17px;
   }
 }
 .starter__menu .input-check:checked ~ .checkbox-animation,
@@ -818,7 +818,7 @@ a {
 .starter__menu:hover .starter__price, .starter__menu:hover .dish__price, .starter__menu:hover .dessert__price, .dish__menu:hover ~ .starter__price, .dish__menu:hover ~ .dish__price, .dish__menu:hover ~ .dessert__price,
 .dish__menu:hover .starter__price, .dish__menu:hover .dish__price, .dish__menu:hover .dessert__price, .dessert__menu:hover ~ .starter__price, .dessert__menu:hover ~ .dish__price, .dessert__menu:hover ~ .dessert__price,
 .dessert__menu:hover .starter__price, .dessert__menu:hover .dish__price, .dessert__menu:hover .dessert__price {
-    top: 20px;
+    top: 17px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -1110,13 +1110,9 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 65rem;
+  height: 70rem;
   appearance: none;
   padding-bottom: 5rem;
-  /* @include tablet-landscape {
-       min-height: 130rem!important;
-       padding-bottom: 8rem;
-   }*/
 }
 @media screen and (min-width: 992px) {
   .form-menu {
@@ -1135,6 +1131,11 @@ main {
     align-items: center;
     min-height: 130rem;
     padding-bottom: 8rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .form-menu {
+    max-height: 55rem;
   }
 }
 .form-menu__starter {
@@ -1261,7 +1262,7 @@ main {
 @media screen and (max-width: 360px) {
   .form-menu .starter__menu {
     border-radius: 0.8rem;
-    height: 3.5rem;
+    height: 4rem;
   }
 }
 .form-menu .starter__details {
@@ -1359,7 +1360,7 @@ main {
 }
 @media screen and (max-width: 360px) {
   .form-menu .starter__price {
-    top: 14px;
+    top: 18px;
   }
 }
 .form-menu .dish__menu {
@@ -1391,7 +1392,7 @@ main {
 @media screen and (max-width: 360px) {
   .form-menu .dish__menu {
     border-radius: 0.8rem;
-    height: 3.5rem;
+    height: 4rem;
   }
 }
 .form-menu .dish__details {
@@ -1489,7 +1490,7 @@ main {
 }
 @media screen and (max-width: 360px) {
   .form-menu .dish__price {
-    top: 14px;
+    top: 18px;
   }
 }
 .form-menu .dessert__menu {
@@ -1521,7 +1522,7 @@ main {
 @media screen and (max-width: 360px) {
   .form-menu .dessert__menu {
     border-radius: 0.8rem;
-    height: 3.5rem;
+    height: 4rem;
   }
 }
 .form-menu .dessert__details {
@@ -1619,7 +1620,7 @@ main {
 }
 @media screen and (max-width: 360px) {
   .form-menu .dessert__price {
-    top: 14px;
+    top: 18px;
   }
 }
 .form-menu input[type=checkbox] {

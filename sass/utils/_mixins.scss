@@ -65,7 +65,7 @@
             }
             @include small-mobile {
                 border-radius: 0.8rem;
-                height: 3.5rem;
+                height: 4rem;
             }
            
         }
@@ -150,7 +150,7 @@
                 font-size: 90%;
             }
             @include small-mobile {
-                top: 14px;
+                top: 18px;
             }         
         }
     }  
@@ -355,7 +355,7 @@
             top: 61px; 
         }
         @include small-mobile {
-            top: 20px;
+            top: 17px;
         }        
     }
     ~.checkbox-animation,

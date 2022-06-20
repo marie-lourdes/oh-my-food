@@ -124,7 +124,7 @@ main{
 .form-menu {
     @include flexbox-direction;
     justify-content: space-between;
-    height: 65rem;
+    height: 70rem;
     appearance: none;
     padding-bottom: 5rem;
     @include desktop {
@@ -140,13 +140,11 @@ main{
         min-height: 130rem;
         padding-bottom: 8rem;
     }
-   /* @include tablet-landscape {
-        min-height: 130rem!important;
-        padding-bottom: 8rem;
-    }*/
-      
-    
-    @include form-menu-fieldset;
+    @include small-mobile {
+        max-height: 55rem;
+    }
+   
+     @include form-menu-fieldset;
     legend {
         &::after {
             content: "";
