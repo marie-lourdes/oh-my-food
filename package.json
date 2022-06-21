@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "sass-1": "sass --watch ./sass/homepage.scss:./css/homepage.css",
-    "sass-2": "sass --watch ./sass/page-menu.scss:./css/page-menu.css",
-    "prefix-1":"postcss ./css/homepage.css --use autoprefixer -d ./css/",
-    "prefix-2":"postcss ./css/page-menu.css --use autoprefixer -d ./css/"
+    "sass-2": "sass --watch ./sass/page-menu.scss:./css/page-menu.css"
+   
   },
   "author": "marie-lourdes",
   "license": "ISC",
