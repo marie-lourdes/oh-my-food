@@ -44,8 +44,11 @@
         font-size: 0.9rem;
         text-shadow: 0.03rem -0.02rem;
         @include tablet {
+            font-size: 97%;
+        } 
+        @include tablet-landscape {
             font-size: 100%;
-        }       
+        }      
     }  
     &__bloc-links {
         @include flexbox-direction;
