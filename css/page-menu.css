@@ -1002,13 +1002,13 @@ main {
   z-index: -1;
   min-height: 17.2rem;
 }
+@media screen and (min-width: 1200px) {
+  .banner-menu img {
+    max-height: 64rem;
+  }
+}
 .banner-menu img.img--max-height {
   max-height: 17.2rem;
-}
-@media screen and (min-width: 992px) {
-  .banner-menu img.img--max-height {
-    max-height: 40rem;
-  }
 }
 @media screen and (min-width: 1200px) {
   .banner-menu img.img--max-height {
@@ -1018,6 +1018,11 @@ main {
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .banner-menu img.img--max-height {
     max-height: 30rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .banner-menu img.img--max-height {
+    max-height: 38rem;
   }
 }
 @media screen and (min-width: 992px) {
@@ -1038,17 +1043,9 @@ main {
   margin-bottom: 12.7rem;
   padding: 0 1rem;
 }
-@media screen and (min-width: 992px) {
-  .menu {
-    top: 27rem;
-    width: 95%;
-    margin-bottom: 32rem;
-    border-radius: 4.5rem 4.5rem 0 0;
-  }
-}
 @media screen and (min-width: 1200px) {
   .menu {
-    top: 40rem;
+    top: 27rem;
     border-radius: 5rem 5rem 0 0;
     margin-bottom: 43rem;
   }
@@ -1062,14 +1059,22 @@ main {
   }
 }
 @media screen and (min-width: 992px) {
+  .menu {
+    top: 27rem;
+    width: 95%;
+    margin-bottom: 32rem;
+    border-radius: 4.5rem 4.5rem 0 0;
+  }
+}
+@media screen and (min-width: 992px) {
   .menu.menu--note-enchantee {
     margin-bottom: 30rem;
   }
 }
 @media screen and (min-width: 1200px) {
   .menu.menu--note-enchantee {
-    top: 46rem;
-    margin-bottom: 49rem;
+    top: 28rem;
+    margin-bottom: 33rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {

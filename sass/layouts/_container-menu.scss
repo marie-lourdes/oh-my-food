@@ -26,16 +26,20 @@ main{
         position: absolute;
         z-index: -1;
         min-height: 17.2rem;
+        @include desktop-large {
+            max-height: 64rem;
+        }
         &.img--max-height {
             max-height: 17.2rem;
-            @include desktop {
-                max-height: 40rem;
-            }
+           
             @include desktop-large {
                 max-height: 52rem;
             }
             @include tablet {
                 max-height: 30rem;
+            }
+            @include desktop {
+                max-height: 38rem;
             }
         }
         @include desktop {
@@ -54,14 +58,9 @@ main{
     top: 13.8rem;
     margin-bottom: 12.7rem;
     padding: 0 1rem;
-    @include desktop {
-        top: 27rem;
-        width: 95%;
-        margin-bottom: 32rem;
-        border-radius: 4.5rem 4.5rem 0 0;
-    }  
+     
     @include desktop-large {
-        top: 40rem;
+        top: 27rem;
         border-radius: 5rem 5rem 0 0;
         margin-bottom: 43rem;
     }
@@ -71,13 +70,19 @@ main{
         margin-bottom: 25.7rem;
         border-radius: 4.5rem 4.5rem 0 0;
     }
+    @include desktop {
+        top: 27rem;
+        width: 95%;
+        margin-bottom: 32rem;
+        border-radius: 4.5rem 4.5rem 0 0;
+    } 
     &.menu--note-enchantee {
         @include desktop {
             margin-bottom: 30rem;
         }
         @include desktop-large {
-            top: 46rem;
-            margin-bottom: 49rem;
+            top: 28rem;
+            margin-bottom: 33rem;
         }
         @include tablet {
             top: 24.8rem;
