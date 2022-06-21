@@ -13,6 +13,9 @@
         line-height: 1.5;
         word-spacing: 0.2rem;
         padding: 0.5rem;
+        @include small-mobile {
+          font-size: 0.8rem;
+        }
     }
     & > .loading {
         position: relative;
@@ -35,6 +38,10 @@
         @include tablet-landscape {
           top: 12%; 
         } 
+        @include small-mobile {
+          top: 6%;
+
+        }
         & .loading__spinner {
             border: 6px solid ;
             position: absolute;
