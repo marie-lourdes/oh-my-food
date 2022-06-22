@@ -98,29 +98,11 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 5rem;
-  height: 5rem;
+  width: 2rem;
+  height: 2rem;
   position: absolute;
   right: 0;
-  z-index: 0;
-}
-.icon-like:active .border {
-  opacity: 0;
-}
-.icon-like:active .full-heart {
-  transform: scale(1);
-  opacity: 1;
-  cursor: pointer;
-}
-@media screen and (min-width: 992px) {
-  .icon-like:hover .border {
-    opacity: 0;
-  }
-  .icon-like:hover > .full-heart {
-    transform: scale(1);
-    opacity: 1;
-    cursor: pointer;
-  }
+  z-index: 1;
 }
 .icon-like .empty-heart {
   width: 100%;
@@ -160,6 +142,24 @@ a {
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
   .icon-like .empty-heart > .full-heart i {
     font-size: 130%;
+  }
+}
+.icon-like .empty-heart:hover:active .border {
+  opacity: 0;
+}
+.icon-like .empty-heart:hover:active > .full-heart {
+  transform: scale(1);
+  opacity: 1;
+  cursor: pointer;
+}
+@media screen and (min-width: 992px) {
+  .icon-like .empty-heart:hover .border {
+    opacity: 0;
+  }
+  .icon-like .empty-heart:hover > .full-heart {
+    transform: scale(1);
+    opacity: 1;
+    cursor: pointer;
   }
 }
 

@@ -5,33 +5,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 5rem;
-    height: 5rem;
+    width: 2rem;
+    height: 2rem;
     position: absolute;
     right: 0;
-    z-index: 0;
-    &:active {
-        .border {
-            opacity:0;
-        }
-        .full-heart {
-            transform: scale(1);
-            opacity: 1;
-            cursor: pointer;                   
-        }
-    }
-    @include desktop {
-        &:hover {
-            .border {
-                opacity: 0;
-            }
-            > .full-heart {
-                transform: scale(1);
-                opacity: 1;
-                cursor: pointer;                         
-            }
-        }
-    }
+    z-index: 1;
     .empty-heart {
         width: 100%;
         display: flex;
@@ -67,7 +45,30 @@
                 }  
             }    
         } 
-             
+      
+        &:hover:active {
+            .border {
+                opacity:0;
+            }
+            > .full-heart {
+                transform: scale(1);
+                opacity: 1;
+                cursor: pointer;                   
+            }
+        }
+      
+        @include desktop {
+            &:hover {
+                .border {
+                    opacity: 0;
+                }
+                > .full-heart {
+                    transform: scale(1);
+                    opacity: 1;
+                    cursor: pointer;                         
+                }
+            }   
+        }
    }    
 }
         
