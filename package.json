@@ -8,11 +8,6 @@
     "sass-2": "sass --watch ./sass/page-menu.scss:./css/page-menu.css --style compressed",
     "prefix-1":"postcss ./css/homepage.css --use autoprefixer -d ./css/",
     "prefix-2":"postcss ./css/page-menu.css --use autoprefixer -d ./css/"
-<<<<<<< HEAD
-
- 
-=======
->>>>>>> homepage
   },
   "author": "marie-lourdes",
   "license": "ISC",
