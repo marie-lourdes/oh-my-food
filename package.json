@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass-1": "sass --watch ./sass/homepage.scss:./css/homepage.css",
+    "sass-1": "sass --watch ./sass/homepage.scss:./css/homepage.css --style compressed",
     "sass-2": "sass --watch ./sass/page-menu.scss:./css/page-menu.css",
     "prefix-1":"postcss ./css/homepage.css --use autoprefixer -d ./css/"
   },
