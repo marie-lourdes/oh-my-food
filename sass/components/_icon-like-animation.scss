@@ -17,7 +17,10 @@
         position: relative;
         > .border {
             opacity :1;
+            transition: opacity 0.1s linear 0.1s;
+            @include desktop {
             transition: opacity 0.1s linear 0.9s;
+            }
             font-size: 1.5rem;
             @include tablet {
                 font-size: 130%;
@@ -34,7 +37,10 @@
             color: transparent;
             position: absolute;
             transform: scale(0);
+            transition: transform 200ms linear, opacity 100ms ease-out;
+            @include desktop {
             transition: transform 1s linear, opacity 0.4s ease-out ;
+            }
             z-index: -1;
             overflow: hidden;
             opacity: 0;  
