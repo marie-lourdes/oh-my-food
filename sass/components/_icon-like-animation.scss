@@ -10,6 +10,28 @@
     position: absolute;
     right: 0;
     z-index: 0;
+    &:active {
+        .border {
+            opacity:0;
+        }
+        .full-heart {
+            transform: scale(1);
+            opacity: 1;
+            cursor: pointer;                   
+        }
+    }
+    @include desktop {
+        &:hover {
+            .border {
+                opacity: 0;
+            }
+            > .full-heart {
+                transform: scale(1);
+                opacity: 1;
+                cursor: pointer;                         
+            }
+        }
+    }
     .empty-heart {
         width: 100%;
         display: flex;
@@ -45,28 +67,7 @@
                 }  
             }    
         } 
-        &:hover:active {
-            .border {
-                opacity:0;
-            }
-            > .full-heart {
-                transform: scale(1);
-                opacity: 1;
-                cursor: pointer;                   
-            }
-        }
-        @include desktop {
-            &:hover {
-                .border {
-                    opacity: 0;
-                }
-                > .full-heart {
-                    transform: scale(1);
-                    opacity: 1;
-                    cursor: pointer;                         
-                }
-            }
-        }       
+             
    }    
 }
         
