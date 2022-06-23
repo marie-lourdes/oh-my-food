@@ -110,7 +110,7 @@ main{
 .form-menu {
     @include flexbox-direction;
     justify-content: space-between;
-    height: 70rem;
+    height: 74rem;
     appearance: none;
     padding-bottom: 5rem;
     @include desktop {
@@ -127,7 +127,7 @@ main{
         padding-bottom: 8rem;
     }
     @include small-mobile {
-        max-height: 55rem;
+        max-height: 60rem;
     }
    
     @include form-menu-fieldset;
@@ -175,6 +175,7 @@ main{
 .button-primary {
     width: 13rem;
     margin: 0 auto;
+    margin-top: -1rem;
     @include desktop-large {
         width: 16rem;
         padding: 1.5rem;
@@ -190,7 +191,11 @@ main{
     }
     @include tablet-landscape {
         margin-top: 0;
-    }   
+    }
+    
+    @include small-mobile {
+        margin-top: 2rem;
+    }
 }
  
 
