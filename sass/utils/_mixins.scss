@@ -1,0 +1,410 @@
+
+@mixin flexbox-direction($direction: column) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+/*search-bar*/
+
+
+@mixin gradient-search-bar($color1: map-get($color-gray, background-search-bar),$color2: map-get($color-gray, background-search-bar), $degrees: 10%){
+    $color1: darken-opacity-search-bar($color1);
+    background: linear-gradient($color1 $degrees, $color2); 
+   
+}
+
+@mixin button-primary($color1: $color-secondary, $color2: $color-primary) {
+    padding: 1rem;
+    border-radius: 2rem;
+    border: none;
+    color: $color-white;
+    background: linear-gradient( $color1, $color2);
+    box-shadow: 0px 10px 20px -5px rgb(map-get($color-gray, dark-gray), 0.5);
+    @include tablet {
+        padding: 1.5rem;
+        border-radius: 2.5rem;
+    }
+}
+
+@mixin box-shadow ($color-shadow: rgb(map-get($color-gray, dark-gray),0.6), $offset-y:10px,$blur-radius: 20px, $spread-radius:-2px) {
+    box-shadow: 0px $offset-y $blur-radius $spread-radius $color-shadow ;
+}
+
+/*gallery-restaurants homepage*/
+
+@mixin object-position ($map) {
+    @each $key, $value in $map {
+        &.#{$key} {
+            object-position: center map-get($value, object-position);
+        }
+    }
+}
+/*page-menu form*/
+
+@mixin menu-details ($list: $menu-details) {
+    @each $value in $list {
+        & .#{$value}__menu {
+            position: relative;
+            @include flexbox-direction(row);
+            @include box-shadow ($color-shadow: map-get($color-gray, background-search-bar), $offset-y: 5px, $blur-radius: 10px, $spread-radius: 2px);
+            border-radius: 1rem;
+            padding: 0.3rem 1rem 0.3rem 0.6rem;
+            align-items: center;
+            height: 5rem;
+            background: $color-white;
+            margin-bottom: 1rem;
+            box-sizing: border-box;
+            cursor: pointer;
+            @include desktop {
+                padding-left: 1rem;
+            }
+            @include tablet {
+                min-height: 8rem;
+                border-radius: 1.6rem;
+                padding-left: 1rem;
+            }
+            @include small-mobile {
+                border-radius: 0.8rem;
+                height: 4rem;
+            }
+           
+        }
+       
+        .#{$value}__details {
+            @include flexbox-direction;
+            width: 100%;
+            justify-content: center;
+            h3, p {
+                > label {
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    display: block;
+                    appearance: none;
+                    cursor: pointer;
+                }
+            }
+            h3 {
+                     
+                label{
+                    font-size: 1.1rem;
+                    @include small-mobile {
+                        font-size: 0.9rem;
+                    }
+                    @include tablet {
+                        font-size: 1.8rem;
+                    }
+                }              
+            }
+            p {
+                margin-top: -0.8rem;
+                @include tablet {
+                    margin-top: -1.3rem
+                }
+                label {
+                    font-size: 1rem;
+                    @include small-mobile {
+                        font-size: 0.8rem;
+                    }
+                    @include tablet {
+                        font-size: 100%;
+                    }
+                }  
+            }
+              
+            .dish--beef {
+                width: 89%;
+            }
+            .dessert--ice {
+                @include small-mobile {
+                    width: 83%;
+                }
+            }
+
+            .dessert--tiramisu {
+                width: 81%;
+                @include small-mobile {
+                    width: 67%;
+                }
+            }
+             .dessert--ice {
+                width: 76%;
+                @include small-mobile {
+                    width: 71%;
+                }
+             }      
+        }
+        .#{$value}__price {
+            @include flexbox-direction;
+            font-size: 0.8rem;
+            text-align: right;
+            position: absolute;
+            top: 33px; 
+            right: 20px;
+            z-index: 1;
+            @include desktop-large {
+                font-size: 85%;
+            }
+            @include tablet {
+                top: 50px;
+                font-size: 90%;
+            }
+            @include small-mobile {
+                top: 22px;
+            }         
+        }
+    }  
+ } 
+
+ @mixin form-menu-fieldset($list: $menu-details) {
+    @each $value in $list {
+        &__#{$value} {
+            position: relative;
+            @include flexbox-direction;
+            margin: 0;
+            padding: 0;
+            border: none;
+            justify-content: space-around;
+            box-sizing: border-box;
+            @include desktop {
+                width: 80vw;
+                padding: 2rem;
+                border: 2px groove rgb(192, 192, 192);
+            }
+            @include tablet {
+                width: 80vw;
+                padding: 2rem;
+                border: 2px groove rgb(192, 192, 192);
+            }       
+        }
+    }   
+}
+
+@mixin fadein {
+    @for $i from 1 through 2 {
+         .form-menu--#{$i}-fadein {
+            animation-delay: $anim-delay*$i;
+            animation: fadein $anim-dur ease-out both;
+        } 
+    }
+}
+
+/*checkbox cursor animation*/
+
+@mixin checkbox-cursor {
+    overflow: hidden;
+    ~.starter__details, ~.dish__details, ~.dessert__details,
+    .starter__details, .dish__details, .dessert__details { /* start__menu, dish__menu, dessert__menu cursor:hover desktop*/
+        h3 {
+            > label {
+                line-height: 1rem;
+                @include desktop {
+                    line-height: 1.5rem;
+                }
+                @include tablet {
+                    line-height: 2rem;       
+                }
+            }      
+
+            /* paragraphe, h3 ellipsis: "la note enchantée" */
+
+            .starter--lobster {
+                @include small-mobile {
+                    width: 59%;
+                }
+            }
+            .saint-jacques {
+                @include small-mobile {
+                    width: 63%;
+                }  
+            }
+            .foie-gras {
+                @include small-mobile {
+                    width: 62%;
+                }
+            }
+
+            /* "la palette du gout"*/  
+
+            .queue-de-boeuf {
+                @include small-mobile {
+                    width: 87%;   
+                }
+            }
+            .macaroon {
+                @include small-mobile {
+                    width: 70%;  
+                }      
+            }
+
+             /* "le delice des sens"*/
+
+            .crisp-lobster {
+                @include small-mobile {
+                    width: 70%;
+                }
+             }
+             .roast-chicken {
+                @include small-mobile {
+                    width: 70%;
+                }
+            }
+        }
+        p {
+            > label {
+                line-height: 2rem;
+                transform: scaleX(0.9);
+            }
+
+            /* "french menu" */
+        
+            .dish--potatoes {
+                width: 66%;
+                @include small-mobile {
+                    width: 70%;
+                }
+            }
+            .dish--parmentier {
+                @include small-mobile {
+                    width: 67%;
+                }            
+            }
+            .dish--gnocchis {
+                width: 65%;
+                @include small-mobile {
+                    width: 62%;
+                }
+            } 
+
+            /* "la note enchantée" */
+            
+            .starter--ravioli {
+                width: 73%;
+                @include small-mobile {
+                    width: 69%;
+                }
+            }
+            .saint-jacques {
+                @include small-mobile {
+                    width: 80%;
+                }
+            }
+            .dish--wild-rice {
+                @include small-mobile {
+                    width: 64%;
+                }   
+            }
+            .macaroon-hazelnut {
+                @include small-mobile {
+                    width: 70%;
+                }
+            }            
+            .dessert--ice {
+                width: 83%;
+                @include small-mobile {
+                    width: 67%;
+                }
+            }
+
+            /* la palette du gout */
+            
+            .starter--duck {
+                width: 58%;
+            }
+            .starter--egg {
+                width: 71%;
+            }
+            .dish--beef{
+                width: 72%;
+                
+            }   
+            .dish--beef-parmentier {
+                width: 74%;
+            }
+            .dish--mada{
+                @include small-mobile {
+                    width: 51%;
+                }
+            }
+            .dessert--mousse {
+                width: 67%;
+                
+            }
+            
+            /* "le delice des sens"*/
+
+            .farandole {
+                width: 64%;
+            }
+            .dessert--tiramisu {
+                width: 67%;
+            }                  
+        }                    
+    }
+    
+    ~.starter__price, ~.dish__price, ~.dessert__price,
+    .starter__price, .dish__price, .dessert__price { /* start__menu, dish__menu, dessert__menu cursor:hover desktop*/
+        margin-right: 1rem;
+        margin-left: -3rem;
+        top: 31px;
+        transform: translateX(-45px);
+        @include desktop-large {
+            transform: translateX(-60px); 
+        }
+        @include tablet {
+            transform: translateX(-100px); 
+            top: 50px; 
+        }
+        @include small-mobile {
+            top: 22px;
+        }        
+    }
+    ~.checkbox-animation,
+    .checkbox-animation { /* start__menu, dish__menu, dessert__menu cursor:hover desktop*/
+        display: flex; 
+        transform: scaleX(1.35);
+        @include tablet {
+           transform: scaleX(1.8);
+           padding: 2rem;
+        }
+        .circle-checked {
+            animation: rotate-check 1s ease-in-out 1 ;              
+       }   
+   }
+
+}
+
+/* responsive*/
+
+@mixin small-mobile {
+    @media screen and (max-width: 360px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) {
+        @content;
+    }
+}
+
+ @mixin tablet-landscape {
+    @media screen and (min-width: 768px) and  (max-width: 1024px) and (orientation: landscape) {
+        @content;
+    }
+}
+  
+@mixin desktop {
+    @media screen and (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin desktop-large {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+  
+  
+
+
