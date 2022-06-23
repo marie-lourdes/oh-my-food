@@ -17,7 +17,7 @@
         position: relative;
         > .border {
             opacity :1;
-            transition: opacity 0.1s linear 0.1s;
+            transition: opacity 0.1s linear 0.4s;
             @include desktop {
             transition: opacity 0.1s linear 0.9s;
             }
@@ -37,7 +37,7 @@
             color: transparent;
             position: absolute;
             transform: scale(0);
-            transition: transform 200ms linear, opacity 100ms ease-out;
+            transition: transform 200ms linear 200ms, opacity 300ms ease-out 100ms;
             @include desktop {
             transition: transform 1s linear, opacity 0.4s ease-out ;
             }
