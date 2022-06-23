@@ -37,7 +37,7 @@
             color: transparent;
             position: absolute;
             transform: scale(0);
-            transition: transform 200ms linear 200ms, opacity 300ms ease-out 100ms;
+            transition: transform 300ms linear 100ms, opacity 150ms ease-out ;
             @include desktop {
             transition: transform 1s linear, opacity 0.4s ease-out ;
             }
