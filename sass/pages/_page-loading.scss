@@ -21,7 +21,7 @@
         position: relative;
         margin:0 auto;
         top: 10%;
-        animation:loading-spinner 2500ms 500ms ease-in infinite, loading-start 500ms  ease-out 1  ;
+        animation:loading-spinner 2500ms 500ms ease-in infinite, loading-start 500ms  ease-out 1 ;
         opacity: 0;
         transform: rotate(-360deg);
         height: 50px;
