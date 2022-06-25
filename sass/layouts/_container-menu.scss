@@ -1,0 +1,204 @@
+
+
+main{
+    @include flexbox-direction;
+    width:100%;
+    @include desktop {
+        align-items: center;
+        
+    }
+}
+
+/*banner-menu*/
+
+.banner-menu {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    @include desktop {
+        justify-content: center;
+        width:100%;
+    }
+    img {
+        width:100%;
+        object-fit: cover;
+        position: absolute;
+        z-index: -1;
+        min-height: 17.2rem;
+        @include desktop-large {
+            max-height: 64rem;
+        }
+        &.img--max-height {
+            max-height: 17.2rem;
+           
+            @include desktop-large {
+                max-height: 52rem;
+            }
+            @include tablet {
+                max-height: 30rem;
+            }
+            @include desktop {
+                max-height: 38rem;
+            }
+        }
+        @include desktop {
+            width: 94.5%;        
+        }          
+    } 
+}
+
+.menu {
+    @include flexbox-direction;
+    background: map-get($color-gray, main-background);
+    border-radius: 2.5rem 2.5rem 0 0;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    top: 13.8rem;
+    margin-bottom: 12.7rem;
+    padding: 0 1rem;
+     
+    @include desktop-large {
+        top: 27rem;
+        border-radius: 5rem 5rem 0 0;
+        margin-bottom: 43rem;
+    }
+    @include tablet {
+        padding: 0;
+        top: 25.8rem;
+        margin-bottom: 25.7rem;
+        border-radius: 4.5rem 4.5rem 0 0;
+    }
+    @include desktop {
+        top: 27rem;
+        width: 95%;
+        margin-bottom: 32rem;
+        border-radius: 4.5rem 4.5rem 0 0;
+    } 
+    &.menu--note-enchantee {
+        @include desktop {
+            margin-bottom: 30rem;
+        }
+        @include desktop-large {
+            top: 28rem;
+            margin-bottom: 33rem;
+        }
+        @include tablet {
+            top: 24.8rem;
+         }     
+    }   
+    &__heading {
+        font-family: "Shrikhand", cursive, arial, sans-serif;
+        @include flexbox-direction(row);
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1.5rem 0 0;
+        @include desktop {
+            padding-left: 2rem;
+        }
+        @include tablet {
+            font-size: 120%;
+            padding-left: 2rem;
+        } 
+        .icon-like {
+            right: 3%;     
+        }    
+    }  
+}
+
+.form-menu {
+    @include flexbox-direction;
+    justify-content: space-between;
+    height: 70rem;
+    appearance: none;
+    padding-bottom: 5rem;
+    @include desktop {
+        align-items: center;
+        min-height: 90rem;
+        padding-bottom: 8rem;
+    }
+    @include desktop-large {
+        min-height: 90rem;
+    } 
+    @include tablet {
+        align-items:center;
+        min-height: 130rem;
+        padding-bottom: 8rem;
+    }
+    @include small-mobile {
+        max-height: 60rem;
+    }
+   
+    @include form-menu-fieldset;
+    legend {
+        &::after {
+            content: "";
+            height: 0.2rem;
+            width: 2.5rem;
+            background: $color-tertiary;
+            position: absolute;
+            top: 2rem;
+            @include tablet {
+                top: 3rem;
+                width: 4rem;
+            }
+        }
+        h2 {
+            font-size: 1rem;
+            font-weight: 500;
+            @include tablet {
+                font-size: 100%;
+            }
+        }       
+    }
+    @include menu-details;
+    input[type=checkbox] {
+        display:none; 
+    }  
+    &.form-menu--note-enchantee{
+        padding-bottom: 15rem;
+        @include desktop {
+            padding-bottom: 8rem;
+        }
+        @include desktop-large {
+            min-height: 100rem;
+            padding-bottom: 8rem;
+        }
+        @include tablet {
+           min-height: 140rem; 
+           padding-bottom: 8rem;
+        }    
+    }    
+}
+
+.button-primary {
+    width: 13rem;
+    margin: 0 auto;
+    margin-top: -1rem;
+    @include desktop-large {
+        width: 16rem;
+        padding: 1.5rem;
+        border-radius: 2.5rem;
+        font-size: 130%;
+    }
+    @include tablet {
+        width: 20rem;
+        padding: 2rem;
+        border-radius: 3rem;
+        font-size: 110%;
+        margin-top: 1rem;       
+    }
+    @include tablet-landscape {
+        margin-top: 0;
+    }
+    
+    @include small-mobile {
+        margin-top: 2rem;
+    }
+}
+ 
+
+
+
+    
