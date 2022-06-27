@@ -41,6 +41,16 @@
 }
 /*page-menu form*/
 
+/* animation page-menu*/
+@mixin fadein {
+    @for $i from 1 through 2 {
+         .form-menu--#{$i}-fadein {
+            animation-delay: $anim-delay*$i;
+            animation: fadein $anim-dur ease-out both;
+        } 
+    }
+}
+
 @mixin menu-details ($list: $menu-details) {
     @each $value in $list {
         & .#{$value}__menu {
@@ -180,14 +190,6 @@
     }   
 }
 
-@mixin fadein {
-    @for $i from 1 through 2 {
-         .form-menu--#{$i}-fadein {
-            animation-delay: $anim-delay*$i;
-            animation: fadein $anim-dur ease-out both;
-        } 
-    }
-}
 
 /*checkbox cursor animation*/
 
